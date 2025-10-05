@@ -380,7 +380,7 @@ const PrabhaveeWebsite = () => {
                 <li>Responsible Business Conduct.</li>
                 <li>Transparency, and Corporate Accountability.</li>
                 <li>Governance, Ethics & Business Integrity.</li>
-                <li>Decent Work & Migrant Worker's Protection.</li>
+                <li>Decent Work & Migrant Worker&apos;s Protection.</li>
                 <li>Social Protection, Social Justice & Inclusion.</li>
               </ul>
             </div>
@@ -390,7 +390,7 @@ const PrabhaveeWebsite = () => {
               We actively contribute to <strong>Roundtable Conferences, Discussion
               and Ideation Meetings, Stakeholder Dialogues, UN Consultations, and Working Groups</strong>,
               to contribute to larger dialogues. Through these engagements, we seek to 
-              <strong> advance the evolving ESG landscape with a focused lens on critical issues discussed in "Focus Areas".</strong>
+              <strong> advance the evolving ESG landscape with a focused lens on critical issues discussed in &quot;Focus Areas&quot;.</strong>
             </p>
           )}
         </div>
