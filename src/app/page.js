@@ -127,8 +127,7 @@ const PrabhaveeWebsite = () => {
               <Typewriter
                 words={[
                   "Empowering sustainable progress through strategic capacity building.",
-                  "Strengthening governance, partnerships, and advocacy.",
-                  "Driving positive change with research, training, and innovation."
+                  "Strengthening governance, partnerships, and advocacy."
                 ]}
                 typeSpeed={40}
                 deleteSpeed={20}
@@ -141,17 +140,17 @@ const PrabhaveeWebsite = () => {
                 <div >
                   <Scale className="h-12 w-12 text-red-400 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Legal Advisory</h3>
-                  <p className="text-gray-300">Professional legal and policy advisory services</p>
+                  <p className="text-gray-300">Professional legal and Policy advisory services</p>
                 </div>
                 <div >
                   <Users className="h-12 w-12 text-red-400 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Capacity Building</h3>
-                  <p className="text-gray-300">Strategic training and development programs</p>
+                  <p className="text-gray-300">Strategic training and Programs</p>
                 </div>
                 <div >
                   <Globe className="h-12 w-12 text-red-400 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Social Impact</h3>
-                  <p className="text-gray-300">Business and human rights advocacy</p>
+                  <p className="text-gray-300">Business and Human <br></br>rights</p>
                 </div>
               </div>
             </div>
@@ -213,7 +212,7 @@ const PrabhaveeWebsite = () => {
       </section>
 
       {/* About Us Section */}
-      <section id ="about" className="max-w-auto mx-auto px-17 py-20 bg-gray-50">
+      <section id ="about" className="max-w-auto mx-auto px-17 py-10 bg-gray-50">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="relative h-[420px] flex items-center justify-center">
             <div className="absolute top-0 left-0 w-40 h-40 bg-[#1a365d] opacity-80 rounded-lg shadow-xl" />
@@ -230,29 +229,28 @@ const PrabhaveeWebsite = () => {
               />
             </div>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-1">
             <h1 className="text-4xl md:text-5xl font-bold text-[#1a365d] tracking-tight leading-snug">
               About PRABHAVEE
             </h1>
             <p className="text-lg text-gray-700">
-              <span className="font-semibold text-[#1a365d]">PRABHAVEE – Partner for Social Impact</span> is a Professional Advisory and Strategy Consulting Office based in Delhi. We deliver legal, policy, and strategic advisory services to organizations in the social impact sector, equipping them to strengthen their capacity, governance, and partnerships for long-term sustainability.
+              <span className="font-semibold text-[#1a365d]">PRABHAVEE – Partner for Social Impact</span> is a Professional Advisory and Strategy Consulting practice based in Delhi. We deliver legal, policy, and strategic advisory services to organizations in the social impact sector. Our mission is to equip organisations with strategies and insights to strengthen institutional capacity, governance, and partnerships — enabling sustainable growth and long-term impact.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg border-t-4 border-[#e53e3e] transition">
-                <h3 className="text-lg font-semibold text-[#e53e3e] mb-2">Our approach</h3>
-                <p className="mb-2">
+                <h3 className="text-xl font-semibold text-[#e53e3e] mb-3">Our approach</h3>
+                <p className="mb-4">
                   We equip impact organisations with insights, policies, recommendations, leadership strategies and training they need to build lasting impact:
                 </p>
-                <ul className="list-disc list-inside text-sm text-gray-700">
+                <ul className="list-disc list-inside text-base text-gray-700">
                   <li>NGOs & For-Profit Entities.</li>
                   <li>Social Enterprises.</li>
                   <li>MSMEs & SMEs.</li>
                   <li>Brands & Suppliers.</li>
-                  <li>and other impact-led institutions.</li>
                 </ul>
-                <p className="mt-2 text-base"> With expertise in <span className="font-medium">governance, compliance, partnerships, communication, stakeholder engagement, and capacity-building</span>, PRABHAVEE operates at the intersection of{" "} <span className="font-medium">policy and practice</span>. </p>
+                <p className="mt-4 text-base"> With expertise in <span className="font-medium">governance, compliance, partnerships, communication, stakeholder engagement, and capacity-building</span>, PRABHAVEE operates at the intersection of{" "} <span className="font-medium">policy and practice</span>. </p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg border-t-4 border-[#1a365d] transition pt-5">
+              <div className="bg-white p-6 pb-4 rounded-xl shadow-md hover:shadow-lg border-t-4 border-[#1a365d] transition pt-5">
                 <h3 className="text-lg font-semibold text-[#1a365d]">Our Work & Partnerships</h3>
                 <p className="mb-1 text-lg">Focus areas include:</p>
                 <ul className="list-disc list-inside  text-sm text-gray-700">
@@ -260,10 +258,11 @@ const PrabhaveeWebsite = () => {
                   <li>Responsible Business Conduct & Corporate Accountability.</li>
                   <li>Governance, Ethics & Business Integrity.</li>
                   <li>Decent Work and Protection of Migrant Workers.</li>
-                  <li>Social Protection, Financial Inclusion & Women’s Entrepreneurship Livelihoods</li>
-                  <li>Mental Health, Child Protection, Gender justice & PoSH Laws.</li>
+                  <li>Social Protection, Financial Inclusion & Women’s Entrepreneurship Development, Livelihoods.</li>
+                  <li>Mental health and Well-being.</li>
+                  <li>Gender, Diversity, Inclusion & PoSH Laws.</li>
                 </ul>
-                <p className="mt-2 text-base">
+                <p className="mt-1 text-base">
                   We collaborate with <span className="font-medium">Lawyers, Academia, Policy Experts, Sustainability &amp;
                 ESG Professionals, industry bodies, Think Tanks, and Educational Institutions</span> on various projects and initiatives.
                 </p>

@@ -29,13 +29,13 @@ const stats = [
   },
   {
     icon: <MessageSquare className="w-6 h-6" />,
-    label: "Policy & Public/Stakeholder Consultation",
-    value: "6",
+    label: "Policy & Public,Stakeholder Consultation",
+    value: "7",
   },
   {
     icon: <Network className="w-6 h-6" />,
     label: "Network, Platforms, Forums",
-    value: "11",
+    value: "12",
   },
 ];
 export default function OrgStats() {

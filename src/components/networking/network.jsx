@@ -45,6 +45,11 @@ const NetworkPartnerships = () => {
           org: "NGO Ecosystem",
           type: "NGO Network",
           badge: "Accelerator Partner"
+        },{
+          name: "eLearnPOSH.com",
+          org: "Digital Learning Platform",
+          type: "EdTech Collaboration",
+          badge: "Learning Partner"
         }
       ],
       color: "from-blue-500 to-blue-600",
@@ -62,7 +67,7 @@ const NetworkPartnerships = () => {
           badge: "Mentor"
         },
         {
-          name: "Womenovator",
+          name: "Womennnovator",
           org: "Global Incubator for Women",
           type: "Women Empowerment",
           badge: "Global Mentor"
@@ -137,6 +142,9 @@ const NetworkPartnerships = () => {
           org: "Government Institute",
           type: "Corporate Governance",
           badge: "Member"
+        },{
+          name:"Indian Society for Training and Development (ISTD)",
+          badge:"Member",
         }
       ],
       color: "from-red-500 to-red-600",
@@ -376,9 +384,6 @@ const NetworkPartnerships = () => {
             ))}
           </div>
         </div>
-        <div className="text-center mt-4 text-sm text-gray-400">
-          {sections[activeSection].items.length > 2 && <>Scroll horizontally to view all partners →</>}
-        </div>
       </div>
     </div>
   );
@@ -450,7 +455,7 @@ const NetworkPartnerships = () => {
           )}
           {hoveredSection === 'memberships' && (
             <>
-              <div className="text-gray-900 font-bold text-lg mb-1">
+              <div className="text-gray-900 font-bold text-lg">
                 {membershipSections[activeMembershipSection].items[hovered].name}
               </div>
               <div className="mb-1 text-sm text-gray-600">{membershipSections[activeMembershipSection].items[hovered].org}</div>

@@ -22,30 +22,30 @@ const background = () => {
       icon: <Shield className="w-6 h-6" />,
       title: "MSME/SME Capacity",
       description:
-        "SMEs and MSMEs lack awareness and legal capacity to manage contractual liability, HRDD, procurement risks, knowledge of purchasing practices, and supply-chain human rights violation.",
+        "SMEs and MSMEs lack awareness and legal capacity to manage contractual liability, HRDD(Human Rights Due Diligence), procurement risks, knowledge of purchasing practices, and supply-chain human rights violation.",
       color: "from-red-400 to-red-400",
     },
     {
       icon: <Scale className="w-6 h-6" />,
       title: "Fragmented Legal Expertise",
       description:
-        "Business & Human Rights expertise is scattered, like inhouse counsel, sustainability officers, commercial lawyers, human rights practitioners are not networked for a focused Business and Human Rights practice in India yet.",
+        "Business & Human Rights expertise is scattered, like in-house counsel, sustainability officers, commercial lawyers, human rights practitioners are not networked for a focused Business and Human Rights practice in India yet.",
       color: "from-gray-500 to-gray-600",
     },
   ];
 
   const initiatives = [
-    "Policy Input and engagement with Government and Private sector",
-    "Stakeholder and Public consultation",
-    "Comments on draft regulations, guidance and standards development",
+    "Policy Input and engagement with Government and Private sector.",
+    "Stakeholder and Public consultation.",
+    "Comments on draft regulations, guidance and standards development.",
     "Collaboration with organizations to publish reports that drive policy change.",
-    "Dialogues and closed-door deliberationsa and public events",
-    "Capacity building workshops & Training",
-    "International forums/Events/Speaking engagements participation",
-    "Mentorship & Guest lectures: Higher education students and emerging industry leaders",
-    "Participation in stakeholder interviews, surveys - contributing to industry reports",
-    "Representation in conferences: Ecosystem coalition and consensus-building",
-    "Strategic consultations & advisory"
+    "Dialogues and closed-door deliberations and public events.",
+    "Capacity building workshops & Training.",
+    "International forums/Events/Speaking engagements.",
+    "Mentorship & Guest lectures: Students and emerging industry leaders.",
+    "Participation in stakeholder interviews, surveys - contributing to industry reports.",
+    "Representation in conferences: Ecosystem coalition and consensus-building.",
+    "Strategic consultations & advisory."
   ];
 
   const thematicAreas = [
@@ -53,7 +53,7 @@ const background = () => {
     { icon: <Shield className="w-5 h-5" />, title: "Responsible Business Conduct & Practices" },
     { icon: <FileText className="w-5 h-5" />, title: "Transparency & Corporate Accountability" },
     { icon: <Award className="w-5 h-5" />, title: "Governance, Ethics and Business Integrity" },
-    { icon: <Users className="w-5 h-5" />, title: "Decent Work and Migrant Workers Protection" },
+    { icon: <Users className="w-5 h-5" />, title: "Decent Work and Protection of Migrant Workers" },
     { icon: <Briefcase className="w-5 h-5" />, title: "Responsible Recruitment Practices" },
     { icon: <Heart className="w-5 h-5" />, title: "Child Rights, Protection & Safeguard strategies and practices" },
     { icon: <HandHelping className="w-5 h-5" />, title: "Child Labour" },
@@ -89,11 +89,11 @@ const background = () => {
               <Scale className="w-9 h-9 text-red-600" />
             </span>
             <div>
-              <span className="font-semibold text-gray-900 block text-lg">Legal Expertise</span>
-              <span className="text-gray-600 text-base">Integrated legal framework for Business & Human Rights practice</span>
+              <span className="font-semibold text-gray-900 block text-lg">Policy and Guidance</span>
+              <span className="text-gray-600 text-base">Strengthening systems for Business & Human Rights practice</span>
             </div>
           </div>
-          <div className="hidden md:block w-10 h-1 rounded-full bg-gray-200" />
+          <div className="hidden md:block w-10 h-1 rounded-full" />
           <div className="flex items-center gap-4">
             <span className="bg-red-50 rounded-full p-4 shadow-md">
               <Users className="w-9 h-9 text-red-600" />
