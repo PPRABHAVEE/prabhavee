@@ -64,7 +64,7 @@ const background = () => {
     { icon: <ShieldAlert className="w-5 h-5" />, title: "Prevention of Sexual Harassment at the Workplace (PoSH)" }
   ];
   return (
-   <div className="min-h-screen bg-white">
+   <div className="min-h-screen bg-white pt-10">
     <section className="relative bg-gradient-to-br from-gray-200 to-white py-24 overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 left-1/3 w-96 h-96 bg-red-100 rounded-full opacity-30 blur-3xl"></div>

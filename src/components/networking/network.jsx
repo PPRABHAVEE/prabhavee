@@ -227,7 +227,7 @@ const NetworkPartnerships = () => {
     }
   ];
   const FloatingOrbitSection = ({ sections, activeSection, setActiveSection, title, subtitle, description }) => (
-    <div className="relative pb-16">
+    <div className="relative pb-16 pt-10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 text-center lg:text-left">

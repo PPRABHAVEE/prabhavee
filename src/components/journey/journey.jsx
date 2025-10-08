@@ -122,7 +122,7 @@ const JourneyTimeline = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white pt-13">
       {/* Header Section */}
       <div className="relative py-16 bg-gradient-to-tr from-red-50/70 via-white via-60% to-gray-200 overflow-hidden">
         <div className="absolute left-1/2 -top-28 -translate-x-1/2 w-[700px] h-56 bg-red-100 opacity-30 blur-2xl pointer-events-none"></div>

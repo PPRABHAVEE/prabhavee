@@ -114,7 +114,7 @@ const PrabhaveeWebsite = () => {
   }, [])
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-15">
       <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-red-900 text-white" aria-label="Hero Section">
         <canvas ref={canvasRef} className="absolute inset-0 z-0" role="presentation" aria-hidden="true" />
 
@@ -575,7 +575,7 @@ const PrabhaveeWebsite = () => {
                   Focused on business and human rights, responsible conduct, governance, and ethics.
                 </p>
                 <a
-                  href="/founder"
+                  href="/people"
                   className="inline-block mt-2 px-7 py-2 bg-gradient-to-r from-red-600 to-amber-500 hover:from-red-700 hover:to-yellow-600 text-white font-semibold rounded-full shadow-lg transition duration-200"
                 >
                   Read More

@@ -50,7 +50,7 @@ const Navbar = () => {
     }, []);
 
     return (
-      <header className="bg-white shadow-lg sticky top-0 z-50">
+      <header className="bg-white w-full shadow-lg fixed z-50">
         <div className="container mx-auto px-5 py-1.5">
           <div className="flex justify-between items-center">
             {/* Logo */}
@@ -159,14 +159,14 @@ const Navbar = () => {
               </div>
 
               <a 
-                href="#who-we-serve" 
+                href="/whoWeServe" 
                 className="text-gray-700 hover:text-red-600 font-medium transition-colors duration-200"
               >
                 Who We Serve
               </a>
               
               <a 
-                href="#people" 
+                href="/people" 
                 className="text-gray-700 hover:text-red-600 font-medium transition-colors duration-200"
               >
                 People
