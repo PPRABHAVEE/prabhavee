@@ -1,20 +1,16 @@
 "use client";
-import React, { useState, useRef } from 'react'
-import { Users, Handshake, Award, Briefcase, ExternalLink, Star, Building, Globe, ArrowRight, BookOpen, Target } from "lucide-react";
-import OrgStats from '@/components/stats/stats';
+import React, { useState, useRef } from 'react';
+import { Users, Handshake, Award, Briefcase, ExternalLink, Star, Building, Globe, ArrowRight, BookOpen, Target, ChevronRight } from "lucide-react";
+
 const NetworkPartnerships = () => {
-  const partnershipsRef = useRef(null);
-  const membershipsRef = useRef(null);
   const [activeNetworkSection, setActiveNetworkSection] = useState(0);
   const [activeMembershipSection, setActiveMembershipSection] = useState(0);
-  const [hovered, setHovered] = useState(null);
-  const [hoveredSection, setHoveredSection] = useState(null);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
   const networkSections = [
     {
       title: "Network Partner",
       subtitle: "Strategic network collaborations",
-      icon: <Globe className="w-8 h-8 text-white" />,
+      icon: <Globe className="w-6 h-6" />,
       items: [
         {
           name: "Young Leaders Council (YLC)",
@@ -45,20 +41,21 @@ const NetworkPartnerships = () => {
           org: "NGO Ecosystem",
           type: "NGO Network",
           badge: "Accelerator Partner"
-        },{
+        },
+        {
           name: "eLearnPOSH.com",
-          org: "Digital Learning Platform",
-          type: "EdTech Collaboration",
+          org: "E-Learning Provider (PoSH)",
+          type: "E-learning, Training",
           badge: "Learning Partner"
         }
       ],
-      color: "from-blue-500 to-blue-600",
-      stats: { count: "5", label: "Network Partners" }
+      color: "blue",
+      gradient: "from-blue-500 to-blue-700"
     },
     {
       title: "Mentorship",
       subtitle: "Guiding next generation leaders",
-      icon: <Users className="w-8 h-8 text-white" />,
+      icon: <Users className="w-6 h-6" />,
       items: [
         {
           name: "Young Leaders Council (YLC)",
@@ -85,13 +82,13 @@ const NetworkPartnerships = () => {
           badge: "Industry Mentor"
         }
       ],
-      color: "from-green-500 to-green-600",
-      stats: { count: "4", label: "Mentorship Programs" }
+      color: "green",
+      gradient: "from-green-500 to-green-700"
     },
     {
       title: "Knowledge Partner",
       subtitle: "Sharing expertise & insights",
-      icon: <BookOpen className="w-8 h-8 text-white" />,
+      icon: <BookOpen className="w-6 h-6" />,
       items: [
         {
           name: "Yellow Spark Solutions LLP",
@@ -100,13 +97,13 @@ const NetworkPartnerships = () => {
           badge: "Knowledge Partner"
         }
       ],
-      color: "from-amber-400 to-amber-500",
-      stats: { count: "1", label: "Knowledge Partners" }
+      color: "amber",
+      gradient: "from-amber-400 to-amber-600"
     },
     {
       title: "Ecosystem / Business associations",
       subtitle: "Industry and ecosystem participation",
-      icon: <Target className="w-8 h-8 text-white" />,
+      icon: <Target className="w-6 h-6" />,
       items: [
         {
           name: "Anti-Corruption Collective Action Working Group Member (ACCA)",
@@ -115,15 +112,16 @@ const NetworkPartnerships = () => {
           badge: "Working Group Member"
         }
       ],
-      color: "from-orange-500 to-orange-600",
-      stats: { count: "1", label: "Business Associations" }
+      color: "orange",
+      gradient: "from-orange-500 to-orange-700"
     }
   ];
+
   const membershipSections = [
     {
       title: "Memberships",
       subtitle: "Professional affiliations & certifications",
-      icon: <Award className="w-8 h-8 text-white" />,
+      icon: <Award className="w-6 h-6" />,
       items: [
         {
           name: "Young Leaders Council (YLC)",
@@ -142,18 +140,21 @@ const NetworkPartnerships = () => {
           org: "Government Institute",
           type: "Corporate Governance",
           badge: "Member"
-        },{
-          name:"Indian Society for Training and Development (ISTD)",
-          badge:"Member",
+        },
+        {
+          name: "Indian Society for Training and Development (ISTD)",
+          org: "Non-profit organisation",
+          type: "Training",
+          badge: "Member"
         }
       ],
-      color: "from-red-500 to-red-600",
-      stats: { count: "3", label: "Professional Memberships" }
+      color: "red",
+      gradient: "from-red-500 to-red-700"
     },
     {
       title: "Trusted by",
       subtitle: "Organizations that trust our expertise",
-      icon: <Handshake className="w-8 h-8 text-white" />,
+      icon: <Handshake className="w-6 h-6" />,
       items: [
         {
           name: "ATMA - An Accelerator for NGOs",
@@ -174,13 +175,13 @@ const NetworkPartnerships = () => {
           badge: "Trusted Collaborator"
         }
       ],
-      color: "from-gray-700 to-gray-800",
-      stats: { count: "3", label: "Trusted Partnerships" }
+      color: "gray",
+      gradient: "from-gray-600 to-gray-800"
     },
     {
       title: "Industry Mentorship",
       subtitle: "Mentoring programs & initiatives",
-      icon: <Users className="w-8 h-8 text-white" />,
+      icon: <Users className="w-6 h-6" />,
       items: [
         {
           name: "G20 Women Entrepreneurship Platform (WEP)",
@@ -201,134 +202,84 @@ const NetworkPartnerships = () => {
           badge: "Industry Mentor"
         },
         {
-          name: "Womenovator",
+          name: "Womennnovator",
           org: "Global Incubator for Women",
           type: "Women Empowerment",
           badge: "Global Mentor"
         }
       ],
-      color: "from-blue-500 to-blue-600",
-      stats: { count: "4", label: "Mentorship Programs" }
+      color: "blue",
+      gradient: "from-blue-500 to-blue-700"
     },
     {
       title: "Brand Collaboration",
       subtitle: "Strategic brand partnerships",
-      icon: <Briefcase className="w-8 h-8 text-white" />,
+      icon: <Briefcase className="w-6 h-6" />,
       items: [
         {
           name: "Young Leaders Council (YLC)",
           org: "All India Management Association (AIMA)",
           type: "Strategic Alliance",
           badge: "Brand Partner"
+        },{
+          name: "Yellow Spark Solutions LLP",
+          org: "Strategic Consulting",
+          type: "Business Knowledge",
+          badge: "Knowledge Partner"
         }
       ],
-      color: "from-purple-500 to-purple-600",
-      stats: { count: "1", label: "Brand Collaborations" }
+      color: "purple",
+      gradient: "from-amber-400 to-amber-600"
     }
   ];
-  const FloatingOrbitSection = ({ sections, activeSection, setActiveSection, title, subtitle, description }) => (
-    <div className="relative pb-16 pt-10">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="flex-1 text-center lg:text-left">
-            <h2 className="text-5xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent mb-6">
-              {title}<br />
-              <span className="text-transparent bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text">
-                {subtitle}
-              </span>
-            </h2>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">
-              {description}
-            </p>
-          </div>
-          <div className="flex-1 relative h-96 lg:h-[500px]">
-            <div className="absolute inset-0">
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-                w-24 h-24 bg-gradient-to-br from-red-500 to-red-600 rounded-3xl flex items-center justify-center 
-                shadow-2xl animate-pulse">
-                <Building className="w-12 h-12 text-white" />
-              </div>
-              {sections.map((section, index) => {
-                const angle = (index * 90) - 45;
-                const radius = 120;
-                const x = Math.cos(angle * Math.PI / 180) * radius;
-                const y = Math.sin(angle * Math.PI / 180) * radius;
-                return (
-                  <div
-                    key={index}
-                    className="absolute w-16 h-16 transform -translate-x-1/2 -translate-y-1/2 
-                      transition-all duration-500 hover:scale-110 cursor-pointer"
-                    style={{
-                      left: `calc(50% + ${x}px)`,
-                      top: `calc(50% + ${y}px)`,
-                      animationDelay: `${index * 0.5}s`
-                    }}
-                    onClick={() => setActiveSection(index)}
-                  >
-                    <div className={`w-full h-full bg-gradient-to-br ${section.color} rounded-2xl 
-                      flex items-center justify-center shadow-lg`}>
-                      {section.icon}
-                    </div>
-                  </div>
-                );
-              })}
-              <svg className="absolute inset-0 w-full h-full pointer-events-none">
-                <defs>
-                  <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="#ef4444" stopOpacity="0.3"/>
-                    <stop offset="100%" stopColor="#374151" stopOpacity="0.3"/>
-                  </linearGradient>
-                </defs>
-                {sections.map((_, index) => {
-                  const angle = (index * 90) - 45;
-                  const radius = 120;
-                  const x = Math.cos(angle * Math.PI / 180) * radius + 50;
-                  const y = Math.sin(angle * Math.PI / 180) * radius + 50;
-                  return (
-                    <line
-                      key={index}
-                      x1="50%"
-                      y1="50%"
-                      x2={`${x}%`}
-                      y2={`${y}%`}
-                      stroke="url(#lineGradient)"
-                      strokeWidth="2"
-                      strokeDasharray="5,5"
-                      className="animate-pulse"
-                    />
-                  );
-                })}
-              </svg>
-            </div>
-          </div>
+
+  const HeroSection = ({ title, subtitle, description }) => (
+    <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-28 overflow-hidden pt-37">
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-red-600 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            {title} <br />
+            <span className="bg-gradient-to-r from-red-400 to-amber-400 bg-clip-text text-transparent">
+              {subtitle}
+            </span>
+          </h1>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            {description}
+          </p>
         </div>
       </div>
     </div>
   );
-  const SectionSelector = ({ sections, activeSection, setActiveSection }) => (
-    <div className="bg-gray-900 py-16">
+
+  const TabNavigation = ({ sections, activeSection, setActiveSection }) => (
+    <div className="bg-white border-b border-gray-200 top-0 z-40 shadow-sm">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex overflow-x-auto scrollbar-hide items-center justify-center text-lg">
           {sections.map((section, index) => (
             <button
               key={index}
               onClick={() => setActiveSection(index)}
-              className={`p-6 rounded-2xl border-2 transition-all duration-300 text-left
-                ${activeSection === index 
-                  ? 'bg-red-600 border-red-500 text-white' 
-                  : 'bg-gray-800 border-gray-700 text-gray-300 hover:border-red-500 hover:bg-gray-700'
+              className={`flex items-center justify-center gap-3 px-6 py-6 border-b-2 transition-all duration-300 whitespace-nowrap
+                ${activeSection === index
+                  ? 'border-red-600 text-red-600 bg-red-200'
+                  : 'border-transparent text-gray-600 hover:text-gray-900 hover:border-gray-300'
                 }`}
             >
-              <div className="flex items-center gap-4 mb-3">
-                <div className={`w-10 h-10 rounded-xl flex items-center justify-center
-                  ${activeSection === index ? 'bg-white/20' : 'bg-gray-700'}`}>
-                  {section.icon}
-                </div>
-                <span className="font-semibold">{section.title}</span>
+              <div className={`p-2 rounded-lg transition-colors ${
+                activeSection === index ? 'bg-red-50' : 'bg-gray-50'
+              }`}>
+                {section.icon}
               </div>
-              <p className={`text-sm ${activeSection === index ? 'text-red-100' : 'text-gray-400'}`}>
-                {section.subtitle}
-              </p>
+              <div className="text-left text-base">
+                <div className="font-semibold text-sm">{section.title}</div>
+                <div className="text-xs opacity-70">{section.items.length} {section.items.length === 1 ? "Section" : "Sections"}
+</div>
+              </div>
             </button>
           ))}
         </div>
@@ -336,140 +287,105 @@ const NetworkPartnerships = () => {
     </div>
   );
 
-  const ContentSection = ({ sections, activeSection, sectionType }) => (
-    <div className="bg-white py-20">
+  const PartnerCard = ({ item, gradient, index }) => (
+    <div 
+      className={`group relative bg-white rounded-2xl border border-gray-200 hover:${gradient} transition-all duration-300 hover:shadow-xl overflow-hidden`}
+      style={{ animationDelay: `${index * 100}ms` }}
+    >
+      <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${gradient}`}></div>
+      
+      <div className="p-6">
+        <div className="flex items-start justify-between mb-4">
+          <div className="flex-1">
+            <h3 className={`text-lg font-bold text-gray-900 mb-2 group-hover:${gradient} transition-colors`}>
+              {item.name}
+            </h3>
+            {item.org && (
+              <p className="text-sm text-gray-600 mb-1 flex items-center gap-2">
+                <Building className="w-4 h-4" />
+                {item.org}
+              </p>
+            )}
+            {item.type && (
+              <p className="text-xs text-gray-500 italic">{item.type}</p>
+            )}
+          </div>
+        </div>
+        
+        <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+          <span className={`text-xs font-semibold px-3 py-1.5 rounded-full bg-gradient-to-r ${gradient} text-white`}>
+            {item.badge}
+          </span>
+        </div>
+      </div>
+      
+      <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-5 transition-opacity`}></div>
+    </div>
+  );
+
+  const ContentGrid = ({ sections, activeSection }) => (
+    <div className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-3">
             {sections[activeSection].title}
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-gray-600">
             {sections[activeSection].subtitle}
           </p>
         </div>
-        <div 
-          className="relative flex justify-center items-center h-52"
-          onMouseLeave={() => {
-            setHovered(null);
-            setHoveredSection(null);
-          }}
-        >
-          <div className="absolute left-0 right-0 top-1/2 border-t-2 border-dashed border-red-200 z-0"></div>
-          <div className="relative z-10 flex space-x-10 overflow-x-auto scrollbar-hide px-4 py-6">
-            {sections[activeSection].items.map((item, idx) => (
-              <div
-                key={`${sectionType}-${item.name}-${idx}`}
-                className="relative group cursor-pointer"
-                onMouseEnter={(e) => {
-                  setHovered(idx);
-                  setHoveredSection(sectionType);
-                  setMousePos({ x: e.clientX, y: e.clientY });
-                }}
-                onMouseMove={(e) => setMousePos({ x: e.clientX, y: e.clientY })}
-                onMouseLeave={() => {
-                  setHovered(null);
-                  setHoveredSection(null);
-                }}
-              >
-                <div className={`flex flex-col items-center bg-gradient-to-br
-                  ${sections[activeSection].color}
-                  px-7 py-3 rounded-full shadow-sm text-white font-semibold text-base 
-                  transition-all duration-300 min-w-[200px]`}>
-                  <span className="flex items-center gap-2">
-                    {sections[activeSection].icon}
-                    {item.name}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {sections[activeSection].items.map((item, idx) => (
+            <PartnerCard
+              key={idx}
+              item={item}
+              gradient={sections[activeSection].gradient}
+              index={idx}
+            />
+          ))}
         </div>
       </div>
     </div>
   );
 
   return (
-    <div className="min-h-screen bg-gray-50 relative overflow-hidden">
-      <FloatingOrbitSection
+    <div className="min-h-screen bg-gray-50">
+      <HeroSection
+        title="Our Networks &"
+        subtitle="Strategic Partnerships"
+        description="PRABHAVEE - Partner for Social Impact collaborates with leading organizations to drive meaningful change and sustainable development across industries."
+      />
+      
+      <TabNavigation
         sections={networkSections}
         activeSection={activeNetworkSection}
         setActiveSection={setActiveNetworkSection}
-        title="Our Networks &"
-        subtitle="Partners"
-        description="PRABHAVEE - Partner for Social Impact collaborates and maintains strategic partnerships with leading organizations:"
       />
-      <div ref={partnershipsRef}>
-        <SectionSelector
-          sections={networkSections}
-          activeSection={activeNetworkSection}
-          setActiveSection={setActiveNetworkSection}
-        />
-        <ContentSection
-          sections={networkSections}
-          activeSection={activeNetworkSection}
-          sectionType="networks"
-        />
-      </div>
-      <div className="bg-gray-100 py-16">
-        <FloatingOrbitSection
-          sections={membershipSections}
-          activeSection={activeMembershipSection}
-          setActiveSection={setActiveMembershipSection}
-          title="Our Memberships"
-          subtitle="Supporters | Collaborations"
-          description="Empowering Sustainable progress through Strategic Capacity Building with our trusted memberships and collaborations:"
-        />
-      </div>
-      <div ref={membershipsRef}>
-        <SectionSelector
-          sections={membershipSections}
-          activeSection={activeMembershipSection}
-          setActiveSection={setActiveMembershipSection}
-        />
-        <ContentSection
-          sections={membershipSections}
-          activeSection={activeMembershipSection}
-          sectionType="memberships"
-        />
-      </div>
-      {hovered !== null && hoveredSection && (
-        <div
-          className="fixed z-[100] w-80 bg-white rounded-2xl py-4 px-6 shadow-2xl border border-red-100 text-left pointer-events-none transition-all duration-200"
-          style={{
-            top: mousePos.y + 24,
-            left: Math.min(mousePos.x, window.innerWidth - 340),
-            maxWidth: "90vw"
-          }}
-        >
-          {hoveredSection === 'networks' && (
-            <>
-              <div className="text-gray-900 font-bold text-lg mb-1">
-                {networkSections[activeNetworkSection].items[hovered].name}
-              </div>
-              <div className="mb-1 text-sm text-gray-600">{networkSections[activeNetworkSection].items[hovered].org}</div>
-              <div className="mb-3 text-xs italic text-gray-400">{networkSections[activeNetworkSection].items[hovered].type}</div>
-              <span className={`text-xs font-semibold px-3 py-1 rounded-full bg-gradient-to-r ${networkSections[activeNetworkSection].color} text-white`}>
-                {networkSections[activeNetworkSection].items[hovered].badge}
-              </span>
-            </>
-          )}
-          {hoveredSection === 'memberships' && (
-            <>
-              <div className="text-gray-900 font-bold text-lg">
-                {membershipSections[activeMembershipSection].items[hovered].name}
-              </div>
-              <div className="mb-1 text-sm text-gray-600">{membershipSections[activeMembershipSection].items[hovered].org}</div>
-              <div className="mb-3 text-xs italic text-gray-400">{membershipSections[activeMembershipSection].items[hovered].type}</div>
-              <span className={`text-xs font-semibold px-3 py-1 rounded-full bg-gradient-to-r ${membershipSections[activeMembershipSection].color} text-white`}>
-                {membershipSections[activeMembershipSection].items[hovered].badge}
-              </span>
-            </>
-          )}
-        </div>
-      )}
-      <OrgStats></OrgStats>
+      
+      <ContentGrid
+        sections={networkSections}
+        activeSection={activeNetworkSection}
+      />
+
+      <HeroSection
+        title="Our Memberships &"
+        subtitle="Trusted Collaborations"
+        description="Empowering sustainable progress through strategic capacity building with our trusted memberships and professional affiliations."
+      />
+      
+      <TabNavigation
+        sections={membershipSections}
+        activeSection={activeMembershipSection}
+        setActiveSection={setActiveMembershipSection}
+      />
+      
+      <ContentGrid
+        sections={membershipSections}
+        activeSection={activeMembershipSection}
+      />
     </div>
   );
-}
+};
 
 export default NetworkPartnerships;

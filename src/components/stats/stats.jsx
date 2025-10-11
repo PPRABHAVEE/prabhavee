@@ -37,6 +37,10 @@ const stats = [
     label: "Network, Platforms, Forums",
     value: "12",
   },
+  {
+    label:"Delhi Chapter, Indian Society for Training and Development (ISTD), Member",
+    value:"Trained: 750+ individuals",
+  }
 ];
 export default function OrgStats() {
   return (
@@ -66,13 +70,24 @@ export default function OrgStats() {
           ))}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center">
-          {stats.slice(4).map((stat, idx) => (
+          {stats.slice(4,7).map((stat, idx) => (
             <div
               key={stat.label}
               className="flex flex-col items-center rounded-2xl bg-white shadow-lg px-6 py-8 transition-transform hover:scale-105 hover:shadow-xl border-t-4 border-red-100 min-h-[170px]"
             >
               <span className="block font-semibold text-gray-700 text-base mb-3 text-center">{stat.label}</span>
               <span className="text-4xl font-extrabold text-red-600 drop-shadow-sm mt-auto">{stat.value}</span>
+            </div>
+          ))}
+        </div>
+        <div className="flex justify-center items-center mt-8 ">
+          {stats.slice(7).map((stat, idx) => (
+            <div
+              key={stat.label}
+              className="flex flex-col items-center rounded-2xl bg-white shadow-lg px-6 py-8 transition-transform hover:scale-105 hover:shadow-xl border-t-4 border-red-100 min-h-[170px]"
+            >
+              <span className="block font-semibold text-gray-700 text-base text-center">{stat.label}</span>
+              <span className="text-2xl font-extrabold text-red-600 drop-shadow-sm mt-auto">{stat.value}</span>
             </div>
           ))}
         </div>

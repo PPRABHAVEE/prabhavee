@@ -48,6 +48,8 @@ const PeoplePage = () => {
       name: 'Anumita Sarkar',
       title: 'Founding Lawyer - Policy and Strategic Advisor',
       image: founder.src,
+      linkedin : "https://www.linkedin.com/in/advocateanumitasarkar/",
+      email:'anumita@prabhavee.org',
       description: 'Anumita Sarkar is the Founding Lawyer - Policy and Strategic Advisor of PRABHAVEE – Partner for Social Impact and founded the organization in 2022. She is recognized as a strategic leader with nearly two decades of sectoral and functional expertise across fields like Research, Advisory, Project Management, Editorial & Knowledge Management, Strategic Partnerships, Stakeholder Engagement, Communication and Outreach, and various other strategic initiatives. Her collaborative work covers various stakeholders: Government, Statutory and Quasi-Judicial authorities, Appellate Tribunals, Courts and Forums, Corporates, Multilateral Organizations(UN), Publishers, Authors, Knowledge Partners, Big 4 Consulting Firms, Policy Professionals, Senior Tax Experts, Learning and Development Consultants, and C-Suite Leaders. She possesses deep cross-functional expertise with Production, Technology, Design, Marketing, Sales, Channel Partners &amp; Customer Care Teams.',
       expertise: [
         'Strategic leadership across diverse sectors.',
@@ -83,7 +85,7 @@ const PeoplePage = () => {
         {
           heading: 'Law practice focused on taxation:',
           list: [
-            'CA Firm, Law Offices and Senior Advocate’s Tax Chamber/ Ex-Standing Counsel of Income Tax Department,Delhi &amp; ITAT Kolkata.',
+            'CA Firm, Law Offices and Senior Advocate’s Tax Chamber/ Ex-Standing Counsel of Income Tax Department, Delhi & ITAT Kolkata.',
           ]
         },
         {
@@ -114,7 +116,7 @@ const PeoplePage = () => {
           ]
         },
         'Women on Boards Programme, Cohort 5, Indian School of Development Management (ISDM).',
-        'Certified Professional CSR Impact Assessment &amp; SROI, Consultivo Academy.',
+        'Certified Professional CSR Impact Assessment & SROI, Consultivo Academy.',
         'Certificate in Strategic Communication and Partnership Building for Social Impact, MICA | The School of Ideas.',
         'Certificate in Financial Education, National Centre for Financial Education (NCFE) & ITCILO, International Training Centre of the International Labour Organization.',
         'Certificate in CSR Laws: Its Applied Aspects by HCL Academy of HCL Foundation, Batch X.',
@@ -131,8 +133,10 @@ const PeoplePage = () => {
       id: 'amrita',
       name: 'Amrita Sarkar',
       title: 'Legal Counsel & Advisor',
-      subtitle: 'Advocate-on-Record, Supreme Court of India, S&L Law Offices',
+      subtitle: 'Advocate-on-Record, Supreme Court of India',
       image: cofounder.src,
+      linkedin:"https://www.linkedin.com/in/amrita-sarkar-aor?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email:'lawoffice@amritasarkar.in',
       description: 'Amrita Sarkar is an Advocate-on-Record at the Supreme Court of India with more than 10 years of experience at the Bar. She is recognized for her litigation skills across civil and commercial matters, representing clients at various forums, including Tribunals, District Courts, High Courts, and the Supreme Court. Amrita is also involved in advisory work for domestic and international clients and has significantly contributed to company law, insolvency, and policy development in the legal field.',
       expertise: [
         'Litigation and dispute resolution for civil and commercial matters.',
@@ -152,7 +156,7 @@ const PeoplePage = () => {
         'Involvement in INSOL International and INSOL India, Small Practice Group India, aiming to resolve debt issues being faced by companies and sharing best practices across countries.'
       ],
       credentials: [
-        'Alumna of the premier law institute, National University Juridical Sciences, Kolkata (NUJS).',
+        'Alumna of the premier law institute, National University of Juridical Sciences, Kolkata (NUJS).',
         'Advocate-on-Record, Supreme Court of India.'
       ],
        otherHighlights: [
@@ -218,7 +222,7 @@ const PeoplePage = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-8 pb-20">
+      <div className="max-w-7xl mx-auto px-8 pb-8">
         {people.map((person, index) => {
           const isLeft = index % 2 === 0;
           const sectionTop = 400 + (index * 1000);
@@ -233,7 +237,7 @@ const PeoplePage = () => {
             >
               <div className="w-1/3 sticky top-30 space-y-30">
                 <div 
-                  className="relative mb-20"
+                  className="relative mb-16"
                   style={{
                     transform: isInView ? 'scale(1)' : 'scale(0.8)',
                     opacity: isInView ? 1 : 0,
@@ -278,6 +282,30 @@ const PeoplePage = () => {
                       {person.subtitle && (
                         <p className="text-lg text-gray-600">{person.subtitle}</p>
                       )}
+                      <div className="flex gap-3 justify-center mt-2">
+                        <a
+                          href={person.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#0A66C2] hover:bg-[#004182] text-white text-sm font-medium rounded-full shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 group"
+                        >
+                          <svg className="w-4 h-4 transition-transform group-hover:rotate-12" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                          </svg>
+                          <span>LinkedIn</span>
+                        </a>
+                        <a
+                          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${person.email}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-1.5 bg-neutral-900 hover:bg-neutral-700 text-white text-sm font-medium rounded-full shadow-md transition hover:scale-105"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5">
+                          <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm2 0v.01l8 6.99 8-6.99V4H4zm16 2.234l-8 6.996-8-6.996V20h16V6.234z"/>
+                          </svg>
+                          <span>Email</span>
+                        </a>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -290,10 +318,34 @@ const PeoplePage = () => {
                   }}
                 >
                   {!showBelowImage && (
-                  <div className="mb-6 transition-all duration-700 ease-in-out">
+                  <div className="mb-4 transition-all duration-700 ease-in-out">
                     <h2 className="text-4xl font-bold text-gray-900 mb-2">{person.name}</h2>
                     <p className="text-xl text-red-500 font-semibold mb-1">{person.title}</p>
                     {person.subtitle && <p className="text-lg text-gray-600">{person.subtitle}</p>}
+                    <div className="flex gap-3 mt-4">
+                      <a
+                        href={person.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#0A66C2] hover:bg-[#004182] text-white text-sm font-medium rounded-full shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 group"
+                      >
+                        <svg className="w-4 h-4 transition-transform group-hover:rotate-12" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                      </a>
+                      <a
+                        href={`https://mail.google.com/mail/?view=cm&fs=1&to=${person.email}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-1.5 bg-neutral-900 hover:bg-neutral-700 text-white text-sm font-medium rounded-full shadow-md transition hover:scale-105"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5">
+                        <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm2 0v.01l8 6.99 8-6.99V4H4zm16 2.234l-8 6.996-8-6.996V20h16V6.234z"/>
+                        </svg>
+                        <span>Email</span>
+                      </a>
+                    </div>
                   </div>
                 )}
                 <p className="text-lg text-gray-700 mb-8 leading-relaxed">
