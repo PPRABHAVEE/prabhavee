@@ -142,7 +142,7 @@ const Navbar = () => {
                     Professional Services
                   </a>
                   <a 
-                    href="#training" 
+                    href="/training" 
                     className="block px-4 py-2 text-gray-700 hover:bg-red-50 transition-colors duration-150"
                     onClick={handleDropdownItemClick}
                   >

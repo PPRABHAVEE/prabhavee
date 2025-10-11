@@ -102,8 +102,7 @@ export default function ProfessionalServices() {
         'Conducting periodic compliance audits and regulatory checks.',
         'Due Diligence for donors, partners, and other individual funders.',
         'Compliance with CSR Laws and regulations.'
-      ],
-      experts: 'Expert Network: Lawyers, External Legal Counsel, Sustainability Professionals, Company Secretaries, Chartered Accountants, Finance & Accounting Professionals'
+      ]
     },
     {
       id: 'partnerships',
@@ -161,11 +160,7 @@ export default function ProfessionalServices() {
       description: 'Building clear, consistent, and impactful messaging to advance the organisations mission and expand outreach and strengthen stakeholder engagement by raising awareness, influencing perceptions, shaping policy or public opinion, and strengthening relationships with key audiences.',
       features: [
         'Communication Strategy Development.',
-        'Outreach Plan Design & Implementation.',
-        'Stakeholder Engagement Enhancement.',
-        'Awareness & Influence Campaigns.',
-        'Policy & Public Opinion Shaping.',
-        'Brand Positioning & Perception Management.'
+        'Outreach Plan Design & Implementation.'
       ]
     }
   ];

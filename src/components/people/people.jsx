@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import founder from '../../components/people/assets/founder.jpg';
 import cofounder from './assets/Amrita.jpg'; 
 import AlumniSection from './subPeople/alumni';
+import badge from './assets/badge.png';
 
 const PeoplePage = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -126,14 +127,21 @@ const PeoplePage = () => {
       otherHighlights: [
         'Worked in university/public policy offices, nonprofit accelerator, NGOs, social enterprises, and advisory boards.',
         'Strategic vision: Transform PRABHAVEE into a Centre of Excellence for strategic capacity building and knowledge exchange.',
-        'Extensive participation in academic programs and international professional development.'
+        'Extensive participation in academic programs and international professional development.',
+        'Alumni Member, ITCILO, 2021- present.'
       ]
     },
     {
       id: 'amrita',
       name: 'Amrita Sarkar',
       title: 'Legal Counsel & Advisor',
-      subtitle: 'Advocate-on-Record, Supreme Court of India',
+      subtitle:  {
+          heading: 'Member:',
+          list: [
+            'Supreme Court Bar Association',
+            'Supreme Court Advocates-on-Record Association',
+          ]
+        },
       image: cofounder.src,
       linkedin:"https://www.linkedin.com/in/amrita-sarkar-aor?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       email:'lawoffice@amritasarkar.in',
@@ -279,8 +287,16 @@ const PeoplePage = () => {
                     >
                       <h2 className="text-4xl font-bold text-gray-900 mb-2">{person.name}</h2>
                       <p className="text-xl text-red-500 font-semibold mb-1">{person.title}</p>
-                      {person.subtitle && (
-                        <p className="text-lg text-gray-600">{person.subtitle}</p>
+                     {person.subtitle && (
+                        <div className="text-lg text-gray-600 mb-2 ml-6 ">
+                          <div className="flex flex-row flex-wrap items-center">
+                            <span className="font-semibold mr-2">{person.subtitle.heading}</span>
+                            <span>{person.subtitle.list[0]}</span>
+                          </div>
+                          {person.subtitle.list.slice(1).map((item, i) => (
+                            <div key={i + 1} className="pl-[4rem]">{item}</div>
+                          ))}
+                        </div>
                       )}
                       <div className="flex gap-3 justify-center mt-2">
                         <a
@@ -321,7 +337,16 @@ const PeoplePage = () => {
                   <div className="mb-4 transition-all duration-700 ease-in-out">
                     <h2 className="text-4xl font-bold text-gray-900 mb-2">{person.name}</h2>
                     <p className="text-xl text-red-500 font-semibold mb-1">{person.title}</p>
-                    {person.subtitle && <p className="text-lg text-gray-600">{person.subtitle}</p>}
+                    {person.subtitle && (
+                      <div className="text-lg text-gray-600 mb-2">
+                        <span className="font-semibold">{person.subtitle.heading}</span>
+                        <ul className="list-disc ml-4">
+                          {person.subtitle.list.map((item, i) => (
+                            <li key={i} className='ml-4'>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                     <div className="flex gap-3 mt-4">
                       <a
                         href={person.linkedin}
@@ -482,7 +507,7 @@ const PeoplePage = () => {
                     Other Profesional Highlights
                   </h3>
                   <div className="space-y-3">
-                    {person. otherHighlights.map((item, i) => (
+                    {person.otherHighlights.map((item, i) => (
                       <div 
                         key={i}
                         className="flex items-start gap-3 group"
@@ -493,7 +518,16 @@ const PeoplePage = () => {
                         }}
                       >
                         <div className="mt-2 w-2 h-2 bg-gray-800 rounded-full group-hover:scale-150 transition-transform" />
-                        <p className="text-gray-700 flex-1">{item}</p>
+                        <p className="text-gray-700 flex-1">
+                          {item}
+                          {person.id === "anumita" && i === person.otherHighlights.length - 1 && (
+                            <img
+                              src={badge.src}
+                              alt="ITCILO Alumni Badge"
+                              className=" flex flex-col ml-2 w-50 h-50 rounded-full"
+                            />
+                          )}
+                        </p>
                       </div>
                     ))}
                   </div>

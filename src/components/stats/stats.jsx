@@ -38,8 +38,8 @@ const stats = [
     value: "12",
   },
   {
-    label:"Delhi Chapter, Indian Society for Training and Development (ISTD), Member",
-    value:"Trained: 750+ individuals",
+    label:"Taining & Capacity Building",
+    value:"700+",
   }
 ];
 export default function OrgStats() {
@@ -84,7 +84,7 @@ export default function OrgStats() {
           {stats.slice(7).map((stat, idx) => (
             <div
               key={stat.label}
-              className="flex flex-col items-center rounded-2xl bg-white shadow-lg px-6 py-8 transition-transform hover:scale-105 hover:shadow-xl border-t-4 border-red-100 min-h-[170px]"
+              className="flex flex-col items-center rounded-2xl bg-white shadow-lg px-10 py-12 transition-transform hover:scale-105 hover:shadow-xl border-t-4 border-red-100 min-h-[170px]"
             >
               <span className="block font-semibold text-gray-700 text-base text-center">{stat.label}</span>
               <span className="text-2xl font-extrabold text-red-600 drop-shadow-sm mt-auto">{stat.value}</span>

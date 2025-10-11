@@ -1,4 +1,4 @@
-import WhoWeServe from "@/components/whoWeServe/whoWeServe";
+import WhoWeServe from "@/pages/whoWeServe";
 
 export default function BackgroundPage() {
   return <WhoWeServe />;
