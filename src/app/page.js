@@ -505,18 +505,21 @@ const PrabhaveeWebsite = () => {
                     {service.title}
                   </h3>
                   <p className="text-gray-700 mb-6">{service.description}</p>
-                  <a
-                    href={service.link}
-                    className="opacity-0 group-hover:opacity-100 transition-opacity text-red-600 font-medium absolute bottom-6 left-6 text-center"
-                  >
-                    Learn More &rarr;
-                  </a>
+                 <a
+                  href={`/services?service=${service.title
+                    .toLowerCase()
+                    .replace(/ & /g, "-")
+                    .replace(/\s+/g, "-")}`}
+                  className="opacity-0 group-hover:opacity-100 transition-opacity text-red-600 font-medium absolute bottom-6 left-6 text-center"
+                >
+                  Learn More &rarr;
+                </a>
                 </div>
               ))}
             </div>
             <div className="mt-12 text-center">
               <a
-                href="/professional-services"
+                href="/services"
                 className="inline-block px-8 py-3 font-semibold text-white bg-red-600 rounded-lg hover:bg-red-700 transition"
               >
                 Explore More

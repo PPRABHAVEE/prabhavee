@@ -135,7 +135,7 @@ const Navbar = () => {
                     : 'opacity-0 invisible -translate-y-2'
                 }`}>
                   <a 
-                    href="#professional-services" 
+                    href="/services" 
                     className="block px-4 py-2 text-gray-700 hover:bg-red-50 transition-colors duration-150"
                     onClick={handleDropdownItemClick}
                   >
