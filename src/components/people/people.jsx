@@ -135,13 +135,7 @@ const PeoplePage = () => {
       id: 'amrita',
       name: 'Amrita Sarkar',
       title: 'Legal Counsel & Advisor',
-      subtitle:  {
-          heading: 'Member:',
-          list: [
-            'Supreme Court Bar Association',
-            'Supreme Court Advocates-on-Record Association',
-          ]
-        },
+      subtitle:  'Advocate-on-Record, Supreme Court of India',
       image: cofounder.src,
       linkedin:"https://www.linkedin.com/in/amrita-sarkar-aor?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       email:'lawoffice@amritasarkar.in',
@@ -165,7 +159,14 @@ const PeoplePage = () => {
       ],
       credentials: [
         'Alumna of the premier law institute, National University of Juridical Sciences, Kolkata (NUJS).',
-        'Advocate-on-Record, Supreme Court of India.'
+        'Advocate-on-Record, Supreme Court of India.',
+        {
+          heading :"Member:",
+          list:[
+            'Supreme Court Bar Association.',
+            'Supreme Court Advocate-on-Record Association.',
+          ]
+        }
       ],
        otherHighlights: [
         'Expert speaker at law institutions.',
@@ -241,7 +242,7 @@ const PeoplePage = () => {
             <div
               key={person.id}
               ref={(el) => (containerRefs.current[index] = el)}
-              className={`mb-32 flex ${isLeft ? 'flex-row' : 'flex-row-reverse'} gap-18 items-start`}
+              className={`mb-32 flex ${isLeft ? 'flex-row' : 'flex-row-reverse'} gap-16 items-start`}
             >
               <div className="w-1/3 sticky top-30 space-y-30">
                 <div 
@@ -288,15 +289,7 @@ const PeoplePage = () => {
                       <h2 className="text-4xl font-bold text-gray-900 mb-2">{person.name}</h2>
                       <p className="text-xl text-red-500 font-semibold mb-1">{person.title}</p>
                      {person.subtitle && (
-                        <div className="text-lg text-gray-600 mb-2 ml-6 ">
-                          <div className="flex flex-row flex-wrap items-center">
-                            <span className="font-semibold mr-2">{person.subtitle.heading}</span>
-                            <span>{person.subtitle.list[0]}</span>
-                          </div>
-                          {person.subtitle.list.slice(1).map((item, i) => (
-                            <div key={i + 1} className="pl-[4rem]">{item}</div>
-                          ))}
-                        </div>
+                        <p className="text-lg text-gray-600">{person.subtitle}</p>
                       )}
                       <div className="flex gap-3 justify-center mt-2">
                         <a
@@ -337,15 +330,8 @@ const PeoplePage = () => {
                   <div className="mb-4 transition-all duration-700 ease-in-out">
                     <h2 className="text-4xl font-bold text-gray-900 mb-2">{person.name}</h2>
                     <p className="text-xl text-red-500 font-semibold mb-1">{person.title}</p>
-                    {person.subtitle && (
-                      <div className="text-lg text-gray-600 mb-2">
-                        <span className="font-semibold">{person.subtitle.heading}</span>
-                        <ul className="list-disc ml-4">
-                          {person.subtitle.list.map((item, i) => (
-                            <li key={i} className='ml-4'>{item}</li>
-                          ))}
-                        </ul>
-                      </div>
+                   {person.subtitle && (
+                      <p className="text-lg text-gray-600">{person.subtitle}</p>
                     )}
                     <div className="flex gap-3 mt-4">
                       <a

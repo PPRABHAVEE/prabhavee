@@ -24,7 +24,7 @@ const JourneyTimeline = () => {
       year: "2024",
       month: "SEPTEMBER",
       title: "ADVISORY BOARD APPOINTMENT",
-      subtitle: "Strategic Leadership Role",
+      subtitle: "Strategic Leadership",
       description: "PRABHAVEE's Founding Lawyer, Anumita Sarkar, joined the Advisory Board of Darbar Sahitya Sasada (DSS), a grassroots NGO based in Odisha. This marked our commitment to grassroots development and social impact.",
       icon: <UserCheck className="w-6 h-6" />,
       color: "from-gray-600 to-gray-700",

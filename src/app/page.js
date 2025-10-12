@@ -264,7 +264,7 @@ const PrabhaveeWebsite = () => {
                 </ul>
                 <p className="mt-1 text-base">
                   We collaborate with <span className="font-medium">Lawyers, Academia, Policy Experts, Sustainability &amp;
-                ESG Professionals, industry bodies, Think Tanks, and Educational Institutions</span> on various projects and initiatives.
+                ESG Professionals, Industry bodies, Business chambers, Think Tanks, and Educational Institutions</span> on various projects and initiatives.
                 </p>
               </div>
             </div>

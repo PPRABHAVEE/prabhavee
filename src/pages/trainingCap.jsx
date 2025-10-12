@@ -81,25 +81,29 @@ export default function TrainingPage() {
                     </div>
                 </div>
                 </div>
-                <h1 className="text-5xl lg:text-7xl font-black tracking-tight mb-8">
-                <span className="bg-gradient-to-r from-red-600 via-orange-600 to-yellow-600 bg-clip-text text-transparent">
-                    Build. Empower. Transform.
+                <h1 className="text-4xl lg:text-6xl font-black tracking-tight mb-8">
+                <span className="bg-gradient-to-r from-red-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
+                    Strategic. Multi-Stakeholder. Sustainable.
                 </span>
                 </h1>
-                <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
-                <div className="group p-6 rounded-2xl bg-white/80 backdrop-blur border border-red-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div className="text-3xl font-bold text-red-600 mb-2">Strategic</div>
-                    <div className="text-sm text-gray-600">Capacity Building</div>
+                <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+                <div className="group p-8 rounded-2xl bg-white/80 backdrop-blur border border-red-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center">
+                  <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500 mb-2">
+                    Partnering for Purpose
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    Driving collaboration and shared value for meaningful change.
+                  </div>
                 </div>
-                <div className="group p-6 rounded-2xl bg-white/80 backdrop-blur border border-orange-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div className="text-3xl font-bold text-orange-600 mb-2">Multi-Stakeholder</div>
-                    <div className="text-sm text-gray-600">Dialogue & Training</div>
+                <div className="group p-8 rounded-2xl bg-white/80 backdrop-blur border border-amber-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center">
+                  <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 mb-2">
+                    Strengthening Institutions
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    Building resilient systems and leadership for long-term impact.
+                  </div>
                 </div>
-                <div className="group p-6 rounded-2xl bg-white/80 backdrop-blur border border-yellow-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div className="text-3xl font-bold text-yellow-600 mb-2">Sustainable</div>
-                    <div className="text-sm text-gray-600">Impact Programs</div>
-                </div>
-                </div>
+              </div>
             </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10 px-20 pb-8">
@@ -114,9 +118,9 @@ export default function TrainingPage() {
             >
               <ul className="list-disc pl-8">
                 <li><strong>Women & Child Rights</strong>
-                    <ul className="py-3">
-                        <li>a. PoSH (Prevention of Sexual Harassment) at the Workplace.</li>
-                        <li>b. Child Rights, Protection &amp; Safeguard practices.</li>
+                    <ul className="py-3 list-decimal pl-4">
+                        <li>PoSH (Prevention of Sexual Harassment) at the Workplace.</li>
+                        <li>Child Rights, Protection &amp; Safeguard practices.</li>
                     </ul>
                 </li>
                 <li><strong>External Member of Internal Committee of PoSH</strong></li>
@@ -135,8 +139,7 @@ export default function TrainingPage() {
               </p>
               <ul className="list-disc pl-5 space-y-2">
                 <li>Businesses of all sizes: <strong>Corporates, MSMEs, SMEs, Small Business Owners, Brands, Suppliers, and other stakeholders</strong> in the value chain.</li>
-                <li><strong>Media Professionals, Journalists, Reporters, CSO Communicators, Campaigners.</strong></li>
-                <li><strong>Young aspiring Professionals in Policy </strong> —-Fellowships.</li>
+                <li><strong>Young aspiring Professionals in Policy </strong>.</li>
               </ul>
             </Accordion>
             <Accordion
@@ -169,7 +172,7 @@ export default function TrainingPage() {
                     <li>Speaking engagements, facilitation talks and dialogues.</li>
                     <li>Delivering lectures and training: Behavioral and Leadership development.</li>
                     <li>Mentorship - Higher academic and industry engagements.</li>
-                    <li>NGO and Social Purpose Organisation: Advisory, Strategic Guidance and Advisory and Legal Board Leadership.</li>
+                    <li>NGO and Social Purpose Organisation: Advisory, Strategic Guidance and Advisory Board Member.</li>
                     </ul>
                 </div>
               </div>
