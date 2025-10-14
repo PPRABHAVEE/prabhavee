@@ -149,7 +149,7 @@ const Navbar = () => {
                     Training & Capacity Building
                   </a>
                   <a 
-                    href="#posh" 
+                    href="/posh" 
                     className="block px-4 py-2 text-gray-700 hover:bg-red-50 transition-colors duration-150"
                     onClick={handleDropdownItemClick}
                   >
@@ -204,7 +204,7 @@ const Navbar = () => {
                     Stakeholder engagement & Initiatives
                   </Link>
                   <Link 
-                    href="/journey" 
+                    href="/posh_workshop" 
                     className="block px-4 py-2 text-gray-700 hover:bg-red-50 transition-colors duration-150"
                     onClick={handleDropdownItemClick}
                   >
