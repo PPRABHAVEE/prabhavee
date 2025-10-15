@@ -197,7 +197,7 @@ const Navbar = () => {
                     Events
                   </Link>
                   <Link 
-                    href="/stakeInitiatives" 
+                    href="/stakeholder" 
                     className="block px-4 py-2 text-gray-700 hover:bg-red-50 transition-colors duration-150"
                     onClick={handleDropdownItemClick}
                   >
