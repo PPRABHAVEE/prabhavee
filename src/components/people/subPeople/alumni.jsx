@@ -95,7 +95,7 @@ export default function AlumniSection() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500 font-medium mb-1">Degree</p>
-                      <p className="text-lg font-semibold text-gray-800">{person.degree}</p>
+                      <p className="text-lg font-semibold text-gray-800">Student {person.degree}</p>
                     </div>
                   </div>
                   <div 

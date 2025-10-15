@@ -164,13 +164,45 @@ const Navbar = () => {
               >
                 Who We Serve
               </a>
-              
-              <a 
-                href="/people" 
-                className="text-gray-700 hover:text-red-600 font-medium transition-colors duration-200"
+          
+              <div
+                className="relative"
+                onMouseEnter={() => handleMouseEnter('people')}
+                onMouseLeave={handleMouseLeave}
               >
-                People
-              </a>
+                <button
+                  className="flex items-center space-x-1 text-gray-700 hover:text-red-600 font-medium transition-colors duration-200"
+                >
+                  <span>People</span>
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform duration-200 ${
+                      activeDropdown === 'people' ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                <div
+                  className={`absolute top-full right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border-red-500 border-2 py-2 transition-all duration-200 ${
+                    activeDropdown === 'people'
+                      ? 'opacity-100 visible translate-y-0'
+                      : 'opacity-0 invisible -translate-y-2'
+                  }`}
+                >
+                  <Link
+                    href="/people/founder"
+                    className="block px-4 py-2 text-gray-700 hover:bg-red-50 transition-colors duration-150"
+                    onClick={handleDropdownItemClick}
+                  >
+                    Our Founder
+                  </Link>
+                  <Link
+                    href="/people/consultant"
+                    className="block px-4 py-2 text-gray-700 hover:bg-red-50 transition-colors duration-150"
+                    onClick={handleDropdownItemClick}
+                  >
+                    External Consultants & Alumni
+                  </Link>
+                </div>
+              </div>
 
               {/* Engagements Dropdown */}
               <div 

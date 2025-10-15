@@ -70,7 +70,7 @@ const footer = () => {
               Empowering Sustainable Progress through Strategic Capacity Building
             </p>
             <div className="text-base text-gray-500 ">
-              © {new Date().getFullYear()} - P/PRABHAVEE : Partner for Social Impact. All rights reserved.
+              © {new Date().getFullYear()} : P/PRABHAVEE - Partner for Social Impact. All rights reserved.
             </div>
           </div>
         </div>

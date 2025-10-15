@@ -1,9 +1,7 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
 
-import founder from '../../components/people/assets/founder.jpg';
-import cofounder from './assets/Amrita.jpg'; 
-import AlumniSection from './subPeople/alumni';
+import founder from './assets/founder.jpg';
 import badge from './assets/badge.png';
 
 const PeoplePage = () => {
@@ -36,8 +34,7 @@ const PeoplePage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setRotations(prev => ({
-        anumita: (prev.anumita + 1) % 360,
-        amrita: (prev.amrita - 1) % 360
+        anumita: (prev.anumita + 1) % 360
       }));
     }, 50);
     return () => clearInterval(interval);
@@ -51,7 +48,7 @@ const PeoplePage = () => {
       image: founder.src,
       linkedin : "https://www.linkedin.com/in/advocateanumitasarkar/",
       email:'anumita@prabhavee.org',
-      description: 'Anumita Sarkar is the Founding Lawyer - Policy and Strategic Advisor of PRABHAVEE – Partner for Social Impact and founded the organization in 2022. She is recognized as a strategic leader with nearly two decades of sectoral and functional expertise across fields like Research, Advisory, Project Management, Editorial & Knowledge Management, Strategic Partnerships, Stakeholder Engagement, Communication and Outreach, and various other strategic initiatives. Her collaborative work covers various stakeholders: Government, Statutory and Quasi-Judicial authorities, Appellate Tribunals, Courts and Forums, Corporates, Multilateral Organizations(UN), Publishers, Authors, Knowledge Partners, Big 4 Consulting Firms, Policy Professionals, Senior Tax Experts, Learning and Development Consultants, and C-Suite Leaders. She possesses deep cross-functional expertise with Production, Technology, Design, Marketing, Sales, Channel Partners &amp; Customer Care Teams.',
+      description: 'Anumita Sarkar is the Founding Lawyer - Policy and Strategic Advisor of PRABHAVEE – Partner for Social Impact and founded the organization in 2022. She is recognized as a strategic leader with nearly two decades of sectoral and functional expertise across fields like Research, Advisory, Project Management, Editorial & Knowledge Management, Strategic Partnerships, Stakeholder Engagement, Communication and Outreach, and various other strategic initiatives. Her collaborative work covers various stakeholders: Government, Statutory and Quasi-Judicial authorities, Appellate Tribunals, Courts and Forums, Corporates, Multilateral Organizations(UN), Publishers, Authors, Knowledge Partners, Big 4 Consulting Firms, Policy Professionals, Senior Tax Experts, Learning and Development Consultants, and C-Suite Leaders. She possesses deep cross-functional expertise with Production, Technology, Design, Marketing, Sales, Channel Partners & Customer Care Teams.',
       expertise: [
         'Strategic leadership across diverse sectors.',
         'Business and Human Rights, Responsible Business Conduct.',
@@ -130,49 +127,6 @@ const PeoplePage = () => {
         'Extensive participation in academic programs and international professional development.',
         'Alumni Member, ITCILO, 2021- present.'
       ]
-    },
-    {
-      id: 'amrita',
-      name: 'Amrita Sarkar',
-      title: 'Legal Counsel & Advisor',
-      subtitle:  'Advocate-on-Record, Supreme Court of India',
-      image: cofounder.src,
-      linkedin:"https://www.linkedin.com/in/amrita-sarkar-aor?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      email:'lawoffice@amritasarkar.in',
-      description: 'Amrita Sarkar is an Advocate-on-Record at the Supreme Court of India with more than 10 years of experience at the Bar. She is recognized for her litigation skills across civil and commercial matters, representing clients at various forums, including Tribunals, District Courts, High Courts, and the Supreme Court. Amrita is also involved in advisory work for domestic and international clients and has significantly contributed to company law, insolvency, and policy development in the legal field.',
-      expertise: [
-        'Litigation and dispute resolution for civil and commercial matters.',
-        'Insolvency and company law matters(NCLT/NCLAT representation).',
-        'High-value transactional work and litigation relating to complex corporate and civil proceedings.',
-        'Debt recovery, MSME representation, mergers, winding up, liquidation, Insolvency.',
-        'Banking practice before several forums like Arbitration, Mediation, Conciliation, DRT, DRAT, NCLT, NCLAT, High Court, Supreme Court.',
-        'Policy making in insolvency and restructuring laws.',
-        'Advisory to domestic and international clients on complex legal issues.'
-      ],
-      experience: [
-        'Advocate-on-Record, Supreme Court of India.',
-        'Law Clerk Cum Research Assistant to Hon\'ble Mr. Justice F.M.I. Kalifulla, Supreme Court of India.',
-        'Ministry of Law and Justice, Government of India.',
-        'Argus Partners, (Solicitors & Advocates): Corporate law and dispute resolution, Delhi and Mumbai.',
-        'Regular appearances and representation before Tribunals, High Courts, and the Supreme Court.',
-        'Involvement in INSOL International and INSOL India, Small Practice Group India, aiming to resolve debt issues being faced by companies and sharing best practices across countries.'
-      ],
-      credentials: [
-        'Alumna of the premier law institute, National University of Juridical Sciences, Kolkata (NUJS).',
-        'Advocate-on-Record, Supreme Court of India.',
-        {
-          heading :"Member:",
-          list:[
-            'Supreme Court Bar Association.',
-            'Supreme Court Advocate-on-Record Association.',
-          ]
-        }
-      ],
-       otherHighlights: [
-        'Expert speaker at law institutions.',
-        'Student mentoring.',
-        'Published author on news portals and legal journals.'
-      ]
     }
   ];
 
@@ -217,16 +171,16 @@ const PeoplePage = () => {
           }}
         >
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
-        <span className="text-gray-900">Powering&nbsp;</span>
-        <span
-          className="bg-gradient-to-r from-red-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent"
-          style={{ WebkitBackgroundClip: 'text' }}
-        >
-          Change
-        </span>
-      </h1>
-          <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-600 font-light tracking-wide leading-relaxed">
-            Get to know the people inspiring change, shaping policies, and empowering communities.
+            <span className="text-gray-900">Meet&nbsp;Our&nbsp;</span>
+            <span
+              className="bg-gradient-to-r from-red-500 via-orange-400 to-yellow-400 bg-clip-text text-transparent"
+              style={{ WebkitBackgroundClip: "text" }}
+            >
+              Founder
+            </span>
+        </h1>
+          <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-600 font-light leading-relaxed">
+            The driving force behind <span className="text-red-600 font-medium">PRABHAVEE</span> — inspiring social change through vision, purpose, and impact.
           </p>
         </div>
       </div>
@@ -524,7 +478,6 @@ const PeoplePage = () => {
           );
         })}
       </div>
-      <AlumniSection />
     </div>
   );
 };

@@ -181,7 +181,7 @@ export default function ProfessionalServices() {
               <span className="text-sm font-medium text-red-700 tracking-wide">Professional Services & Strategy Consulting</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight drop-shadow-xl">
-               Where Law Meets Leadership for Lasting Impact
+               Consulting for Purposeful Progress
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">
                Partnering with organizations to shape governance, strengthen compliance, and inspire sustainable change.

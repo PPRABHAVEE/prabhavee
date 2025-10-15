@@ -39,7 +39,7 @@ const stats = [
   },
   {
     label:"Taining & Capacity Building",
-    value:"700+",
+    value:"700+ individuals",
   }
 ];
 export default function OrgStats() {

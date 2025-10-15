@@ -200,8 +200,7 @@ export default function TrainingPage() {
               <h5 className="text-sm font-semibold text-gray-800">Partners & Memberships</h5>
               <div className="mt-3 flex flex-wrap gap-3">
                 <span className="px-3 py-1 rounded-full bg-red-50 text-red-700 text-sm font-medium border border-red-200">AIMA</span>
-                <span className="px-3 py-1 rounded-full bg-gray-50 text-gray-700 text-sm font-medium border border-gray-300">IPN</span>
-                <span className="px-3 py-1 rounded-full bg-rose-50 text-rose-700 text-sm font-medium border border-rose-200">SATTVA Initiative</span>
+                <span className="px-3 py-1 rounded-full bg-gray-50 text-gray-700 text-sm font-medium border border-gray-300">IPN, SATTVA Initiative</span>
                 <span className="px-3 py-1 rounded-full bg-amber-50 text-amber-700 text-sm font-medium border border-amber-200">ATMA</span>
                 <span className="px-3 py-1 rounded-full bg-gray-200 text-gray-700 text-sm font-medium border border-gray-200">eLearnPOSH.com</span>
                 <span className="px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium border border-indigo-200">UNGCNI</span>
