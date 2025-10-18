@@ -578,7 +578,7 @@ const PrabhaveeWebsite = () => {
                   Focused on business and human rights, responsible conduct, governance, and ethics.
                 </p>
                 <a
-                  href="/people"
+                  href="/people/founder"
                   className="inline-block mt-2 px-7 py-2 bg-gradient-to-r from-red-600 to-amber-500 hover:from-red-700 hover:to-yellow-600 text-white font-semibold rounded-full shadow-lg transition duration-200"
                 >
                   Read More

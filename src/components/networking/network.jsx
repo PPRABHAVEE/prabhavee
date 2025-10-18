@@ -142,7 +142,7 @@ const NetworkPartnerships = () => {
           badge: "Member"
         },
         {
-          name: "Indian Society for Training and Development (ISTD)",
+          name: "Indian Society for Training and Development (ISTD), Delhi Chapter",
           org: "Non-profit organisation",
           type: "Training",
           badge: "Member"

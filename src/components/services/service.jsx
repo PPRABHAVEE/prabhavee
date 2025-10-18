@@ -293,7 +293,7 @@ export default function ProfessionalServices() {
                         <div className="pt-6 border-t-2 border-gradient-red">
                         <h4 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
                             <Shield className="w-5 h-5 text-amber-500" />
-                            Key Services & Deliverables
+                            Key Services
                         </h4>
                         <div className="grid md:grid-cols-2 gap-3">
                             {service.features.map((feature, idx) => (

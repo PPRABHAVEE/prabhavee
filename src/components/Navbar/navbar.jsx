@@ -153,7 +153,7 @@ const Navbar = () => {
                     className="block px-4 py-2 text-gray-700 hover:bg-red-50 transition-colors duration-150"
                     onClick={handleDropdownItemClick}
                   >
-                    PoSH Services
+                     PoSH Consultancy & Services
                   </a>
                 </div>
               </div>
@@ -192,7 +192,7 @@ const Navbar = () => {
                     className="block px-4 py-2 text-gray-700 hover:bg-red-50 transition-colors duration-150"
                     onClick={handleDropdownItemClick}
                   >
-                    Our Founder
+                    Founder
                   </Link>
                   <Link
                     href="/people/consultant"

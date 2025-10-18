@@ -53,12 +53,7 @@ export default function StakeholderEngagement() {
             <span className="text-gray-700">&</span> Initiatives
           </h2>
           <p className="text-gray-600 mt-6 max-w-3xl mx-auto text-lg leading-relaxed">
-            Empowering sustainable progress through{" "}
-            <span className="font-bold text-red-600 relative inline-block group">
-              Strategic Capacity Building
-              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-red-600 transform origin-left"></span>
-            </span>{" "}
-            and meaningful collaboration with experts and social leaders.
+            Facilitating <strong className="font-medium text-red-500 text-xl font-style: italic "> multi-stakeholder dialogue</strong> to advance shared priorities and collective action.
           </p>
         </div>
         <div className="relative bg-white/80 backdrop-blur-xl border border-gray-200/50 rounded-3xl shadow-2xl p-10 mb-16 hover:shadow-3xl transition-all duration-500 group overflow-hidden">
@@ -131,7 +126,7 @@ export default function StakeholderEngagement() {
                   <div className="p-2 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl">
                     <Users className="w-6 h-6 text-white" />
                   </div>
-                  Collaborating Experts
+                  Experts
                 </h4>
                 <div className="flex items-center gap-2 px-4 py-2 bg-red-50 rounded-full">
                   <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
@@ -166,9 +161,9 @@ export default function StakeholderEngagement() {
               <div className="flex items-center justify-between mb-8">
                 <h4 className="flex items-center gap-3 text-2xl font-black text-gray-900">
                   <div className="p-2 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl">
-                    <Target className="w-6 h-6 text-white" />
+                    <Users className="w-6 h-6 text-white" />
                   </div>
-                  Engaged Professionals
+                  Experts
                 </h4>
                 <div className="flex items-center gap-2 px-4 py-2 bg-orange-50 rounded-full">
                   <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>

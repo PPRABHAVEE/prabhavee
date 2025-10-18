@@ -50,14 +50,14 @@ const PeoplePage = () => {
       email:'anumita@prabhavee.org',
       description: 'Anumita Sarkar is the Founding Lawyer - Policy and Strategic Advisor of PRABHAVEE – Partner for Social Impact and founded the organization in 2022. She is recognized as a strategic leader with nearly two decades of sectoral and functional expertise across fields like Research, Advisory, Project Management, Editorial & Knowledge Management, Strategic Partnerships, Stakeholder Engagement, Communication and Outreach, and various other strategic initiatives. Her collaborative work covers various stakeholders: Government, Statutory and Quasi-Judicial authorities, Appellate Tribunals, Courts and Forums, Corporates, Multilateral Organizations(UN), Publishers, Authors, Knowledge Partners, Big 4 Consulting Firms, Policy Professionals, Senior Tax Experts, Learning and Development Consultants, and C-Suite Leaders. She possesses deep cross-functional expertise with Production, Technology, Design, Marketing, Sales, Channel Partners & Customer Care Teams.',
       expertise: [
-        'Strategic leadership across diverse sectors.',
-        'Business and Human Rights, Responsible Business Conduct.',
-        'Corporate Accountability, Governance, Ethics and Business Integrity.',
-        'Decent Work and Protection for Migrant Workers.',
-        'Social Protection and other related themes.',
+        'Strategic leadership & New Opportunities.',
+        'Organizational Development & Strategic Consulting.',
+        'Non-Profit Board Leadership.',
+        'Leadership & Team-building.',
+        'Multi-Disciplinary & Cross-Functional Team Leadership.',
         'Diversity, Equity and Inclusion.',
-        'Prevention of Sexual Harassment Laws (PoSH) Consulting and Practice.',
-        'Strategic Partnerships and Stakeholder Engagement.',
+        'Stakeholder Engagement and Strategic Initiatives.',
+        'Training & Capacity-Building.',
         'Communication, Outreach, and Knowledge Management.'
       ],
       experience: [
@@ -171,7 +171,7 @@ const PeoplePage = () => {
           }}
         >
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
-            <span className="text-gray-900">Meet&nbsp;Our&nbsp;</span>
+            <span className="text-gray-900">About&nbsp;the&nbsp;</span>
             <span
               className="bg-gradient-to-r from-red-500 via-orange-400 to-yellow-400 bg-clip-text text-transparent"
               style={{ WebkitBackgroundClip: "text" }}
