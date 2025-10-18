@@ -228,7 +228,7 @@ const EventsPage = () => {
 
   // ---------------- Page Layout ----------------
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-5">
       <div className="relative bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white py-24 px-6 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-72 h-72 bg-red-600/20 blur-3xl rounded-full -translate-x-1/3 -translate-y-1/3"></div>
@@ -236,8 +236,8 @@ const EventsPage = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/80"></div>
         </div>
         <div className="relative z-10 max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-amber-400 to-orange-500">
-            Our Events
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 pb-2 bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-amber-400 to-orange-500">
+            Events, Dialogues & Engagements
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Connecting with global stakeholders to drive{" "}

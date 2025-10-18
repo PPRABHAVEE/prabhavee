@@ -100,7 +100,7 @@ const background = () => {
             </span>
             <div>
               <span className="font-semibold text-gray-900 block text-lg">Multi-Stakeholder</span>
-              <span className="text-gray-600 text-base">Bringing together CSOs, academia, businesses, & policy experts</span>
+              <span className="text-gray-600 text-base">Bringing together CSOs, academia, businesses, lawyers & policy experts</span>
             </div>
           </div>
           <div className="hidden md:block w-10 h-1 rounded-full bg-gray-200" />

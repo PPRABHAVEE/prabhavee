@@ -12,9 +12,7 @@ import Image from "next/image";
         "/assets/1/1/20240926_200807.jpg",
         "/assets/1/1/20240924_173316.jpg",
         "/assets/1/1/20240924_085924.jpg",
-        "/assets/1/1/20240927_145024.jpg",
-        "/assets/1/1/20240924_085203.jpg",
-        "/assets/1/1/Self.jpg",
+        "/assets/1/1/20240927_145024.jpg"
       ],
       description: "Participated as a delegate in the UN Responsible Business and Human Rights Forum, engaging with stakeholders across Asia-Pacific region on sustainable business practices and human rights integration."
     },
@@ -66,7 +64,7 @@ import Image from "next/image";
       participationType: "Stakeholder at the Roundtable",
       displayType: "collage",
       images: [
-        "./assets/5/5/Ideation meeting MSME UNGCNI.jpg"
+        "./assets/5/5/Screenshot 2025-10-18 223818.png"
       ],
       description: "Participated in a strategic roundtable focused on integrating ethical business practices in Micro, Small, and Medium enterprises, contributing to policy discussions and framework development."
     },
@@ -305,13 +303,13 @@ import Image from "next/image";
     }, 
     {
       id: 24,
-      name: "Module VI - Legal & Policy Framework around Social Aspects in India of ESG Compliance Lead Course by EHS GURU, Sustainable Solutions in collaboration with IP University",
+      name: "Module VI - Legal & Policy Framework around Social Aspects in India of ESG Compliance Lead Course by EHS GURU Sustainable Solutions Private Limited in collaboration with IP University",
       year: 2025,
       eventType: "Online Guest Lecture",
       participationType: "Guest Lecturer/ Speaker/ Trainer ",
       displayType: "carousel",
       images: [
-        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+        "./assets/24/1.jpg",
       ],
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
     }, 
