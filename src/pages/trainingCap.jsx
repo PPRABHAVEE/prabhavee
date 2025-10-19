@@ -275,8 +275,8 @@ export default function LegalFirmPage() {
                   </div>
                 </div>
                 <div className="py-5 px-4 bg-gradient-to-br from-amber-50 to-slate-50 rounded-lg border-l-4 border-amber-600">
-                  <p className="text-base text-slate-800 font-semibold italic leading-relaxed">
-                    " Empowering Sustainable Progress through Strategic Capacity Building"
+                  <p className="text-base text-slate-800 font-semibold italic leading-relaxed text-center">
+                    "Empowering Sustainable Progress through Strategic Capacity Building"
                   </p>
                 </div>
               </div>

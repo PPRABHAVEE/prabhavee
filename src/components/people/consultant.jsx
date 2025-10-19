@@ -129,17 +129,13 @@ const PeoplePage = () => {
           }}
         >
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
-            <span className="text-gray-900">Our&nbsp;</span>
             <span
               className="bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400 bg-clip-text text-transparent"
               style={{ WebkitBackgroundClip: "text" }}
             >
-              Consultants & Alumni
+              External Consultants & Alumni
             </span>
           </h1>
-          <p className="mt-4 max-w-4xl mx-auto text-lg md:text-xl text-gray-600 font-light leading-relaxed">
-            Dedicated professionals and partners who continue to shape impactful initiatives and strengthen our shared mission.
-          </p>
         </div>
       </div>
 

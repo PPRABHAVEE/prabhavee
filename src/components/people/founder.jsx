@@ -179,9 +179,6 @@ const PeoplePage = () => {
               Founder
             </span>
         </h1>
-          <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-600 font-light leading-relaxed">
-            The driving force behind <span className="text-red-600 font-medium">PRABHAVEE</span> — inspiring social change through vision, purpose, and impact.
-          </p>
         </div>
       </div>
 

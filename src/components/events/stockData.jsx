@@ -238,7 +238,7 @@ import Image from "next/image";
     }, 
     {
       id: 19,
-      name: "Guest Lecture on Collaboration and Teamwork",
+      name: "Guest Lecture on Collaboration and Teamwork jointly organised by PCTE & AIMA Young Leaders Council ",
       year: 2025,
       eventType: "Online Guest Lecture ",
       participationType: "Guest Lecturer",
@@ -281,7 +281,7 @@ import Image from "next/image";
       year: 2025,
       eventType: "Mentorship Meeting",
       participationType: "Mentor",
-      displayType: "carousel",
+      displayType: "collage",
       images: [
         "./assets/22/Screenshot 2025-10-18 153430.png",
       ],
@@ -307,7 +307,7 @@ import Image from "next/image";
       year: 2025,
       eventType: "Online Guest Lecture",
       participationType: "Guest Lecturer/ Speaker/ Trainer ",
-      displayType: "carousel",
+      displayType: "collage",
       images: [
         "./assets/24/1.jpg",
       ],
