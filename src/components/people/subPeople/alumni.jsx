@@ -27,10 +27,10 @@ export default function AlumniSection() {
     <div className=" bg-gradient-to-br from-gray-50 to-gray-100 py-10 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-5 flex gap-4 items-center justify-center">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl mb-6 shadow-lg">
+          <div className="inline-flex items-center justify-center w-17 h-17 md:w-20 md:h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl shadow-lg">
             <GraduationCap className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Our Alumni
           </h1>
         </div>
@@ -59,10 +59,10 @@ export default function AlumniSection() {
                 />
                 <div className="p-8">
                   <div className="mb-6">
-                    <h3 className="text-3xl font-bold text-gray-900 mb-2 transition-colors duration-300">
+                    <h3 className="text-3xl font-bold text-gray-900 mb-2 transition-colors duration-300 text-center md:text-left">
                       {person.name}
                     </h3>
-                    <div className="h-1 w-16 bg-gradient-to-r from-gray-400 to-transparent rounded-full transition-all duration-500"
+                    <div className="h-1 w-16 bg-gradient-to-r from-gray-400 to-transparent rounded-full transition-all duration-500 flex justify-center items-center mx-auto md:mx-0"
                       style={{
                         width: hoveredId === person.id ? '80px' : '64px'
                       }}

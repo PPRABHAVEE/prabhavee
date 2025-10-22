@@ -175,13 +175,13 @@ const EventsPage = () => {
           <>
             <button
               onClick={prev}
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full opacity-100 transition-opacity"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={next}
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full opacity-100 transition-opacity"
             >
               <ChevronRight className="w-5 h-5" />
             </button>
@@ -209,7 +209,7 @@ const EventsPage = () => {
 
   // ---------------- Scrollable Grid ----------------
   const ScrollableImageGrid = ({ images }) => (
-    <div className="flex gap-3 p-2 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
+    <div className="flex gap-3 p-2 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100 ">
       {images.map((img, idx) => (
         <div
           key={idx}
@@ -283,7 +283,7 @@ const EventsPage = () => {
               <select
                 value={selectedType}
                 onChange={(e) => setSelectedType(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none appearance-none bg-white"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none appearance-none bg-white "
               >
                 {eventTypes.map((type) => (
                   <option key={type} value={type}>
@@ -341,7 +341,7 @@ const EventsPage = () => {
                 )}
                 <div className="space-y-2">
                   <div className="flex items-start gap-2">
-                    <div className="bg-black text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <div className="bg-black text-white px-3 py-2 text-center md:px-3 md:py-1 rounded-full text-sm font-medium">
                       {event.eventType}
                     </div>
                   </div>

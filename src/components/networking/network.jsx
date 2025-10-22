@@ -5,6 +5,9 @@ import { Users, Handshake, Award, Briefcase, ExternalLink, Star, Building, Globe
 const NetworkPartnerships = () => {
   const [activeNetworkSection, setActiveNetworkSection] = useState(0);
   const [activeMembershipSection, setActiveMembershipSection] = useState(0);
+  const networkContentRef = useRef(null);
+  const membershipContentRef = useRef(null);
+
 
   const networkSections = [
     {
@@ -234,12 +237,11 @@ const NetworkPartnerships = () => {
   ];
 
   const HeroSection = ({ title, subtitle, description }) => (
-    <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-28 overflow-hidden pt-37">
+    <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-28 md:pb-26 pb-15 overflow-hidden pt-28 md:pt-40">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-red-600 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600 rounded-full blur-3xl"></div>
       </div>
-      
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
@@ -256,10 +258,11 @@ const NetworkPartnerships = () => {
     </div>
   );
 
-  const TabNavigation = ({ sections, activeSection, setActiveSection }) => (
-    <div className="bg-white border-b border-gray-200 top-0 z-40 shadow-sm">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex overflow-x-auto scrollbar-hide items-center justify-center text-lg">
+  const TabNavigation = ({ sections, activeSection, setActiveSection, contentRef }) => (
+  <div className="bg-white border-b border-gray-200 top-0 z-40 shadow-sm">
+    <div className="max-w-7xl mx-auto md:px-6 px-0">
+      <div className="flex flex-wrap items-center justify-center text-lg">
+        <div className="hidden md:flex overflow-x-auto scrollbar-hide">
           {sections.map((section, index) => (
             <button
               key={index}
@@ -277,23 +280,51 @@ const NetworkPartnerships = () => {
               </div>
               <div className="text-left text-base">
                 <div className="font-semibold text-sm">{section.title}</div>
-                <div className="text-xs opacity-70">{section.items.length} {section.items.length === 1 ? "Section" : "Sections"}
-</div>
+                <div className="text-xs opacity-70">{section.items.length} {section.items.length === 1 ? "Section" : "Sections"}</div>
+              </div>
+            </button>
+          ))}
+        </div>
+        <div className="md:hidden w-full">
+          {sections.map((section, index) => (
+            <button
+              key={index}
+                onClick={() => {
+                setActiveSection(index);
+                if (activeSection !== index && contentRef?.current) {
+                  setTimeout(() => {
+                    contentRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }, 150);
+                }
+              }}
+              className={`flex gap-3 items-start w-full text-left px-6 py-4 border-b-2 transition-all duration-300
+                ${activeSection === index
+                  ? 'border-red-600 text-red-600 bg-red-200'
+                  : 'border-transparent text-gray-600 hover:text-gray-900 hover:border-gray-300'
+                }`}
+              >
+              <div className={`flex items-center gap-3 p-2 rounded-lg transition-colors ${
+                activeSection === index ? 'bg-red-50' : 'bg-gray-100'
+              }`}>
+                {section.icon}
+              </div>
+              <div className='text-left text-lg'>
+                <div className="text-base font-semibold">{section.title}</div>
+                <div className="text-xs opacity-70">{section.items.length} {section.items.length === 1 ? "Section" : "Sections"}</div>
               </div>
             </button>
           ))}
         </div>
       </div>
     </div>
-  );
-
+  </div>
+);
   const PartnerCard = ({ item, gradient, index }) => (
     <div 
       className={`group relative bg-white rounded-2xl border border-gray-200 hover:${gradient} transition-all duration-300 hover:shadow-xl overflow-hidden`}
       style={{ animationDelay: `${index * 100}ms` }}
     >
       <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${gradient}`}></div>
-      
       <div className="p-6">
         <div className="flex items-start justify-between mb-4">
           <div className="flex-1">
@@ -311,7 +342,6 @@ const NetworkPartnerships = () => {
             )}
           </div>
         </div>
-        
         <div className="flex items-center justify-between pt-4 border-t border-gray-100">
           <span className={`text-xs font-semibold px-3 py-1.5 rounded-full bg-gradient-to-r ${gradient} text-white`}>
             {item.badge}
@@ -322,9 +352,8 @@ const NetworkPartnerships = () => {
       <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-5 transition-opacity`}></div>
     </div>
   );
-
-  const ContentGrid = ({ sections, activeSection }) => (
-    <div className="bg-gray-50 py-16">
+  const ContentGrid = ({ sections, activeSection , contentRef}) => (
+    <div ref={contentRef} className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">
@@ -348,7 +377,6 @@ const NetworkPartnerships = () => {
       </div>
     </div>
   );
-
   return (
     <div className="min-h-screen bg-gray-50">
       <HeroSection
@@ -356,36 +384,34 @@ const NetworkPartnerships = () => {
         subtitle="Strategic Partnerships"
         description="PRABHAVEE - Partner for Social Impact collaborates with leading organizations to drive meaningful change and sustainable development across industries."
       />
-      
       <TabNavigation
         sections={networkSections}
         activeSection={activeNetworkSection}
         setActiveSection={setActiveNetworkSection}
+        contentRef={networkContentRef}
       />
-      
       <ContentGrid
         sections={networkSections}
         activeSection={activeNetworkSection}
+        contentRef={networkContentRef}        
       />
-
       <HeroSection
         title="Our Memberships &"
         subtitle="Trusted Collaborations"
         description="Empowering sustainable progress through strategic capacity building with our trusted memberships and professional affiliations."
       />
-      
       <TabNavigation
         sections={membershipSections}
         activeSection={activeMembershipSection}
         setActiveSection={setActiveMembershipSection}
+        contentRef={membershipContentRef}
       />
-      
       <ContentGrid
         sections={membershipSections}
         activeSection={activeMembershipSection}
+        contentRef={membershipContentRef}
       />
     </div>
   );
 };
-
 export default NetworkPartnerships;

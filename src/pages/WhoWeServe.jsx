@@ -63,7 +63,7 @@ const CollaborationCard = ({ data, isLast, delay }) => {
 const WhoWeServePage = () => {
     return (
       <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-gray-300 pt-8">
-        <header className="py-20 bg-gradient-to-r from-neutral-100 via-white to-red-50 shadow-sm border-b">
+        <header className="py-15 bg-gradient-to-r from-neutral-100 via-white to-red-50 shadow-sm border-b">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <h2 className="text-5xl md:text-7xl font-extrabold text-neutral-900 mb-4 tracking-tight leading-tight drop-shadow">
               Who We Serve <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-neutral-800">& Collaborate</span>
@@ -74,11 +74,11 @@ const WhoWeServePage = () => {
           </div>
         </header>
 
-        <section className="py-16 max-w-6xl mx-auto px-6">
-          <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 border-red-500 inline-block pb-1">
+        <section className="py-10 max-w-6xl mx-auto px-6">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 border-red-500 inline-block pb-1 text-center md:text-left">
             Our Beneficiary Segments
           </h3>
-          <p className="text-lg text-gray-700 mb-12 leading-relaxed">
+          <p className="text-lg text-gray-700 mb-10 leading-relaxed text-center md:text-left">
             We work with both <span className="font-semibold text-blue-800">nonprofit</span> and <span className="font-semibold text-orange-600">for-profit organisations</span> whose aim is to advance social impact. Here are the two segments of beneficiaries we serve by collaborating with our ecosystem partners:
           </p>
           <div className="grid md:grid-cols-2 gap-8">
@@ -91,7 +91,7 @@ const WhoWeServePage = () => {
                   A. Social Impact Organisations
                 </h4>
               </div>
-              <ul className="space-y-3 text-gray-800 text-base mt-6">
+              <ul className="space-y-3 text-gray-800 text-base mt-6 list-disc ml-10">
                 <li>NGOs & Civil Society Organisations</li>
                 <li>Social Impact Entrepreneurs & Startups</li>
                 <li>Social Enterprises</li>
@@ -108,7 +108,7 @@ const WhoWeServePage = () => {
                   B. Businesses, Brands, Suppliers
                 </h4>
               </div>
-              <ul className="space-y-3 text-gray-800 text-base mt-6">
+              <ul className="space-y-3 text-gray-800 text-base mt-6 list-disc ml-10">
                 <li>Companies & Other Corporate Entities</li>
                 <li>Brands and suppliers across diverse sectors</li>
                 <li>MSMEs, SMEs, and other enterprises</li>

@@ -64,7 +64,7 @@ export default function PoSHWorkshop() {
     document.body.style.overflow = 'auto';
   };
   return (
-    <div className="bg-white text-gray-900 overflow-hidden pt-18">
+    <div className="bg-white text-gray-900 overflow-hidden md:pt-18 pt-10">
         <div className=" bg-gradient-to-br from-red-200 via-orange-100 to-amber-100 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
             <div className="absolute -top-40 -left-40 w-80 h-80 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full opacity-20 blur-3xl animate-pulse"></div>
@@ -92,12 +92,12 @@ export default function PoSHWorkshop() {
         </h1>
 
         <div className="border-2 border-red-700 rounded-full px-6 py-2 mb-8 bg-amber-50">
-          <p className="text-xl md:text-xl font-semibold text-gray-800">
+          <p className="text-xl md:text-xl font-semibold text-gray-800 text-center md:text-center">
             Prevention of Sexual Harrasment at Workplace
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-6 mb-10">
-          <div className="bg-gradient-to-r from-red-500 to-red-600 text-white px-6 rounded-full flex items-center gap-3 shadow-lg h-12">
+          <div className="bg-gradient-to-r from-red-500 to-red-600 text-white px-15 md:px-6 rounded-full flex items-center gap-3 shadow-lg h-12 ">
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <rect x="3" y="4" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
               <line x1="16" y1="2" x2="16" y2="6" strokeWidth="2"/>
@@ -173,15 +173,15 @@ export default function PoSHWorkshop() {
             <motion.div
               layout
               className={`relative cursor-pointer transition-all duration-700 ${
-                hoveredIdx === 1 ? "order-2 mt-8" : "order-1"
+                hoveredIdx === 1 ? "md:order-2 md:mt-8" : "md:order-1"
               }`}
-              onMouseEnter={() => setHoveredIdx(0)}
-              onMouseLeave={() => setHoveredIdx(null)}
+              onMouseEnter={() => window.innerWidth >= 768 && setHoveredIdx(0)}
+              onMouseLeave={() => window.innerWidth >= 768 && setHoveredIdx(null)}
             >
             <div
                 className={`rounded-3xl border-4 overflow-hidden shadow-lg transition-all duration-500 ${
-                  hoveredIdx === 0
-                    ? "border-transparent bg-gradient-to-r from-red-400 to-orange-400 p-[2px] scale-105"
+                  hoveredIdx === 0 && window.innerWidth >= 768
+                    ? "md:border-transparent md:bg-gradient-to-r md:from-red-400 md:to-orange-400 md:p-[2px] md:scale-105"
                     : "border-gray-200 scale-100"
                 }`}
             >
@@ -191,7 +191,7 @@ export default function PoSHWorkshop() {
                     alt={features[0].alt}
                     width={300}
                     height={400}
-                    className="w-72 h-96 object-cover object-center"
+                    className="w-90 h-96 object-fill"
                     onClick={() =>
                         setExpandedImg({
                             src: features[0].src,
@@ -208,26 +208,30 @@ export default function PoSHWorkshop() {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 50 }}
                     transition={{ duration: 0.4 }}
-                    className="absolute top-0 left-full ml-8 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 z-20"
+                    className="hidden md:block absolute top-0 left-full ml-8 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 z-20 "
                   >
                     <h4 className="text-2xl font-bold text-red-600 mb-2">{features[0].title}</h4>
                     <p className="text-gray-700 text-sm leading-relaxed">{features[0].desc}</p>
                   </motion.div>
                 </AnimatePresence>
               )}
+              <div className="block md:hidden mt-6 w-full max-w-xs text-center">
+                <h4 className="text-xl font-bold text-red-600 mb-1">{features[0].title}</h4>
+                <p className="text-gray-700 text-sm leading-relaxed font-medium">{features[0].desc}</p>
+              </div>
             </motion.div>
             <motion.div
               layout
               className={`relative cursor-pointer transition-all duration-700 ${
-                hoveredIdx === 0 ? "order-3 mt-8" : "order-2"
+                hoveredIdx === 0 ? "md:order-3 md:mt-8" : "md:order-2"
               }`}
-              onMouseEnter={() => setHoveredIdx(1)}
-              onMouseLeave={() => setHoveredIdx(null)}
+              onMouseEnter={() => window.innerWidth >= 768 && setHoveredIdx(1)}
+              onMouseLeave={() => window.innerWidth >= 768 && setHoveredIdx(null)}
             >
               <div
                 className={`rounded-3xl border-4 overflow-hidden shadow-lg transition-all duration-500 ${
                   hoveredIdx === 1
-                    ? "border-transparent bg-gradient-to-r from-red-400 to-orange-400 p-[2px] scale-105"
+                    ? "md:border-transparent md:bg-gradient-to-r md:from-red-400 md:to-orange-400 md:p-[2px] md:scale-105"
                     : "border-gray-200 scale-100"
                 }`}
               >
@@ -237,7 +241,7 @@ export default function PoSHWorkshop() {
                     alt={features[1].alt}
                     width={300}
                     height={400}
-                    className="w-72 h-96 object-fill object-center"
+                    className="w-90 h-96 object-cover"
                     onClick={() =>
                         setExpandedImg({
                             src: features[1].src,
@@ -254,24 +258,28 @@ export default function PoSHWorkshop() {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -50 }}
                     transition={{ duration: 0.4 }}
-                    className="absolute top-0 right-full mr-8 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 z-20"
+                    className="hidden md:block absolute top-0 right-full mr-8 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 z-20"
                   >
                     <h4 className="text-2xl font-bold text-red-600 mb-2">{features[1].title}</h4>
                     <p className="text-gray-700 text-sm leading-relaxed">{features[1].desc}</p>
                   </motion.div>
                 </AnimatePresence>
               )}
+              <div className="block md:hidden mt-6 w-full max-w-xs text-center">
+                <h4 className="text-xl font-bold text-red-600 mb-1">{features[1].title}</h4>
+                <p className="text-gray-700 text-sm leading-relaxed font-medium">{features[1].desc}</p>
+              </div>
             </motion.div>
             <motion.div
               layout
               className="relative cursor-pointer transition-all duration-700 order-3"
-              onMouseEnter={() => setHoveredIdx(2)}
-              onMouseLeave={() => setHoveredIdx(null)}
+               onMouseEnter={() => window.innerWidth >= 768 && setHoveredIdx(2)}
+              onMouseLeave={() => window.innerWidth >= 768 && setHoveredIdx(null)}
             >
               <div
                 className={`rounded-3xl border-4 overflow-hidden shadow-lg transition-all duration-500 ${
                   hoveredIdx === 2
-                    ? "border-transparent bg-gradient-to-r from-red-400 to-orange-400 p-[2px] scale-105"
+                    ? "md:border-transparent md:bg-gradient-to-r md:from-red-400 md:to-orange-400 md:p-[2px] md:scale-105"
                     : "border-gray-200 scale-100"
                 }`}
               >
@@ -281,7 +289,7 @@ export default function PoSHWorkshop() {
                     alt={features[2].alt}
                     width={300}
                     height={400}
-                    className="w-72 h-96 object-fill"
+                    className="w-90 h-96 object-fill"
                     onClick={() =>
                         setExpandedImg({
                             src: features[2].src,
@@ -300,13 +308,17 @@ export default function PoSHWorkshop() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 40 }}
                 transition={{ duration: 0.4 }}
-                className="mt-10 bg-white rounded-2xl shadow-xl border border-gray-100 p-8 max-w-lg text-center"
+                className=" hidden md:block mt-10 bg-white rounded-2xl shadow-xl border border-gray-100 p-8 max-w-lg text-center"
               >
                 <h4 className="text-2xl font-bold text-red-600 mb-2">{features[2].title}</h4>
                 <p className="text-gray-700 text-base leading-relaxed">{features[2].desc}</p>
               </motion.div>
             </AnimatePresence>
           )}
+          <div className="block md:hidden mt-6 w-full max-w-xs text-center">
+                <h4 className="text-xl font-bold text-red-600 mb-1">{features[2].title}</h4>
+                <p className="text-gray-700 text-sm leading-relaxed font-medium">{features[2].desc}</p>
+              </div>
         </div>
         <ImageModal image={expandedImg} onClose={() => setExpandedImg(null)} />
       </div>

@@ -167,7 +167,7 @@ export default function ProfessionalServices() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 via-white to-gray-300">
-      <section className="pt-32 pb-15 px-6">
+      <section className="pt-28 pb-15 px-6">
         <div className="max-w-7xl mx-auto">
           <div 
             className="text-center mb-12 transition-all duration-600"
@@ -222,17 +222,14 @@ export default function ProfessionalServices() {
             </div>
         </div>
       </section>
-
-      {/* Services Section */}
-      <section className="py-20 px-6 bg-white/80">
+      <section className="py-10 mb-3 md:mb-0 px-6 bg-white/80">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 flex items-center justify-center gap-2">
               Our Core Practice Areas
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-500 via-amber-400 to-red-500 mx-auto rounded-xl"></div>
           </div>
-
           <div className="grid gap-10 md:grid-cols-2">
             {services
             .filter((service) => service.title.toLowerCase().includes(searchQuery.toLowerCase()))
@@ -245,7 +242,6 @@ export default function ProfessionalServices() {
                 const borderColor = service.color === 'red' ? 'border-red-200' : 'border-gray-200';
                 const iconBg = service.color === 'red' ? 'bg-gradient-to-tr from-red-500 to-amber-400' : 'bg-gray-800';
                 const accentColor = service.color === 'red' ? 'text-red-600' : 'text-gray-800';
-
                 return (
                 <div
                 id={`service-${service.id}`}
@@ -265,12 +261,12 @@ export default function ProfessionalServices() {
                         <div className="flex-1">
                         <div className="flex items-start justify-between mb-2">
                             <div>
-                            <h3 className={`text-2xl md:text-3xl font-bold ${accentColor} mb-2`}>
-                                {service.title}
-                            </h3>
-                            <p className="text-sm font-medium text-gray-600 uppercase tracking-wide">
-                                {service.subtitle}
-                            </p>
+                              <h3 className={`text-2xl md:text-3xl font-bold ${accentColor} mb-2`}>
+                                  {service.title}
+                              </h3>
+                              <p className="text-sm font-medium text-gray-600 uppercase tracking-wide">
+                                  {service.subtitle}
+                              </p>
                             </div>
                             <button
                             onClick={() =>
@@ -286,9 +282,7 @@ export default function ProfessionalServices() {
                         </div>
                         </div>
                     </div>
-
                     <p className="text-gray-800 leading-relaxed mb-6 text-lg">{service.description}</p>
-
                     <div className={`transition-all duration-500 ${isOpen ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                         <div className="pt-6 border-t-2 border-gradient-red">
                         <h4 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">

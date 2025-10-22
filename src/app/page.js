@@ -11,6 +11,7 @@ import OrgStats from '@/components/stats/stats';
 const PrabhaveeWebsite = () => {
   const [activeTab, setActiveTab] = useState("approach");
   const [activeIndex, setActiveIndex] = useState(null);
+  const [mobileActiveIndex, setMobileActiveIndex] = useState(null);
   const icons = [BookOpen, Users, Globe, Award, Target];
 
   const pillars = [
@@ -69,6 +70,7 @@ const PrabhaveeWebsite = () => {
     if (!ctx) return
 
     const setCanvasDimensions = () => {
+      const section = canvas.parentNode;
       canvas.width = window.innerWidth
       canvas.height = window.innerHeight
     }
@@ -116,11 +118,10 @@ const PrabhaveeWebsite = () => {
   return (
     <div className="min-h-screen bg-white pt-15">
       <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-red-900 text-white" aria-label="Hero Section">
-        <canvas ref={canvasRef} className="absolute inset-0 z-0" role="presentation" aria-hidden="true" />
-
+        <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full z-0" role="presentation" aria-hidden="true" />
         <div className="relative z-10 container mx-auto px-12 py-20 min-h-screen flex flex-col lg:flex-row items-center justify-center gap-12">
           <div className="w-full lg:w-1/2 space-y-8 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Expert Legal & <br/> <span className="text-red-400">Strategic Advisory</span>
             </h1>
             <div className="h-16 text-lg md:text-xl font-medium text-red-200">
@@ -210,16 +211,15 @@ const PrabhaveeWebsite = () => {
           </div> 
         </div>
       </section>
-
       {/* About Us Section */}
-      <section id ="about" className="max-w-auto mx-auto px-17 py-10 bg-gray-50">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="relative h-[420px] flex items-center justify-center">
-            <div className="absolute top-0 left-0 w-40 h-40 bg-[#1a365d] opacity-80 rounded-lg shadow-xl" />
-            <div className="absolute -top-6 right-6 w-32 h-32 bg-orange-400 rounded-lg shadow-lg" />
-            <div className="absolute bottom-0 left-10 w-60 h-24 bg-[#1a365d] rounded-lg shadow-xl" />
-            <div className="absolute bottom-8 right-0 w-20 h-40 bg-red-400 rounded-lg" />
-            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+      <section id ="about" className="w-full mx-auto px-4  md:px-17 lg:px-17 py-10 bg-gray-50">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+          <div className="relative h-[270px] sm:h-[340px] md:h-[420px] flex items-center justify-center">
+            <div className="absolute top-0 left-0 w-30 h-30 sm:w-28 sm:h-28 md:w-40 md:h-40 bg-[#1a365d] opacity-80 rounded-lg shadow-xl" />
+            <div className="absolute -top-4 sm:-top-6 right-3 sm:right-6 w-24 h-24 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-orange-400 rounded-lg shadow-lg" />
+            <div className="absolute bottom-0 left-5 sm:left-10 w-36 h-20 sm:w-44 sm:h-16 md:w-60 md:h-24 bg-[#1a365d] rounded-lg shadow-xl" />
+            <div className="absolute bottom-5 right-0 w-14 h-27 sm:w-16 sm:h-32 md:w-20 md:h-40 bg-red-400 rounded-lg" />
+            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white max-w-full w-[260px] sm:w-[340px] md:w-[440px]">
               <Image
                 height={150}
                 width={440}
@@ -230,13 +230,13 @@ const PrabhaveeWebsite = () => {
             </div>
           </div>
           <div className="space-y-1">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#1a365d] tracking-tight leading-snug">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#1a365d] tracking-tight leading-snug text-center md:text-left">
               About PRABHAVEE
             </h1>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-700 text-center md:text-left mb-6 md:mb-0">
               <span className="font-semibold text-[#1a365d]">PRABHAVEE – Partner for Social Impact</span> is a Professional Advisory and Strategy Consulting practice based in Delhi. We deliver legal, policy, and strategic advisory services to organizations in the social impact sector. Our mission is to equip organisations with strategies and insights to strengthen institutional capacity, governance, and partnerships — enabling sustainable growth and long-term impact.
             </p>
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg border-t-4 border-[#e53e3e] transition">
                 <h3 className="text-xl font-semibold text-[#e53e3e] mb-3">Our approach</h3>
                 <p className="mb-4">
@@ -271,9 +271,8 @@ const PrabhaveeWebsite = () => {
           </div>
         </div>
       </section>
-
       {/* Quote Section */}
-      <section className="py-12 bg-red-600 text-white">
+      <section className="py-12 bg-red-600 text-white px-4 md:px-0">
         <div className="container mx-auto px-4">
           <div className="relative max-w-2xl mx-auto">
             <Quote className="absolute -top-6 -left-6 w-10 h-10 text-white-600 rotate-180" />
@@ -287,13 +286,12 @@ const PrabhaveeWebsite = () => {
           </div>
         </div>
       </section>
-
       {/* Vision & Mission */}
       <section className="py-10 bg-gray-50">
         <div className="container mx-auto px-4 py-5">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Vision & Mission</h2>
-              <div className="grid md:grid-cols-2 gap-12">
+              <div className="grid md:grid-cols-2 gap-8 md:gap-12">
                 <div className="bg-white p-8 rounded-lg w-full max-w-lg shadow text-center">
                   <div className="flex items-center justify-center mb-6">
                     <Image
@@ -352,9 +350,8 @@ const PrabhaveeWebsite = () => {
             </button>
           ))}
         </div>
-
         {/* Content */}
-        <div className="bg-white shadow-lg rounded-xl p-8 max-w-4xl mx-auto text-gray-700 leading-relaxed">
+        <div className="bg-white shadow-lg rounded-xl p-8 max-w-4xl mx-auto text-gray-700 leading-relaxed text-center md:text-left">
           {activeTab === "approach" && (
             <p>
             To achieve our vision, <strong>PRABHAVEE engages with sector-specific stakeholders—companies, MSMEs, SMEs, Small Business Owners, Researchers, lawyers, CSOs, Journalists, </strong>and 
@@ -373,7 +370,7 @@ const PrabhaveeWebsite = () => {
             </p>
           )}
           {activeTab === "focus" && (
-            <div>
+            <div className='text-left'>
               <ul className="list-disc pl-5 space-y-2">
                 <li>Business & Human Rights.</li>
                 <li>Responsible Business Conduct.</li>
@@ -397,34 +394,51 @@ const PrabhaveeWebsite = () => {
       </section>
     <OrgStats />
       {/* 5-Pillar Approach */}
-      <section id="pillars" className="py-16 bg-gray-900 text-white">
+      <section id="pillars" className="py-10 md:py-16 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-12">5-Pillar Approach to Impact</h2>
             {/* Pillar blocks */}
-            <div className="grid md:grid-cols-5 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-5 md:gap-6 gap-3">
               {pillars.map((pillar, idx) => {
                 const Icon = icons[idx];
                 return (
-                  <div
-                    key={idx}
-                    className={`
-                      flex flex-col items-center p-8 rounded-lg bg-gray-800 cursor-pointer 
-                      transition-colors duration-200 hover:bg-red-800
-                      ${activeIndex === idx ? "border-2 border-red-500" : ""}
-                    `}
-                    onMouseEnter={() => setActiveIndex(idx)}
-                    onMouseLeave={() => setActiveIndex(null)}
-                    onFocus={() => setActiveIndex(idx)}
-                    tabIndex={0}
-                  >
-                    <Icon className="h-12 w-12 text-red-400 mb-4" />
-                    <h3 className="text-lg font-semibold mb-3 text-center">{pillar.title}</h3>
-                  </div>
+                  <React.Fragment key={idx}>
+                    <div
+                      className={`
+                        flex flex-col items-center p-8 rounded-lg bg-gray-800 cursor-pointer 
+                        transition-colors duration-200 hover:bg-red-800
+                        ${activeIndex === idx ? "border-2 border-red-500" : ""}
+                      `}
+                      onMouseEnter={() => window.innerWidth >= 768 && setActiveIndex(idx)}
+                      onMouseLeave={() => window.innerWidth >= 768 && setActiveIndex(null)}
+                      onClick={() => window.innerWidth < 768 && setMobileActiveIndex(mobileActiveIndex === idx ? null : idx)}
+                      tabIndex={0}
+                    >
+                      <Icon className="h-12 w-12 text-red-400 mb-4" />
+                      <h3 className="text-lg font-semibold mb-3 text-center">{pillar.title}</h3>
+                    </div>
+                    <div
+                      className={`
+                        md:hidden transition-all duration-300 w-full
+                        ${mobileActiveIndex === idx ? "max-h-[400px] opacity-100 my-3" : "max-h-0 opacity-0 overflow-hidden"}
+                      `}
+                    >
+                      {mobileActiveIndex === idx && (
+                        <div className="bg-red-800 rounded-md p-5 text-sm">
+                          <h3 className="text-xl font-bold mb-2">{pillar.title}</h3>
+                          <ul className="list-disc list-inside ml-4 space-y-2">
+                            {pillar.bullets.map((b, i) => (
+                              <li key={i}>{b}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  </React.Fragment>
                 );
               })}
             </div>
-            {/* Expanded details drawer below all blocks */}
             <div 
               className={`transition-all duration-300 mt-0 ${activeIndex !== null ? "max-h-[400px] opacity-100 mt-8" : "max-h-0 opacity-0 overflow-hidden"}`}
               aria-live="polite"
@@ -443,7 +457,6 @@ const PrabhaveeWebsite = () => {
           </div>
         </div>
       </section>
-
       {/* Professional Services */}
       <section id="professional-services" className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -504,13 +517,13 @@ const PrabhaveeWebsite = () => {
                   <h3 className="text-xl font-semibold mb-3 text-gray-900">
                     {service.title}
                   </h3>
-                  <p className="text-gray-700 mb-6">{service.description}</p>
+                  <p className="text-gray-700 mb-8">{service.description}</p>
                  <a
                   href={`/services?service=${service.title
                     .toLowerCase()
                     .replace(/ & /g, "-")
                     .replace(/\s+/g, "-")}`}
-                  className="opacity-0 group-hover:opacity-100 transition-opacity text-red-600 font-medium absolute bottom-6 left-6 text-center"
+                  className="md:opacity-0 group-hover:opacity-100 transition-opacity text-red-600 font-medium absolute bottom-6 left-6 text-center"
                 >
                   Learn More &rarr;
                 </a>
@@ -529,12 +542,11 @@ const PrabhaveeWebsite = () => {
         </div>
       </section>
       {/* People Section */}
-      <section id="people" className="py-16 bg-gradient-to-b from-gray-50 to-gray-100">
+      <section id="people" className="py-10 bg-gradient-to-b from-gray-50 to-gray-100">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Leadership Spotlight</h2>
-            <div className="flex flex-col md:flex-row bg-white rounded-2xl shadow-xl p-10 items-center group transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl">
-              {/* Founder Image with stylish border and animation */}
+            <h2 className=" text-3xl md:text-4xl font-bold text-center mb-6 md:mb-12 text-gray-900">Leadership Spotlight</h2>
+            <div className="text-center md:text-left flex flex-col md:flex-row bg-white rounded-2xl shadow-xl p-10 items-center group transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl">
               <div className="flex-shrink-0 mb-8 md:mb-0 md:mr-10 relative">
                 <div className="p-1.5 rounded-3xl bg-gradient-to-tr from-red-400 via-red-600 to-amber-500 shadow-xl transition-all duration-300">
                   <Image
@@ -554,7 +566,7 @@ const PrabhaveeWebsite = () => {
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
                     Anumita Sarkar
                   </h3>
-                  <div className="flex flex-wrap items-center gap-3 mb-2">
+                  <div className="flex flex-wrap items-center gap-3 mb-2 justify-center md:justify-start">
                     <p className="text-red-600 font-semibold">
                       Founding Lawyer – Policy and Strategic Advisor
                     </p>

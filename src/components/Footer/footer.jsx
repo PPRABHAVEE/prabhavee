@@ -7,14 +7,14 @@ import logo1 from '../../components/Navbar/assests/logo.png';
 const footer = () => {
   return (
     <>
-      <section id="contact" className="py-16 bg-gray-900 text-white">
+      <section id="contact" className="py-16 bg-gray-900 text-white text-center md:text-left">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-12">Get Involved</h2>
             <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <h3 className="text-2xl font-semibold mb-6">Contact Us</h3>
-                <div className="space-y-4">
+                <div className="space-y-4 text-center md:text-left">
                   <div className="flex items-center">
                     <Mail className="h-6 w-6 text-red-400 mr-4" />
                     <span>anumita@prabhavee.org</span>
@@ -55,7 +55,6 @@ const footer = () => {
           </div>
         </div>
       </section>
-      {/* Footer */}
       <footer className="bg-gray-200 border-t border-gray-200 py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-center text-center">

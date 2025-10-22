@@ -1,9 +1,7 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
-
 import founder from './assets/founder.jpg';
 import badge from './assets/badge.png';
-
 const PeoplePage = () => {
   const [scrollY, setScrollY] = useState(0);
   const [rotations, setRotations] = useState({ anumita: 0, amrita: 0 });
@@ -129,9 +127,8 @@ const PeoplePage = () => {
       ]
     }
   ];
-
   return (
-    <div className="min-h-screen bg-white relative pt-20">
+    <div className="bg-white relative pt-20 overflow-x-clip">
       <div className="fixed left-0 top-0 h-full w-1/4 pointer-events-none z-0">
         <div 
           className="absolute inset-0"
@@ -159,9 +156,7 @@ const PeoplePage = () => {
           ))}
         </div>
       </div>
-
-      {/* Header */}
-      <div className="pt-13 pb-16 px-6 md:px-8 bg-white">
+      <div className="md:pt-13 md:pb-16 px-6 md:px-8 bg-white">
         <div
           className="max-w-5xl mx-auto text-center"
           style={{
@@ -170,7 +165,7 @@ const PeoplePage = () => {
             transition: 'opacity 0.3s ease',
           }}
         >
-          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight flex md:flex-row justify-center items-center">
             <span className="text-gray-900">About&nbsp;the&nbsp;</span>
             <span
               className="bg-gradient-to-r from-red-500 via-orange-400 to-yellow-400 bg-clip-text text-transparent"
@@ -178,26 +173,24 @@ const PeoplePage = () => {
             >
               Founder
             </span>
-        </h1>
+          </h1>
         </div>
       </div>
-
-      <div className="max-w-7xl mx-auto px-8 pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {people.map((person, index) => {
           const isLeft = index % 2 === 0;
           const sectionTop = 400 + (index * 1000);
           const isInView = scrollY > sectionTop - 600;
           const showBelowImage = showBelowStates[person.id];
-          
           return (
             <div
               key={person.id}
               ref={(el) => (containerRefs.current[index] = el)}
-              className={`mb-32 flex ${isLeft ? 'flex-row' : 'flex-row-reverse'} gap-16 items-start`}
+              className={`mb-32 flex flex-col md:flex-row ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} gap-5 md:gap-16 items-start md:text-left`}
             >
-              <div className="w-1/3 sticky top-30 space-y-30">
+              <div className="w-full md:w-1/3 sticky md:top-30 md:space-y-30">
                 <div 
-                  className="relative mb-16"
+                  className="relative mx-14 my-7 md:mb-16 md:mx-0 md:mt-0 flex justify-center md:block"
                   style={{
                     transform: isInView ? 'scale(1)' : 'scale(0.8)',
                     opacity: isInView ? 1 : 0,
@@ -237,7 +230,7 @@ const PeoplePage = () => {
                       className="transition-all duration-700 ease-in-out text-center"
                       style={{ opacity: 1 }}
                     >
-                      <h2 className="text-4xl font-bold text-gray-900 mb-2">{person.name}</h2>
+                      <h2 className=" text-3xl md:text-4xl font-bold text-gray-900 md:mb-2">{person.name}</h2>
                       <p className="text-xl text-red-500 font-semibold mb-1">{person.title}</p>
                      {person.subtitle && (
                         <p className="text-lg text-gray-600">{person.subtitle}</p>
@@ -270,7 +263,7 @@ const PeoplePage = () => {
                   )}
                 </div>
                 <div 
-                  className="w-2/3"
+                  className="md:w-2/3"
                   style={{
                     transform: isInView ? 'translateX(0)' : `translateX(${isLeft ? '50px' : '-50px'})`,
                     opacity: isInView ? 1 : 0,
@@ -310,7 +303,7 @@ const PeoplePage = () => {
                     </div>
                   </div>
                 )}
-                <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                <p className=" text-base md:text-lg text-gray-700 mb-8 leading-relaxed text-center md:text-left">
                   {person.description}
                 </p>
                 <div className="mb-8">
@@ -437,7 +430,6 @@ const PeoplePage = () => {
                     })}
                   </div>
                 </div>
-                    
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center mt-7">
                     <span className="w-1 h-8 bg-gray-800 mr-3" />
@@ -469,7 +461,6 @@ const PeoplePage = () => {
                     ))}
                   </div>
                 </div>
-
               </div>
             </div>
           );
@@ -478,5 +469,4 @@ const PeoplePage = () => {
     </div>
   );
 };
-
 export default PeoplePage;

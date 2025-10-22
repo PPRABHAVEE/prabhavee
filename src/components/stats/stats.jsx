@@ -44,7 +44,7 @@ const stats = [
 ];
 export default function OrgStats() {
   return (
-    <section className="bg-gradient-to-t from-gray-50 to-white py-20">
+    <section className="bg-gradient-to-t from-gray-50 to-white py-8">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading section */}
         <div className="mb-14 text-center">

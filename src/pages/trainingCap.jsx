@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import {
   Globe,
@@ -16,7 +15,6 @@ import {
   LayoutList,
   Activity
 } from "lucide-react";
-
 const Accordion = ({ id, title, subtitle, icon: Icon, children, open, onToggle }) => {
   return (
     <div className={`bg-white rounded-xl overflow-hidden transition-all duration-300 ${
@@ -29,7 +27,7 @@ const Accordion = ({ id, title, subtitle, icon: Icon, children, open, onToggle }
       >
         <div className="flex items-center gap-5">
           <div className={`w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300 ${
-            open ? 'bg-gradient-to-br from-amber-600 to-amber-700 shadow-lg scale-110' : 'bg-slate-800'
+            open ? 'bg-gradient-to-br from-amber-600 to-amber-700 shadow-lg scale-110 p-3 md:p-0' : 'bg-slate-800  p-3 md:p-0 '
           } text-white`}>
             <Icon className="w-7 h-7" />
           </div>
@@ -39,7 +37,7 @@ const Accordion = ({ id, title, subtitle, icon: Icon, children, open, onToggle }
           </div>
         </div>
         <ChevronDown
-          className={`w-6 h-6 transition-all duration-300 ${
+          className={`w-8 h-8 font-medium transition-all duration-300 ${
             open ? 'rotate-180 text-amber-600' : 'text-slate-400'
           }`}
         />
@@ -57,11 +55,9 @@ const Accordion = ({ id, title, subtitle, icon: Icon, children, open, onToggle }
     </div>
   );
 };
-
 export default function LegalFirmPage() {
   const [openId, setOpenId] = useState("gender");
   const toggle = (id) => setOpenId((prev) => (prev === id ? null : id));
-
   return (
     <main className="bg-gradient-to-b from-slate-50 via-white to-slate-50">
       <section className="relative overflow-hidden pt-12">

@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react';
 import { ChevronDown, Users, FileText, Scale, Shield, Heart, Briefcase, BookOpen, Globe, Award, Target, ArrowRight, Gavel, TrendingDown, HandHelping, Wallet, Sparkles, ShieldAlert,Brain } from 'lucide-react';
-
 const background = () => {
   const challenges = [
     {
@@ -65,7 +64,7 @@ const background = () => {
   ];
   return (
    <div className="min-h-screen bg-white pt-10">
-    <section className="relative bg-gradient-to-br from-gray-200 to-white py-24 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-gray-200 to-white py-16 md:py-24 overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 left-1/3 w-96 h-96 bg-red-100 rounded-full opacity-30 blur-3xl"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#1a365d] rounded-full opacity-10 blur-3xl"></div>
@@ -75,11 +74,30 @@ const background = () => {
         <h1 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-10 leading-tight">
           Bridging Business, Human Rights & <span className="text-red-600 bg-red-200/60 px-2 rounded-xl">Sustainability</span>
         </h1>
-        <div className="flex justify-center mb-12">
-          <div className="bg-white/80 border-l-4 border-red-500 shadow-lg px-7 py-6 rounded-xl max-w-3xl text-center flex flex-row items-center gap-4">
-            <svg className="w-8 h-8 text-red-600 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m2-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-            <p className="text-xl text-gray-800 font-medium leading-relaxed">
-              PRABHAVEE envisions an <span className="text-red-600 font-semibold">integrated, legally informed, research-enabled model</span> that brings together legal practitioners, CSOs, policy experts, communicators, academic reasearchers and business representatives to improve disclosures by the businesses and build capacity across the value chain.
+       <div className="flex justify-center mb-12">
+          <div className="bg-white/80 border-l-4 border-red-500 shadow-lg px-4 py-5 sm:px-7 sm:py-6 rounded-xl max-w-3xl w-full text-center flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+            <svg
+              className="w-8 h-8 text-red-600 flex-shrink-0 mx-auto sm:mx-0 mb-3 sm:mb-0"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M13 16h-1v-4h-1m2-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <p className="text-base sm:text-xl text-gray-800 font-medium leading-relaxed">
+              PRABHAVEE envisions an{" "}
+              <span className="text-red-600 font-semibold">
+                integrated, legally informed, research-enabled model
+              </span>{" "}
+              that brings together legal practitioners, CSOs, policy experts,
+              communicators, academic reasearchers and business representatives to
+              improve disclosures by the businesses and build capacity across the value
+              chain.
             </p>
           </div>
         </div>
@@ -116,10 +134,8 @@ const background = () => {
         </div>
       </div>
     </section>
-    {/* Market Context */}
-    <section className="py-20 bg-gradient-to-br from-white to-gray-50">
+    <section className="py-8 md:py-20 bg-gradient-to-br from-white to-gray-50 text-center md:text-left">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
-        {/* Section Title */}
         <div className="mb-14">
           <h2 className="text-4xl font-extrabold text-[#1a365d] mb-6">
             Positioning in the Ecosystem
@@ -128,14 +144,11 @@ const background = () => {
             In India, mandatory Corporate Social Responsibility (CSR) — requiring companies to dedicate 2% of average net profits to social welfare — has shaped the landscape for over a decade. Alongside, evolving frameworks like the <strong>National Guidelines on Responsible Business Conduct (NGRBC)</strong> and the <strong>Business Responsibility and Sustainability Reporting (BRSR)</strong> are making responsible business and human rights central themes for organizations. Yet, fragmented efforts and a lack of unified strategy persist across sectors and stakeholders.
           </p>
         </div>
-
-        {/* Main Grid */}
         <div className="grid md:grid-cols-3 gap-10 items-start">
-          {/* Regulatory Timeline & Context */}
           <div className="md:col-span-2">
             <div className="bg-white rounded-xl shadow-md p-8 border border-gray-100 mb-8">
               <h3 className="text-2xl font-semibold mb-4 text-[#e53e3e]">Context & Regulatory Shifts</h3>
-              <ul className="list-disc pl-5 space-y-3 text-gray-700 text-base">
+              <ul className="list-disc pl-5 space-y-3 text-gray-700 text-base text-left">
                 <li>
                   <span className="font-semibold">CSR Law (2013):</span> Companies must allocate 2% of average net profits for community welfare — a transformative benchmark in the region.
                 </li>
@@ -182,8 +195,7 @@ const background = () => {
         </div>
       </div>
     </section>
-    {/* Challenges Section */}
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative">
+    <section className="py-5 md:py-20 bg-gradient-to-br from-gray-50 to-white relative">
       <div className="absolute top-0 left-10 w-40 h-40 bg-red-100 rounded-full blur-3xl opacity-40"></div>
         <div className="absolute bottom-0 right-10 w-56 h-56 bg-blue-100 rounded-full blur-3xl opacity-40"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
