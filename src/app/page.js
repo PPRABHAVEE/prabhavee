@@ -141,17 +141,17 @@ const PrabhaveeWebsite = () => {
                 <div >
                   <Scale className="h-12 w-12 text-red-400 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Legal Advisory</h3>
-                  <p className="text-gray-300">Professional legal and Policy advisory services</p>
+                  <p className="text-gray-300">Professional Legal and Policy Advisory Services</p>
                 </div>
                 <div >
                   <Users className="h-12 w-12 text-red-400 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Capacity Building</h3>
-                  <p className="text-gray-300">Strategic training and Programs</p>
+                  <p className="text-gray-300">Strategic Training and Programs</p>
                 </div>
                 <div >
                   <Globe className="h-12 w-12 text-red-400 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Social Impact</h3>
-                  <p className="text-gray-300">Business and Human <br></br>rights</p>
+                  <p className="text-gray-300">Business and Human <br></br>Rights</p>
                 </div>
               </div>
             </div>
@@ -584,10 +584,7 @@ const PrabhaveeWebsite = () => {
                   </div>
                 </div>
                 <p className="text-gray-700 mb-4 transition-opacity duration-300 group-hover:opacity-90">
-                  Strategic leader with nearly two decades of diverse sectoral and functional
-                  expertise in Research, Advisory, Editorial &amp; Knowledge Management,
-                  Strategic Partnerships.
-                  Focused on business and human rights, responsible conduct, governance, and ethics.
+                 Strategic Leader with nearly two decades of diverse sectoral and functional expertise in Research, Advisory Editorial & Knowledge Management, Strategy Development, Partnerships and Stakeholder Engagement. Focused on ESG, Business and Human Rights, Corporate Accountability, Governance, Ethics and Business Integrity.
                 </p>
                 <a
                   href="/people/founder"

@@ -62,9 +62,10 @@ import Image from "next/image";
       year: 2023,
       eventType: "Ideation Meeting with diverse stakeholders",
       participationType: "Stakeholder at the Roundtable",
-      displayType: "collage",
+      displayType: "carousel",
       images: [
-        "./assets/5/5/Screenshot 2025-10-18 223818.png"
+        "./assets/5/5/e5-1.jpeg",
+        "./assets/5/5/e5-2.jpeg"
       ],
       description: "Participated in a strategic roundtable focused on integrating ethical business practices in Micro, Small, and Medium enterprises, contributing to policy discussions and framework development."
     },
@@ -258,7 +259,7 @@ import Image from "next/image";
       participationType: "Advisory Board Member",
       displayType: "collage",
       images: [
-        "./assets/20/20/IMG-20240825-WA0011 (1).jpg"
+        "./assets/20/20/Screenshot 2025-10-23 224517.png"
       ],
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
     }, 

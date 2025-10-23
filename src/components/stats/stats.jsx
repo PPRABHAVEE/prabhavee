@@ -29,7 +29,7 @@ const stats = [
   },
   {
     icon: <MessageSquare className="w-6 h-6" />,
-    label: "Policy & Public,Stakeholder Consultation",
+    label: "Policy & Public/Stakeholder Consultation",
     value: "7",
   },
   {
@@ -52,7 +52,7 @@ export default function OrgStats() {
             Organization Reach & Engagement
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-600 mb-1">
-            Engaged with diverse stakeholders & organizations through strategic capacity building.
+            Engaged with diverse stakeholders & organizations.
           </p>
           <span className="inline-block mt-3 bg-gradient-to-r from-red-500 to-amber-400 text-white font-semibold px-5 py-2 rounded-full shadow text-base">
             Empowering Social Impact Across Sectors

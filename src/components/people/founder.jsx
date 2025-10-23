@@ -48,7 +48,7 @@ const PeoplePage = () => {
       email:'anumita@prabhavee.org',
       description: 'Anumita Sarkar is the Founding Lawyer - Policy and Strategic Advisor of PRABHAVEE – Partner for Social Impact and founded the organization in 2022. She is recognized as a strategic leader with nearly two decades of sectoral and functional expertise across fields like Research, Advisory, Project Management, Editorial & Knowledge Management, Strategic Partnerships, Stakeholder Engagement, Communication and Outreach, and various other strategic initiatives. Her collaborative work covers various stakeholders: Government, Statutory and Quasi-Judicial authorities, Appellate Tribunals, Courts and Forums, Corporates, Multilateral Organizations(UN), Publishers, Authors, Knowledge Partners, Big 4 Consulting Firms, Policy Professionals, Senior Tax Experts, Learning and Development Consultants, and C-Suite Leaders. She possesses deep cross-functional expertise with Production, Technology, Design, Marketing, Sales, Channel Partners & Customer Care Teams.',
       expertise: [
-        'Strategic leadership & New Opportunities.',
+        'Strategic Partnerships & New Opportunities.',
         'Organizational Development & Strategic Consulting.',
         'Non-Profit Board Leadership.',
         'Leadership & Team-building.',
@@ -98,6 +98,14 @@ const PeoplePage = () => {
         },
         'International funder engagements: Omidyar Network India (ONI), Friedrich-Naumann-Stiftung für die Freiheit, South Asia, Hewlett Foundation, Access Now.',
         'CSR project work: ROCHE, Mastercard Centre for Inclusive Growth, Asian Development Bank, Hyundai.'
+      ],
+      awards:[
+        "Iconic Women Creating a Better World for All, presented at the 84th Global Edition of the Annual Women Economic Forum 2022, represented WICCI Delhi External Affairs Council.",
+        'CEO Award for exemplifying the core value of "Make It Better" - Tax, Accounting & Legal Publishing Team for exceeding revenue targets in H1 2018 - Wolters Kluwer India (2018)',
+        "Best Product Launch of the Year 2017 - GST - Tax, Accounting & Legal GST Acts, Rules & Forms with Referencer by CA. Ashok Batra (Published 4 Editions, May 2017 - October 2017) - Wolters Kluwer India.",
+        "Launch of the month - GST Acts, Rules & Forms with Referencer, CA. Ashok Batra - Wolters Kluwer India (2017).",
+        "Launch of the month (Best-selling Title) - GST Era Beckons - A comparative analysis of the Indian Model GST Law provisions with International Best Practices and OECD by Deloitte - Wolters Kluwer India (2017).",
+        "Rookie of the Year 2016 - Wolters Kluwer India (2017)."
       ],
       credentials: [
         'B.A. (Hons.) Sociology, Miranda House College, University of Delhi.',
@@ -377,6 +385,28 @@ const PeoplePage = () => {
                       }
                       return null; 
                     })}
+                  </div>
+                </div>
+                <div className="mb-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="w-1 h-8 bg-red-500 mr-3" />
+                    Awards & Recognitions
+                  </h3>
+                  <div className="space-y-3">
+                    {person.awards.map((item, i) => (
+                      <div 
+                        key={i}
+                        className="flex items-start gap-3 group"
+                        style={{
+                          transform: isInView ? 'translateX(0)' : 'translateX(20px)',
+                          opacity: isInView ? 1 : 0,
+                          transition: `all 0.5s ease-out ${i * 0.1}s`
+                        }}
+                      >
+                        <div className="mt-2 w-2 h-2 bg-red-500 rounded-full group-hover:scale-150 transition-transform" />
+                        <p className="text-gray-700 flex-1">{item}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div>

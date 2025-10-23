@@ -55,13 +55,11 @@ const PeoplePage = () => {
         'High-value transactional work and litigation relating to complex corporate and civil proceedings.',
         'Debt recovery, MSME representation, mergers, winding up, liquidation, Insolvency.',
         'Banking practice before several forums like Arbitration, Mediation, Conciliation, DRT, DRAT, NCLT, NCLAT, High Court, Supreme Court.',
-        'Policy making in insolvency and restructuring laws.',
         'Advisory to domestic and international clients on complex legal issues.'
       ],
       experience: [
         'Advocate-on-Record, Supreme Court of India.',
-        'Law Clerk Cum Research Assistant to Hon\'ble Mr. Justice F.M.I. Kalifulla, Supreme Court of India.',
-        'Ministry of Law and Justice, Government of India.',
+        "Law Clerk Cum Research Assistant to the Hon'ble Mr. Justice F.M.I. Kalifulla, Supreme Court of India through Ministry of Law and Justice, Government of India.",
         'Argus Partners, (Solicitors & Advocates): Corporate law and dispute resolution, Delhi and Mumbai.',
         'Regular appearances and representation before Tribunals, High Courts, and the Supreme Court.',
         'Involvement in INSOL International and INSOL India, Small Practice Group India, aiming to resolve debt issues being faced by companies and sharing best practices across countries.'
