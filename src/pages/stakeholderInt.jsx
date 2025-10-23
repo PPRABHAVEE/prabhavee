@@ -192,7 +192,7 @@ export default function StakeholderEngagement() {
           <div className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-gray-50 to-red-50 border border-gray-200 rounded-full shadow-lg">
             <Sparkles className="w-5 h-5 text-red-500" />
             <p className="text-gray-600 text-sm font-medium">
-              These collaborations reflect <span className="font-bold text-red-600">PRABHAVEE's</span> growing network of professionals
+              These collaborations reflect <span className="font-bold text-red-600"> P/ PRABHAVEE's</span> growing network of professionals
               committed to driving positive, inclusive change.
             </p>
           </div>

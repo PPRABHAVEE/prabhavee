@@ -90,7 +90,7 @@ const background = () => {
               />
             </svg>
             <p className="text-base sm:text-xl text-gray-800 font-medium leading-relaxed">
-              PRABHAVEE envisions an{" "}
+               P/ PRABHAVEE envisions an{" "}
               <span className="text-red-600 font-semibold">
                 integrated, legally informed, research-enabled model
               </span>{" "}
@@ -162,7 +162,7 @@ const background = () => {
             </div>
             <div className="bg-[#f7fafc] border-l-4 border-[#1a365d] rounded-xl p-6 text-base text-gray-800 shadow-sm">
               <p>
-                <span className="font-semibold text-[#e53e3e]">PRABHAVEE</span> aims to bridge these gaps by fostering partnerships among lawyers, legal researchers, and academics experts , at the intersection of business, human rights, and sustainability. We strive to gather diverse perspectives, foster partnerships, and enable multi-stakeholder dialogue to drive legal, institutional, and systemic reforms.
+                <span className="font-semibold text-[#e53e3e]"> P/ PRABHAVEE</span> aims to bridge these gaps by fostering partnerships among lawyers, legal researchers, and academics experts , at the intersection of business, human rights, and sustainability. We strive to gather diverse perspectives, foster partnerships, and enable multi-stakeholder dialogue to drive legal, institutional, and systemic reforms.
               </p>
             </div>
           </div>

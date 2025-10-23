@@ -231,10 +231,10 @@ const PrabhaveeWebsite = () => {
           </div>
           <div className="space-y-1">
             <h1 className="text-4xl md:text-5xl font-bold text-[#1a365d] tracking-tight leading-snug text-center md:text-left">
-              About PRABHAVEE
+              About  P/ PRABHAVEE
             </h1>
             <p className="text-lg text-gray-700 text-center md:text-left mb-6 md:mb-0">
-              <span className="font-semibold text-[#1a365d]">PRABHAVEE – Partner for Social Impact</span> is a Professional Advisory and Strategy Consulting practice based in Delhi. We deliver legal, policy, and strategic advisory services to organizations in the social impact sector. Our mission is to equip organisations with strategies and insights to strengthen institutional capacity, governance, and partnerships — enabling sustainable growth and long-term impact.
+              <span className="font-semibold text-[#1a365d]"> P/ PRABHAVEE – Partner for Social Impact</span> is a Professional Advisory and Strategy Consulting practice based in Delhi. We deliver legal, policy, and strategic advisory services to organizations in the social impact sector. Our mission is to equip organisations with strategies and insights to strengthen institutional capacity, governance, and partnerships — enabling sustainable growth and long-term impact.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg border-t-4 border-[#e53e3e] transition">
@@ -248,7 +248,7 @@ const PrabhaveeWebsite = () => {
                   <li>MSMEs & SMEs.</li>
                   <li>Brands & Suppliers.</li>
                 </ul>
-                <p className="mt-4 text-base"> With expertise in <span className="font-medium">governance, compliance, partnerships, communication, stakeholder engagement, and capacity-building</span>, PRABHAVEE operates at the intersection of{" "} <span className="font-medium">policy and practice</span>. </p>
+                <p className="mt-4 text-base"> With expertise in <span className="font-medium">governance, compliance, partnerships, communication, stakeholder engagement, and capacity-building</span>,  P/ PRABHAVEE operates at the intersection of{" "} <span className="font-medium">policy and practice</span>. </p>
               </div>
               <div className="bg-white p-6 pb-4 rounded-xl shadow-md hover:shadow-lg border-t-4 border-[#1a365d] transition pt-5">
                 <h3 className="text-lg font-semibold text-[#1a365d]">Our Work & Partnerships</h3>
@@ -326,7 +326,7 @@ const PrabhaveeWebsite = () => {
       </div>
       <div className="container mx-auto px-6">
       <div className='text-center my-5 border-2 border-red-500 bg-red-300 rounded-lg p-4 max-w-5xl mx-auto'>
-          <p className="text-gray-700 text-base">Over the next decade, <strong>PRABHAVEE</strong> will serve as a hub for
+          <p className="text-gray-700 text-base">Over the next decade, <strong> P/ PRABHAVEE</strong> will serve as a hub for
             knowledge exchange and a transformative learning experience for impact leaders and organizations.
           </p>
       </div>
@@ -354,7 +354,7 @@ const PrabhaveeWebsite = () => {
         <div className="bg-white shadow-lg rounded-xl p-8 max-w-4xl mx-auto text-gray-700 leading-relaxed text-center md:text-left">
           {activeTab === "approach" && (
             <p>
-            To achieve our vision, <strong>PRABHAVEE engages with sector-specific stakeholders—companies, MSMEs, SMEs, Small Business Owners, Researchers, lawyers, CSOs, Journalists, </strong>and 
+            To achieve our vision, <strong> P/ PRABHAVEE engages with sector-specific stakeholders—companies, MSMEs, SMEs, Small Business Owners, Researchers, lawyers, CSOs, Journalists, </strong>and 
             more—to identify critical gaps and needs in research, data, generate insights and information, training and capacity-building to <strong>address pressing issues to sensitize and
             influence change. </strong>
             </p>

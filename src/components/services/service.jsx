@@ -203,7 +203,7 @@ export default function ProfessionalServices() {
           </div>
           <div className="max-w-4xl mx-auto text-center mb-5 p-8 glass-bg rounded-2xl shadow-xl border-2 border-red-300">
             <p className="text-lg text-gray-800 leading-relaxed">
-              PRABHAVEE's practice focuses on delivering <span className="font-semibold text-red-500">context-specific, actionable, and sustainable solutions</span> through proprietary frameworks and approaches tailored to each organization's unique needs.
+               P/ PRABHAVEE's practice focuses on delivering <span className="font-semibold text-red-500">context-specific, actionable, and sustainable solutions</span> through proprietary frameworks and approaches tailored to each organization's unique needs.
             </p>
           </div>
         </div>

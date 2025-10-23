@@ -110,7 +110,7 @@ const Navbar = () => {
                   }}
                   className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-red-50 transition-colors duration-150"
                 >
-                  About PRABHAVEE
+                  About  P/ PRABHAVEE
                 </button>
                 <Link
                   href="/background"
@@ -313,7 +313,7 @@ const Navbar = () => {
                         {item.key === "about" && (
                           <>
                             <button onClick={() => { handleScrollToSection("about"); handleDropdownItemClick(); }} className="block text-gray-600 hover:text-red-500">
-                             About PRABHAVEE
+                             About  P/ PRABHAVEE
                             </button>
                             <Link href="/background" onClick={handleDropdownItemClick} className="block text-gray-600 hover:text-red-500">
                               Background

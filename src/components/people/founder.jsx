@@ -46,7 +46,7 @@ const PeoplePage = () => {
       image: founder.src,
       linkedin : "https://www.linkedin.com/in/advocateanumitasarkar/",
       email:'anumita@prabhavee.org',
-      description: 'Anumita Sarkar is the Founding Lawyer - Policy and Strategic Advisor of PRABHAVEE – Partner for Social Impact and founded the organization in 2022. She is recognized as a strategic leader with nearly two decades of sectoral and functional expertise across fields like Research, Advisory, Project Management, Editorial & Knowledge Management, Strategic Partnerships, Stakeholder Engagement, Communication and Outreach, and various other strategic initiatives. Her collaborative work covers various stakeholders: Government, Statutory and Quasi-Judicial authorities, Appellate Tribunals, Courts and Forums, Corporates, Multilateral Organizations(UN), Publishers, Authors, Knowledge Partners, Big 4 Consulting Firms, Policy Professionals, Senior Tax Experts, Learning and Development Consultants, and C-Suite Leaders. She possesses deep cross-functional expertise with Production, Technology, Design, Marketing, Sales, Channel Partners & Customer Care Teams.',
+      description: 'Anumita Sarkar is the Founding Lawyer - Policy and Strategic Advisor of  P/ PRABHAVEE – Partner for Social Impact and founded the organization in 2022. She is recognized as a strategic leader with nearly two decades of sectoral and functional expertise across fields like Research, Advisory, Project Management, Editorial & Knowledge Management, Strategic Partnerships, Stakeholder Engagement, Communication and Outreach, and various other strategic initiatives. Her collaborative work covers various stakeholders: Government, Statutory and Quasi-Judicial authorities, Appellate Tribunals, Courts and Forums, Corporates, Multilateral Organizations(UN), Publishers, Authors, Knowledge Partners, Big 4 Consulting Firms, Policy Professionals, Senior Tax Experts, Learning and Development Consultants, and C-Suite Leaders. She possesses deep cross-functional expertise with Production, Technology, Design, Marketing, Sales, Channel Partners & Customer Care Teams.',
       expertise: [
         'Strategic Partnerships & New Opportunities.',
         'Organizational Development & Strategic Consulting.',
@@ -129,7 +129,7 @@ const PeoplePage = () => {
       ],
       otherHighlights: [
         'Worked in university/public policy offices, nonprofit accelerator, NGOs, social enterprises, and advisory boards.',
-        'Strategic vision: Transform PRABHAVEE into a Centre of Excellence for strategic capacity building and knowledge exchange.',
+        'Strategic vision: Transform  P/ PRABHAVEE into a Centre of Excellence for strategic capacity building and knowledge exchange.',
         'Extensive participation in academic programs and international professional development.',
         'Alumni Member, ITCILO, 2021- present.'
       ]

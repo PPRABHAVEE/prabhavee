@@ -382,7 +382,7 @@ const NetworkPartnerships = () => {
       <HeroSection
         title="Our Networks &"
         subtitle="Strategic Partnerships"
-        description="PRABHAVEE - Partner for Social Impact collaborates with leading organizations to drive meaningful change and sustainable development across industries."
+        description=" P/ PRABHAVEE - Partner for Social Impact collaborates with leading organizations to drive meaningful change and sustainable development across industries."
       />
       <TabNavigation
         sections={networkSections}

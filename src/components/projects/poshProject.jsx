@@ -156,7 +156,7 @@ export default function PoSHWorkshop() {
             About the <span className="text-red-600">Workshop</span>
           </h3>
           <p className="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
-            <span className="font-semibold text-red-600">PRABHAVEE</span> — <strong>Partner for Social Impact</strong>, in collaboration with{" "}
+            <span className="font-semibold text-red-600"> P/ PRABHAVEE</span> — <strong>Partner for Social Impact</strong>, in collaboration with{" "}
             <span className="font-semibold text-amber-400">Yellow Spark</span> — <strong>Strategic HR Consultants</strong>, presents{" "}
             <span className="font-semibold text-red-600">PoSH Pro</span>: a 2-day online Workshop on Prevention of Sexual Harassment (PoSH) at the Workplace. It is designed to bridge the gap between law and practice by
              simplifying complex provisions of the Act and showcasing how effective implementation can shape equitable workspaces.
