@@ -53,7 +53,6 @@ const PeoplePage = () => {
         'Non-Profit Board Leadership.',
         'Leadership & Team-building.',
         'Multi-Disciplinary & Cross-Functional Team Leadership.',
-        'Diversity, Equity and Inclusion.',
         'Stakeholder Engagement and Strategic Initiatives.',
         'Training & Capacity-Building.',
         'Communication, Outreach, and Knowledge Management.'
@@ -90,7 +89,7 @@ const PeoplePage = () => {
             'Kartavyam (With trust).',
             'Impact Consulting.',
             'IDIA – (Increasing Diversity by Increasing Access)(IDIA) to legal education.',
-            'ATMA – Accelerator of NGOs.',
+            'ATMA – An Accelerator for NGOs.',
             'Internet Society, Asia-Pacific (Delhi Chapter).',
             'WICCI – Women’s Indian Chamber of Commerce and Industry(WICCI).',
             'UN Global Compact Network India.'
@@ -411,7 +410,7 @@ const PeoplePage = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                    <span className="w-1 h-8 bg-red-500 mr-3" />
+                    <span className="w-1 h-8 bg-gray-800 mr-3" />
                     Academic & Professional Credentials
                   </h3>
                   <div className="space-y-3">
@@ -462,7 +461,7 @@ const PeoplePage = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center mt-7">
-                    <span className="w-1 h-8 bg-gray-800 mr-3" />
+                    <span className="w-1 h-8 bg-red-500 mr-3" />
                     Other Profesional Highlights
                   </h3>
                   <div className="space-y-3">
@@ -476,7 +475,7 @@ const PeoplePage = () => {
                           transition: `all 0.5s ease-out ${(i + person.expertise.length + person.experience.length) * 0.1}s`
                         }}
                       >
-                        <div className="mt-2 w-2 h-2 bg-gray-800 rounded-full group-hover:scale-150 transition-transform" />
+                        <div className="mt-2 w-2 h-2 bg-red-500 rounded-full group-hover:scale-150 transition-transform" />
                         <p className="text-gray-700 flex-1">
                           {item}
                           {person.id === "anumita" && i === person.otherHighlights.length - 1 && (
