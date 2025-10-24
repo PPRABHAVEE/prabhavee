@@ -35,7 +35,7 @@ const stats = [
   {
     icon: <Network className="w-6 h-6" />,
     label: "Network, Platforms, Forums",
-    value: "12",
+    value: "13",
   },
   {
     label:"Taining & Capacity Building",

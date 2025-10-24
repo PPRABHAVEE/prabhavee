@@ -207,7 +207,7 @@ export default function LegalFirmPage() {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-amber-600 mt-1">•</span>
-                        <span className="text-slate-700">Report launches for new knowledge.</span>
+                        <span className="text-slate-700">Report launches.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-amber-600 mt-1">•</span>

@@ -44,7 +44,7 @@ const JourneyTimeline = () => {
       bgColor: "bg-red-50",
       textColor: "text-red-600",
       location: "Bangkok, Thailand",
-      category: "International"
+      category: "Delegate"
     },
     {
       year: "2024",

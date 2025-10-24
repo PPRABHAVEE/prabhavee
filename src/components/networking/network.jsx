@@ -89,21 +89,6 @@ const NetworkPartnerships = () => {
       gradient: "from-green-500 to-green-700"
     },
     {
-      title: "Knowledge Partner",
-      subtitle: "Sharing expertise & insights",
-      icon: <BookOpen className="w-6 h-6" />,
-      items: [
-        {
-          name: "Yellow Spark Solutions LLP",
-          org: "Strategic Consulting",
-          type: "Business Knowledge",
-          badge: "Knowledge Partner"
-        }
-      ],
-      color: "amber",
-      gradient: "from-amber-400 to-amber-600"
-    },
-    {
       title: "Ecosystem / Business associations",
       subtitle: "Industry and ecosystem participation",
       icon: <Target className="w-6 h-6" />,
@@ -180,39 +165,6 @@ const NetworkPartnerships = () => {
       ],
       color: "gray",
       gradient: "from-gray-600 to-gray-800"
-    },
-    {
-      title: "Industry Mentorship",
-      subtitle: "Mentoring programs & initiatives",
-      icon: <Users className="w-6 h-6" />,
-      items: [
-        {
-          name: "G20 Women Entrepreneurship Platform (WEP)",
-          org: "Niti Ayog, GoI",
-          type: "Government Initiative",
-          badge: "Industry Mentor"
-        },
-        {
-          name: "Young Leaders Council (YLC)",
-          org: "All India Management Association (AIMA)",
-          type: "Leadership Development",
-          badge: "Program Mentor"
-        },
-        {
-          name: "New Delhi Institute of Management (NDIM)",
-          org: "Academic Institution",
-          type: "Educational Partnership",
-          badge: "Industry Mentor"
-        },
-        {
-          name: "Womennnovator",
-          org: "Global Incubator for Women",
-          type: "Women Empowerment",
-          badge: "Global Mentor"
-        }
-      ],
-      color: "blue",
-      gradient: "from-blue-500 to-blue-700"
     },
     {
       title: "Brand Collaboration",

@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "P/ PRABHAVEE",
   description: "Partner for Social Impact",
+  icons:{
+    icon: "./favicon.ico",
+  }
 };
 
 export default function RootLayout({ children }) {
