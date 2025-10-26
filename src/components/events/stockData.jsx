@@ -159,7 +159,7 @@ import Image from "next/image";
      {
       id: 13,
       name: "Appointment - WICCI Delhi External Affairs Council 2024",
-      year: 2025,
+      year: 2024,
       eventType: "Official appointment as Council State Vice President ",
       participationType: "Led the council for the term as State Vice President",
       displayType: "collage",
