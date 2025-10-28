@@ -4,6 +4,18 @@ import React, { useState } from "react";
 import { Users, Target, Award, Sparkles, Sprout, Globe, TrendingUp } from "lucide-react";
 import logo from '../app/assets/logo.png';
 
+export const metadata = {
+  title: "Our Stakeholders | P/ Prabhavee",
+  description: "Learn about our partners, and experts who help us amplify our mission.",
+  keywords: ["Prabhavee", "P/ Prabhavee", "Sumana Bhattacharya", "Vikram Jain", "Tawni Trushna", "Vijeta Rattani", "Sweta Banerjee", "Dr. Ramnik Ahuja", "Deepjyoti Nath", "Marcella D'Souza", "Snigdha Mann", "Anjali Rajput", "Aparna Sanjhe Sapne", "Kedareswar Choudhury", "Garvi Dhar", "Shilpi Singh"],
+  openGraph: {
+    title: "Our Stakeholders | P/ Prabhavee",
+    description: "Learn about our partners, and experts who help us amplify our mission.",
+    url: "https://www.prabhaveepfsi.org/stakeholder",
+  },
+};
+
+
 export default function StakeholderEngagement() {
   const [hoveredCard, setHoveredCard] = useState(null);
 

@@ -2,6 +2,18 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Scale, Users, Handshake, GraduationCap, FileText, Megaphone, Shield, Building2, CheckCircle2, Sparkles, Search, Landmark, ScrollText } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
+
+export const metadata = {
+  title: "Our Services | P/ Prabhavee",
+  description: "Explore our range of social impact services including POSH training, strategic-communication, and training-capacity-building programs.",
+  keywords: ["POSH Training", "Corporate Social Responsibility", "Prabhavee Services", "governance-board-leadership", "legal-compliance", "partnerships-alliances", "training-capacity-building", "law-policy-research", "strategic-communication"],
+  openGraph: {
+    title: "Our Services | P/ Prabhavee",
+    description: "xplore our range of social impact services including POSH training, strategic-communication, and training-capacity-building programs.",
+    url: "https://www.prabhaveepfsi.org/services",
+  },
+};
+
 export default function ProfessionalServices() {
   const [openCards, setOpenCards] = useState({});
   const [scrollY, setScrollY] = useState(0);

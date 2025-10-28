@@ -2,6 +2,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import founder from './assets/founder.jpg';
 import badge from './assets/badge.png';
+
+export const metadata = {
+  title: "Founder | P/ Prabhavee",
+  description: "Meet the founder behind P/ Prabhavee, driving change through purpose and empathy.",
+  keywords: ["Prabhavee Founder", "Leadership", "Prabhavee", "P/ Prabhavee", "Anumita Sarkar", "Founding Lawyer", "Policy and Startegic Advisor", "Darbar Sahitya Sansada", "WICCI", "IDIA", "Strategic Partnerships", "Non-Profit Leadership"],
+  openGraph: {
+    title: "Founder | P/ Prabhavee",
+    description: "Meet the founder behind P/ Prabhavee, driving change through purpose and empathy.",
+    url: "https://www.prabhaveepfsi.org/people/founder",
+  },
+};
 const PeoplePage = () => {
   const [scrollY, setScrollY] = useState(0);
   const [rotations, setRotations] = useState({ anumita: 0, amrita: 0 });

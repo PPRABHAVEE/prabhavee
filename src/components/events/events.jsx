@@ -11,6 +11,18 @@ import {
 } from "lucide-react";
 import events from "./stockData";
 
+export const metadata = {
+  title: "Events, Dialogoues & Engagements | P/ Prabhavee",
+  description: "Stay updated with P/ Prabhavee's social impact events, workshops, and awareness campaigns.",
+  keywords: ["Prabhavee", "P/ Prabhavee", "Events"],
+  openGraph: {
+    title: "Events, Dialogoues & Engagements | P/ Prabhavee",
+    description: "Stay updated with P/ Prabhavee's social impact events, workshops, and awareness campaigns",
+    url: "https://www.prabhaveepfsi.org/events",
+  },
+};
+
+
 const EventsPage = () => {
   const [selectedYear, setSelectedYear] = useState("all");
   const [selectedType, setSelectedType] = useState("all");

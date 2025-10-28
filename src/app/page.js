@@ -8,6 +8,29 @@ import vision from '@/app/assets/vision.png';
 import mission from '@/app/assets/mission.png';
 import founder from '@/app/assets/founder.jpg';
 import OrgStats from '@/components/stats/stats';
+
+export const metadata = {
+  title: "P/ Prabhavee",
+  description: "Partner for Social Impact - Empowering communities and corporates through social development, POSH awareness, and capacity-building programs across India. Driving positive change through social initiatives and corporate collaborations.",
+  keywords: ["P/ Prabhavee", "Prabhavee", "Social Impact", "Training", "Capacity Building", "POSH Workshops", "CSR Initiatives", "Founder", "Aumnita Sarkar"],
+  openGraph: {
+    title: "P/ Prabhavee | Partner for Social Impact",
+    description: "Partner for Social Impact - Empowering communities and corporates through social development, POSH awareness, and capacity-building programs across India. Driving positive change through social initiatives and corporate collaborations.",
+    url: "https://www.prabhaveepfsi.org",
+    siteName: "Prabhavee PFSi",
+    images: [
+      {
+        url: "https://www.prabhaveepfsi.org/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Prabhavee banner",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+};
+
 const PrabhaveeWebsite = () => {
   const [activeTab, setActiveTab] = useState("approach");
   const [activeIndex, setActiveIndex] = useState(null);

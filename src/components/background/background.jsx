@@ -1,6 +1,18 @@
 "use client"
 import React, { useState } from 'react';
 import { ChevronDown, Users, FileText, Scale, Shield, Heart, Briefcase, BookOpen, Globe, Award, Target, ArrowRight, Gavel, TrendingDown, HandHelping, Wallet, Sparkles, ShieldAlert,Brain } from 'lucide-react';
+
+export const metadata = {
+  title: "Our Background | P/ Prabhavee",
+  description: "Discover the story behind P/ Prabhavee — a Professional Advisory and Startegy consulting pratice built to create measurable social change through training and empowerment.",
+  keywords: ["Prabhavee Background", "Prabhavee Foundation Story", "CSR Initiatives", "Social Impact Initiatives", "Prabhavee", "P/ Prabhavee", "Thematic Areas", "Key Initiatives", "Stakeholders", "Business and Human Rights", "Capacity Building", "Policy Advocacy"],
+  openGraph: {
+    title: "Our Background | P/ Prabhavee",
+    description: "Discover the story behind P/ Prabhavee — a Professional Advisory and Startegy consulting pratice built to create measurable social change through training and empowerment.",
+    url: "https://www.prabhaveepfsi.org/background",
+  },
+};
+
 const background = () => {
   const challenges = [
     {
