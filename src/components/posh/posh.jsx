@@ -1,19 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { ShieldCheck, BookOpen, Users, Zap, Briefcase, FileText, CheckCircle, Lightbulb, ChevronRight, ArrowRight, Star, Award, Target, HeartHandshake, Handshake, Scale, BarChart3, Sparkles } from 'lucide-react';
-
-export const metadata = {
-  title: "POSH at Workplace | P/ Prabhavee",
-  description: "POSH training and compliance programs to promote safe, inclusive workplaces for all employees.Empowering organizations to ensure workplace safety and gender equality.",
-  keywords: ["POSH Training", "Workplace Harassment", "POSH Act 2013", "Corporate Workshops", "P/ Prabhavee", "PoSH Consultancy", "PoSH Services", "PoSH Certification", ],
-  openGraph: {
-    title: "POSH at Workplace | P/ Prabhavee",
-    description: "POSH training and compliance programs to promote safe, inclusive workplaces for all employees.Empowering organizations to ensure workplace safety and gender equality.",
-    url: "https://www.prabhaveepfsi.org/posh",
-  },
-};
-
-
 const BRAND_RED = '#EF4444'; 
 const BRAND_DARK = '#1F2937';
 const BRAND_LIGHT_RED = '#FEF2F2';

@@ -13,17 +13,6 @@ import img5 from './assets/IMG-20250925-WA0008.jpg';
 import img6 from './assets/IMG-20250926-WA0003.jpg';
 import img7 from './assets/IMG-20250926-WA0002.jpg';
 
-export const metadata = {
-  title: "POSH Workshop | P/ Prabhavee",
-  description: "Interactive POSH workshops for corporates and employees to ensure workplace safety and compliance.",
-  keywords: ["POSH Workshop", "Workplace Safety", "POSH Act", "Corporate Awareness Programs", "Prabhavee", "P/ Prabhavee", "Yellow Spark", "PoSH law Consulting and practice"],
-  openGraph: {
-    title: "POSH Workshop | P/ Prabhavee",
-    description: "Engaging workshops that create safe and inclusive corporate environments.",
-    url: "https://www.prabhaveepfsi.org/posh_workshop",
-  },
-};
-
 export default function PoSHWorkshop() {
   const [scrollY, setScrollY] = useState(0);
    const [hoveredIdx, setHoveredIdx] = useState(null);

@@ -4,18 +4,6 @@ import cofounder from './assets/Amrita.jpg';
 import AlumniSection from './subPeople/alumni';
 import badge from './assets/badge.png';
 
-export const metadata = {
-  title: "External Consultants & Alumni | P/ Prabhavee",
-  description: "Meet our external consultant & Alumni who bring industry knowledge and passion for social development.",
-  keywords: ["P/ Prabhavee", "External Consultants", "Alumni", "Prabhavee", "Amrita Sarkar", "Legal Counsel"],
-  openGraph: {
-    title: "External Consultants & Alumni | P/ Prabhavee",
-    description: "Meet our external consultant & Alumni who bring industry knowledge and passion for social development.",
-    url: "https://www.prabhaveepfsi.org/people/consultant",
-  },
-};
-
-
 const PeoplePage = () => {
   const [scrollY, setScrollY] = useState(0);
   const [rotations, setRotations] = useState({ anumita: 0, amrita: 0 });

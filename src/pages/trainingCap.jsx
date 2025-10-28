@@ -16,17 +16,6 @@ import {
   Activity
 } from "lucide-react";
 
-export const metadata = {
-  title: "Training & Capacity Building | P/Prabhavee",
-  description: "Skill-building and awareness programs designed to foster inclusion and social growth.",
-  keywords: ["Training Programs", "Skill Development", "Gender, Social Justice","Human Rights", "Corporate Training", "Multi-stakeholder Dialogue"],
-  openGraph: {
-    title: "Training & Capacity Building | P/Prabhavee",
-    description: "Skill-building and awareness programs designed to foster inclusion and social growth.",
-    url: "https://www.prabhaveepfsi.org/training",
-  },
-};
-
 const Accordion = ({ id, title, subtitle, icon: Icon, children, open, onToggle }) => {
   return (
     <div className={`bg-white rounded-xl overflow-hidden transition-all duration-300 ${

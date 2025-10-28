@@ -1,18 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { Calendar, MapPin, Users, Award, Globe, Lightbulb, ChevronDown, ExternalLink, BookOpen, CalendarCheck, UserCheck, MessageSquareText, Handshake } from 'lucide-react';
-
-export const metadata = {
-  title: "Our Journey | P/ Prabhavee",
-  description: "Follow P/Prabhavee journey — from vision to impactful initiatives across India through a glance of strategic milestones.",
-  keywords: ["Prabhavee Journey", "Foundation Growth", "Social Development India", "Startegic Milestones", "P/ Prabhavee"],
-  openGraph: {
-    title: "Our Journey | P/ Prabhavee",
-    description: "Follow P/Prabhavee journey — from vision to impactful initiatives across India through a glance of strategic milestones.",
-    url: "https://www.prabhaveepfsi.org/journey",
-  },
-};
-
 const JourneyTimeline = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isVisible, setIsVisible] = useState({});

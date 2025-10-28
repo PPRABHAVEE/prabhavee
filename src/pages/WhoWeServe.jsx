@@ -1,19 +1,6 @@
 "use client";
 import React from 'react';
 import { ChevronDown, Users, Zap, BookOpen, Handshake, Briefcase, Globe, BarChart, MessageSquare } from 'lucide-react';
-
-export const metadata = {
-  title: "Who We Serve | P/ Prabhavee",
-  description: "Serving corporates, NGOs & Civil Society Organisations, research collaborationsand government organizations through impactful partnerships and sustainable initiatives.",
-  keywords: ["CSR Clients", "Corporate Partnerships", "NGO Collaborations", "P/ Prabhavee", "Strategic Capacity Building", "Policy Dialogue", "Nonprofit Organisations", "For-profit Organisations", "Staekeholder Engagement"],
-  openGraph: {
-    title: "Who We Serve | P/ Prabhavee",
-    description: "Serving corporates, NGOs & Civil Society Organisations, research collaborationsand government organizations through impactful partnerships and sustainable initiatives.",
-    url: "https://www.prabhaveepfsi.org/whoWeServe",
-  },
-};
-
-
 const collaborationData = [
     {
         main: { title: 'Nonprofit & For-profit organisations', icon: Handshake },

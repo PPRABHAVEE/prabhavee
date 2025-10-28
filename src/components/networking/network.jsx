@@ -1,19 +1,6 @@
 "use client";
 import React, { useState, useRef } from 'react';
 import { Users, Handshake, Award, Briefcase, ExternalLink, Star, Building, Globe, ArrowRight, BookOpen, Target, ChevronRight } from "lucide-react";
-
-export const metadata = {
-  title: "Networking & Partnerships | P/ Prabhavee ",
-  description: "Building strong collaborations with leading organizations, NGOs, and communities to drive sustainable social impact. Empowering partnerships that amplify positive change in society.",
-  keywords: ["Social Networking", "Corporate Partnerships", "NGO Collaborations", "CSR India", "Partnerships", "Collaborations", ],
-  openGraph: {
-    title: "Networking & Partnerships | P/ Prabhavee",
-    description: "Building strong collaborations with leading organizations, NGOs, and communities to drive sustainable social impact. Empowering partnerships that amplify positive change in society.",
-    url: "https://www.prabhaveepfsi.org/networking",
-  },
-};
-
-
 const NetworkPartnerships = () => {
   const [activeNetworkSection, setActiveNetworkSection] = useState(0);
   const [activeMembershipSection, setActiveMembershipSection] = useState(0);
