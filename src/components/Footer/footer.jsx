@@ -73,8 +73,8 @@ const footer = () => {
             </div>
           </div>
         </div>
-        <div className="container mx-auto text-center bg-gray-900 py-3 mt-6 flex items-center justify-center gap-4">
-          <p className="flex items-center text-lg text-gray-200">
+        <div className="container mx-auto text-center bg-gray-900 py-3 mt-6 flex items-center justify-center gap-4 flex-col md:flex-row">
+          <p className="flex items-center text-base md:text-lg text-gray-200">
             A digital creation by : &nbsp; 
             <span className="ml-1 font-medium text-red-400">Deepshikha Varshney</span>
           </p>
