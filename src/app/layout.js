@@ -30,12 +30,12 @@ export const metadata = {
   openGraph: {
     title: "P/ PRABHAVEE",
     description:
-      "Partner for Social Impact - Empowering communities and corporates through social development, POSH awareness, and capacity-building programs across India. Driving positive change through social initiatives and corporate collaborations.",
+      "PRABHAVEE – Partner for Social Impact empowers businesses, NGOs, and institutions with legal, policy, and strategic solutions that strengthen governance, sustainability, and human rights practices across India.",
     url: "https://www.prabhaveepfsi.org",
     siteName: "P/ Prabhavee",
     images: [
       {
-        url: "https://www.prabhaveepfsi.org/images/banner.png", 
+        url: "https://www.prabhaveepfsi.org/images/favicon.ico", 
         width: 1200,
         height: 630,
         alt: "Prabhavee logo",
@@ -65,13 +65,13 @@ export default function RootLayout({ children }) {
               "@type": "Organization",
               name: "P/ Prabhavee",
               url: "https://www.prabhaveepfsi.org",
-              logo: "https://www.prabhaveepfsi.org/images/logo.png",
+              logo: "https://www.prabhaveepfsi.org/images/favicon.ico",
               sameAs: [
                 "https://www.linkedin.com/company/prabhavee/posts/?feedView=all&viewAsMember=true",
                 "https://www.linkedin.com/in/advocateanumitasarkar/",
               ],
               description:
-                "Partner for Social Impact - Empowering communities and corporates through social development, POSH awareness, and capacity-building programs across India. Driving positive change through social initiatives and corporate collaborations.",
+                "PRABHAVEE – Partner for Social Impact empowers businesses, NGOs, and institutions with legal, policy, and strategic solutions that strengthen governance, sustainability, and human rights practices across India.",
             }),
           }}
         />
