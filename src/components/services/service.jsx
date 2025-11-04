@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Scale, Users, Handshake, GraduationCap, FileText, Megaphone, Shield, Building2, CheckCircle2, Sparkles, Search, Landmark, ScrollText } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
+import Head from "next/head";
 
 export default function ProfessionalServices() {
   const [openCards, setOpenCards] = useState({});
@@ -167,6 +168,19 @@ export default function ProfessionalServices() {
   ];
 
   return (
+    <>
+    <Head>
+        <title>Professional Services | P/ Prabhavee</title>
+        <meta
+          name="description"
+          content="Explore our core professional and strategy consulting services for purposeful progress."
+        />
+        <meta
+          name="keywords"
+          content="Prabhavee, P/ Prabhavee, professional services, strategy consulting, law and policy research, partnerships, strategic communication, social impact, NGO collaboration, public policy, sustainable development, Training and capacity building, governance, legal compliance, board leadership, CSR consulting"
+        />
+        <link rel="canonical" href="https://www.prabhaveepfsi.org/services" />
+      </Head>
     <div className="min-h-screen bg-gradient-to-br from-gray-100 via-white to-gray-300">
       <section className="pt-28 pb-15 px-6">
         <div className="max-w-7xl mx-auto">
@@ -315,5 +329,6 @@ export default function ProfessionalServices() {
         </div>
       </section>
     </div>
+    </>
   );
 }
