@@ -462,7 +462,7 @@ const PeoplePage = () => {
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center mt-7">
                     <span className="w-1 h-8 bg-red-500 mr-3" />
-                    Other Profesional Highlights
+                    Other Professional Highlights
                   </h3>
                   <div className="space-y-3">
                     {person.otherHighlights.map((item, i) => (
