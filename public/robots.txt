@@ -1,4 +1,16 @@
 User-agent: *
 Allow: /
 
+# Block Next.js build/static files
+Disallow: /_next/static/
+Disallow: /_next/image/
+
+# Block font files
+Disallow: /*.woff2$
+Disallow: /*.woff$
+Disallow: /*.ttf$
+
+# Block favicon (not indexable)
+Disallow: /favicon.ico
+
 Sitemap: https://www.prabhaveepfsi.org/sitemap.xml
