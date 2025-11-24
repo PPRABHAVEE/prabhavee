@@ -23,26 +23,41 @@ export default function ProfessionalServices() {
 
   const serviceParam = searchParams?.get("service");
 
-    useEffect(() => {
-    if (serviceParam) {
+   useEffect(() => {
+      const hash = window.location.hash.replace("#", "");
+      if (hash) {
         const idMap = {
-        "governance-board-leadership": "governance",
-        "legal-compliance": "legal",
-        "partnerships-alliances": "partnerships",
-        "training-capacity-building": "training",
-        "law-policy-research": "research",
-        "strategic-communication": "communication"
+          "governance-board-leadership": "governance",
+          "legal-compliance": "legal",
+          "partnerships-alliances": "partnerships",
+          "training-capacity-building": "training",
+          "law-policy-research": "research",
+          "strategic-communication": "communication"
         };
-        const id = idMap[serviceParam];
-        if (id) {
-        setOpenCards(prev => ({ ...prev, [id]: true }));
+
+        const mappedId = idMap[hash] || hash;
+
+        setOpenCards(prev => ({ ...prev, [mappedId]: true }));
+
         setTimeout(() => {
-            const el = document.getElementById(`service-${id}`);
-            if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+          const target = document.getElementById(`service-${mappedId}`);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
         }, 250);
+      }
+    }, []);
+    
+    useEffect(() => {
+      const hash = window.location.hash.replace("#", "");
+      if (hash) {
+        setOpenCards(prev => ({ ...prev, [hash]: true }));
+        const target = document.getElementById(`service-${hash}`);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
         }
-    }
-    }, [serviceParam]);
+      }
+    }, []);
 
   useEffect(() => {
     let index = 0;

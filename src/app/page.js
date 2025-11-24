@@ -520,7 +520,7 @@ const PrabhaveeWebsite = () => {
                   </h3>
                   <p className="text-gray-700 mb-8">{service.description}</p>
                  <a
-                  href={`/services?service=${service.title
+                  href={`/services#${service.title
                     .toLowerCase()
                     .replace(/ & /g, "-")
                     .replace(/\s+/g, "-")}`}
