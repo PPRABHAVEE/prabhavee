@@ -5,7 +5,7 @@ import Loader from "@/app/loader";
 export default function AppLayout({ children }) {
   const [loading, setLoading] = useState(true);
 
-  {/*useEffect(() => {
+  useEffect(() => {
     const handleContextMenu = (e) => e.preventDefault();
     document.addEventListener("contextmenu", handleContextMenu);
 
@@ -20,7 +20,7 @@ export default function AppLayout({ children }) {
       document.removeEventListener("selectstart", handleSelect);
       document.removeEventListener("copy", handleCopy);
     };
-  }, []);*/}
+  }, []);
 
   useEffect(() => {
     const timeout = setTimeout(() => setLoading(false), 2000);
