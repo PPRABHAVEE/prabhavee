@@ -14,9 +14,9 @@ export default function CountUp({ value }) {
     const io = new IntersectionObserver(([e]) => {
       if (!e.isIntersecting) return;
       io.disconnect();
-      const t0 = performance.now(), dur = 1400;
+      const t0 = performance.now(), dur = 2000;
       const tick = (t) => {
-        const p = Math.min(1, (t - t0) / dur), eased = 1 - Math.pow(1 - p, 3);
+        const p = Math.min(1, (t - t0) / dur), eased = 1 - Math.pow(1 - p, 4);
         setShown(Math.round(end * eased));
         if (p < 1) requestAnimationFrame(tick); else setShown(null);
       };

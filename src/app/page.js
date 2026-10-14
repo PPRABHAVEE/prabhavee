@@ -3,6 +3,7 @@ import Orbit from "@/components/site/Orbit";
 import Pending from "@/components/site/Pending";
 import EnquiryForm from "@/components/site/EnquiryForm";
 import CountUp from "@/components/site/CountUp";
+import HeroSlides from "@/components/site/HeroSlides";
 import FrameworkGraphic from "@/components/site/FrameworkGraphic";
 import JourneyStrip from "@/components/site/JourneyStrip";
 import { LogoRow, Credentials } from "@/components/site/TrustStrip";
@@ -29,9 +30,7 @@ export default function Home() {
             <Link className="link" href="/services">Explore our services</Link>
           </div>
         </div>
-        <div className="hero-media">
-          {HERO.map(([src, alt], i) => <img key={src} src={src} alt={alt} fetchPriority={i === 0 ? "high" : undefined} />)}
-        </div>
+        <HeroSlides slides={HERO} />
       </section>
       <div className="hero-figs"><div className="wrap">{STATS.network.map((s) => <div key={s.t}><b><CountUp value={s.n} /></b><span>{s.t}</span></div>)}</div></div>
 
