@@ -302,10 +302,12 @@ details.list[open] summary::after { content: "–"; }
 .contact-card a { overflow-wrap: anywhere; }
 .contact-card hr { border: 0; border-top: 1px solid var(--on-green-line); margin: 28px 0; }
 .enq { display: grid; grid-template-columns: .8fr 1.2fr; gap: 90px; align-items: start; }
-.enq .field input, .enq .field select, .enq .field textarea { border-color: #ffffff99; background: transparent; color: #fff; }
-.enq .field select option { color: var(--ink); }
-.enq .btn { background: var(--red); border-color: var(--red); color: var(--ink); }
-.enq .btn:hover { background: #fff; border-color: #fff; }
+.sec--green .enq .field input, .sec--green .enq .field select, .sec--green .enq .field textarea { border-color: #ffffff99; background: transparent; color: #fff; }
+.sec--green .enq .field input::placeholder, .sec--green .enq .field textarea::placeholder { color: #ffffffa6; }
+.sec--green .enq .field select option { color: var(--ink); }
+.sec--green .enq .btn { background: var(--red); border-color: var(--red); color: var(--ink); }
+.sec--green .enq .btn:hover { background: #fff; border-color: #fff; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: 3px solid var(--red); outline-offset: 2px; border-color: var(--ink); }
 
 /* review markers (preview builds only) */
 .pending { border: 1.5px dashed #0b100d66; background: #fffbe9; color: var(--ink); padding: 14px 18px; font-size: 14px; line-height: 1.55; margin: 26px 0; max-width: 760px; }
