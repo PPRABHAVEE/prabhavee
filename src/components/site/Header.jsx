@@ -19,12 +19,18 @@ export default function Header() {
     return () => { window.removeEventListener("scroll", onScroll); window.removeEventListener("keydown", onKey); };
   }, []);
 
+  // Escape closes an open dropdown or mega-menu and returns focus to its top-level link.
+  const closeMenus = (e) => {
+    if (e.key !== "Escape") return;
+    const dd = e.target.closest?.(".dd");
+    if (dd) { dd.querySelector(":scope > a")?.focus(); e.target.blur?.(); dd.classList.add("is-dismissed"); setTimeout(() => dd.classList.remove("is-dismissed"), 400); }
+  };
   const on = (href) => (path === href ? "page" : undefined);
   const groupOn = (g) => (path === g.href || g.items.some(([, h]) => h === path) ? "page" : undefined);
 
   return (
     <>
-      <div className="util">
+      <aside className="util" aria-label="Registration and contact details">
         <div className="util-in">
           <span>{SITE.registered}</span>
           <span className="util-links">
@@ -32,15 +38,15 @@ export default function Header() {
             <a href={SITE.linkedinCompany} target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </span>
         </div>
-      </div>
+      </aside>
       <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
         <div className="header-in">
-          <Link className="brand" href="/" aria-label="P/ PRABHAVEE home">
+          <Link className="brand" href="/">
             <span className="brand-mark">P/</span>
             <span><b className="brand-name">PRABHAVEE</b><small className="brand-sub">PARTNER FOR SOCIAL IMPACT</small></span>
           </Link>
           <button className="menu-btn" aria-expanded={open} aria-controls="site-nav" onClick={() => setOpen(!open)}>{open ? "Close" : "Menu"}</button>
-          <nav id="site-nav" className={`nav${open ? " open" : ""}`} aria-label="Main navigation">
+          <nav id="site-nav" className={`nav${open ? " open" : ""}`} aria-label="Main navigation" onKeyDown={closeMenus}>
             {NAV.map((g) => {
               if (g.label === "Services") {
                 return (

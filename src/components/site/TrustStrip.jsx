@@ -1,12 +1,13 @@
 import { CREDENTIALS, LOGOS } from "@/content/site";
+import Img from "@/components/site/Img";
 
 export function LogoRow({ title = "Worked with and alongside" }) {
   return (
     <div className="logorow">
       <span className="logorow-t">{title}</span>
       <div className="logo-strip">
-        <img className="wide" src="/img/logos/un-agencies.png" alt="ILO, UN Women, IOM, UNEP, UNICEF, UN Human Rights and UNDP Business and Human Rights Asia" loading="lazy" />
-        {LOGOS.map(([f, a]) => <img key={f} src={`/img/logos/${f}.png`} alt={a} loading="lazy" />)}
+        <Img className="wide" src="/img/logos/un-agencies.png" alt="ILO, UN Women, IOM, UNEP, UNICEF, UN Human Rights and UNDP Business and Human Rights Asia" />
+        {LOGOS.map(([f, a]) => <Img key={f} src={`/img/logos/${f}.png`} alt={a} />)}
       </div>
     </div>
   );

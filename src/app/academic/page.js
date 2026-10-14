@@ -21,6 +21,7 @@ export default function Academic() {
       <PageIntro crumb="Services / Academic collaborations" title="Academic collaborations." lede="We consult and collaborate with academic institutions and universities. Research, teaching and practice come together." />
       <section className="sec">
         <div className="wrap">
+          <h2 className="sr-only">Collaborations</h2>
           {ACAD.map((a) => (
             <div className="acad" key={a.n}><div><span className="kicker">{a.y}</span><h3>{a.n}</h3></div><ul>{a.items.map((i) => <li key={i}>{i}</li>)}</ul></div>
           ))}

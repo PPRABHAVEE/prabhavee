@@ -3,6 +3,7 @@ import CtaBand from "@/components/site/CtaBand";
 import Pending from "@/components/site/Pending";
 import { pageMeta } from "@/lib/meta";
 import deck from "@/content/deck.json";
+import Img from "@/components/site/Img";
 
 export const metadata = pageMeta("Networks & collaborations", "The networks, memberships and strategic collaborations of P/ PRABHAVEE.", "/networking");
 
@@ -21,8 +22,8 @@ export default function Networking() {
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Strategic collaborations</span><h2>Organisations we work with.</h2></div><p>{deck.collaborations.length} organisations across the UN system, academia, industry bodies, research centres and civil society.</p></div>
           <div className="logo-strip" style={{ marginBottom: 50 }}>
-            <img className="wide" src="/img/logos/un-agencies.png" alt="ILO, UN Women, IOM, UNEP, UNICEF, UN Human Rights and UNDP Business and Human Rights Asia" />
-            {LOGOS.map(([f, a]) => <img key={f} src={`/img/logos/${f}.png`} alt={a} />)}
+            <Img className="wide" src="/img/logos/un-agencies.png" alt="ILO, UN Women, IOM, UNEP, UNICEF, UN Human Rights and UNDP Business and Human Rights Asia" />
+            {LOGOS.map(([f, a]) => <Img key={f} src={`/img/logos/${f}.png`} alt={a} />)}
           </div>
           <ul className="collab">{deck.collaborations.map((c) => <li key={c}><span>{c}</span>{isPast(c) ? <span className="tag">Past</span> : null}</li>)}</ul>
         </div>

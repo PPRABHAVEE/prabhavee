@@ -8,11 +8,12 @@ import FrameworkGraphic from "@/components/site/FrameworkGraphic";
 import JourneyStrip from "@/components/site/JourneyStrip";
 import { LogoRow, Credentials } from "@/components/site/TrustStrip";
 import { SERVICES, STATS, INDUSTRIES, FLAGSHIPS, PILLARS, PARTNER_GROUPS } from "@/content/site";
+import Img from "@/components/site/Img";
 
 const HERO = [
-  ["/img/unrbhr-forum-2026-55529117037-f155f3b5a1-c.jpg", "Delegates at the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026"],
-  ["/img/jindal-jindal-1.jpg", "Participants at a workshop with the Jindal School of Journalism and Communication"],
-  ["/img/ungcni-ilo-ilo-ungcni-workshop-rbc-2025.jpg", "Participants at the ILO and UN Global Compact Network India workshop on responsible business conduct, 2025"],
+  ["/img/unrbhr-forum-2026-55529117037-f155f3b5a1-c.webp", "Delegates at the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026"],
+  ["/img/jindal-jindal-1.webp", "Participants at a workshop with the Jindal School of Journalism and Communication"],
+  ["/img/ungcni-ilo-ilo-ungcni-workshop-rbc-2025.webp", "Participants at the ILO and UN Global Compact Network India workshop on responsible business conduct, 2025"],
 ];
 
 export default function Home() {
@@ -176,7 +177,7 @@ export default function Home() {
           <div className="cards">
             {flagships.map((f) => (
               <article className="card" key={f.title}>
-                <div className="im"><img src={f.img} alt="" loading="lazy" /></div>
+                <div className="im"><Img src={f.img} alt="" sizes="(max-width: 620px) 100vw, (max-width: 1180px) 50vw, 420px" /></div>
                 <div className="bd"><span className="when">{f.when}</span><h3>{f.title}</h3><p>{f.text}</p></div>
               </article>
             ))}

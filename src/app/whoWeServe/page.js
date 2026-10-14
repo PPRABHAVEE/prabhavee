@@ -2,6 +2,7 @@ import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import { pageMeta } from "@/lib/meta";
 import { PARTNER_GROUPS, TARGET_CLIENTS, INDUSTRIES } from "@/content/site";
+import Img from "@/components/site/Img";
 
 export const metadata = pageMeta("Who we serve & collaborate with", "Businesses, brands and suppliers, universities and research centres, and social purpose organisations. Target clients and industry focus.", "/whoWeServe");
 
@@ -37,7 +38,7 @@ export default function WhoWeServe() {
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Industry focus</span><h2>Sectors we work across.</h2></div></div>
           <ul className="industries">{INDUSTRIES.map((i) => <li key={i}>{i}</li>)}</ul>
-          <img src="/img/deck/supply-chain-collage.jpg" alt="Garment, leather and manufacturing workplaces across supply chains" style={{ width: "100%", maxHeight: 360, objectFit: "cover", marginTop: 50 }} />
+          <Img src="/img/deck/supply-chain-collage.webp" sizes="100vw" alt="Garment, leather and manufacturing workplaces across supply chains" style={{ width: "100%", maxHeight: 360, objectFit: "cover", marginTop: 50 }} />
         </div>
       </section>
       <CtaBand next={["See the practice areas", "/services"]} />

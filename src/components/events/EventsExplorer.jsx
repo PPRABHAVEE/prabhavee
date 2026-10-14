@@ -1,5 +1,6 @@
 "use client";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import Img from "@/components/site/Img";
 
 const PER = 6;
 
@@ -13,7 +14,13 @@ function Lightbox({ gal, onClose }) {
     const prevFocus = document.activeElement;
     closeRef.current?.focus();
     const onKey = (e) => {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Tab") {
+        const f = [...document.querySelectorAll(".lb button")];
+        if (!f.length) return;
+        const first = f[0], last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      } else if (e.key === "Escape") onClose();
       else if (e.key === "ArrowRight") step(1);
       else if (e.key === "ArrowLeft") step(-1);
     };
@@ -49,7 +56,7 @@ function Tile({ ev, onOpen }) {
     <article className={`ev${photos.length ? " has-ph" : ""}`}>
       {photos.length ? (
         <button type="button" className="ph" onClick={(e) => onOpen({ photos, i: 0, title: ev.title }, e.currentTarget)} aria-label={`View ${photos.length} ${photos.length === 1 ? "photo" : "photos"}: ${ev.title}`}>
-          <img src={photos[0]} alt="" loading="lazy" />
+          <Img src={photos[0]} alt="" sizes="(max-width: 620px) 100vw, (max-width: 1180px) 50vw, 420px" />
           {photos.length > 1 ? <span className="ph-n">{photos.length} photos</span> : <span className="ph-n">View photo</span>}
         </button>
       ) : null}

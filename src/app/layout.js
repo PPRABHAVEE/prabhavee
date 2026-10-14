@@ -21,11 +21,9 @@ export const metadata = {
     description: DESCRIPTION,
     url: SITE.url,
     siteName: "P/ Prabhavee",
-    images: [{ url: `${SITE.url}/images/banner.png`, width: 1200, height: 630, alt: "P/ PRABHAVEE" }],
     locale: "en_IN",
     type: "website",
   },
-  icons: { icon: "/favicon.ico" },
   // Preview builds (review markers on) are kept out of search engines.
   ...(process.env.NEXT_PUBLIC_SHOW_PENDING === "1" ? { robots: { index: false, follow: false } } : {}),
 };

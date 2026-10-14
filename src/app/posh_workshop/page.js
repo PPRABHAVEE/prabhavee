@@ -1,6 +1,7 @@
 import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import { pageMeta } from "@/lib/meta";
+import Img from "@/components/site/Img";
 
 export const metadata = pageMeta("PoSH Pro workshop", "PoSH Pro: a 2-day online workshop on the Prevention of Sexual Harassment at Workplace, with Yellow Spark.", "/posh_workshop");
 
@@ -24,10 +25,10 @@ export default function PoshPro() {
         </div>
         <div className="wrap split" style={{ marginTop: 70 }}>
           <div><span className="eyebrow">The 2025 programme</span><h2>PoSH Pro, 25–26 September.</h2><p>Two afternoons online, 2:30 to 5:00 PM IST. Hosted by P/ PRABHAVEE with Yellow Spark, with special guests from PoSH practice and law.</p></div>
-          <img src="/img/posh-pro-2025-poster.jpg" alt="PoSH Pro poster: 25–26 September, 2:30 PM to 5:00 PM IST, hosted by P/ PRABHAVEE and Yellow Spark" style={{ width: "100%", maxWidth: 520 }} />
+          <Img src="/img/posh-pro-2025-poster.webp" sizes="(max-width: 880px) 100vw, 520px" alt="PoSH Pro poster: 25–26 September, 2:30 PM to 5:00 PM IST, hosted by P/ PRABHAVEE and Yellow Spark" style={{ width: "100%", maxWidth: 520 }} />
         </div>
         <div className="wrap cols-3" style={{ marginTop: 60, gap: 16 }}>
-          {GAL.map((g) => <a key={g} href={`/img/${g}.jpg`} target="_blank" rel="noopener noreferrer"><img src={`/img/${g}.jpg`} alt="PoSH Pro Advanced workshop" loading="lazy" style={{ width: "100%", aspectRatio: "3/2", objectFit: "cover" }} /></a>)}
+          {GAL.map((g) => <a key={g} href={`/img/${g}.webp`} target="_blank" rel="noopener noreferrer"><Img src={`/img/${g}.webp`} alt="PoSH Pro Advanced workshop" sizes="(max-width: 880px) 100vw, 33vw" style={{ width: "100%", aspectRatio: "3/2", objectFit: "cover" }} /></a>)}
         </div>
       </section>
       <CtaBand next={["Explore PoSH services", "/posh"]} />

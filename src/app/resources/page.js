@@ -2,6 +2,7 @@ import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import Pending from "@/components/site/Pending";
 import { pageMeta } from "@/lib/meta";
+import Img from "@/components/site/Img";
 
 export const metadata = pageMeta("Resources", "Videos, brochures, reports and external links from P/ PRABHAVEE.", "/resources");
 
@@ -38,7 +39,7 @@ export default function Resources() {
                 <h3>{t}</h3><p>{d}</p>
               </div>
             ))}
-            <div className="res"><span className="th"><img src="/img/banner-unrbhr-anumita.jpg" alt="" loading="lazy" /></span><h3>UN Responsible Business and Human Rights Forum</h3><p>Spotlight session on corruption and human rights: integrating anti-corruption into HRDD (Bangkok, 14–17 September 2026).</p></div>
+            <div className="res"><span className="th"><Img src="/img/banner-unrbhr-anumita.webp" alt="" sizes="(max-width: 620px) 100vw, 33vw" /></span><h3>UN Responsible Business and Human Rights Forum</h3><p>Spotlight session on corruption and human rights: integrating anti-corruption into HRDD (Bangkok, 14–17 September 2026).</p></div>
           </div>
           <Pending title="UNRBHR video">A YouTube link for the UNRBHR session is still to be provided.</Pending>
         </div>

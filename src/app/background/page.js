@@ -7,7 +7,7 @@ import { Credentials } from "@/components/site/TrustStrip";
 import { pageMeta } from "@/lib/meta";
 import { APPROACH, FRAMEWORKS, FOCUS_AREAS, STRENGTHS, BENEFITS, STATS } from "@/content/site";
 
-export const metadata = pageMeta("About P/ PRABHAVEE", "A strategy and management consultancy at the intersection of public policy, law, communication, society and business strategy. Approach, frameworks, strengths and contribution to global standard-setting.", "/background");
+export const metadata = pageMeta("Who we are", "A strategy and management consultancy at the intersection of public policy, law, communication, society and business strategy. Approach, frameworks, strengths and contribution to global standard-setting.", "/background");
 
 const CORE = ["Regulatory Risk and Compliance Advisory", "Policy, Strategic Communication and Advocacy", "Compliance Programme Design and Training", "Multi-stakeholder Facilitation and Convenings", "Training and Institutional Capacity-building", "Events, Forums & Strategic Collaborations", "Strategic Programme and Learning Initiatives"];
 // Retained from the current website

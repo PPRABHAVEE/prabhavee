@@ -7,6 +7,6 @@ export function pageMeta(title, description, path) {
     title,
     description,
     alternates: { canonical: url },
-    openGraph: { title: `${title} | ${SITE.name}`, description, url, siteName: "P/ Prabhavee", locale: "en_IN", type: "website" },
+    openGraph: { title: `${title} | ${SITE.name}`, description, url, siteName: "P/ Prabhavee", locale: "en_IN", type: "website", images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "P/ PRABHAVEE, Partner for Social Impact" }] },
   };
 }

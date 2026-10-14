@@ -24,7 +24,7 @@ export default function Services() {
             <div><span className="kicker">0{i + 1}</span><h2>{s.title}</h2></div>
             <div>
               <p className="big">{s.body}</p>
-              {s.items.length ? <><h4>Key services</h4><ul className="ticks">{s.items.map((x) => <li key={x}>{x}</li>)}</ul></> : null}
+              {s.items.length ? <><h3 className="sv-h">Key services</h3><ul className="ticks">{s.items.map((x) => <li key={x}>{x}</li>)}</ul></> : null}
               {s.benefit ? <p className="benefit"><b>Business benefit.</b> {s.benefit}</p> : null}
               <p style={{ marginTop: 22, display: "flex", gap: 26, flexWrap: "wrap" }}>
                 {s.link ? <Link className="link" href={s.link[1]}>{s.link[0]}</Link> : null}

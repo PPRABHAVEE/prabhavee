@@ -3,6 +3,7 @@ import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import { pageMeta } from "@/lib/meta";
 import { TRAINING, CONVENING_FORMATS, CONVENING_ACTIVITIES } from "@/content/site";
+import Img from "@/components/site/Img";
 
 export const metadata = pageMeta("Training & capacity building", "Training and institutional capacity building: PoSH, ethics and compliance, supplier capability programmes, and business and human rights for journalists. Multi-stakeholder dialogue and convenings.", "/training");
 
@@ -30,7 +31,7 @@ export default function Training() {
           <div className="split">
             <div><span className="eyebrow">Multi-stakeholder dialogue &amp; convenings</span><h2>Roundtables, research launches, stakeholder consultations.</h2>
               <p>We nurture collaboration with diverse stakeholder groups. We build strategic partnerships and networks for initiatives. The aim is cross-sector alliances for shared learning and best practice. We also create a shared platform for exchanging views and advancing public discourse.</p></div>
-            <img src="/img/banner-excellence-in-multi-stakeholder-2.jpg" alt="Participants at a P/ PRABHAVEE multi-stakeholder session" style={{ width: "100%" }} />
+            <Img src="/img/banner-excellence-in-multi-stakeholder-2.webp" sizes="(max-width: 880px) 100vw, 60vw" alt="Participants at a P/ PRABHAVEE multi-stakeholder session" style={{ width: "100%" }} />
           </div>
           <div className="cols-2" style={{ marginTop: 54 }}>
             <div><span className="kicker">Formats</span><ul className="ticks" style={{ marginTop: 12 }}>{CONVENING_FORMATS.map((x) => <li key={x}>{x}</li>)}</ul></div>

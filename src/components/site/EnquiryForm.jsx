@@ -13,6 +13,7 @@ const WEB3FORMS = "https://api.web3forms.com/submit";
 export default function EnquiryForm({ idPrefix = "enq" }) {
   const ref = useRef(null);
   const [status, setStatus] = useState("");
+  const [sent, setSent] = useState(false);
   const [interest, setInterest] = useState("");
 
   useEffect(() => {
@@ -38,8 +39,8 @@ export default function EnquiryForm({ idPrefix = "enq" }) {
         const r = await fetch(endpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(payload) });
         const j = await r.json().catch(() => ({}));
         if (!r.ok || j.success === false) throw new Error("failed");
-        form.reset(); setInterest("");
-        setStatus("Thank you. Your enquiry has been sent and will reach us shortly.");
+        form.reset(); setInterest(""); setStatus("");
+        setSent(true);
       } catch {
         setStatus(`Sorry, your enquiry could not be sent. Please email ${SITE.email}.`);
       }
@@ -50,6 +51,15 @@ export default function EnquiryForm({ idPrefix = "enq" }) {
     setStatus(`Your email app has been opened with your enquiry. Review and send it there, or email ${SITE.email} directly.`);
   }
 
+  if (sent) {
+    return (
+      <div className="sent" role="status">
+        <h3>Thank you.</h3>
+        <p>Your enquiry has been sent. We will reply to the email address you gave.</p>
+        <button className="btn btn--ghost" type="button" onClick={() => setSent(false)}>Send another enquiry</button>
+      </div>
+    );
+  }
   return (
     <form className="form" ref={ref} onSubmit={onSubmit} noValidate>
       <div className="row2">

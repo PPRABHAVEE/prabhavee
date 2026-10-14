@@ -22,6 +22,7 @@ export default function Journey() {
       <PageIntro crumb="About / Strategic milestones" title="Empowering progress through purposeful evolution." lede="From vision to impact. Our defining achievements and turning points." />
       <section className="sec">
         <div className="wrap">
+          <h2 className="sr-only">Timeline, 2022 to 2025</h2>
           <ol className="timeline">
             {MS.map(([w, s, tag, h, t]) => (
               <li key={h}><div className="when">{w}<small>{s}</small></div><div><span className="kicker">{tag}</span><h3>{h}</h3><p>{t}</p></div></li>

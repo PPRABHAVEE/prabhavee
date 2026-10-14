@@ -4,6 +4,7 @@ import EventsExplorer from "@/components/events/EventsExplorer";
 import { pageMeta } from "@/lib/meta";
 import { FLAGSHIPS } from "@/content/site";
 import events from "@/content/events.json";
+import Img from "@/components/site/Img";
 
 export const metadata = pageMeta("Events", "Forums, trainings, consultations and dialogues P/ PRABHAVEE has taken part in, 2022 to 2026.", "/events");
 
@@ -18,7 +19,7 @@ export default function Events() {
           <div className="cards">
             {FLAGSHIPS.map((f) => (
               <article className="card" key={f.title + f.when}>
-                {f.img ? <div className="im"><img src={f.img} alt="" loading="lazy" /></div> : <div className="im im--text">P/</div>}
+                {f.img ? <div className="im"><Img src={f.img} alt="" sizes="(max-width: 620px) 100vw, (max-width: 1180px) 50vw, 420px" /></div> : <div className="im im--text">P/</div>}
                 <div className="bd"><span className="when">{f.when}{f.upcoming ? <span className="badge">UPCOMING</span> : null}</span><h3>{f.title}</h3><p>{f.text}</p></div>
               </article>
             ))}
