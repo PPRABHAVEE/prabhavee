@@ -1,6 +1,7 @@
 import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import Pending from "@/components/site/Pending";
+import Link from "next/link";
 import { pageMeta } from "@/lib/meta";
 import Img from "@/components/site/Img";
 
@@ -22,7 +23,8 @@ export default function Consultants() {
           </div>
           <div>
             <h2 className="eyebrow">Our alumni</h2>
-            {ALUM.map(([n, p, i]) => <div className="alum" key={n}><h3>{n}</h3><p><b>{p}</b><br />{i}</p></div>)}
+            {ALUM.map(([n, p, i]) => <div className="alum-card" key={n}><span className="mono" aria-hidden="true">{n.split(" ").map((w) => w[0]).slice(0, 2).join("")}</span><div><h3>{n}</h3><p><b>{p}</b><br />{i}</p></div></div>)}
+            <div className="joinbox"><h3>Join our team.</h3><p>Hands-on experience in social impact law and policy.</p><Link className="btn btn--red" href="/contact?interest=Internship">Ask about internships</Link></div>
           </div>
         </div>
       </section>

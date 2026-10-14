@@ -1,8 +1,8 @@
 import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import Pending from "@/components/site/Pending";
-import { pageMeta } from "@/lib/meta";
 import Img from "@/components/site/Img";
+import { pageMeta } from "@/lib/meta";
 
 export const metadata = pageMeta("Resources", "Videos, brochures, reports and external links from P/ PRABHAVEE.", "/resources");
 
@@ -53,7 +53,7 @@ export default function Resources() {
       <section className="sec">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Publications &amp; reports</span><h2>Reports.</h2></div></div>
-          <div className="res-grid">{REPORTS.map(([t, d, f, tag]) => <div className="res" key={f}><div className="cover"><span>P/</span><small>{tag}</small></div><h3>{t}</h3><p>{d}</p><a className="link" href={`/docs/${f}`} target="_blank" rel="noopener noreferrer">Read the report (PDF)</a></div>)}</div>
+          <div className="res-grid">{REPORTS.map(([t, d, f, tag]) => <div className="res" key={f}><a className="docth" href={`/docs/${f}`} target="_blank" rel="noopener noreferrer" aria-label={`Open ${t} (PDF)`}><Img src={`/img/covers/${f.replace(".pdf", "")}.webp`} alt={`Cover of ${t}`} sizes="(max-width: 620px) 70vw, 280px" /></a><span className="kicker">{tag}</span><h3 style={{ marginTop: 6 }}>{t}</h3><p>{d}</p><a className="link" href={`/docs/${f}`} target="_blank" rel="noopener noreferrer">Read the report (PDF)</a></div>)}</div>
           <Pending title="Missing report">The P/ PRABHAVEE and YLC AIMA report named in her feedback was not among the files received.</Pending>
         </div>
       </section>

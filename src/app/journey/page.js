@@ -1,5 +1,7 @@
 import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
+import Img from "@/components/site/Img";
+import JourneyStrip from "@/components/site/JourneyStrip";
 import { pageMeta } from "@/lib/meta";
 
 export const metadata = pageMeta("Strategic milestones", "Defining achievements and turning points of P/ PRABHAVEE, with stakeholder engagement and initiatives.", "/journey");
@@ -7,8 +9,8 @@ export const metadata = pageMeta("Strategic milestones", "Defining achievements 
 // Retained from the current website (feedback: keep as its own page; merge stakeholder engagement before May 2025)
 const MS = [
   ["May 2022", "Foundation · Online", "Conceptualised at NSRCEL", "The beginning of our vision", "P/ PRABHAVEE – Partner for Social Impact was conceptualised at the NSRCEL Women Startup Program 2022 (IIM Bangalore)."],
-  ["September 2024", "Leadership · Odisha", "Advisory board appointment", "Strategic leadership", "P/ PRABHAVEE’s Founding Lawyer, Anumita Sarkar, joined the Advisory Board of Darbar Sahitya Sansada (DSS), a grassroots NGO based in Odisha, marking our commitment to grassroots development and social impact."],
-  ["September 2024", "Delegate · Bangkok, Thailand", "International conference", "Global engagement", "Delegate at the 5-day International Conference ‘United Nations Responsible Business and Human Rights Forum, Asia-Pacific 2024’ in Bangkok, engaging with stakeholder representatives from South Asia and Asia-Pacific countries."],
+  ["September 2024", "Leadership · Odisha", "Advisory board appointment", "Strategic leadership", "P/ PRABHAVEE’s Founding Lawyer, Anumita Sarkar, joined the Advisory Board of Darbar Sahitya Sansada (DSS), a grassroots NGO based in Odisha, marking our commitment to grassroots development and social impact.", ["/img/ev/20-1.webp", "An executive body meeting of Darbar Sahitya Sansada"]],
+  ["September 2024", "Delegate · Bangkok, Thailand", "International conference", "Global engagement", "Delegate at the 5-day International Conference ‘United Nations Responsible Business and Human Rights Forum, Asia-Pacific 2024’ in Bangkok, engaging with stakeholder representatives from South Asia and Asia-Pacific countries.", ["/img/ev/1-1.webp", "The venue of the UN Responsible Business and Human Rights Forum, Asia-Pacific 2024, Bangkok"]],
   ["November 2024", "Delegate · In-person", "Dialogue on Development Management", "Platform delegate", "P/ PRABHAVEE took part in ISDM’s annual flagship event ‘Dialogue on Development Management’. Anumita also completed the Women on Boards Program (WoB) from the Indian School of Development Management (ISDM), Cohort 5."],
   ["May 2025", "Partnership · Pan-India", "Partnerships & collaborations", "Establishing networks with ecosystem partners", "Initiated and strengthened partnerships and collaborations with diverse ecosystem partners to broaden our impact and drive shared goals."],
   ["May 2025", "Research · Pan-India", "Research initiatives", "Policy dialogue & academic research collaboration", "Launched research initiatives fostering policy dialogue, academic collaboration and evidence-based practice in social impact."],
@@ -20,12 +22,18 @@ export default function Journey() {
   return (
     <>
       <PageIntro crumb="About / Strategic milestones" title="Empowering progress through purposeful evolution." lede="From vision to impact. Our defining achievements and turning points." />
+      <section className="sec sec--mist">
+        <div className="wrap">
+          <div className="sec-head"><div><span className="eyebrow">At a glance</span><h2>2022 to 2026.</h2></div><p>Seven turning points. The full story is below.</p></div>
+          <JourneyStrip />
+        </div>
+      </section>
       <section className="sec">
         <div className="wrap">
           <h2 className="sr-only">Timeline, 2022 to 2025</h2>
           <ol className="timeline">
-            {MS.map(([w, s, tag, h, t]) => (
-              <li key={h}><div className="when">{w}<small>{s}</small></div><div><span className="kicker">{tag}</span><h3>{h}</h3><p>{t}</p></div></li>
+            {MS.map(([w, s, tag, h, t, ph]) => (
+              <li key={h}><div className="when">{w}<small>{s}</small></div><div><span className="kicker">{tag}</span><h3>{h}</h3><p>{t}</p>{ph ? <div className="tl-photo"><Img src={ph[0]} alt={ph[1]} sizes="420px" /></div> : null}</div></li>
             ))}
           </ol>
         </div>

@@ -1,34 +1,54 @@
 import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import Pending from "@/components/site/Pending";
-import { pageMeta } from "@/lib/meta";
-import deck from "@/content/deck.json";
 import Img from "@/components/site/Img";
+import { pageMeta } from "@/lib/meta";
+import { LOGOS } from "@/content/site";
+import deck from "@/content/deck.json";
 
 export const metadata = pageMeta("Networks & collaborations", "The networks, memberships and strategic collaborations of P/ PRABHAVEE.", "/networking");
 
-// Her feedback: these six are past networks and memberships.
+// Her feedback: these networks and memberships are past.
 const PAST_MATCH = ["Young Leaders Council", "United Nations Global Compact Network India", "Indian Institute of Corporate Affairs (IICA)", "Indian Society for Training and Development"];
 const PAST_EXTRA = ["Institute of Directors (IOD)", "Womennovator"];
 const ROLES = [["Mentor", "Young Leaders Council (YLC), AIMA", "Leadership development"], ["Global mentor", "Womennovator, Global Incubator for Women", "Women empowerment"], ["Platform mentor", "G20 Women Entrepreneurship Platform (WEP), Niti Aayog, GoI", "Government initiative"], ["Industry mentor", "New Delhi Institute of Management (NDIM)", "Educational mentorship"], ["Working group member", "Anti-Corruption Collective Action Working Group, UNGCNI", "Anti-corruption initiative"]];
-const LOGOS = [["yellow-spark", "Yellow Spark"], ["sustaim", "Sustaim Consulting"], ["jsjc", "Jindal School of Journalism and Communication"], ["new-imaginations", "New Imaginations"], ["cbhr-tnnlu", "Centre for Business and Human Rights, TNNLU"], ["tnnlu", "Tamil Nadu National Law University"]];
+
+// Groups for the deck's list of collaborations (slides 31-33). Numbers are positions in deck.json.
+const GROUPS = [
+  ["UN system, standards & policy bodies", [0, 3, 11, 22, 24, 25, 28]],
+  ["Universities, research centres & think tanks", [1, 6, 7, 8, 9, 12, 20, 30, 32, 34, 41, 42, 44]],
+  ["Industry bodies, networks & platforms", [4, 10, 18, 19, 21, 23]],
+  ["Companies & enterprise partners", [13, 15, 16, 17, 26, 27, 35]],
+  ["Civil society & community organisations", [2, 5, 14, 29, 31, 33, 36, 37, 38, 39, 40, 43]],
+];
 
 export default function Networking() {
-  const isPast = (n) => PAST_MATCH.some((p) => n.startsWith(p) || n === p);
+  const list = deck.collaborations;
+  const isPast = (n) => PAST_MATCH.some((p) => n.startsWith(p));
   return (
     <>
       <PageIntro crumb="About / Networks & collaborations" title="Networks and strategic collaborations." lede="We work with leading organisations. Together we drive change and sustainable development across industries." />
       <section className="sec">
         <div className="wrap">
-          <div className="sec-head"><div><span className="eyebrow">Strategic collaborations</span><h2>Organisations we work with.</h2></div><p>{deck.collaborations.length} organisations across the UN system, academia, industry bodies, research centres and civil society.</p></div>
-          <div className="logo-strip" style={{ marginBottom: 50 }}>
-            <Img className="wide" src="/img/logos/un-agencies.png" alt="ILO, UN Women, IOM, UNEP, UNICEF, UN Human Rights and UNDP Business and Human Rights Asia" />
+          <div className="sec-head">
+            <div><span className="eyebrow">Strategic collaborations</span><h2>Organisations we work with.</h2></div>
+            <p>{list.length} organisations across the UN system, academia, industry bodies, research centres and civil society.</p>
+          </div>
+          <div className="logo-strip" style={{ marginBottom: 56 }}>
+            <Img className="wide" src="/img/logos/un-agencies.png" alt="ILO, UN Women, IOM, UNEP, UNICEF, UN Human Rights and UNDP Business and Human Rights Asia" sizes="760px" />
             {LOGOS.map(([f, a]) => <Img key={f} src={`/img/logos/${f}.png`} alt={a} />)}
           </div>
-          <ul className="collab">{deck.collaborations.map((c) => <li key={c}><span>{c}</span>{isPast(c) ? <span className="tag">Past</span> : null}</li>)}</ul>
+          {GROUPS.map(([title, idx]) => (
+            <div className="cat" key={title}>
+              <div className="cat-h"><h3>{title}</h3><span>{idx.length} organisations</span></div>
+              <ul className="collab">{idx.map((i) => <li key={list[i]}><span>{list[i]}</span>{isPast(list[i]) ? <span className="tag">Past</span> : null}</li>)}</ul>
+            </div>
+          ))}
+          <Pending title="Grouping">The five groups are our own, applied to the deck’s list of 45. The deck gives no categories. Please confirm they are right.</Pending>
         </div>
       </section>
-      <section className="sec">
+
+      <section className="sec sec--mist">
         <div className="wrap split">
           <div><span className="eyebrow">Mentorship &amp; working groups</span><h2>Guiding the next generation.</h2><p>Roles Anumita Sarkar holds with partner organisations.</p></div>
           <ul className="ticks">
@@ -36,7 +56,8 @@ export default function Networking() {
           </ul>
         </div>
       </section>
-      <section className="sec sec--mist">
+
+      <section className="sec">
         <div className="wrap split">
           <div><span className="eyebrow">Past networks &amp; memberships</span><h2>Where we have been members.</h2></div>
           <div>

@@ -3,7 +3,12 @@ import CtaBand from "@/components/site/CtaBand";
 import { pageMeta } from "@/lib/meta";
 import { FOUNDER, SITE } from "@/content/site";
 import deck from "@/content/deck.json";
+
+// From the pitch deck, slide 6.
+const ADVISES = ["Regulatory risk and compliance", "Social sustainability", "Labour rights", "PoSH", "Gender, diversity and inclusion", "Governance", "Ethics and compliance", "Business integrity", "Corporate accountability", "Human rights", "Responsible business"];
+const EXPERIENCE = ["Law practice", "Corporate", "LegalTech: governance, risk and compliance solutions", "Global publishing and information services", "Consulting", "Academia and universities", "A public policy office", "A non-profit accelerator", "Social enterprise", "NGO advisory boards"];
 import Img from "@/components/site/Img";
+import { Credentials } from "@/components/site/TrustStrip";
 
 export const metadata = pageMeta("Founder: Anumita Sarkar", "Anumita Sarkar, lawyer, independent policy and strategic advisor and founder of P/ PRABHAVEE.", "/people/founder");
 
@@ -23,6 +28,23 @@ export default function Founder() {
             </div>
             <div className="stack">{FOUNDER.bio.map((p) => <p key={p} className="big" style={{ fontSize: 18 }}>{p}</p>)}</div>
           </div>
+        </div>
+      </section>
+      <section className="sec sec--mist">
+        <div className="wrap">
+          <div className="split">
+            <div><span className="eyebrow">What she advises on</span><p className="pull">Building powerful collaborations. Designing high-impact training and capacity-building programmes.</p></div>
+            <div><ul className="chips">{ADVISES.map((a) => <li key={a}>{a}</li>)}</ul>
+              <p style={{ marginTop: 26 }}>Leading organisations often invite her to deliver lectures on ESG, CSR, and business and human rights.</p></div>
+          </div>
+          <span className="figs-label">Experience across</span>
+          <div className="exp">{EXPERIENCE.map((x) => <div key={x}>{x}</div>)}</div>
+        </div>
+      </section>
+      <section className="sec">
+        <div className="wrap">
+          <div className="sec-head"><div><span className="eyebrow">Credentials</span><h2>Registered. Empanelled. Contributing.</h2></div></div>
+          <Credentials />
         </div>
       </section>
       <section className="sec sec--mist">
