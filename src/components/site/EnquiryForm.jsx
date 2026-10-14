@@ -4,8 +4,12 @@ import { SITE, SERVICES, NONPROFIT_SERVICES } from "@/content/site";
 
 const OPTIONS = [...SERVICES.map((s) => s.title), ...NONPROFIT_SERVICES.map((s) => s.title), "Academic collaboration", "Internship", "Partner with us", "Other enquiry"];
 
-// Sends to NEXT_PUBLIC_ENQUIRY_ENDPOINT (a form service such as Formspree) when set;
-// otherwise opens a prepared email to the firm so no enquiry is lost.
+// Delivery, in order of preference:
+// 1. NEXT_PUBLIC_WEB3FORMS_KEY: Web3Forms emails the enquiry straight to the inbox the key was issued for (Reply-To is the visitor).
+// 2. NEXT_PUBLIC_ENQUIRY_ENDPOINT: any other JSON form endpoint (for example Formspree).
+// 3. Neither set: open a prepared email to the firm so no enquiry is lost.
+const WEB3FORMS = "https://api.web3forms.com/submit";
+
 export default function EnquiryForm({ idPrefix = "enq" }) {
   const ref = useRef(null);
   const [status, setStatus] = useState("");
@@ -23,13 +27,19 @@ export default function EnquiryForm({ idPrefix = "enq" }) {
     const d = Object.fromEntries(new FormData(form));
     if (d.website) return;
     delete d.website;
-    const endpoint = process.env.NEXT_PUBLIC_ENQUIRY_ENDPOINT;
+    const key = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+    const endpoint = key ? WEB3FORMS : process.env.NEXT_PUBLIC_ENQUIRY_ENDPOINT;
     if (endpoint) {
+      const payload = key
+        ? { access_key: key, subject: `Website enquiry: ${d.interest}`, from_name: "P/ PRABHAVEE website", ...d, message: `${d.message}\n\nOrganisation: ${d.organisation || "not given"}\nInterest: ${d.interest}` }
+        : d;
+      setStatus("Sending…");
       try {
-        const r = await fetch(endpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(d) });
-        if (!r.ok) throw new Error("failed");
+        const r = await fetch(endpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(payload) });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok || j.success === false) throw new Error("failed");
         form.reset(); setInterest("");
-        setStatus("Thank you. Your enquiry has been sent.");
+        setStatus("Thank you. Your enquiry has been sent and will reach us shortly.");
       } catch {
         setStatus(`Sorry, your enquiry could not be sent. Please email ${SITE.email}.`);
       }

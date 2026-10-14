@@ -16,7 +16,9 @@ Next.js 15 (App Router), static export (`output: "export"`), plain CSS. Content 
 
 ## Environment variables
 - `NEXT_PUBLIC_SHOW_PENDING=1`: show the dashed review markers and add `noindex`. Leave unset for production.
-- `NEXT_PUBLIC_ENQUIRY_ENDPOINT`: a form service URL (for example Formspree). Unset = the enquiry form opens a prepared email to the firm.
+- `NEXT_PUBLIC_WEB3FORMS_KEY`: access key from web3forms.com, issued for the inbox that should receive enquiries. Enquiries are then emailed straight there with Reply-To set to the visitor. The key is safe to expose in the browser.
+- `NEXT_PUBLIC_ENQUIRY_ENDPOINT`: alternative JSON form endpoint (for example Formspree).
+- Neither set: the enquiry form opens a prepared email to the firm.
 
 ## Deploy
 Render static site: build command `npm run build`, publish directory `out`. No server features are used.
