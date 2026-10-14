@@ -1,7 +1,8 @@
 import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import { pageMeta } from "@/lib/meta";
-import { PARTNER_GROUPS, TARGET_CLIENTS, INDUSTRIES } from "@/content/site";
+import AudienceMap from "@/components/site/AudienceMap";
+import { TARGET_CLIENTS, INDUSTRIES } from "@/content/site";
 import Img from "@/components/site/Img";
 
 export const metadata = pageMeta("Who we serve & collaborate with", "Businesses, brands and suppliers, universities and research centres, and social purpose organisations. Target clients and industry focus.", "/whoWeServe");
@@ -12,14 +13,8 @@ export default function WhoWeServe() {
       <PageIntro crumb="Who we serve" title="Who we serve and collaborate with." lede="We partner with organisations that want to advance social impact and responsible business. We bring strategic capacity building and policy dialogue." />
       <section className="sec">
         <div className="wrap">
-          <div className="sec-head"><div><span className="eyebrow">Partners &amp; collaborations</span><h2>Three groups, three kinds of support.</h2></div></div>
-          <div className="cols-3">
-            {PARTNER_GROUPS.map((g, i) => (
-              <div className="row row--plain" key={g.who} style={{ borderTop: "2px solid var(--green)", padding: "26px 0" }}>
-                <div><span className="kicker">0{i + 1}</span><h3 style={{ fontSize: 24, margin: "8px 0 16px" }}>{g.who}</h3><ul className="ticks ticks--sm">{g.gets.map((x) => <li key={x}>{x}</li>)}</ul></div>
-              </div>
-            ))}
-          </div>
+          <div className="sec-head"><div><span className="eyebrow">Partners &amp; collaborations</span><h2>Three groups. Three kinds of support.</h2></div><p>We address operational risks that could violate the human rights of people across the supply chain.</p></div>
+          <AudienceMap withPhotos />
         </div>
       </section>
       <section className="sec">
@@ -29,9 +24,9 @@ export default function WhoWeServe() {
         </div>
       </section>
       <section className="sec sec--mist">
-        <div className="wrap split">
-          <div><span className="eyebrow">Target clients</span><h2>Who benefits most.</h2></div>
-          <ul className="ticks">{TARGET_CLIENTS.map((c) => <li key={c}>{c}</li>)}</ul>
+        <div className="wrap">
+          <div className="sec-head"><div><span className="eyebrow">Target clients</span><h2>Who benefits most.</h2></div><p>Organisations with supply chains, international due diligence duties or export markets.</p></div>
+          <div className="tiles">{TARGET_CLIENTS.map((c, i) => <div key={c}><span>0{i + 1}</span>{c}</div>)}</div>
         </div>
       </section>
       <section className="sec">

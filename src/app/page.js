@@ -5,9 +5,10 @@ import EnquiryForm from "@/components/site/EnquiryForm";
 import CountUp from "@/components/site/CountUp";
 import HeroSlides from "@/components/site/HeroSlides";
 import FrameworkGraphic from "@/components/site/FrameworkGraphic";
+import PillarsGraphic from "@/components/site/PillarsGraphic";
 import JourneyStrip from "@/components/site/JourneyStrip";
 import { LogoRow, Credentials } from "@/components/site/TrustStrip";
-import { SERVICES, STATS, INDUSTRIES, FLAGSHIPS, PILLARS, PARTNER_GROUPS } from "@/content/site";
+import { SERVICES, STATS, INDUSTRIES, FLAGSHIPS, PARTNER_GROUPS } from "@/content/site";
 import Img from "@/components/site/Img";
 
 const HERO = [
@@ -133,12 +134,12 @@ export default function Home() {
       </section>
 
       <section className="sec">
-        <div className="wrap split">
-          <div>
-            <span className="eyebrow">5-pillar approach to impact</span>
-            <h2>How we build lasting impact.</h2>
+        <div className="wrap">
+          <div className="sec-head">
+            <div><span className="eyebrow">5-pillar approach to impact</span><h2>How we build lasting impact.</h2></div>
+            <p>Five pillars. One purpose: stronger institutions and responsible business.</p>
           </div>
-          <div className="rows">{PILLARS.map((p, i) => <div className="row" key={p}><span className="n">0{i + 1}</span><h3>{p}</h3></div>)}</div>
+          <PillarsGraphic />
         </div>
       </section>
 

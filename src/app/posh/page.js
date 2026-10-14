@@ -3,6 +3,7 @@ import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import PillarTabs from "@/components/posh/PillarTabs";
 import Pending from "@/components/site/Pending";
+import PhotoBand from "@/components/site/PhotoBand";
 import { pageMeta } from "@/lib/meta";
 import deck from "@/content/deck.json";
 
@@ -29,7 +30,8 @@ export default function Posh() {
         </div>
       </section>
 
-      <section className="sec sec--mist">
+      <PhotoBand src="/img/ndim-posh-ndim-3.webp" alt="Faculty and staff at a PoSH training session at the New Delhi Institute of Management" caption="PoSH training for faculty and staff, New Delhi Institute of Management" position="center 55%" />
+      <section className="sec sec--mist" style={{ marginTop: 70 }}>
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Our core service pillars</span><h2>Choose the support your organisation needs.</h2></div></div>
           <PillarTabs pillars={PILLARS} />

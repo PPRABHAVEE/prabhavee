@@ -4,6 +4,7 @@ import CtaBand from "@/components/site/CtaBand";
 import { pageMeta } from "@/lib/meta";
 import { TRAINING, CONVENING_FORMATS, CONVENING_ACTIVITIES } from "@/content/site";
 import Img from "@/components/site/Img";
+import PhotoBand from "@/components/site/PhotoBand";
 
 export const metadata = pageMeta("Training & capacity building", "Training and institutional capacity building: PoSH, ethics and compliance, supplier capability programmes, and business and human rights for journalists. Multi-stakeholder dialogue and convenings.", "/training");
 
@@ -11,6 +12,7 @@ export default function Training() {
   return (
     <>
       <PageIntro crumb="Services / Training & capacity building" title="Training and capacity building." lede="Strategic, multi-stakeholder and sustainable. We build resilient systems and leadership for long-term impact. We drive collaboration and shared value for meaningful change." />
+      <PhotoBand src="/img/ev/7-1.webp" alt="Participants at the business integrity and ESG orientation training by UN Global Compact Network India" caption="Business integrity and ESG orientation training, UN Global Compact Network India" position="center 35%" />
       <section className="sec">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Programmes</span><h2>What we train on.</h2></div><p>Practical learning for employees, leaders, suppliers and media professionals.</p></div>

@@ -2,12 +2,16 @@ import Link from "next/link";
 import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import Pending from "@/components/site/Pending";
+import AudienceMap from "@/components/site/AudienceMap";
+import PhotoBand from "@/components/site/PhotoBand";
 import { pageMeta } from "@/lib/meta";
 import { SERVICES, NONPROFIT_SERVICES, OFFERINGS, ENGAGE_MODELS, ENGAGE_ACTIVITIES } from "@/content/site";
 
 export const metadata = pageMeta("Professional services", "Regulatory risk and compliance advisory, policy and advocacy, research and convenings, training and capacity building, strategic programmes, governance and PoSH consultancy.", "/services");
 
 const enc = (s) => encodeURIComponent(s);
+// Which audience each area serves (deck slide 20).
+const FOR = { "regulatory-risk": "Businesses, brands & suppliers", "policy-advocacy": "Businesses, brands & suppliers", "policy-research": "Universities, research centres & think tanks", "strategic-programmes": "Universities, research centres & think tanks", "training-capacity": "Universities, research centres & think tanks", "governance-boards": "Social purpose organisations", "multi-stakeholder": "Social purpose organisations", posh: "Businesses, brands & suppliers" };
 
 export default function Services() {
   return (
@@ -18,10 +22,18 @@ export default function Services() {
         <a href="#nonprofit">For non-profits</a><a href="#engage">How we engage</a>
       </div></nav>
 
-      <div className="wrap" style={{ paddingBlock: "20px 40px" }}>
+      <section className="sec">
+        <div className="wrap">
+          <div className="sec-head"><div><span className="eyebrow">Find your fit</span><h2>Start with who you are.</h2></div><p>Three kinds of organisation. Each gets a different mix of our work.</p></div>
+          <AudienceMap />
+        </div>
+      </section>
+      <PhotoBand src="/img/unrbhr-forum-2026-55531628986-0223b14d31-c.webp" alt="A working session at the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026" caption="A working session at the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok" position="center 45%" />
+
+      <div className="wrap" style={{ paddingBlock: "70px 40px" }}>
         {SERVICES.map((s, i) => (
           <section className="svc" id={s.slug} key={s.slug}>
-            <div><span className="kicker">0{i + 1}</span><h2>{s.title}</h2></div>
+            <div><span className="kicker">0{i + 1}</span><h2>{s.title}</h2>{FOR[s.slug] ? <p className="for">For: {FOR[s.slug]}</p> : null}</div>
             <div>
               <p className="big">{s.body}</p>
               {s.items.length ? <><h3 className="sv-h">Key services</h3><ul className="ticks">{s.items.map((x) => <li key={x}>{x}</li>)}</ul></> : null}
