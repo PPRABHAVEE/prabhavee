@@ -5,7 +5,7 @@ import Link from "next/link";
 import { pageMeta } from "@/lib/meta";
 import Img from "@/components/site/Img";
 
-export const metadata = pageMeta("External consultants & alumni", "External consultants and alumni of P/ PRABHAVEE.", "/people/consultant");
+export const metadata = pageMeta("External consultants & alumni", "External consultants and alumni of P/ PRABHAVEE, including an Advocate-on-Record at the Supreme Court of India and research alumni from law and public health.", "/people/consultant");
 
 const ALUM = [["Khushi Garg", "Research Assistant", "Student, B.A.LL.B., Army Institute of Law, Mohali"], ["Manvi Tayal", "Research Assistant", "Student, Master’s of Public Health, Indian Institute of Public Health, Gandhinagar"], ["Rohaan Thyagaraju V", "Final Year Law Student", "Symbiosis International University, Hyderabad"]];
 

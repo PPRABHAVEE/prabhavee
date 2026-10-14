@@ -4,7 +4,7 @@ import Img from "@/components/site/Img";
 import JourneyStrip from "@/components/site/JourneyStrip";
 import { pageMeta } from "@/lib/meta";
 
-export const metadata = pageMeta("Strategic milestones", "Defining achievements and turning points of P/ PRABHAVEE, with stakeholder engagement and initiatives.", "/journey");
+export const metadata = pageMeta("Strategic milestones", "Milestones of P/ PRABHAVEE from its 2022 founding at NSRCEL, IIM Bangalore, to research initiatives, partnerships and global forums, with stakeholder engagement.", "/journey");
 
 // Retained from the current website (feedback: keep as its own page; merge stakeholder engagement before May 2025)
 const MS = [

@@ -5,7 +5,7 @@ import Pending from "@/components/site/Pending";
 import Img from "@/components/site/Img";
 import { pageMeta } from "@/lib/meta";
 
-export const metadata = pageMeta("Academic collaborations", "Consulting and collaborations of P/ PRABHAVEE with academic institutions and universities.", "/academic");
+export const metadata = pageMeta("Academic collaborations", "How P/ PRABHAVEE works with universities and academic institutions: Jindal Global University, TNNLU, NDIM and more, through research, workshops and courses.", "/academic");
 
 // From her events sheet (rows typed Academic collaboration) and the pitch deck.
 const ACAD = [

@@ -6,7 +6,7 @@ import { FLAGSHIPS } from "@/content/site";
 import events from "@/content/events.json";
 import Img from "@/components/site/Img";
 
-export const metadata = pageMeta("Events", "Forums, trainings, consultations and dialogues P/ PRABHAVEE has taken part in, 2022 to 2026.", "/events");
+export const metadata = pageMeta("Events", "57 forums, trainings, consultations and dialogues P/ PRABHAVEE has taken part in from 2022 to 2026, filterable by type and year, with photos.", "/events");
 
 export default function Events() {
   const years = events.flatMap((e) => e.year.match(/20\d\d/g) || []).sort();

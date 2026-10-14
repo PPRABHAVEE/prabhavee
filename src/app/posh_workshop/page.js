@@ -3,7 +3,7 @@ import CtaBand from "@/components/site/CtaBand";
 import { pageMeta } from "@/lib/meta";
 import Img from "@/components/site/Img";
 
-export const metadata = pageMeta("PoSH Pro workshop", "PoSH Pro: a 2-day online workshop on the Prevention of Sexual Harassment at Workplace, with Yellow Spark.", "/posh_workshop");
+export const metadata = pageMeta("PoSH Pro workshop", "PoSH Pro: a 2-day online workshop on the Prevention of Sexual Harassment at Workplace, run by P/ PRABHAVEE with Yellow Spark for practitioners and law students.", "/posh_workshop");
 
 const GAL = ["posh-pro-advanced-20", "posh-pro-advanced-21", "posh-pro-advanced-22", "posh-pro-advanced-23", "posh-pro-advanced-trainer-facilitators-meet-the-experts"];
 

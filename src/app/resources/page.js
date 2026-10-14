@@ -4,7 +4,7 @@ import Pending from "@/components/site/Pending";
 import Img from "@/components/site/Img";
 import { pageMeta } from "@/lib/meta";
 
-export const metadata = pageMeta("Resources", "Videos, brochures, reports and external links from P/ PRABHAVEE.", "/resources");
+export const metadata = pageMeta("Resources", "Videos, brochures, reports and submissions from P/ PRABHAVEE: the GCNI impact report, PoSH governance outcomes, and EU and UN consultation inputs.", "/resources");
 
 const VIDS = [
   ["Young Leaders Council, AIMA", "IBE52ZSN69U", "Online session: India’s Economic Growth: Powered by Innovation and Fair Play (moderator, 2025)"],

@@ -3,7 +3,7 @@ import EnquiryForm from "@/components/site/EnquiryForm";
 import { pageMeta } from "@/lib/meta";
 import { SITE } from "@/content/site";
 
-export const metadata = pageMeta("Contact us", "Contact P/ PRABHAVEE for advisory, training or collaboration enquiries.", "/contact");
+export const metadata = pageMeta("Contact us", "Contact P/ PRABHAVEE, a Delhi strategy consultancy, for advisory, training, PoSH or collaboration enquiries. Write to us and we reply directly.", "/contact");
 
 export default function Contact() {
   return (

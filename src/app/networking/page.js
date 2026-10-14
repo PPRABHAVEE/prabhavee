@@ -6,7 +6,7 @@ import { pageMeta } from "@/lib/meta";
 import { LOGOS } from "@/content/site";
 import deck from "@/content/deck.json";
 
-export const metadata = pageMeta("Networks & collaborations", "The networks, memberships and strategic collaborations of P/ PRABHAVEE.", "/networking");
+export const metadata = pageMeta("Networks & collaborations", "Networks, mentorship roles and 45 strategic collaborations of P/ PRABHAVEE across the UN system, universities, industry bodies and civil society.", "/networking");
 
 // Her feedback: these networks and memberships are past.
 const PAST_MATCH = ["Young Leaders Council", "United Nations Global Compact Network India", "Indian Institute of Corporate Affairs (IICA)", "Indian Society for Training and Development"];
