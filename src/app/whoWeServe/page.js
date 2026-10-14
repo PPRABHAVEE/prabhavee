@@ -8,10 +8,10 @@ export const metadata = pageMeta("Who we serve & collaborate with", "Businesses,
 export default function WhoWeServe() {
   return (
     <>
-      <PageIntro crumb="Who we serve" title="Who we serve and collaborate with." lede="We partner with ambitious organisations whose aim is to advance social impact and responsible business, leveraging our expertise in strategic capacity building and policy dialogue." />
+      <PageIntro crumb="Who we serve" title="Who we serve and collaborate with." lede="We partner with organisations that want to advance social impact and responsible business. We bring strategic capacity building and policy dialogue." />
       <section className="sec">
         <div className="wrap">
-          <div className="sec-head"><div><span className="eyebrow">Partners &amp; collaborations</span><h2>Three groups, three kinds of support.</h2></div><p>We address operational challenges and risks in business that carry real and potential risks of violating the human rights of people across the supply chain.</p></div>
+          <div className="sec-head"><div><span className="eyebrow">Partners &amp; collaborations</span><h2>Three groups, three kinds of support.</h2></div><p>We address operational risks that could violate the human rights of people across the supply chain.</p></div>
           <div className="cols-3">
             {PARTNER_GROUPS.map((g, i) => (
               <div className="row row--plain" key={g.who} style={{ borderTop: "2px solid var(--green)", padding: "26px 0" }}>
@@ -31,10 +31,10 @@ export default function WhoWeServe() {
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Industry focus</span><h2>Sectors we work across.</h2></div></div>
           <ul className="industries">{INDUSTRIES.map((i) => <li key={i}>{i}</li>)}</ul>
-          <img src="/img/deck/supply-chain-collage.jpg" alt="Garment, leather and manufacturing workplaces across supply chains" style={{ width: "100%", maxHeight: 360, objectFit: "cover", filter: "grayscale(1)", marginTop: 50 }} />
+          <img src="/img/deck/supply-chain-collage.jpg" alt="Garment, leather and manufacturing workplaces across supply chains" style={{ width: "100%", maxHeight: 360, objectFit: "cover", marginTop: 50 }} />
         </div>
       </section>
-      <CtaBand />
+      <CtaBand next={["See the practice areas", "/services"]} />
     </>
   );
 }

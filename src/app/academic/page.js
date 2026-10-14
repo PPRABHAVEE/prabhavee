@@ -18,7 +18,7 @@ const OTHERS = ["Nirma University, Ahmedabad", "Centre for Communication Governa
 export default function Academic() {
   return (
     <>
-      <PageIntro crumb="Services / Academic collaborations" title="Academic collaborations." lede="Consulting and collaborations with academic institutions and universities, bringing research, teaching and practice together." />
+      <PageIntro crumb="Services / Academic collaborations" title="Academic collaborations." lede="We consult and collaborate with academic institutions and universities. Research, teaching and practice come together." />
       <section className="sec">
         <div className="wrap">
           {ACAD.map((a) => (
@@ -29,7 +29,7 @@ export default function Academic() {
           <Pending title="Confirm the list">The deck states six academic institutions and universities. Four are shown from her events sheet; the others are named elsewhere in the deck. Please confirm the six and any additions.</Pending>
         </div>
       </section>
-      <CtaBand />
+      <CtaBand next={["See academic engagements", "/events?cat=Academic%20collaborations"]} />
     </>
   );
 }

@@ -27,7 +27,7 @@ const EXT = [
 export default function Resources() {
   return (
     <>
-      <PageIntro crumb="Engagements / Resources" title="Videos, brochures, reports and submissions." lede="Watch our sessions, download our brochures and read the reports and submissions we have contributed to." />
+      <PageIntro crumb="Engagements / Resources" title="Videos, brochures, reports and submissions." lede="Watch our sessions. Download our brochures. Read the reports and submissions we have contributed to." />
       <section className="sec">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Videos</span><h2>Watch and listen.</h2></div></div>
@@ -62,7 +62,7 @@ export default function Resources() {
           <ul className="linklist">{EXT.map(([t, d, u]) => <li key={u}><div><b>{t}</b><small>{d}</small></div><a className="link" href={u} target="_blank" rel="noopener noreferrer">Open</a></li>)}</ul>
         </div>
       </section>
-      <CtaBand />
+      <CtaBand next={["See the practice areas", "/services"]} />
     </>
   );
 }

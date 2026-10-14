@@ -19,7 +19,7 @@ const EXPERTS = [["Sumana Bhattacharya", "Adjunct Professor, National Institute 
 export default function Journey() {
   return (
     <>
-      <PageIntro crumb="About / Strategic milestones" title="Empowering progress through purposeful evolution." lede="From vision to impact: our defining achievements and turning points." />
+      <PageIntro crumb="About / Strategic milestones" title="Empowering progress through purposeful evolution." lede="From vision to impact. Our defining achievements and turning points." />
       <section className="sec">
         <div className="wrap">
           <ol className="timeline">
@@ -31,7 +31,7 @@ export default function Journey() {
       </section>
       <section className="sec sec--mist" id="stakeholder">
         <div className="wrap">
-          <div className="sec-head"><div><span className="eyebrow">Stakeholder engagement &amp; initiatives · before May 2025</span><h2>Engaged with stakeholders across diverse thematic areas.</h2></div><p>Facilitating multi-stakeholder dialogue to advance shared priorities and collective action.</p></div>
+          <div className="sec-head"><div><span className="eyebrow">Stakeholder engagement &amp; initiatives · before May 2025</span><h2>Engaged with stakeholders across diverse thematic areas.</h2></div><p>We facilitate multi-stakeholder dialogue. It advances shared priorities and collective action.</p></div>
           <div className="figs figs--4" style={{ marginBottom: 46 }}>
             <div><b>13+</b><span>experts</span></div><div><b>10+</b><span>domains</span></div><div><b>5+</b><span>organisations</span></div><div><b>2024</b><span>active year. Recognition: WICCI Delhi External Affairs Council (DEAC)</span></div>
           </div>
@@ -39,7 +39,7 @@ export default function Journey() {
           <p style={{ marginTop: 30, maxWidth: "62ch" }}>These collaborations reflect P/ PRABHAVEE’s growing network of professionals committed to driving positive, inclusive change.</p>
         </div>
       </section>
-      <CtaBand />
+      <CtaBand next={["See our events", "/events"]} />
     </>
   );
 }

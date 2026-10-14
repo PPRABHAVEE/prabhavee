@@ -9,10 +9,10 @@ export const metadata = pageMeta("Training & capacity building", "Training and i
 export default function Training() {
   return (
     <>
-      <PageIntro crumb="Services / Training & capacity building" title="Training and capacity building." lede="Strategic, multi-stakeholder and sustainable: building resilient systems and leadership for long-term impact, and driving collaboration and shared value for meaningful change." />
+      <PageIntro crumb="Services / Training & capacity building" title="Training and capacity building." lede="Strategic, multi-stakeholder and sustainable. We build resilient systems and leadership for long-term impact. We drive collaboration and shared value for meaningful change." />
       <section className="sec">
         <div className="wrap">
-          <div className="sec-head"><div><span className="eyebrow">Programmes</span><h2>What we train on.</h2></div><p>Practical learning for employees, leadership, suppliers and media professionals.</p></div>
+          <div className="sec-head"><div><span className="eyebrow">Programmes</span><h2>What we train on.</h2></div><p>Practical learning for employees, leaders, suppliers and media professionals.</p></div>
           <div className="cols-2">
             {TRAINING.map((t, i) => (
               <div className="row row--plain" key={t.h} style={{ borderTop: "2px solid var(--green)", padding: "26px 0 34px" }}>
@@ -29,8 +29,8 @@ export default function Training() {
         <div className="wrap">
           <div className="split">
             <div><span className="eyebrow">Multi-stakeholder dialogue &amp; convenings</span><h2>Roundtables, research launches, stakeholder consultations.</h2>
-              <p>We foster and nurture collaboration with diverse stakeholder groups within the ecosystem and establish strategic partnerships and networks for initiatives. The objective is to foster cross-sector collaborations and alliances for shared learning and best practices, and to create a shared platform for exchanging views and advancing public discourse.</p></div>
-            <img src="/img/banner-excellence-in-multi-stakeholder-2.jpg" alt="Participants at a P/ PRABHAVEE multi-stakeholder session" style={{ width: "100%", filter: "grayscale(1)" }} />
+              <p>We nurture collaboration with diverse stakeholder groups. We build strategic partnerships and networks for initiatives. The aim is cross-sector alliances for shared learning and best practice. We also create a shared platform for exchanging views and advancing public discourse.</p></div>
+            <img src="/img/banner-excellence-in-multi-stakeholder-2.jpg" alt="Participants at a P/ PRABHAVEE multi-stakeholder session" style={{ width: "100%" }} />
           </div>
           <div className="cols-2" style={{ marginTop: 54 }}>
             <div><span className="kicker">Formats</span><ul className="ticks" style={{ marginTop: 12 }}>{CONVENING_FORMATS.map((x) => <li key={x}>{x}</li>)}</ul></div>
@@ -38,7 +38,7 @@ export default function Training() {
           </div>
         </div>
       </section>
-      <CtaBand />
+      <CtaBand next={["See training engagements", "/events?cat=Training%20%26%20capacity%20building"]} />
     </>
   );
 }

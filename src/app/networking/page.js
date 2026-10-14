@@ -15,7 +15,7 @@ export default function Networking() {
   const isPast = (n) => PAST_MATCH.some((p) => n.startsWith(p) || n === p);
   return (
     <>
-      <PageIntro crumb="About / Networks & collaborations" title="Networks and strategic collaborations." lede="P/ PRABHAVEE collaborates with leading organisations to drive meaningful change and sustainable development across industries." />
+      <PageIntro crumb="About / Networks & collaborations" title="Networks and strategic collaborations." lede="We work with leading organisations. Together we drive change and sustainable development across industries." />
       <section className="sec">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Strategic collaborations</span><h2>Organisations we work with.</h2></div><p>{deck.collaborations.length} organisations across the UN system, academia, industry bodies, research centres and civil society.</p></div>
@@ -41,7 +41,7 @@ export default function Networking() {
           </div>
         </div>
       </section>
-      <CtaBand />
+      <CtaBand next={["See strategic milestones", "/journey"]} />
     </>
   );
 }

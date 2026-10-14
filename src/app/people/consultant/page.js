@@ -25,7 +25,7 @@ export default function Consultants() {
           </div>
         </div>
       </section>
-      <CtaBand />
+      <CtaBand next={["Meet the founder", "/people/founder"]} />
     </>
   );
 }

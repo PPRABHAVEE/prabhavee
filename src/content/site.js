@@ -177,3 +177,50 @@ export const FOUNDER = {
   training: "Anumita’s academic and professional training includes an LL.B. from Campus Law Centre, Faculty of Law, University of Delhi; a B.A. (Hons.) in Sociology from Miranda House College; a Postgraduate Diploma in Mass Communication from Bhavan's Rajendra Prasad Institute of Communication and Management; Strategic Management from IIM Bangalore; CSR, social media and strategic communication from MICA | School of Ideas; and Faculty Development Programs (FDPs) with ICRC, AIMA, GD Goenka University and FORE School of Management.",
   certs: "She holds professional certificates in Business and Human Rights, Human Rights Due Diligence, Anti-corruption and Anti-bribery, and Labor standards from ITCILO, UNODC, UNGC, Global Campus of Human Rights, TRACE International Inc., GIZ, RBH Network and Labor Solutions.",
 };
+
+// ---------------------------------------------------------------- navigation: Services mega-menu, grouped by audience (deck slide 20)
+export const MEGA = {
+  intro: "Advisory, facilitation, capacity building and strategic programmes.",
+  columns: [
+    { heading: "Businesses, brands & suppliers", links: [["Regulatory risk & compliance advisory", "/services#regulatory-risk"], ["Policy, strategic communication & advocacy", "/services#policy-advocacy"], ["Supplier engagement & training", "/training"], ["PoSH consultancy & services", "/posh"]] },
+    { heading: "Universities, research centres & think tanks", links: [["Policy research, analysis & convenings", "/services#policy-research"], ["Strategic programmes & learning initiatives", "/services#strategic-programmes"], ["Training & institutional capacity building", "/services#training-capacity"], ["Academic collaborations", "/academic"]] },
+    { heading: "Social purpose organisations", links: [["Governance & non-profit board leadership", "/services#governance-boards"], ["Legal & compliance for non-profits", "/services#nonprofit"], ["Partnerships & donor engagement", "/services#nonprofit"], ["Multi-stakeholder engagement", "/services#multi-stakeholder"]] },
+  ],
+  footer: [["All practice areas", "/services"], ["Training & capacity building", "/training"], ["How we engage", "/services#engage"]],
+};
+
+// ---------------------------------------------------------------- trust signals (deck slides 4, 6, 7, 47; events sheet; brochure)
+export const CREDENTIALS = [
+  { k: "Registered", v: "Ministry of Women & Child Development, Government of India" },
+  { k: "Empanelled", v: "New Delhi Institute of Management, for PoSH training and capacity building" },
+  { k: "Member", v: "UN Global Compact Network India, Anti-Corruption Collective Action Working Group (since 2022)" },
+  { k: "Contributor", v: "GRI standards consultations, UN Working Group on Business and Human Rights, European Commission" },
+  { k: "Advocate", v: "Registered with the Bar Council of Delhi" },
+];
+// Partner logos supplied in the deck (slide 30). Shown in full colour.
+export const LOGOS = [
+  ["yellow-spark", "Yellow Spark"],
+  ["sustaim", "Sustaim Consulting"],
+  ["jsjc", "Jindal School of Journalism and Communication"],
+  ["new-imaginations", "New Imaginations"],
+  ["cbhr-tnnlu", "Centre for Business and Human Rights, TNNLU"],
+  ["tnnlu", "Tamil Nadu National Law University"],
+];
+
+// ---------------------------------------------------------------- journey graphic (current website timeline, deck slides 34-37)
+export const JOURNEY = [
+  { y: "May 2022", t: "Founded", d: "Conceptualised at NSRCEL, IIM Bangalore." },
+  { y: "Sep 2024", t: "Bangkok forum", d: "Delegate at the UN Responsible Business and Human Rights Forum." },
+  { y: "Nov 2024", t: "Women on Boards", d: "Founder completes the ISDM programme." },
+  { y: "May 2025", t: "Research and partnerships", d: "Policy dialogue and academic research begin." },
+  { y: "2025–26", t: "Flagship programmes", d: "Nine convenings, workshops and consultations." },
+  { y: "Sep 2026", t: "Spotlight session", d: "Hosted at the UN Forum, Asia-Pacific 2026." },
+  { y: "Nov 2026", t: "Governance masterclass", d: "Upcoming PoSH year-end consultation.", upcoming: true },
+];
+
+// ---------------------------------------------------------------- framework graphic (deck slides 11-14): short lines for the graphic
+export const FRAMEWORK_SHORT = [
+  "Scan the rules. Understand expectations. Assess risk.",
+  "Embed in governance. Integrate into operations. Set accountability.",
+  "Engage suppliers. Implement. Monitor and learn.",
+];

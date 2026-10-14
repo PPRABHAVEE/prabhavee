@@ -11,7 +11,7 @@ export default function Events() {
   const years = events.flatMap((e) => e.year.match(/20\d\d/g) || []).sort();
   return (
     <>
-      <PageIntro crumb="Engagements / Events" title="Forums, trainings, consultations and dialogues." lede={`${events.length} engagements across ${years[0]}–${years[years.length - 1]}, in the formats and roles that show how we engage.`} />
+      <PageIntro crumb="Engagements / Events" title="Forums, trainings, consultations and dialogues." lede={`${events.length} engagements from ${years[0]} to ${years[years.length - 1]}. Each shows how we take part, and in what role.`} />
       <section className="sec sec--mist">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Flagship programmes 2025–26</span><h2>Nine programmes we convened and hosted.</h2></div></div>
@@ -26,7 +26,7 @@ export default function Events() {
         </div>
       </section>
       <EventsExplorer events={events} />
-      <CtaBand />
+      <CtaBand next={["Read our reports", "/resources"]} />
     </>
   );
 }

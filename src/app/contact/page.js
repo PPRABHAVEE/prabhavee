@@ -8,13 +8,13 @@ export const metadata = pageMeta("Contact us", "Contact P/ PRABHAVEE for advisor
 export default function Contact() {
   return (
     <>
-      <PageIntro crumb="Contact us" title="Write to us to discuss." lede="Tell us about your organisation and the support you are looking for. Engagement terms are discussed directly." />
+      <PageIntro crumb="Contact us" title="Write to us to discuss." lede="Tell us about your organisation. Tell us what support you need. We discuss terms directly." />
       <section className="sec">
         <div className="wrap enq" style={{ gridTemplateColumns: ".8fr 1.2fr" }}>
           <aside className="contact-card">
             <span className="eyebrow">Get in touch</span>
             <h2>A conversation is a good place to start.</h2>
-            <p>For advisory, training or collaboration enquiries:</p>
+            <p>For advisory, training or collaboration enquiries, write to:</p>
             <a className="link" href={`mailto:${SITE.email}`}>{SITE.email}</a>
             <hr />
             <span className="eyebrow">Our reach</span>

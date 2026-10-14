@@ -20,11 +20,11 @@ const WHY = [["End-to-end PoSH support", "From policy drafting and Internal Comm
 export default function Posh() {
   return (
     <>
-      <PageIntro crumb="Services / PoSH consultancy & services" title="Safeguarding workplaces with integrity." lede="Empowering organisations to create inclusive, legally compliant and safe workplace environments. Our PoSH services are anchored in deep legal expertise and go beyond theoretical training to practical, implementable solutions." />
+      <PageIntro crumb="Services / PoSH consultancy & services" title="Safeguarding workplaces with integrity." lede="We help organisations create inclusive, legally compliant and safe workplaces. Our PoSH services rest on deep legal expertise. They go beyond theory to practical, workable solutions." />
       <section className="sec">
         <div className="wrap split">
           <div><span className="eyebrow">The law</span><h2>The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013</h2>
-            <p>Anumita Sarkar is registered with the Ministry of Women &amp; Child Development, Government of India, and serves as an External Member of PoSH Internal Committees.</p></div>
+            <p>Anumita Sarkar is registered with the Ministry of Women &amp; Child Development, Government of India. She serves as an External Member of PoSH Internal Committees.</p></div>
           <div className="cols-2" style={{ gap: "0 36px" }}>{WHY.map(([h, t]) => <div className="row row--plain" key={h} style={{ borderTop: "2px solid var(--green)" }}><div><h3>{h}</h3><p>{t}</p></div></div>)}</div>
         </div>
       </section>
@@ -50,12 +50,12 @@ export default function Posh() {
           </details>
           <Pending title="Counts">70+ is the deck PDF figure; the PowerPoint says 60+ and the list of names has {deck.poshClients.length} distinct organisations. Confirm which to publish.</Pending>
           <div className="cols-2" style={{ marginTop: 50 }}>
-            <div><h3 style={{ fontSize: 24 }}>Mid-year PoSH review consultation</h3><p>Safe Workplaces by Design: a leadership imperative in risk governance. Reframing PoSH beyond a compliance mandate as part of organisational risk governance, designing safety and accountability, and reading PoSH through the ESG and BRSR lens.</p><a className="link" href="/docs/building-better-governance-2026.pdf" target="_blank" rel="noopener">Read the outcomes report (PDF)</a></div>
-            <div><h3 style={{ fontSize: 24 }}>PoSH PRO programmes</h3><p>Two-day online programmes on PoSH and its application at the workplace, co-organised with Yellow Spark.</p><Link className="link" href="/posh_workshop">About PoSH Pro</Link> &nbsp; <a className="link" href="/docs/prabhavee-posh-brochure.pdf" download>PoSH brochure (PDF)</a></div>
+            <div><h3 style={{ fontSize: 24 }}>Mid-year PoSH review consultation</h3><p>Safe Workplaces by Design: a leadership imperative in risk governance. We reframed PoSH beyond a compliance mandate, as part of organisational risk governance. We designed safety and accountability. And we read PoSH through the ESG and BRSR lens.</p><a className="link" href="/docs/building-better-governance-2026.pdf" target="_blank" rel="noopener">Read the outcomes report (PDF)</a></div>
+            <div><h3 style={{ fontSize: 24 }}>PoSH PRO programmes</h3><p>Two-day online programmes on PoSH at the workplace, co-organised with Yellow Spark.</p><Link className="link" href="/posh_workshop">About PoSH Pro</Link> &nbsp; <a className="link" href="/docs/prabhavee-posh-brochure.pdf" download>PoSH brochure (PDF)</a></div>
           </div>
         </div>
       </section>
-      <CtaBand />
+      <CtaBand next={["Read about PoSH Pro", "/posh_workshop"]} />
     </>
   );
 }

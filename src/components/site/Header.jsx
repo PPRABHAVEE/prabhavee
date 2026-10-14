@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { NAV } from "@/content/site";
+import { NAV, MEGA, SITE } from "@/content/site";
 
 export default function Header() {
   const path = usePathname() || "/";
@@ -23,29 +23,59 @@ export default function Header() {
   const groupOn = (g) => (path === g.href || g.items.some(([, h]) => h === path) ? "page" : undefined);
 
   return (
-    <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
-      <div className="header-in">
-        <Link className="brand" href="/" aria-label="P/ PRABHAVEE home">
-          <span className="brand-mark">P/</span>
-          <span><b className="brand-name">PRABHAVEE</b><small className="brand-sub">PARTNER FOR SOCIAL IMPACT</small></span>
-        </Link>
-        <button className="menu-btn" aria-expanded={open} aria-controls="site-nav" onClick={() => setOpen(!open)}>{open ? "Close" : "Menu"}</button>
-        <nav id="site-nav" className={`nav${open ? " open" : ""}`} aria-label="Main navigation">
-          {NAV.map((g) =>
-            g.items.length ? (
-              <div className="dd" key={g.label}>
-                <Link href={g.href} aria-current={groupOn(g)}>{g.label}</Link>
-                <div className="sub">
-                  {g.items.map(([t, h]) => <Link key={h} href={h} aria-current={on(h)}>{t}</Link>)}
-                </div>
-              </div>
-            ) : (
-              <Link key={g.label} href={g.href} aria-current={on(g.href)}>{g.label}</Link>
-            )
-          )}
-          <Link className="btn btn--sm" href="/contact">Contact us</Link>
-        </nav>
+    <>
+      <div className="util">
+        <div className="util-in">
+          <span>{SITE.registered}</span>
+          <span className="util-links">
+            <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+            <a href={SITE.linkedinCompany} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </span>
+        </div>
       </div>
-    </header>
+      <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
+        <div className="header-in">
+          <Link className="brand" href="/" aria-label="P/ PRABHAVEE home">
+            <span className="brand-mark">P/</span>
+            <span><b className="brand-name">PRABHAVEE</b><small className="brand-sub">PARTNER FOR SOCIAL IMPACT</small></span>
+          </Link>
+          <button className="menu-btn" aria-expanded={open} aria-controls="site-nav" onClick={() => setOpen(!open)}>{open ? "Close" : "Menu"}</button>
+          <nav id="site-nav" className={`nav${open ? " open" : ""}`} aria-label="Main navigation">
+            {NAV.map((g) => {
+              if (g.label === "Services") {
+                return (
+                  <div className="dd dd--mega" key={g.label}>
+                    <Link href={g.href} aria-current={groupOn(g)}>{g.label}</Link>
+                    <div className="mega">
+                      <div className="mega-in">
+                        <p className="mega-intro">{MEGA.intro}</p>
+                        <div className="mega-cols">
+                          {MEGA.columns.map((c) => (
+                            <div key={c.heading}>
+                              <span className="mega-h">{c.heading}</span>
+                              {c.links.map(([t, h]) => <Link key={t} href={h}>{t}</Link>)}
+                            </div>
+                          ))}
+                        </div>
+                        <div className="mega-foot">{MEGA.footer.map(([t, h]) => <Link key={t} href={h}>{t}</Link>)}</div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+              return g.items.length ? (
+                <div className="dd" key={g.label}>
+                  <Link href={g.href} aria-current={groupOn(g)}>{g.label}</Link>
+                  <div className="sub">{g.items.map(([t, h]) => <Link key={h} href={h} aria-current={on(h)}>{t}</Link>)}</div>
+                </div>
+              ) : (
+                <Link key={g.label} href={g.href} aria-current={on(g.href)}>{g.label}</Link>
+              );
+            })}
+            <Link className="btn btn--sm" href="/contact">Contact us</Link>
+          </nav>
+        </div>
+      </header>
+    </>
   );
 }

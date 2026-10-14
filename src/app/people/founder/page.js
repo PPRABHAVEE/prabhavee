@@ -30,7 +30,7 @@ export default function Founder() {
           <div><span className="eyebrow">Organisations engaged with</span><ul className="ticks ticks--sm">{deck.founderOrgs.map((o) => <li key={o}>{o.replace(/;$/, "")}</li>)}</ul></div>
         </div>
       </section>
-      <CtaBand />
+      <CtaBand next={["Read about our approach", "/background#approach"]} />
     </>
   );
 }
