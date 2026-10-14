@@ -15,7 +15,7 @@ export default function Consultants() {
         <div className="wrap cols-2">
           <div>
             <span className="eyebrow">External consultants</span>
-            <div className="id-card"><h3>Amrita Sarkar</h3><p style={{ fontSize: 17 }}>Advisor, Advocate-on-Record, Supreme Court of India</p>
+            <div className="id-card"><img src="/img/amrita-sarkar.jpg" alt="Amrita Sarkar" style={{ width: 240, aspectRatio: "3/4", objectFit: "cover", objectPosition: "top", marginBottom: 22 }} /><h3>Amrita Sarkar</h3><p style={{ fontSize: 17 }}>Advisor, Advocate-on-Record, Supreme Court of India</p>
               <div className="btnrow"><a className="btn" href="https://www.linkedin.com/in/amrita-sarkar-aor" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div>
             <Pending title="Email button">Her feedback says to retain the email button; the address was not provided.</Pending>
           </div>

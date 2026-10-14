@@ -1,16 +1,58 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 const PER = 6;
 
-function Tile({ ev }) {
+function Lightbox({ gal, onClose }) {
+  const [i, setI] = useState(gal.i);
+  const closeRef = useRef(null);
+  const n = gal.photos.length;
+  const step = useCallback((d) => setI((x) => (x + d + n) % n), [n]);
+
+  useEffect(() => {
+    const prevFocus = document.activeElement;
+    closeRef.current?.focus();
+    const onKey = (e) => {
+      if (e.key === "Escape") onClose();
+      else if (e.key === "ArrowRight") step(1);
+      else if (e.key === "ArrowLeft") step(-1);
+    };
+    document.addEventListener("keydown", onKey);
+    const overflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.removeEventListener("keydown", onKey); document.body.style.overflow = overflow; prevFocus?.focus?.(); };
+  }, [onClose, step]);
+
+  return (
+    <div className="lb" role="dialog" aria-modal="true" aria-label={`Photos: ${gal.title}`} onClick={onClose}>
+      <div className="lb-in" onClick={(e) => e.stopPropagation()}>
+        <img src={gal.photos[i]} alt={`${gal.title}, photo ${i + 1} of ${n}`} />
+        <div className="lb-bar">
+          <span>{gal.title}<small>{i + 1} / {n}</small></span>
+          <span className="lb-btns">
+            {n > 1 ? <><button type="button" onClick={() => step(-1)} aria-label="Previous photo">‹</button><button type="button" onClick={() => step(1)} aria-label="Next photo">›</button></> : null}
+            <button type="button" ref={closeRef} onClick={onClose} aria-label="Close photos">Close</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Tile({ ev, onOpen }) {
   const links = [
     ...ev.links.map((l) => ({ href: l, label: l.includes("youtube") ? "Watch" : "Read more" })),
     ...(ev.doc ? [{ href: ev.doc.href, label: ev.doc.label }] : []),
   ];
+  const photos = ev.photos && ev.photos.length ? ev.photos : ev.photo ? [ev.photo] : [];
   return (
-    <article className={`ev${ev.photo ? " has-ph" : ""}`}>
-      {ev.photo ? <div className="ph"><img src={ev.photo} alt="" loading="lazy" /></div> : null}
+    <article className={`ev${photos.length ? " has-ph" : ""}`}>
+      {photos.length ? (
+        <button type="button" className="ph" onClick={(e) => onOpen({ photos, i: 0, title: ev.title }, e.currentTarget)} aria-label={`View ${photos.length} ${photos.length === 1 ? "photo" : "photos"}: ${ev.title}`}>
+          <img src={photos[0]} alt="" loading="lazy" />
+          {photos.length > 1 ? <span className="ph-n">{photos.length} photos</span> : <span className="ph-n">View photo</span>}
+        </button>
+      ) : null}
       <div className="meta">
         {ev.upcoming ? <span className="badge">UPCOMING</span> : null}
         <span>{ev.year}</span><i>/</i><span>{ev.type}</span>
@@ -29,6 +71,8 @@ export default function EventsExplorer({ events }) {
   const [year, setYear] = useState("");
   const [q, setQ] = useState("");
   const [page, setPage] = useState(1);
+  const [gal, setGal] = useState(null);
+  const closeGal = useCallback(() => setGal(null), []);
 
   useEffect(() => {
     const p = new URLSearchParams(window.location.search);
@@ -52,6 +96,7 @@ export default function EventsExplorer({ events }) {
 
   return (
     <div className="wrap">
+      {gal ? <Lightbox gal={gal} onClose={closeGal} /> : null}
       <div className="filters">
         <div><label htmlFor="f-cat">Type of engagement</label>
           <select id="f-cat" value={cat} onChange={reset(setCat)}><option value="">All types</option>{cats.map((c) => <option key={c}>{c}</option>)}</select></div>
@@ -61,7 +106,7 @@ export default function EventsExplorer({ events }) {
           <input id="f-q" type="search" value={q} onChange={reset(setQ)} placeholder="Forum, role, organisation" /></div>
         <span className="count" aria-live="polite">{list.length} {list.length === 1 ? "engagement" : "engagements"}</span>
       </div>
-      <div className="ev-grid" id="ev-grid">{shown.map((e) => <Tile key={e.n} ev={e} />)}</div>
+      <div className="ev-grid" id="ev-grid">{shown.map((e) => <Tile key={e.n} ev={e} onOpen={setGal} />)}</div>
       {list.length === 0 ? <p className="empty">No engagements match these filters.</p> : null}
       {pages > 1 ? (
         <div className="pager" aria-label="Pages">

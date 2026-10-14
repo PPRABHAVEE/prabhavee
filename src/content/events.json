@@ -151,7 +151,12 @@
   "role": "Empanelled Consultant PoSH Internal Committee",
   "photoFlag": "Y",
   "photo": "/img/ndim-posh-ndim-3.jpg",
-  "photos": [],
+  "photos": [
+   "/img/ndim-posh-ndim-3.jpg",
+   "/img/ndim-posh-ndim-1.jpg",
+   "/img/ndim-posh-ndim-2.jpg",
+   "/img/ndim-posh-ndim-4.jpg"
+  ],
   "links": [],
   "upcoming": false
  },
@@ -232,7 +237,11 @@
   "role": "Facilitator and Trainer",
   "photoFlag": "Y",
   "photo": "/img/17-july-2026-poster.jpg",
-  "photos": [],
+  "photos": [
+   "/img/17-july-2026-poster.jpg",
+   "/img/17-july-2026-17-07-2026.jpg",
+   "/img/17-july-2026-guest-speaker.jpg"
+  ],
   "links": [],
   "upcoming": false
  },
@@ -247,7 +256,13 @@
   "role": "Collaborating Partner",
   "photoFlag": "Y",
   "photo": "/img/unrbhr-forum-2026-55529117037-f155f3b5a1-c.jpg",
-  "photos": [],
+  "photos": [
+   "/img/unrbhr-forum-2026-55529117037-f155f3b5a1-c.jpg",
+   "/img/unrbhr-forum-2026-55530242728-ed92f4e6a9-c.jpg",
+   "/img/unrbhr-forum-2026-55531628986-0223b14d31-c.jpg",
+   "/img/unrbhr-forum-2026-55531653576-f14bb7362e-c.jpg",
+   "/img/unrbhr-forum-2026-55531807479-b381c7d9dc-c.jpg"
+  ],
   "links": [],
   "upcoming": false
  },
@@ -277,7 +292,12 @@
   "role": "Academic collaboration",
   "photoFlag": "Y",
   "photo": "/img/jindal-jsjc-5.jpg",
-  "photos": [],
+  "photos": [
+   "/img/jindal-jsjc-5.jpg",
+   "/img/jindal-jsjc-6.jpg",
+   "/img/jindal-jsjc-7.jpg",
+   "/img/jindal-jsjc-8.jpg"
+  ],
   "links": [
    "https://www.youtube.com/watch?v=Nsdxj1KCyIM"
   ],
@@ -294,7 +314,11 @@
   "role": "Academic collaboration",
   "photoFlag": "Y",
   "photo": "/img/jindal-jindal-1.jpg",
-  "photos": [],
+  "photos": [
+   "/img/jindal-jindal-1.jpg",
+   "/img/jindal-jsjc-3.jpg",
+   "/img/jindal-jsjc-flyer.jpg"
+  ],
   "links": [],
   "upcoming": false
  },
@@ -309,7 +333,10 @@
   "role": "Corporate Training",
   "photoFlag": "Y",
   "photo": "/img/beat-route-posh-training-beatroute-1.jpg",
-  "photos": [],
+  "photos": [
+   "/img/beat-route-posh-training-beatroute-1.jpg",
+   "/img/beat-route-posh-training-beatroute-2.jpg"
+  ],
   "links": [],
   "upcoming": false
  },
@@ -369,7 +396,12 @@
   "role": "Host, Co-organiser, Facilitator, Convener",
   "photoFlag": "Y",
   "photo": "/img/posh-pro-advanced-20.jpg",
-  "photos": [],
+  "photos": [
+   "/img/posh-pro-advanced-20.jpg",
+   "/img/posh-pro-advanced-21.jpg",
+   "/img/posh-pro-advanced-22.jpg",
+   "/img/posh-pro-advanced-23.jpg"
+  ],
   "links": [],
   "upcoming": false
  },
@@ -403,7 +435,9 @@
   "role": "Multi-stakeholder convenings & research",
   "photoFlag": "Y",
   "photo": "/img/tnnlu-brochure-msme-research-collaboration.jpg",
-  "photos": [],
+  "photos": [
+   "/img/tnnlu-brochure-msme-research-collaboration.jpg"
+  ],
   "links": [
    "https://www.youtube.com/watch?v=3776A3TawDs"
   ],
@@ -435,7 +469,10 @@
   "role": "Facilitator and Organizer of upcoming Academic/ Research Initiative",
   "photoFlag": "Y",
   "photo": "/img/tnnlu-tnnlu-edited.jpg",
-  "photos": [],
+  "photos": [
+   "/img/tnnlu-tnnlu-edited.jpg",
+   "/img/tnnlu-tnnlu.jpg"
+  ],
   "links": [],
   "upcoming": false
  },
@@ -450,7 +487,11 @@
   "role": "Facilitator and Organizer of upcoming Academic/ Research Initiative",
   "photoFlag": "Y",
   "photo": "/img/tnnlu-tnnlu.jpg",
-  "photos": [],
+  "photos": [
+   "/img/tnnlu-tnnlu.jpg",
+   "/img/tnnlu-tnnlu-edited.jpg",
+   "/img/tnnlu-brochure-msme-research-collaboration.jpg"
+  ],
   "links": [],
   "upcoming": false
  },
@@ -465,7 +506,9 @@
   "role": "Participant/ Stakeholder",
   "photoFlag": "Y",
   "photo": "/img/ungcni-ilo-ilo-ungcni-workshop-rbc-2025.jpg",
-  "photos": [],
+  "photos": [
+   "/img/ungcni-ilo-ilo-ungcni-workshop-rbc-2025.jpg"
+  ],
   "links": [],
   "upcoming": false
  },

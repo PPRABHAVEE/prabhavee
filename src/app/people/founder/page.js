@@ -27,7 +27,7 @@ export default function Founder() {
       <section className="sec sec--mist">
         <div className="wrap cols-2">
           <div><span className="eyebrow">Academic &amp; professional training</span><p>{FOUNDER.training}</p><p>{FOUNDER.certs}</p></div>
-          <div><span className="eyebrow">Organisations engaged with</span><ul className="ticks ticks--sm">{deck.founderOrgs.map((o) => <li key={o}>{o.replace(/;$/, "")}</li>)}</ul></div>
+          <div><span className="eyebrow">Alumni network</span><div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 36 }}><img src="/img/logos/itcilo-alumni.png" alt="ITCILO Alumni Network member badge" style={{ width: 96, height: 96 }} /><p style={{ margin: 0 }}>Member of the International Training Centre of the ILO (ITCILO) Alumni Network since 2021.</p></div><span className="eyebrow">Organisations engaged with</span><ul className="ticks ticks--sm">{deck.founderOrgs.map((o) => <li key={o}>{o.replace(/;$/, "")}</li>)}</ul></div>
         </div>
       </section>
       <CtaBand next={["Read about our approach", "/background#approach"]} />

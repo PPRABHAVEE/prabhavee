@@ -11,7 +11,7 @@ export default function WhoWeServe() {
       <PageIntro crumb="Who we serve" title="Who we serve and collaborate with." lede="We partner with organisations that want to advance social impact and responsible business. We bring strategic capacity building and policy dialogue." />
       <section className="sec">
         <div className="wrap">
-          <div className="sec-head"><div><span className="eyebrow">Partners &amp; collaborations</span><h2>Three groups, three kinds of support.</h2></div><p>We address operational risks that could violate the human rights of people across the supply chain.</p></div>
+          <div className="sec-head"><div><span className="eyebrow">Partners &amp; collaborations</span><h2>Three groups, three kinds of support.</h2></div></div>
           <div className="cols-3">
             {PARTNER_GROUPS.map((g, i) => (
               <div className="row row--plain" key={g.who} style={{ borderTop: "2px solid var(--green)", padding: "26px 0" }}>
@@ -19,6 +19,12 @@ export default function WhoWeServe() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="sec">
+        <div className="wrap split">
+          <div><span className="eyebrow">Our collaborators</span><h2>Who we work alongside.</h2></div>
+          <div><p className="big">We collaborate with lawyers, academia, policy experts, sustainability and ESG professionals, industry bodies, business chambers, think tanks and educational institutions.</p><p>We work with them on projects and initiatives across business and human rights. We seek to be the ‘Convenor’ of this larger public discourse.</p></div>
         </div>
       </section>
       <section className="sec sec--mist">

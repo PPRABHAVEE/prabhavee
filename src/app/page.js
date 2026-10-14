@@ -46,7 +46,7 @@ export default function Home() {
           <div>
             <p className="big">P/ PRABHAVEE is an independent strategy and management consultancy based in Delhi. We advance human rights and responsible business.</p>
             <p>Lawyer Anumita Sarkar founded the practice in 2022. We offer strategic advisory, multi-stakeholder initiatives, consultation and facilitation, training and capacity building, and strategic programmes.</p>
-            <p>We focus on the social and governance dimensions of ESG. That is where regulation, labour standards, business practice and stakeholder expectations meet. We turn that into strategies for engagement and influence.</p>
+            <p>We focus on the social and governance dimensions of ESG. That is where regulation, labour standards, business practice and stakeholder expectations meet. We turn that into strategies for engagement and influence. We seek to be the ‘Convenor’ of this larger public discourse.</p>
             <Link className="link" href="/background">Read about our practice</Link>
           </div>
         </div>

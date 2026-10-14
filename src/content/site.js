@@ -196,6 +196,7 @@ export const CREDENTIALS = [
   { k: "Member", v: "UN Global Compact Network India, Anti-Corruption Collective Action Working Group (since 2022)" },
   { k: "Contributor", v: "GRI standards consultations, UN Working Group on Business and Human Rights, European Commission" },
   { k: "Advocate", v: "Registered with the Bar Council of Delhi" },
+  { k: "Alumni", v: "International Training Centre of the ILO (ITCILO) Alumni Network, member since 2021" },
 ];
 // Partner logos supplied in the deck (slide 30). Shown in full colour.
 export const LOGOS = [

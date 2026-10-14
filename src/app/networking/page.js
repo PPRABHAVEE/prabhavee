@@ -9,6 +9,7 @@ export const metadata = pageMeta("Networks & collaborations", "The networks, mem
 // Her feedback: these six are past networks and memberships.
 const PAST_MATCH = ["Young Leaders Council", "United Nations Global Compact Network India", "Indian Institute of Corporate Affairs (IICA)", "Indian Society for Training and Development"];
 const PAST_EXTRA = ["Institute of Directors (IOD)", "Womennovator"];
+const ROLES = [["Mentor", "Young Leaders Council (YLC), AIMA", "Leadership development"], ["Global mentor", "Womennovator, Global Incubator for Women", "Women empowerment"], ["Platform mentor", "G20 Women Entrepreneurship Platform (WEP), Niti Aayog, GoI", "Government initiative"], ["Industry mentor", "New Delhi Institute of Management (NDIM)", "Educational mentorship"], ["Working group member", "Anti-Corruption Collective Action Working Group, UNGCNI", "Anti-corruption initiative"]];
 const LOGOS = [["yellow-spark", "Yellow Spark"], ["sustaim", "Sustaim Consulting"], ["jsjc", "Jindal School of Journalism and Communication"], ["new-imaginations", "New Imaginations"], ["cbhr-tnnlu", "Centre for Business and Human Rights, TNNLU"], ["tnnlu", "Tamil Nadu National Law University"]];
 
 export default function Networking() {
@@ -24,6 +25,14 @@ export default function Networking() {
             {LOGOS.map(([f, a]) => <img key={f} src={`/img/logos/${f}.png`} alt={a} />)}
           </div>
           <ul className="collab">{deck.collaborations.map((c) => <li key={c}><span>{c}</span>{isPast(c) ? <span className="tag">Past</span> : null}</li>)}</ul>
+        </div>
+      </section>
+      <section className="sec">
+        <div className="wrap split">
+          <div><span className="eyebrow">Mentorship &amp; working groups</span><h2>Guiding the next generation.</h2><p>Roles Anumita Sarkar holds with partner organisations.</p></div>
+          <ul className="ticks">
+            {ROLES.map(([r, o, d]) => <li key={o}><b>{o}</b><br /><span style={{ color: "var(--muted)", fontSize: 15 }}>{r} · {d}</span></li>)}
+          </ul>
         </div>
       </section>
       <section className="sec sec--mist">
