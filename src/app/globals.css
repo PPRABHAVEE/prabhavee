@@ -546,3 +546,8 @@ button.ph:hover img { transform: scale(1.03); }
   .fw-k { font-size: 32px; }
   .fw-s { font-size: 15px; }
 }
+
+/* hidden dropdowns still occupy layout now that they fade: anchor the right-hand ones inward and clip any stray overflow */
+.nav .dd:nth-child(n + 4) .sub { left: auto; right: -12px; }
+body { overflow-x: clip; }
+@media (max-width: 880px) { .nav .dd:nth-child(n + 4) .sub { right: auto; } }
