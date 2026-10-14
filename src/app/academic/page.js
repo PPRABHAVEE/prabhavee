@@ -19,7 +19,7 @@ const OTHERS = ["Nirma University, Ahmedabad", "Centre for Communication Governa
 export default function Academic() {
   return (
     <>
-      <PageIntro crumb="Services / Academic collaborations" title="Academic collaborations." lede="We consult and collaborate with academic institutions and universities. Research, teaching and practice come together." />
+      <PageIntro crumb="Services / Academic collaborations" title="Academic collaborations." lede="We consult and collaborate with academic institutions and universities. Research, teaching and practice come together." image={{ src: "/img/banner-jsjc-workshop.webp", alt: "A workshop at the Jindal School of Journalism and Communication", caption: "Workshop at the Jindal School of Journalism and Communication", position: "center 55%" }} />
       <section className="sec">
         <div className="wrap">
           <h2 className="sr-only">Collaborations</h2>

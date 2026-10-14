@@ -12,7 +12,7 @@ export default function Events() {
   const years = events.flatMap((e) => e.year.match(/20\d\d/g) || []).sort();
   return (
     <>
-      <PageIntro crumb="Engagements / Events" title="Forums, trainings, consultations and dialogues." lede={`${events.length} engagements from ${years[0]} to ${years[years.length - 1]}. Each shows how we take part, and in what role.`} />
+      <PageIntro crumb="Engagements / Events" title="Forums, trainings, consultations and dialogues." lede={`${events.length} engagements from ${years[0]} to ${years[years.length - 1]}. Each shows how we take part, and in what role.`} image={{ src: "/img/banner-unrbhr-2026-anumita1.webp", alt: "Three delegates at the welcome sign of the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026", caption: "At the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok", position: "center 60%" }} />
       <section className="sec sec--mist">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Flagship programmes 2025–26</span><h2>Nine programmes we convened and hosted.</h2></div></div>

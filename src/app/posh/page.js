@@ -4,6 +4,7 @@ import CtaBand from "@/components/site/CtaBand";
 import PillarTabs from "@/components/posh/PillarTabs";
 import Pending from "@/components/site/Pending";
 import PhotoBand from "@/components/site/PhotoBand";
+import Img from "@/components/site/Img";
 import { pageMeta } from "@/lib/meta";
 import deck from "@/content/deck.json";
 
@@ -52,7 +53,7 @@ export default function Posh() {
           </details>
           <Pending title="Counts">70+ is the deck PDF figure; the PowerPoint says 60+ and the list of names has {deck.poshClients.length} distinct organisations. Confirm which to publish.</Pending>
           <div className="cols-2" style={{ marginTop: 50 }}>
-            <div><h3 style={{ fontSize: 24 }}>Mid-year PoSH review consultation</h3><p>Safe Workplaces by Design: a leadership imperative in risk governance. We reframed PoSH beyond a compliance mandate, as part of organisational risk governance. We designed safety and accountability. And we read PoSH through the ESG and BRSR lens.</p><a className="link" href="/docs/building-better-governance-2026.pdf" target="_blank" rel="noopener">Read the outcomes report (PDF)</a></div>
+            <div><Img src="/img/banner-governance-poster.webp" alt="Poster: Annual Roundtable 2026, Safe Workplaces by Design, a leadership imperative in risk governance" sizes="(max-width: 880px) 100vw, 320px" style={{ width: 240, marginBottom: 22 }} /><h3 style={{ fontSize: 24 }}>Mid-year PoSH review consultation</h3><p>Safe Workplaces by Design: a leadership imperative in risk governance. We reframed PoSH beyond a compliance mandate, as part of organisational risk governance. We designed safety and accountability. And we read PoSH through the ESG and BRSR lens.</p><a className="link" href="/docs/building-better-governance-2026.pdf" target="_blank" rel="noopener">Read the outcomes report (PDF)</a></div>
             <div><h3 style={{ fontSize: 24 }}>PoSH PRO programmes</h3><p>Two-day online programmes on PoSH at the workplace, co-organised with Yellow Spark.</p><Link className="link" href="/posh_workshop">About PoSH Pro</Link> &nbsp; <a className="link" href="/docs/prabhavee-posh-brochure.pdf" download>PoSH brochure (PDF)</a></div>
           </div>
         </div>

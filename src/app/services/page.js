@@ -16,7 +16,7 @@ const FOR = { "regulatory-risk": "Businesses, brands & suppliers", "policy-advoc
 export default function Services() {
   return (
     <>
-      <PageIntro crumb="Services" title="Practice areas." lede="Advisory, facilitation, capacity building and strategic programmes. For businesses, institutions and social purpose organisations. Practical solutions, tailored to each organisation’s needs." />
+      <PageIntro crumb="Services" title="Practice areas." lede="Advisory, facilitation, capacity building and strategic programmes. For businesses, institutions and social purpose organisations. Practical solutions, tailored to each organisation’s needs." image={{ src: "/img/banner-forum-session.webp", alt: "A session in progress at the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026", caption: "A session at the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok", position: "center 50%" }} />
       <nav className="subnav" aria-label="Practice areas"><div className="wrap">
         {SERVICES.map((s) => <a key={s.slug} href={`#${s.slug}`}>{s.title}</a>)}
         <a href="#nonprofit">For non-profits</a><a href="#engage">How we engage</a>

@@ -11,7 +11,7 @@ export const metadata = pageMeta("Training & capacity building", "Training and i
 export default function Training() {
   return (
     <>
-      <PageIntro crumb="Services / Training & capacity building" title="Training and capacity building." lede="Strategic, multi-stakeholder and sustainable. We build resilient systems and leadership for long-term impact. We drive collaboration and shared value for meaningful change." />
+      <PageIntro crumb="Services / Training & capacity building" title="Training and capacity building." lede="Strategic, multi-stakeholder and sustainable. We build resilient systems and leadership for long-term impact. We drive collaboration and shared value for meaningful change." image={{ src: "/img/banner-jsjc-session.webp", alt: "A training session in progress at the Jindal School of Journalism and Communication", caption: "A session at the Jindal School of Journalism and Communication", position: "center 40%" }} />
       <PhotoBand src="/img/ev/7-1.webp" alt="Participants at the business integrity and ESG orientation training by UN Global Compact Network India" caption="Business integrity and ESG orientation training, UN Global Compact Network India" position="center 35%" />
       <section className="sec">
         <div className="wrap">

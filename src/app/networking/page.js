@@ -27,7 +27,7 @@ export default function Networking() {
   const isPast = (n) => PAST_MATCH.some((p) => n.startsWith(p));
   return (
     <>
-      <PageIntro crumb="About / Networks & collaborations" title="Networks and strategic collaborations." lede="We work with leading organisations. Together we drive change and sustainable development across industries." />
+      <PageIntro crumb="About / Networks & collaborations" title="Networks and strategic collaborations." lede="We work with leading organisations. Together we drive change and sustainable development across industries." image={{ src: "/img/banner-forum-speakers.webp", alt: "Four speakers in front of a presentation screen at the UN Responsible Business and Human Rights Forum", caption: "At the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok", position: "center 35%" }} />
       <section className="sec">
         <div className="wrap">
           <div className="sec-head">

@@ -10,7 +10,7 @@ export default function Contact() {
     <>
       <PageIntro crumb="Contact us" title="Write to us to discuss." lede="Tell us about your organisation. Tell us what support you need. We discuss terms directly." />
       <section className="sec">
-        <div className="wrap enq" style={{ gridTemplateColumns: ".8fr 1.2fr" }}>
+        <div className="wrap enq enq--contact">
           <aside className="contact-card">
             <span className="eyebrow">Get in touch</span>
             <h2>A conversation is a good place to start.</h2>

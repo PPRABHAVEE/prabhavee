@@ -24,7 +24,7 @@ const THEMES = ["Business & human rights", "Responsible business conduct & pract
 export default function About() {
   return (
     <>
-      <PageIntro crumb="About" title="Who we are." lede="P/ PRABHAVEE is an independent strategy and management consultancy based in Delhi. We advance human rights and responsible business through strategic advisory, multi-stakeholder initiatives, facilitation, training and strategic programmes." />
+      <PageIntro crumb="About" title="Who we are." lede="P/ PRABHAVEE is an independent strategy and management consultancy based in Delhi. We advance human rights and responsible business through strategic advisory, multi-stakeholder initiatives, facilitation, training and strategic programmes." image={{ src: "/img/banner-forum-hall.webp", alt: "A working hall at the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026", caption: "UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok", position: "center 55%" }} />
       <nav className="subnav" aria-label="On this page"><div className="wrap">
         <a href="#background">Background</a><a href="#approach">Approach</a><a href="#expertise">Consulting expertise</a><a href="#frameworks">Frameworks</a><a href="#strengths">Strengths</a><a href="#contribution">Contribution</a><a href="#context">Context</a>
       </div></nav>

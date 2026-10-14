@@ -10,7 +10,7 @@ export const metadata = pageMeta("Who we serve & collaborate with", "Businesses,
 export default function WhoWeServe() {
   return (
     <>
-      <PageIntro crumb="Who we serve" title="Who we serve and collaborate with." lede="We partner with organisations that want to advance social impact and responsible business. We bring strategic capacity building and policy dialogue." />
+      <PageIntro crumb="Who we serve" title="Who we serve and collaborate with." lede="We partner with organisations that want to advance social impact and responsible business. We bring strategic capacity building and policy dialogue." image={{ src: "/img/banner-forum-stage.webp", alt: "Participants on stage after a session at the UN Responsible Business and Human Rights Forum", caption: "At the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok", position: "center 40%" }} />
       <section className="sec">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Partners &amp; collaborations</span><h2>Three groups. Three kinds of support.</h2></div><p>We address operational risks that could violate the human rights of people across the supply chain.</p></div>

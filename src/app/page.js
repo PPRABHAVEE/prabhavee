@@ -15,6 +15,8 @@ const HERO = [
   ["/img/unrbhr-forum-2026-55529117037-f155f3b5a1-c.webp", "Delegates at the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026"],
   ["/img/jindal-jindal-1.webp", "Participants at a workshop with the Jindal School of Journalism and Communication"],
   ["/img/ungcni-ilo-ilo-ungcni-workshop-rbc-2025.webp", "Participants at the ILO and UN Global Compact Network India workshop on responsible business conduct, 2025"],
+  ["/img/banner-forum-stage.webp", "Participants on stage after a session at the UN Responsible Business and Human Rights Forum"],
+  ["/img/banner-unrbhr-2026-anumita1.webp", "Delegates at the welcome sign of the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026"],
 ];
 
 export default function Home() {
