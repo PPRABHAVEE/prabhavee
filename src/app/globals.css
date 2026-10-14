@@ -672,3 +672,5 @@ body { overflow-x: clip; }
 }
 
 @media (min-width: 881px) { .enq--contact { grid-template-columns: .8fr 1.2fr; } }
+
+.band--natural img { aspect-ratio: auto; }

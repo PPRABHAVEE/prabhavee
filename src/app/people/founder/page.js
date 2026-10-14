@@ -15,7 +15,7 @@ export const metadata = pageMeta("Founder: Anumita Sarkar", "Anumita Sarkar, law
 export default function Founder() {
   return (
     <>
-      <PageIntro crumb="People / Founder" title="About the founder." />
+      <PageIntro crumb="People / Founder" title="About the founder." image={{ src: "/img/banner-unrbhr-anumita.webp", alt: "Anumita Sarkar standing at the welcome sign of the UN Responsible Business and Human Rights Forum, Bangkok", caption: "Anumita Sarkar at the UN Responsible Business and Human Rights Forum, Bangkok", position: "center 30%" }} />
       <section className="sec">
         <div className="wrap person">
           <div><Img src="/img/founder.webp" alt={FOUNDER.name} sizes="(max-width: 880px) 100vw, 40vw" priority /></div>

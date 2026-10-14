@@ -21,7 +21,7 @@ const EXPERTS = [["Sumana Bhattacharya", "Adjunct Professor, National Institute 
 export default function Journey() {
   return (
     <>
-      <PageIntro crumb="About / Strategic milestones" title="Empowering progress through purposeful evolution." lede="From vision to impact. Our defining achievements and turning points." />
+      <PageIntro crumb="About / Strategic milestones" title="Empowering progress through purposeful evolution." lede="From vision to impact. Our defining achievements and turning points." image={{ src: "/img/ev/1-1.webp", alt: "The venue of the UN Responsible Business and Human Rights Forum, Asia-Pacific 2024, Bangkok, with national flags", caption: "UN Responsible Business and Human Rights Forum, Asia-Pacific 2024, Bangkok", position: "center 40%" }} />
       <section className="sec sec--mist">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">At a glance</span><h2>2022 to 2026.</h2></div><p>Seven turning points. The full story is below.</p></div>

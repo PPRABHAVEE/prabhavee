@@ -2,6 +2,7 @@ import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import Pending from "@/components/site/Pending";
 import Img from "@/components/site/Img";
+import PhotoBand from "@/components/site/PhotoBand";
 import { pageMeta } from "@/lib/meta";
 
 export const metadata = pageMeta("Resources", "Videos, brochures, reports and submissions from P/ PRABHAVEE: the GCNI impact report, PoSH governance outcomes, and EU and UN consultation inputs.", "/resources");
@@ -29,6 +30,7 @@ export default function Resources() {
   return (
     <>
       <PageIntro crumb="Engagements / Resources" title="Videos, brochures, reports and submissions." lede="Watch our sessions. Download our brochures. Read the reports and submissions we have contributed to." />
+      <PhotoBand natural src="/img/banner-excellence-in-multi-stakeholder-2.webp" alt="A collage of P/ PRABHAVEE workshops, consultations and convenings, and of the supply chains they address" caption="Workshops, consultations and convenings across our partners" />
       <section className="sec">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Videos</span><h2>Watch and listen.</h2></div></div>
