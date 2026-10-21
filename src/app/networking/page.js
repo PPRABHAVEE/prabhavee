@@ -2,9 +2,21 @@ import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import Img from "@/components/site/Img";
 import { pageMeta } from "@/lib/meta";
-import { LOGOS, NETWORK_BLOCKS } from "@/content/site";
+import { NETWORK_BLOCKS } from "@/content/site";
+import { LogoRow } from "@/components/site/TrustStrip";
 
 export const metadata = pageMeta("Networks & collaborations", "Ongoing and past networks, mentorship roles and strategic collaborations of P/ PRABHAVEE across the UN system, universities, industry bodies and civil society.", "/networking");
+
+// Short mark for a crest/badge: the bracketed acronym, a short lead word before a comma, or an explicit override.
+const MARKS = { "UN Global Compact Network India": "UNGC", "Teaching Business and Human Rights Forum": "TBHR", "eLearnPOSH.com": "eLP", "New Delhi Institute of Management (NDIM)": "NDIM", "Womennovator": "WN", "Institute of Directors (IOD)": "IOD" };
+function mark(name) {
+  if (MARKS[name]) return MARKS[name];
+  const paren = name.match(/\(([A-Za-z.]+)\)/);
+  if (paren) return paren[1];
+  const lead = name.split(",")[0];
+  if (lead.length <= 6) return lead;
+  return lead.split(/\s+/).map((w) => w[0]).join("").slice(0, 4).toUpperCase();
+}
 
 export default function Networking() {
   return (
@@ -16,10 +28,7 @@ export default function Networking() {
             <div><span className="eyebrow">Strategic collaborations</span><h2>Organisations we work with.</h2></div>
             <p>Across the UN system, academia, research centres and civil society.</p>
           </div>
-          <div className="logo-strip">
-            <Img className="wide" src="/img/logos/un-agencies.png" alt="ILO, UN Women, IOM, UNEP, UNICEF, UN Human Rights and UNDP Business and Human Rights Asia" sizes="760px" />
-            {LOGOS.map(([f, a]) => <Img key={f} src={`/img/logos/${f}.png`} alt={a} />)}
-          </div>
+          <LogoRow title="Our collaborators" />
         </div>
       </section>
 
@@ -30,7 +39,25 @@ export default function Networking() {
             {b.categories.map((c) => (
               <div className="cat" key={c.title}>
                 <div className="cat-h"><h3>{c.title}</h3>{c.subtitle ? <span>{c.subtitle}</span> : null}</div>
-                <ul className="collab">{c.items.map(([n, o, r, href]) => <li key={n + r}><span>{n}<small>{o} · {r}</small>{href ? <small><a className="link" href={href} target="_blank" rel="noopener noreferrer">View profile on eLearnPOSH</a></small> : null}</span></li>)}</ul>
+                {bi === 0 ? (
+                  <ul className={`net-grid${c.items.length < 3 ? " net-grid--2" : ""}`}>{c.items.map(([n, o, r, href]) => (
+                    <li className="net-card" key={n + r}>
+                      <div className="net-top"><span className="net-crest" aria-hidden="true">{mark(n)}</span><span className="net-role">{r}</span></div>
+                      <h4>{n}</h4>
+                      <p>{o}</p>
+                      {href ? <a className="link" href={href} target="_blank" rel="noopener noreferrer">View profile on eLearnPOSH<span className="sr-only"> (opens in a new tab)</span></a> : null}
+                    </li>
+                  ))}</ul>
+                ) : (
+                  <ul className="mem-grid">{c.items.map(([n, o, r]) => (
+                    <li className="mem-tile" key={n + r}>
+                      <span className="mem-mark" aria-hidden="true">{mark(n)}</span>
+                      <h4>{n}</h4>
+                      <p>{o}</p>
+                      <span className="mem-role">{r}</span>
+                    </li>
+                  ))}</ul>
+                )}
               </div>
             ))}
           </div>
