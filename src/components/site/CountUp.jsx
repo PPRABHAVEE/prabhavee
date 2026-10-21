@@ -27,5 +27,5 @@ export default function CountUp({ value }) {
   }, [value]);
   if (!m) return <span>{value}</span>;
   const fmt = (n) => (m[2].includes(",") ? n.toLocaleString("en-IN") : String(n));
-  return <span ref={ref}>{m[1]}{shown === null ? m[2] : fmt(shown)}{m[3]}</span>;
+  return <span ref={ref}>{m[1]}{shown === null ? m[2] : fmt(shown)}{m[3] ? <span className="sfx">{m[3]}</span> : null}</span>;
 }

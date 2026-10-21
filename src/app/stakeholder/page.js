@@ -9,7 +9,7 @@ export default function Stakeholder() {
   useEffect(() => { router.replace("/journey#stakeholder"); }, [router]);
   return (
     <section className="sec"><div className="wrap">
-      <h1 style={{ fontSize: 40 }}>This page has moved.</h1>
+      <h1>This page has moved.</h1>
       <p>Stakeholder engagement and initiatives is now part of <Link className="link" href="/journey#stakeholder">Strategic milestones</Link>.</p>
     </div></section>
   );

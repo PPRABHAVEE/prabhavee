@@ -2,13 +2,11 @@ import Link from "next/link";
 import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import PillarTabs from "@/components/posh/PillarTabs";
-import Pending from "@/components/site/Pending";
 import PhotoBand from "@/components/site/PhotoBand";
 import Img from "@/components/site/Img";
 import { pageMeta } from "@/lib/meta";
-import deck from "@/content/deck.json";
 
-export const metadata = pageMeta("PoSH consultancy & services", "PoSH advisory, training, compliance and external member services under the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013.", "/posh");
+export const metadata = pageMeta("PoSH training & compliance support", "PoSH advisory, training, compliance and external member services under the Sexual Harassment of Women at Workplace Act, 2013.", "/posh");
 
 // Retained from the current website (feedback: PoSH content is fine)
 const PILLARS = [
@@ -22,17 +20,18 @@ const WHY = [["End-to-end PoSH support", "From policy drafting and Internal Comm
 export default function Posh() {
   return (
     <>
-      <PageIntro crumb="Services / PoSH consultancy & services" title="Safeguarding workplaces with integrity." lede="We help organisations create inclusive, legally compliant and safe workplaces. Our PoSH services rest on deep legal expertise. They go beyond theory to practical, workable solutions." />
+      <PageIntro crumb="Services / PoSH training & compliance support" title="Safeguarding workplaces with integrity." lede="We help organisations create inclusive, legally compliant and safe workplaces. Our PoSH services rest on deep legal expertise. They go beyond theory to practical, workable solutions." />
       <section className="sec">
         <div className="wrap split">
-          <div><span className="eyebrow">The law</span><h2>The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013</h2>
+          <span className="eyebrow">The law</span>
+          <div><h2>The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013</h2>
             <p>Anumita Sarkar is registered with the Ministry of Women &amp; Child Development, Government of India. She serves as an External Member of PoSH Internal Committees.</p></div>
           <div className="cols-2" style={{ gap: "0 36px" }}>{WHY.map(([h, t]) => <div className="row row--plain" key={h} style={{ borderTop: "2px solid var(--green)" }}><div><h3>{h}</h3><p>{t}</p></div></div>)}</div>
         </div>
       </section>
 
       <PhotoBand src="/img/ndim-posh-ndim-3.webp" alt="Faculty and staff at a PoSH training session at the New Delhi Institute of Management" caption="PoSH training for faculty and staff, New Delhi Institute of Management" position="center 55%" />
-      <section className="sec sec--mist" style={{ marginTop: 70 }}>
+      <section className="sec sec--mist" style={{ marginTop: 44 }}>
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Our core service pillars</span><h2>Choose the support your organisation needs.</h2></div></div>
           <PillarTabs pillars={PILLARS} />
@@ -41,24 +40,19 @@ export default function Posh() {
 
       <section className="sec">
         <div className="wrap">
-          <div className="figs figs--4" style={{ marginBottom: 54 }}>
+          <div className="figs figs--4" style={{ marginBottom: 34 }}>
             <div><b>70+</b><span>organisations empowered through PoSH training</span></div>
             <div><b>15+</b><span>participants at the July 2026 mid-year PoSH review roundtable</span></div>
             <div><b>1150+</b><span>individuals trained</span></div>
-            <div><b>3</b><span>PoSH PRO programmes with Yellow Spark</span></div>
+            <div><b>9</b><span>flagship programmes convened and hosted, 2025–26</span></div>
           </div>
-          <details className="list">
-            <summary>Organisations we have trained ({deck.poshClients.length})</summary>
-            <ul className="cols-list">{deck.poshClients.map((c) => <li key={c}>{c}</li>)}</ul>
-          </details>
-          <Pending title="Counts">70+ is the deck PDF figure; the PowerPoint says 60+ and the list of names has {deck.poshClients.length} distinct organisations. Confirm which to publish.</Pending>
-          <div className="cols-2" style={{ marginTop: 50 }}>
-            <div><Img src="/img/banner-governance-poster.webp" alt="Poster: Annual Roundtable 2026, Safe Workplaces by Design, a leadership imperative in risk governance" sizes="(max-width: 880px) 100vw, 320px" style={{ width: 240, marginBottom: 22 }} /><h3 style={{ fontSize: 24 }}>Mid-year PoSH review consultation</h3><p>Safe Workplaces by Design: a leadership imperative in risk governance. We reframed PoSH beyond a compliance mandate, as part of organisational risk governance. We designed safety and accountability. And we read PoSH through the ESG and BRSR lens.</p><a className="link" href="/docs/building-better-governance-2026.pdf" target="_blank" rel="noopener">Read the outcomes report (PDF)</a></div>
-            <div><h3 style={{ fontSize: 24 }}>PoSH PRO programmes</h3><p>Two-day online programmes on PoSH at the workplace, co-organised with Yellow Spark.</p><Link className="link" href="/posh_workshop">About PoSH Pro</Link> &nbsp; <a className="link" href="/docs/prabhavee-posh-brochure.pdf" download>PoSH brochure (PDF)</a></div>
+          <div className="cols-2 posh-programmes" style={{ marginTop: 32 }}>
+            <Img src="/img/banner-governance-poster.webp" alt="Poster: Annual Roundtable 2026, Safe Workplaces by Design, a leadership imperative in risk governance" sizes="(max-width: 880px) 100vw, 320px" style={{ width: 240, marginBottom: 22 }} /><div><h3>Mid-year PoSH review consultation</h3><p>Reframes PoSH as a strategic governance priority rather than a compliance obligation, exploring workplace grey zones, organisational risk areas and Internal Committee accountability. Examines PoSH through an ESG and BRSR lens, highlighting its growing relevance as investor-visible governance data and a measure of organisational responsibility and accountability.</p><a className="link" href="/docs/building-better-governance-2026.pdf" target="_blank" rel="noopener">Read the outcomes report (PDF)</a></div>
+            <div><h3>PoSH PRO programmes</h3><p>Two-day online programmes on PoSH at the workplace, co-organised with Yellow Spark.</p><a className="link" href="/docs/prabhavee-posh-brochure.pdf" download>PoSH brochure (PDF)</a></div>
           </div>
         </div>
       </section>
-      <CtaBand next={["Read about PoSH Pro", "/posh_workshop"]} />
+      <CtaBand next={["See our engagements", "/events"]} />
     </>
   );
 }

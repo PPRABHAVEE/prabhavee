@@ -16,12 +16,12 @@
 195
 ],
 "/img/founder.webp": [
-1152,
-1440
+971,
+1620
 ],
 "/img/founder-sm.webp": [
 640,
-800
+1068
 ],
 "/img/posh-pro-advanced-posh-pro-advanced-banner.webp": [
 1400,
@@ -684,16 +684,16 @@
 162
 ],
 "/img/logos/jsjc.png": [
-640,
-484
+900,
+680
 ],
 "/img/logos/tnnlu.png": [
-615,
-615
+800,
+800
 ],
 "/img/logos/new-imaginations.png": [
-617,
-320
+771,
+400
 ],
 "/img/logos/yellow-spark.png": [
 694,
@@ -704,8 +704,8 @@
 100
 ],
 "/img/logos/sustaim.png": [
-568,
-439
+453,
+152
 ],
 "/img/deck/how-we-engage.png": [
 2000,
@@ -786,5 +786,149 @@
 "/img/banner-governance-poster-sm.webp": [
 640,
 905
+],
+"/img/ev/42-1.webp": [
+1400,
+654
+],
+"/img/ev/42-1-sm.webp": [
+640,
+299
+],
+"/img/ev/39-1.webp": [
+951,
+687
+],
+"/img/ev/39-1-sm.webp": [
+640,
+462
+],
+"/img/17-july-2026-roundtable.webp": [
+1400,
+600
+],
+"/img/17-july-2026-roundtable-sm.webp": [
+640,
+274
+],
+"/img/jindal-webinar-2026.webp": [
+1323,
+742
+],
+"/img/jindal-webinar-2026-sm.webp": [
+640,
+359
+],
+"/img/posh-pro-2025-grid.webp": [
+1400,
+788
+],
+"/img/posh-pro-2025-grid-sm.webp": [
+640,
+360
+],
+"/img/posh-pro-advanced-2026-hosts.webp": [
+1400,
+788
+],
+"/img/posh-pro-advanced-2026-hosts-sm.webp": [
+640,
+360
+],
+"/img/tnnlu-plenary-dec-2025.webp": [
+887,
+528
+],
+"/img/tnnlu-plenary-dec-2025-sm.webp": [
+640,
+381
+],
+"/img/unrbhr-forum-2026-group.webp": [
+1280,
+960
+],
+"/img/unrbhr-forum-2026-group-sm.webp": [
+640,
+480
+],
+"/img/banner-home-hall.webp": [
+1280,
+852
+],
+"/img/banner-home-hall-sm.webp": [
+640,
+426
+],
+"/img/banner-home-bangkok-2024.webp": [
+1400,
+1867
+],
+"/img/banner-home-bangkok-2024-sm.webp": [
+640,
+853
+],
+"/img/banner-home-esg-rollup.webp": [
+1400,
+2100
+],
+"/img/banner-home-esg-rollup-sm.webp": [
+640,
+960
+],
+"/img/banner-home-aima-conclave.webp": [
+1400,
+1867
+],
+"/img/banner-home-aima-conclave-sm.webp": [
+640,
+853
+],
+"/img/banner-networks-aima-2026.webp": [
+1600,
+1160
+],
+"/img/banner-networks-aima-2026-sm.webp": [
+640,
+464
+],
+"/img/ev/27-1.webp": [
+1400,
+784
+],
+"/img/ev/27-1-sm.webp": [
+640,
+358
+],
+"/img/ev/47-1.webp": [
+1200,
+1200
+],
+"/img/ev/47-1-sm.webp": [
+640,
+640
+],
+"/img/ev/47-2.webp": [
+1200,
+1200
+],
+"/img/ev/47-2-sm.webp": [
+640,
+640
+],
+"/img/ev/47-3.webp": [
+1200,
+1200
+],
+"/img/ev/47-3-sm.webp": [
+640,
+640
+],
+"/img/ev/47-4.webp": [
+1200,
+1200
+],
+"/img/ev/47-4-sm.webp": [
+640,
+640
 ]
 }

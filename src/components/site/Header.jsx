@@ -30,20 +30,11 @@ export default function Header() {
 
   return (
     <>
-      <aside className="util" aria-label="Registration and contact details">
-        <div className="util-in">
-          <span>{SITE.registered}</span>
-          <span className="util-links">
-            <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
-            <a href={SITE.linkedinCompany} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </span>
-        </div>
-      </aside>
       <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
         <div className="header-in">
           <Link className="brand" href="/">
-            <span className="brand-mark">P/</span>
-            <span><b className="brand-name">PRABHAVEE</b><small className="brand-sub">PARTNER FOR SOCIAL IMPACT</small></span>
+            <img className="brand-logo" src="/images/logo-mark.png" width="405" height="135" alt="P/ PRABHAVEE, Partner for Social Impact" />
+            <span className="brand-strap">{SITE.strapline}</span>
           </Link>
           <button className="menu-btn" aria-expanded={open} aria-controls="site-nav" onClick={() => setOpen(!open)}>{open ? "Close" : "Menu"}</button>
           <nav id="site-nav" className={`nav${open ? " open" : ""}`} aria-label="Main navigation" onKeyDown={closeMenus}>
@@ -54,7 +45,7 @@ export default function Header() {
                     <Link href={g.href} aria-current={groupOn(g)}>{g.label}</Link>
                     <div className="mega">
                       <div className="mega-in">
-                        <p className="mega-intro">{MEGA.intro}</p>
+                        {MEGA.intro ? <p className="mega-intro">{MEGA.intro}</p> : null}
                         <div className="mega-cols">
                           {MEGA.columns.map((c) => (
                             <div key={c.heading}>

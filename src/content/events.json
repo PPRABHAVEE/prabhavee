@@ -1,5 +1,20 @@
 [
  {
+  "n": 58,
+  "title": "Participated in a closed-door Consultation with Partners for Law in Development as part of a lawyers’ group on the theme of prevention of workplace sexual harassment and safety for women in the legal system.",
+  "detail": [],
+  "year": "2026",
+  "yearSort": 2026,
+  "type": "Stakeholder Consultation",
+  "category": "Consultations",
+  "role": "Participant",
+  "photoFlag": "",
+  "photo": null,
+  "photos": [],
+  "links": [],
+  "upcoming": false
+ },
+ {
   "n": 47,
   "title": "PoSH Governance Review, Annual Reporting and Strategic Planning: Year-end Consultation and Governance Masterclass by P/ PRABHAVEE",
   "detail": [],
@@ -8,9 +23,14 @@
   "type": "Public Consultation / Professional Development",
   "category": "Consultations",
   "role": "Facilitator and Trainer",
-  "photoFlag": "",
-  "photo": null,
-  "photos": [],
+  "photoFlag": "Y",
+  "photo": "/img/ev/47-1.webp",
+  "photos": [
+   "/img/ev/47-1.webp",
+   "/img/ev/47-2.webp",
+   "/img/ev/47-3.webp",
+   "/img/ev/47-4.webp"
+  ],
   "links": [],
   "upcoming": true
  },
@@ -46,7 +66,7 @@
  },
  {
   "n": 54,
-  "title": "Building Better Governance: Consultation Outcomes Report” from the Mid-Year PoSH Review: Safe Workplaces by Design published in August 2026",
+  "title": "“Building Better Governance: Consultation Outcomes Report” from the Mid-Year PoSH Review: Safe Workplaces by Design published in August 2026",
   "detail": [],
   "year": "2026",
   "yearSort": 2026,
@@ -65,7 +85,7 @@
  },
  {
   "n": 53,
-  "title": "Legal and Policy Framework around Social aspects in India\"- Part I & Part II of ESG Compliance Lead Course (Batch - 3) by EHS GURU Sustainable Solutions Pvt. Ltd. in collaboration with Guru Gobind Singh Indraprastha University, New Delhi.",
+  "title": "“Legal and Policy Framework around Social aspects in India” - Part I & Part II of ESG Compliance Lead Course (Batch - 3) by EHS GURU Sustainable Solutions Pvt. Ltd. in collaboration with Guru Gobind Singh Indraprastha University, New Delhi.",
   "detail": [],
   "year": "2026",
   "yearSort": 2026,
@@ -107,7 +127,9 @@
   "photoFlag": "N",
   "photo": null,
   "photos": [],
-  "links": [],
+  "links": [
+   "https://www.globalreporting.org/standards/standards-development/topic-standards-project-for-labor/"
+  ],
   "upcoming": false
  },
  {
@@ -122,7 +144,9 @@
   "photoFlag": "N",
   "photo": null,
   "photos": [],
-  "links": [],
+  "links": [
+   "https://shebox.wcd.gov.in/empanelmentReport"
+  ],
   "upcoming": false
  },
  {
@@ -162,7 +186,7 @@
  },
  {
   "n": 45,
-  "title": "Power Dynamics and ‘Consent’ in Hierarchical Workplaces: Rethinking Research Ethics in Higher Education published by eLearn PoSH",
+  "title": "Power Dynamics and ‘Consent’ in Hierarchical Workplaces: Rethinking Research Ethics in Higher Education published by eLearnPOSH",
   "detail": [],
   "year": "2026",
   "yearSort": 2026,
@@ -173,7 +197,7 @@
   "photo": null,
   "photos": [],
   "links": [
-   "https://elearnposh.com/tag/posh/?utm_source=google&utm_medium=organic&utm_campaign=auto_detected"
+   "https://elearnposh.com/tag/posh/"
   ],
   "upcoming": false
  },
@@ -221,8 +245,10 @@
   "category": "Training & capacity building",
   "role": "Trainer",
   "photoFlag": "Y",
-  "photo": null,
-  "photos": [],
+  "photo": "/img/ev/42-1.webp",
+  "photos": [
+   "/img/ev/42-1.webp"
+  ],
   "links": [],
   "upcoming": false
  },
@@ -233,12 +259,12 @@
   "year": "2026",
   "yearSort": 2026,
   "type": "Public Consultation/ Capacity Building",
-  "category": "Consultations",
+  "category": "Roundtables & multi-stakeholder dialogues",
   "role": "Facilitator and Trainer",
   "photoFlag": "Y",
-  "photo": "/img/17-july-2026-poster.webp",
+  "photo": "/img/17-july-2026-roundtable.webp",
   "photos": [
-   "/img/17-july-2026-poster.webp",
+   "/img/17-july-2026-roundtable.webp",
    "/img/17-july-2026-17-07-2026.webp",
    "/img/17-july-2026-guest-speaker.webp"
   ],
@@ -259,16 +285,17 @@
   "photos": [
    "/img/unrbhr-forum-2026-55529117037-f155f3b5a1-c.webp",
    "/img/unrbhr-forum-2026-55530242728-ed92f4e6a9-c.webp",
-   "/img/unrbhr-forum-2026-55531628986-0223b14d31-c.webp",
-   "/img/unrbhr-forum-2026-55531653576-f14bb7362e-c.webp",
-   "/img/unrbhr-forum-2026-55531807479-b381c7d9dc-c.webp"
+   "/img/unrbhr-forum-2026-55531807479-b381c7d9dc-c.webp",
+   "/img/unrbhr-forum-2026-group.webp"
   ],
-  "links": [],
+  "links": [
+   "https://www.youtube.com/watch?v=ux0yvv89Pl0&list=PLd1oe7-gK28U&index=7"
+  ],
   "upcoming": false
  },
  {
   "n": 39,
-  "title": "Learning Circle 1: “P/ PRABHAVEE’s Trainer’s Programme: PoSH Law & Practice",
+  "title": "Learning Circle 1: “P/ PRABHAVEE’s Trainer’s Programme: PoSH Law & Practice”",
   "detail": [],
   "year": "2026",
   "yearSort": 2026,
@@ -276,27 +303,27 @@
   "category": "Training & capacity building",
   "role": "Facilitator and Trainer",
   "photoFlag": "Y",
-  "photo": null,
-  "photos": [],
+  "photo": "/img/ev/39-1.webp",
+  "photos": [
+   "/img/ev/39-1.webp",
+   "/img/deck/flagship-first10-poster.webp"
+  ],
   "links": [],
   "upcoming": false
  },
  {
   "n": 38,
-  "title": "The Business of Human Rights: Unpacking Linkages between Corporate Accountability, Rights-based Frameworks and the Fourth Estate co-organized by New Imaginations: Centre for Peace, Conflict and Justice, of Jindal School of Journalism and Communication at O.P. Jindal Global University and P/ PRABHAVEE",
+  "title": "The Business of Human Rights: Unpacking Linkages between Corporate Accountability, Rights-based Frameworks and the Fourth Estate co-organised by New Imaginations: Centre for Peace, Conflict and Justice, of Jindal School of Journalism and Communication at O.P. Jindal Global University and P/ PRABHAVEE",
   "detail": [],
   "year": "2026",
   "yearSort": 2026,
   "type": "Multi-stakeholder convenings & Dialogues",
-  "category": "Roundtables & multi-stakeholder dialogues",
+  "category": "Academic collaborations",
   "role": "Academic collaboration",
   "photoFlag": "Y",
-  "photo": "/img/jindal-jsjc-5.webp",
+  "photo": "/img/jindal-webinar-2026.webp",
   "photos": [
-   "/img/jindal-jsjc-5.webp",
-   "/img/jindal-jsjc-6.webp",
-   "/img/jindal-jsjc-7.webp",
-   "/img/jindal-jsjc-8.webp"
+   "/img/jindal-webinar-2026.webp"
   ],
   "links": [
    "https://www.youtube.com/watch?v=Nsdxj1KCyIM"
@@ -305,12 +332,12 @@
  },
  {
   "n": 37,
-  "title": "2-Day Workshop on Corporate Accountability, Business Reporting, and Human Rights, co-organized by New Imaginations: Centre for Peace, Conflict and Justice, of Jindal School of Journalism and Communication at O.P. Jindal Global University and P/ PRABHAVEE at JGU Campus, Sonipat, Haryana",
+  "title": "2-Day Workshop on Corporate Accountability, Business Reporting, and Human Rights, co-organised by New Imaginations: Centre for Peace, Conflict and Justice, of Jindal School of Journalism and Communication at O.P. Jindal Global University and P/ PRABHAVEE at JGU Campus, Sonipat, Haryana",
   "detail": [],
   "year": "2026",
   "yearSort": 2026,
   "type": "Training/ Capacity Building",
-  "category": "Training & capacity building",
+  "category": "Academic collaborations",
   "role": "Academic collaboration",
   "photoFlag": "Y",
   "photo": "/img/jindal-jindal-1.webp",
@@ -324,7 +351,7 @@
  },
  {
   "n": 36,
-  "title": "BeatRoute Employee PoSH Training",
+  "title": "Employee PoSH Awareness / Compliance Training",
   "detail": [],
   "year": "2026",
   "yearSort": 2026,
@@ -342,7 +369,7 @@
  },
  {
   "n": 35,
-  "title": "EHS GURU Sustainable Solutions Pvt. Ltd. - Employee PoSH Training",
+  "title": "Employee PoSH Awareness / Compliance Training",
   "detail": [],
   "year": "2026",
   "yearSort": 2026,
@@ -357,13 +384,13 @@
  },
  {
   "n": 34,
-  "title": "Third Stakeholder Consultation - Group 3 - CSOs, Academia, Policy experts, Labor rights organisations, and researchers",
+  "title": "Third Stakeholder Consultation - Group 3 - CSOs, Academia, Policy experts, Labour rights organisations, and researchers",
   "detail": [],
   "year": "2026",
   "yearSort": 2026,
   "type": "Consultation",
-  "category": "Consultations",
-  "role": "Facilitator and Organizer of upcoming Academic/ Research Initiative",
+  "category": "Academic collaborations",
+  "role": "Facilitator and Organiser of upcoming Academic/ Research Initiative",
   "photoFlag": "Y",
   "photo": null,
   "photos": [],
@@ -377,7 +404,7 @@
   "year": "2026",
   "yearSort": 2026,
   "type": "Training/ Capacity Building",
-  "category": "Training & capacity building",
+  "category": "Academic collaborations",
   "role": "Faculty/ Speaker",
   "photoFlag": "N",
   "photo": null,
@@ -387,7 +414,7 @@
  },
  {
   "n": 32,
-  "title": "POSH PRO Advanced: Hosted a 2-Day Online Workshop on PoSH Act and its application at the Workplace in collaboration with Yellow Spark",
+  "title": "PoSH PRO Advanced: Hosted a 2-Day Online Workshop on PoSH Act and its application at the Workplace in collaboration with Yellow Spark",
   "detail": [],
   "year": "2026",
   "yearSort": 2026,
@@ -400,7 +427,8 @@
    "/img/posh-pro-advanced-20.webp",
    "/img/posh-pro-advanced-21.webp",
    "/img/posh-pro-advanced-22.webp",
-   "/img/posh-pro-advanced-23.webp"
+   "/img/posh-pro-advanced-23.webp",
+   "/img/posh-pro-advanced-2026-hosts.webp"
   ],
   "links": [],
   "upcoming": false
@@ -450,8 +478,8 @@
   "year": "2025",
   "yearSort": 2025,
   "type": "Multi-stakeholder convenings & Dialogues",
-  "category": "Roundtables & multi-stakeholder dialogues",
-  "role": "Facilitator and Organizer of upcoming Academic/ Research Initiative",
+  "category": "Academic collaborations",
+  "role": "Facilitator and Organiser of upcoming Academic/ Research Initiative",
   "photoFlag": "Y",
   "photo": null,
   "photos": [],
@@ -460,35 +488,34 @@
  },
  {
   "n": 30,
-  "title": "Opening High-Level Plenary Session and the launch of the research initiative titled “Local Economies, Global Values: MSMEs Driving Gender Equity in South India — Second Stakeholder Consultation - Group 2: Government representatives",
+  "title": "Opening High-Level Plenary Session and the launch of the research initiative titled “Local Economies, Global Values: MSMEs Driving Gender Equity in South India” — Second Stakeholder Consultation - Group 2: Government representatives",
   "detail": [],
   "year": "2025",
   "yearSort": 2025,
   "type": "Multi-stakeholder convenings & Dialogues",
-  "category": "Roundtables & multi-stakeholder dialogues",
-  "role": "Facilitator and Organizer of upcoming Academic/ Research Initiative",
+  "category": "Academic collaborations",
+  "role": "Facilitator and Organiser of upcoming Academic/ Research Initiative",
   "photoFlag": "Y",
-  "photo": "/img/tnnlu-tnnlu-edited.webp",
+  "photo": "/img/tnnlu-plenary-dec-2025.webp",
   "photos": [
-   "/img/tnnlu-tnnlu-edited.webp",
-   "/img/tnnlu-tnnlu.webp"
+   "/img/tnnlu-plenary-dec-2025.webp",
+   "/img/tnnlu-tnnlu-edited.webp"
   ],
   "links": [],
   "upcoming": false
  },
  {
   "n": 29,
-  "title": "Academic / Policy Research initiative in collaboration with Centre for Business and Human Rights, Tamil Nadu National Law University (TNNU) and Sustaim Consulting, — 10th December Opening-High Level Plenary | First Expert Consultation | Launch of Research initiative",
+  "title": "Academic / Policy Research initiative in collaboration with Centre for Business and Human Rights, Tamil Nadu National Law University (TNNLU) and Sustaim Consulting: 10th December Opening High-Level Plenary | First Expert Consultation | Launch of Research initiative",
   "detail": [],
   "year": "2025",
   "yearSort": 2025,
   "type": "Multi-stakeholder convenings & Dialogues",
-  "category": "Roundtables & multi-stakeholder dialogues",
-  "role": "Facilitator and Organizer of upcoming Academic/ Research Initiative",
+  "category": "Academic collaborations",
+  "role": "Facilitator and Organiser of upcoming Academic/ Research Initiative",
   "photoFlag": "Y",
-  "photo": "/img/tnnlu-tnnlu.webp",
+  "photo": "/img/tnnlu-tnnlu-edited.webp",
   "photos": [
-   "/img/tnnlu-tnnlu.webp",
    "/img/tnnlu-tnnlu-edited.webp",
    "/img/tnnlu-brochure-msme-research-collaboration.webp"
   ],
@@ -497,7 +524,7 @@
  },
  {
   "n": 28,
-  "title": "Responsible Business Conduct (RBC) Capacity Building Workshop under the project “Building Responsible Value Chains in Asia – Phase II on 24th November",
+  "title": "Responsible Business Conduct (RBC) Capacity Building Workshop under the project “Building Responsible Value Chains in Asia – Phase II” on 24th November",
   "detail": [],
   "year": "2025",
   "yearSort": 2025,
@@ -522,8 +549,10 @@
   "category": "Consultations",
   "role": "Stakeholder",
   "photoFlag": "Y",
-  "photo": null,
-  "photos": [],
+  "photo": "/img/ev/27-1.webp",
+  "photos": [
+   "/img/ev/27-1.webp"
+  ],
   "links": [],
   "upcoming": false
  },
@@ -568,7 +597,7 @@
   "year": "2025",
   "yearSort": 2025,
   "type": "Online Guest Lecture",
-  "category": "Training & capacity building",
+  "category": "Academic collaborations",
   "role": "Guest Lecturer/ Speaker/ Trainer",
   "photoFlag": "Y",
   "photo": "/img/ev/24-1.webp",
@@ -585,7 +614,7 @@
   "year": "2025",
   "yearSort": 2025,
   "type": "Invite-only Roundtable conference",
-  "category": "Conferences, forums & launches",
+  "category": "Roundtables & multi-stakeholder dialogues",
   "role": "Advisory Board Member of Darbar Sahitya Sansada (DSS)",
   "photoFlag": "Y",
   "photo": "/img/ev/23-1.webp",
@@ -599,7 +628,7 @@
  },
  {
   "n": 22,
-  "title": "Mentor, Women Entrepreneurship Platform, Niti Ayog, Government of India",
+  "title": "Mentor, Women Entrepreneurship Platform, Niti Aayog, Government of India",
   "detail": [],
   "year": "2025",
   "yearSort": 2025,
@@ -673,8 +702,8 @@
   "n": 13,
   "title": "Appointment - WICCI Delhi External Affairs Council 2024",
   "detail": [],
-  "year": "2025",
-  "yearSort": 2025,
+  "year": "2024",
+  "yearSort": 2024,
   "type": "Official appointment as Council State Vice President",
   "category": "Leadership, advisory & council roles",
   "role": "Led the council for the term as State Vice President",
@@ -744,7 +773,7 @@
   "year": "2025",
   "yearSort": 2025,
   "type": "Talk/ fireside chat",
-  "category": "Leadership, advisory & council roles",
+  "category": "Conferences, forums & launches",
   "role": "Moderator",
   "photoFlag": "Y",
   "photo": "/img/ev/9-1.webp",
@@ -764,7 +793,7 @@
   "year": "2025",
   "yearSort": 2025,
   "type": "Roundtable conference",
-  "category": "Conferences, forums & launches",
+  "category": "Roundtables & multi-stakeholder dialogues",
   "role": "Stakeholder",
   "photoFlag": "Y",
   "photo": "/img/ev/8-1.webp",
@@ -797,7 +826,7 @@
  },
  {
   "n": 2,
-  "title": "POSH PRO: Hosted a 2-Day Online Workshop on PoSH Act and its application at the Workplace in collaboration with Yellow Spark",
+  "title": "PoSH PRO: Hosted a 2-Day Online Workshop on PoSH Act and its application at the Workplace in collaboration with Yellow Spark",
   "detail": [],
   "year": "2025",
   "yearSort": 2025,
@@ -808,8 +837,7 @@
   "photo": "/img/ev/2-1.webp",
   "photos": [
    "/img/ev/2-1.webp",
-   "/img/ev/2-2.webp",
-   "/img/ev/2-3.webp"
+   "/img/posh-pro-2025-grid.webp"
   ],
   "links": [],
   "upcoming": false
@@ -879,7 +907,7 @@
   "year": "2024",
   "yearSort": 2024,
   "type": "Online Webinar",
-  "category": "Leadership, advisory & council roles",
+  "category": "Conferences, forums & launches",
   "role": "Led the council for the term as State Vice President",
   "photoFlag": "Y",
   "photo": "/img/ev/15-1.webp",
@@ -896,7 +924,7 @@
   "year": "2024",
   "yearSort": 2024,
   "type": "Online Webinar",
-  "category": "Leadership, advisory & council roles",
+  "category": "Conferences, forums & launches",
   "role": "Led the council for the term as State Vice President",
   "photoFlag": "Y",
   "photo": "/img/ev/14-1.webp",
@@ -927,7 +955,7 @@
  },
  {
   "n": 5,
-  "title": "Second Ideation Meeting: “Promoting Anti-Corruption Strategies and Integrating Ethical Business Practices in Micro, Small, and Medium Enterprises (MSMEs), organized by the UN Global Compact Network India",
+  "title": "Second Ideation Meeting: “Promoting Anti-Corruption Strategies and Integrating Ethical Business Practices in Micro, Small, and Medium Enterprises (MSMEs)”, organised by the UN Global Compact Network India",
   "detail": [],
   "year": "2023",
   "yearSort": 2023,
@@ -969,7 +997,7 @@
  },
  {
   "n": 4,
-  "title": "Online Knowledge session on Engaging Youth in Anti-Corruption Efforts organized by the UN Global Compact Network India",
+  "title": "Online Knowledge session on Engaging Youth in Anti-Corruption Efforts organised by the UN Global Compact Network India",
   "detail": [],
   "year": "2022",
   "yearSort": 2022,

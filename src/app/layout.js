@@ -1,14 +1,14 @@
-import { Manrope, Libre_Caslon_Display } from "next/font/google";
+import { Inter, DM_Serif_Display } from "next/font/google";
 import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
 import { SITE } from "@/content/site";
 import "./globals.css";
 
-const body = Manrope({ variable: "--font-body", subsets: ["latin"], display: "swap" });
-const display = Libre_Caslon_Display({ variable: "--font-display", subsets: ["latin"], weight: "400", display: "swap" });
+const body = Inter({ variable: "--font-body", subsets: ["latin"], display: "swap" });
+const display = DM_Serif_Display({ variable: "--font-display", subsets: ["latin"], weight: "400", display: "swap" });
 
 const DESCRIPTION =
-  "P/ PRABHAVEE is a strategy and management consultancy advising businesses, institutions and social purpose organisations on responsible business, workplace governance, human rights and social sustainability.";
+  "Strategy and management consultancy for businesses, institutions and social purpose organisations: responsible business, workplace governance, human rights.";
 
 export const metadata = {
   metadataBase: new URL(SITE.url),

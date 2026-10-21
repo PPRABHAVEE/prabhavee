@@ -1,6 +1,6 @@
 import { PILLARS } from "@/content/site";
 
-// The 5-pillar approach to impact, drawn as five pillars under one roof.
+// The 5-pillar approach to impact: five equal tiles between two slim bars.
 export default function PillarsGraphic() {
   return (
     <div className="pillars">

@@ -8,18 +8,19 @@ import { pageMeta } from "@/lib/meta";
 export const metadata = pageMeta("Resources", "Videos, brochures, reports and submissions from P/ PRABHAVEE: the GCNI impact report, PoSH governance outcomes, and EU and UN consultation inputs.", "/resources");
 
 const VIDS = [
+  ["UN Responsible Business and Human Rights Forum", "ux0yvv89Pl0", "Spotlight session on corruption and human rights: integrating anti-corruption into HRDD (Bangkok, 14–17 September 2026)."],
   ["Young Leaders Council, AIMA", "IBE52ZSN69U", "Online session: India’s Economic Growth: Powered by Innovation and Fair Play (moderator, 2025)"],
   ["Jindal School of Journalism and Communication", "Nsdxj1KCyIM", "The Business of Human Rights: unpacking linkages between corporate accountability, rights-based frameworks and the Fourth Estate (2026)"],
   ["Centre for Business and Human Rights, TNNLU", "3776A3TawDs", "Multi-stakeholder dialogue series: Local Economies, Global Values: MSMEs Driving Gender Equity in South India (2025)"],
 ];
 const BROCHURES = [["P/ PRABHAVEE brochure", "Empowering organisations through strategic advisory, capacity building, facilitation and strategic programmes.", "prabhavee-brochure.pdf"], ["PoSH: advisory, training, compliance & litigation support", "End-to-end PoSH support for workplaces.", "prabhavee-posh-brochure.pdf"]];
 const REPORTS = [
-  ["GCNI ACCA Project Impact Report", "Global Compact Network India · June 2025 · Siemens Integrity Initiative. P/ PRABHAVEE contributed to country network surveys and interviews as a working-group member.", "gcni-acca-project-impact-report-2025.pdf", "GCNI · 2025"],
+  ["GCNI ACCA Project Impact Report", "Global Compact Network India · June 2025 · Siemens Integrity Initiative. Anumita contributed to country network surveys and interviews as a working-group member.", "gcni-acca-project-impact-report-2025.pdf", "GCNI · 2025"],
   ["Building Better Governance: Consultation Outcomes Report", "Mid-year PoSH review: Safe Workplaces by Design · P/ PRABHAVEE · August 2026.", "building-better-governance-2026.pdf", "P/ PRABHAVEE · 2026"],
   ["Anti-Corruption Collective Action Playbook Training: Workshop Report", "UN Global Compact Network India · September 2022.", "acca-playbook-workshop-report-2022.pdf", "UNGCNI · 2022"],
 ];
 const EXT = [
-  ["Forced labour: guidelines on the implementation of the EU rules", "European Commission public consultation, 2026", "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16292-Forced-labour-guidelines-on-the-implementation-of-the-EU-rules/F3337806_en"],
+  ["Forced labour: guidelines on the implementation of the EU rules", "European Commission public consultation, 2026", "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16292-Forced-labour-guidelines-on-the-implementation-of-the-EU-rules/F33378062_en"],
   ["Corporate Sustainability Due Diligence: development of guidelines", "European Commission public consultation, 2026", "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14445-Corporate-sustainability-due-diligence-development-of-guidelines/public-consultation_en"],
   ["Submission to the UN Working Group on Business and Human Rights", "Call for inputs for the 81st session of the UN General Assembly: Corporate Governance, Business and Human Rights", "https://www.ohchr.org/sites/default/files/documents/issues/business/cfis/ga81/subm-corporate-governance-business-priv-sect-13-p-prabhavee-partner-social-impa-mpact.pdf"],
   ["Power Dynamics and ‘Consent’ in Hierarchical Workplaces: Rethinking Research Ethics in Higher Education", "Published by eLearnPOSH, 2026", "https://elearnposh.com/tag/posh/"],
@@ -34,16 +35,14 @@ export default function Resources() {
       <section className="sec">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Videos</span><h2>Watch and listen.</h2></div></div>
-          <div className="res-grid">
+          <div className={`res-grid${VIDS.length % 3 === 1 ? " res-grid--4" : ""}`}>
             {VIDS.map(([t, id, d]) => (
               <div className="res" key={id}>
                 <a className="th" href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener noreferrer"><img src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" /><span className="badge">WATCH</span></a>
                 <h3>{t}</h3><p>{d}</p>
               </div>
             ))}
-            <div className="res"><span className="th"><Img src="/img/banner-unrbhr-anumita.webp" alt="" sizes="(max-width: 620px) 100vw, 33vw" /></span><h3>UN Responsible Business and Human Rights Forum</h3><p>Spotlight session on corruption and human rights: integrating anti-corruption into HRDD (Bangkok, 14–17 September 2026).</p></div>
           </div>
-          <Pending title="UNRBHR video">A YouTube link for the UNRBHR session is still to be provided.</Pending>
         </div>
       </section>
       <section className="sec sec--mist">

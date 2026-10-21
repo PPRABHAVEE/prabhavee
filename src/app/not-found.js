@@ -9,7 +9,7 @@ export default function NotFound() {
       <div className="wrap split">
         <div>
           <span className="eyebrow">Error 404</span>
-          <h1 style={{ fontSize: "clamp(44px, 6vw, 84px)" }}>This page has moved or never existed.</h1>
+          <h1>This page has moved or never existed.</h1>
         </div>
         <div>
           <p className="big">Try one of these instead.</p>

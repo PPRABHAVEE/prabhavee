@@ -1,7 +1,7 @@
 export default function Orbit() {
   return (
     <div className="orbit" role="img" aria-label="Four areas around one purpose: legal advisory, capacity building, social impact and policy research">
-      <svg viewBox="0 0 400 400" aria-hidden="true">
+      <svg viewBox="22 22 356 356" aria-hidden="true">
         <circle className="ring" cx="200" cy="200" r="150" strokeWidth="2" />
         <circle className="ring dash" cx="200" cy="200" r="108" strokeWidth="2" />
         <circle className="ring" cx="200" cy="200" r="66" strokeWidth="1" strokeOpacity=".4" />
