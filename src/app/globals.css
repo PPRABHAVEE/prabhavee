@@ -1399,3 +1399,6 @@ main:has(> #background) .figs-label { display: block; }
   .cons-join > div { grid-column: 1 / 3; }
   .cons-join > .btn { grid-column: 3; justify-self: start; }
 }
+
+/* Closing band: the two actions sit at the right edge of the content, level with the heading */
+@media (min-width: 881px) { .closing-actions { justify-content: flex-end; } }
