@@ -1310,3 +1310,67 @@ dl.cred > div:nth-child(n) { padding: 22px 26px 24px; }
   .approach > div > p { margin-bottom: 20px; }
   .approach .steps li:last-child { border-bottom: 1px solid var(--line-soft); }
 }
+
+/* About polish (22 Oct): presentation only; preserve content and mobile folds. */
+main:has(> #background) > .subnav .wrap { padding-block: 8px; }
+main:has(> #background) > .subnav a { display: inline-flex; align-items: center; min-height: 44px; }
+#background { padding-bottom: calc(var(--sec-y) * 1.5); }
+#background .bg-top { align-items: start; }
+#background .bg-lead h2 { text-box-trim: trim-start; text-box-edge: cap alphabetic; }
+#background .bg-name {
+  display: block;
+  align-self: start;
+  padding: 0 0 0 24px;
+  border-left-width: 2px;
+  font-size: var(--fs-sub);
+  line-height: 1.4;
+  text-box-trim: trim-start;
+  text-box-edge: cap alphabetic;
+}
+#background .bg-cards { margin-top: 32px; align-items: start; }
+#background .bg-points { gap: 28px; }
+#background .bg-card { grid-template-columns: 44px minmax(0, 1fr); gap: 0 18px; padding-top: 24px; }
+#background .bg-card .n { font-size: var(--fs-sub); line-height: 1.3; }
+#background .bg-card .bg-label {
+  margin: 0 0 12px;
+  font-size: var(--fs-h3);
+  line-height: 1.3;
+  letter-spacing: -.015em;
+  text-transform: none;
+}
+#background .bg-card .n, #background .bg-card .bg-label { text-box-trim: trim-start; text-box-edge: cap alphabetic; }
+#background .bg-card p { line-height: 1.65; }
+#background .bg-photo { align-self: start; min-height: 0; aspect-ratio: auto; overflow: visible; background: none; }
+#background .bg-photo img { position: static; width: 100%; height: auto; object-fit: contain; }
+#background .bg-photo figcaption { position: static; max-width: none; padding: 12px 0 0; border-top: 1px solid var(--line); }
+
+/* Keep the header, section text and repeated list columns on one rhythm. */
+main:has(> #background) .sec-head { column-gap: 56px; row-gap: 0; }
+main:has(> #background) .figs-label { display: block; }
+#expertise .core-grid h3 { font-size: var(--fs-h3); }
+#strengths .ticks--sm li { padding-block: 13px; }
+#strengths > .wrap > .big {
+  /* The existing inline maxWidth is presentational; keep JSX untouched. */
+  max-width: 88ch !important;
+  font-size: 17px;
+  line-height: 1.7;
+}
+#contribution .figs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+#contribution .figs > div:nth-child(n) { padding: 18px 0 20px; border-left: 0; }
+#contribution .figs > div:nth-child(even) { padding-left: 22px; border-left: 1px solid var(--line); }
+#contribution .figs > div:nth-child(n + 3) { border-top: 1px solid var(--line); }
+@media (min-width: 881px) and (max-width: 1100px) {
+  #background .bg-top { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 32px; }
+  #background .bg-cards { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 32px; }
+}
+@media (max-width: 880px) {
+  main:has(> #background) .sec-head { row-gap: 16px; }
+  #background .bg-top { gap: 24px; }
+  #background .bg-cards { margin-top: 28px; }
+  #background .bg-name { padding-left: 20px; }
+}
+@media (max-width: 620px) {
+  #background .bg-card { grid-template-columns: 32px minmax(0, 1fr); column-gap: 12px; padding-top: 20px; }
+  #background .bg-points { gap: 24px; }
+  #contribution .figs > div:nth-child(even) { padding-left: 16px; }
+}
