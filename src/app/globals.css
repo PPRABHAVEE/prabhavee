@@ -1320,3 +1320,13 @@ dl.cred > div:nth-child(n) { padding: 22px 26px 24px; }
 .approach .steps li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 6px; min-height: 0; padding: 12px 14px 14px; font-size: 14.5px; line-height: 1.4; border-top-width: 2px; }
 .approach .steps li::before { font: 700 12px/1.7 var(--body); letter-spacing: .08em; margin: 0; color: var(--red-ink); }
 @media (max-width: 620px) { .approach .steps li { padding: 10px 12px 12px; } .approach .steps li::before { font-size: 12px; margin: 0; } }
+
+/* framework stages: title on the left, intro on the right, then the step tiles run full width beneath, so no row has empty space */
+@media (min-width: 1101px) {
+  .approach > div, .approach > div + div { grid-template-columns: minmax(0, .8fr) minmax(0, 2.2fr); row-gap: 0; padding: 24px 0 26px; }
+  .approach > div > .kicker { grid-column: 1; grid-row: 1; }
+  .approach > div > .k { grid-column: 1; grid-row: 2; margin: 2px 0 0; }
+  .approach > div > p { grid-column: 2; grid-row: 1 / span 2; align-self: center; max-width: 80ch; }
+  .approach > div > .steps { grid-column: 1 / -1; grid-row: 3; margin-top: 18px; align-self: auto; grid-auto-rows: auto; }
+  .approach .steps li { align-items: start; }
+}
