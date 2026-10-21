@@ -1270,9 +1270,9 @@ dl.cred > div:nth-child(n) { padding: 22px 26px 24px; }
 @media (min-width: 881px) { .subnav .wrap { justify-content: space-between; gap: 20px; } }
 
 /* Slim photo band tucked directly under the content above it */
-#background { padding-bottom: 36px; }
+#background { padding-bottom: calc(var(--sec-y) * 2.4); }
 .band--slim img { aspect-ratio: 3.6 / 1; }
-@media (max-width: 880px) { .band--slim img { aspect-ratio: 16 / 9; } #background { padding-bottom: 28px; } }
+@media (max-width: 880px) { .band--slim img { aspect-ratio: 16 / 9; } #background { padding-bottom: calc(var(--sec-y) * 2); } }
 
 /* Background cards 01 and 02: bordered cards with a large numeral and a short label */
 .bg-card { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--green); padding: 30px 36px 34px; position: relative; }
