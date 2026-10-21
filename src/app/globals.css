@@ -1273,3 +1273,10 @@ dl.cred > div:nth-child(n) { padding: 22px 26px 24px; }
 #background { padding-bottom: 36px; }
 .band--slim img { aspect-ratio: 3.6 / 1; }
 @media (max-width: 880px) { .band--slim img { aspect-ratio: 16 / 9; } #background { padding-bottom: 28px; } }
+
+/* Background cards 01 and 02: bordered cards with a large numeral and a short label */
+.bg-card { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--green); padding: 30px 36px 34px; position: relative; }
+.bg-card .n { font: 400 60px/1 var(--display); letter-spacing: -.02em; color: var(--red-ink); margin: 0 0 16px; }
+.bg-card .bg-label { font: 700 12px/1.3 var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--green); margin: 0 0 14px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.bg-card p { font-size: 16.5px; line-height: 1.75; color: #2c352f; }
+@media (max-width: 620px) { .bg-card { padding: 22px 22px 26px; } .bg-card .n { font-size: 46px; margin-bottom: 12px; } }

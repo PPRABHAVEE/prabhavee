@@ -41,8 +41,8 @@ export default function About() {
             <p className="bg-name"><span className="bg-red">P/ PRABHA</span> means impact.<br /><span className="bg-red">PRABHAVEE</span> influences.</p>
           </div>
           <div className="bg-cards">
-            <div className="bg-card"><span className="n" aria-hidden="true">01</span><p>We help organisations interpret and navigate risk. We strengthen governance and accountability. We embed ethical systems, processes and practices across operations and supply chains. And we translate responsible business commitments into action through strategic advisory, training and capacity building, facilitation and strategic programmes.</p></div>
-            <div className="bg-card"><span className="n" aria-hidden="true">02</span><p>We work with companies of all sizes, academic institutions, civil society organisations, research and advocacy centres, multi-stakeholder platforms, UN agencies, working groups and coalitions. Together we turn the complexity of business and human rights into actionable strategy. P/ PRABHAVEE was founded in 2022.</p></div>
+            <div className="bg-card"><span className="n" aria-hidden="true">01</span><h3 className="bg-label">What we do</h3><p>We help organisations interpret and navigate risk. We strengthen governance and accountability. We embed ethical systems, processes and practices across operations and supply chains. And we translate responsible business commitments into action through strategic advisory, training and capacity building, facilitation and strategic programmes.</p></div>
+            <div className="bg-card"><span className="n" aria-hidden="true">02</span><h3 className="bg-label">Who we work with</h3><p>We work with companies of all sizes, academic institutions, civil society organisations, research and advocacy centres, multi-stakeholder platforms, UN agencies, working groups and coalitions. Together we turn the complexity of business and human rights into actionable strategy. P/ PRABHAVEE was founded in 2022.</p></div>
           </div>
         </div>
       </section>
