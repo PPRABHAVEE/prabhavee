@@ -1,8 +1,8 @@
 import Link from "next/link";
+import Img from "@/components/site/Img";
 import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
 import FrameworkGraphic from "@/components/site/FrameworkGraphic";
-import PhotoBand from "@/components/site/PhotoBand";
 import JourneyStrip from "@/components/site/JourneyStrip";
 import { Credentials } from "@/components/site/TrustStrip";
 import Fold from "@/components/site/Fold";
@@ -41,13 +41,15 @@ export default function About() {
             <p className="bg-name"><span className="bg-red">P/ PRABHA</span> means impact.<br /><span className="bg-red">PRABHAVEE</span> influences.</p>
           </div>
           <div className="bg-cards">
+            <div className="bg-points">
             <div className="bg-card"><span className="n" aria-hidden="true">01</span><h3 className="bg-label">What we do</h3><p>We help organisations interpret and navigate risk. We strengthen governance and accountability. We embed ethical systems, processes and practices across operations and supply chains. And we translate responsible business commitments into action through strategic advisory, training and capacity building, facilitation and strategic programmes.</p></div>
             <div className="bg-card"><span className="n" aria-hidden="true">02</span><h3 className="bg-label">Who we work with</h3><p>We work with companies of all sizes, academic institutions, civil society organisations, research and advocacy centres, multi-stakeholder platforms, UN agencies, working groups and coalitions. Together we turn the complexity of business and human rights into actionable strategy. P/ PRABHAVEE was founded in 2022.</p></div>
+            </div>
+            <figure className="bg-photo"><Img src="/img/ev/25-1.webp" alt="Participants at the amfori and Confederation of Indian Industry workshop on trade and sustainability" sizes="(max-width: 880px) 100vw, 640px" /><figcaption>Trade and sustainability workshop, amfori and the Confederation of Indian Industry</figcaption></figure>
           </div>
         </div>
       </section>
 
-      <PhotoBand src="/img/ev/25-1.webp" alt="Participants at the amfori and Confederation of Indian Industry workshop on trade and sustainability" caption="Trade and sustainability workshop, amfori and the Confederation of Indian Industry" position="center 38%" slim />
 
       <section className="sec">
         <div className="wrap">
