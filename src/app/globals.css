@@ -1299,38 +1299,14 @@ dl.cred > div:nth-child(n) { padding: 22px 26px 24px; }
 @media (max-width: 1100px) { .bg-photo { min-height: 0; aspect-ratio: 16 / 9; } }
 
 
-/* 3-part framework detail: each stage is a row (title and lead on the left, its steps as numbered tiles on a shared 3-column grid on the right) */
-.approach { display: block; grid-template-columns: none; border-top: 2px solid var(--green); }
-.approach > div, .approach > div + div { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 2.1fr); column-gap: 56px; align-items: start; padding: 36px 0 38px; border-left: 0; border-top: 1px solid var(--line); counter-reset: s; }
-.approach > div:first-child { border-top: 0; }
-.approach > div > .kicker, .approach > div > .k, .approach > div > p { grid-column: 1; }
-.approach > div > .steps { grid-column: 2; grid-row: 1 / span 3; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; counter-reset: none; }
-.approach .steps li { display: block; position: relative; background: #fff; border: 0; border-top: 3px solid var(--green); padding: 18px 18px 22px; font-size: 15.5px; line-height: 1.5; }
-.approach .steps li::before { display: block; font: 400 30px/1 var(--display); color: var(--red-ink); padding: 0; margin-bottom: 12px; }
-.approach .k { margin-top: 8px; }
-@media (max-width: 1100px) { .approach > div, .approach > div + div { grid-template-columns: minmax(0, 1fr); row-gap: 8px; } .approach > div > .steps { grid-column: 1; grid-row: auto; margin-top: 18px; } }
-@media (max-width: 620px) { .approach > div > .steps { grid-template-columns: minmax(0, 1fr); gap: 10px; } .approach .steps li { padding: 14px 16px 16px; } .approach .steps li::before { font-size: 24px; margin-bottom: 6px; } }
-.approach > div > .steps { grid-auto-rows: 1fr; } .approach .steps li { min-height: 150px; }
-
-/* framework detail, compact: small tiles with an inline numeral, tighter rows */
-.approach > div, .approach > div + div { padding: 22px 0 24px; column-gap: 48px; }
-.approach .k { margin: 4px 0 8px; }
-.approach > div > p { font-size: 15px; line-height: 1.55; margin: 0; }
-.approach > div > .steps { gap: 10px; grid-auto-rows: auto; }
-.approach .steps li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 6px; min-height: 0; padding: 12px 14px 14px; font-size: 14.5px; line-height: 1.4; border-top-width: 2px; }
-.approach .steps li::before { font: 700 12px/1.7 var(--body); letter-spacing: .08em; margin: 0; color: var(--red-ink); }
-@media (max-width: 620px) { .approach .steps li { padding: 10px 12px 12px; } .approach .steps li::before { font-size: 12px; margin: 0; } }
-
-/* framework stages: title on the left, intro on the right, then the step tiles run full width beneath, so no row has empty space */
-@media (min-width: 1101px) {
-  .approach > div, .approach > div + div { grid-template-columns: minmax(0, .8fr) minmax(0, 2.2fr); row-gap: 0; padding: 24px 0 26px; }
-  .approach > div > .kicker { grid-column: 1; grid-row: 1; }
-  .approach > div > .k { grid-column: 1; grid-row: 2; margin: 2px 0 0; }
-  .approach > div > p { grid-column: 2; grid-row: 1 / span 2; align-self: center; max-width: 80ch; }
-  .approach > div > .steps { grid-column: 1 / -1; grid-row: 3; margin-top: 18px; align-self: auto; grid-auto-rows: auto; }
-  .approach .steps li { align-items: start; }
-}
-
 /* 3-part framework: the description sits directly under the heading instead of spreading to the right edge */
 #approach .sec-head { display: block; }
 #approach .sec-head > p { margin: 16px 0 0; max-width: 62ch; font-size: 17px; }
+
+/* framework detail: three plain columns; kicker, title and intro share rows so each step list starts on the same line */
+@media (min-width: 881px) {
+  .approach { grid-template-rows: auto auto auto 1fr; }
+  .approach > div { display: grid; grid-template-rows: subgrid; grid-row: span 4; align-content: start; }
+  .approach > div > p { margin-bottom: 20px; }
+  .approach .steps li:last-child { border-bottom: 1px solid var(--line-soft); }
+}
