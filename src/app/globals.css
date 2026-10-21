@@ -1389,3 +1389,13 @@ main:has(> #background) .figs-label { display: block; }
 .cons-join h2 { color: #fff; margin: 0 0 10px; }
 .cons-join p { color: #ffffffd6; margin: 0; max-width: 52ch; }
 @media (max-width: 880px) { .cons-card { grid-template-columns: minmax(0, 1fr); gap: 26px; padding: 22px; } .cons-card img { max-width: 260px; } .alum-grid { grid-template-columns: minmax(0, 1fr); gap: 14px; } .cons-join { flex-direction: column; align-items: flex-start; gap: 24px; } }
+
+/* Consultants & alumni: one shared 3-column grid (same columns as the alumni cards) for the profile, the alumni and the join band */
+@media (min-width: 881px) {
+  .cons-card { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 24px; padding: 0; background: none; border-top: 3px solid var(--green); padding-top: 28px; align-items: stretch; }
+  .cons-card img { grid-column: 1; width: 100%; height: 100%; max-height: 420px; aspect-ratio: 1 / 1; object-fit: cover; object-position: top; }
+  .cons-body { grid-column: 2 / 4; align-self: center; background: var(--mist); padding: 36px 40px; height: 100%; display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; }
+  .cons-join { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 24px; align-items: center; }
+  .cons-join > div { grid-column: 1 / 3; }
+  .cons-join > .btn { grid-column: 3; justify-self: start; }
+}
