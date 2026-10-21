@@ -47,7 +47,7 @@ export default function About() {
         </div>
       </section>
 
-      <PhotoBand src="/img/ev/25-1.webp" alt="Participants at the amfori and Confederation of Indian Industry workshop on trade and sustainability" caption="Trade and sustainability workshop, amfori and the Confederation of Indian Industry" position="center 38%" />
+      <PhotoBand src="/img/ev/25-1.webp" alt="Participants at the amfori and Confederation of Indian Industry workshop on trade and sustainability" caption="Trade and sustainability workshop, amfori and the Confederation of Indian Industry" position="center 38%" slim />
 
       <section className="sec">
         <div className="wrap">

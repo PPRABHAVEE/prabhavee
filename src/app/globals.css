@@ -1268,3 +1268,8 @@ dl.cred > div:nth-child(n) { padding: 22px 26px 24px; }
 /* On-this-page bar: links spread across the full content width, first and last flush with the page edges */
 .subnav a { flex: none; }
 @media (min-width: 881px) { .subnav .wrap { justify-content: space-between; gap: 20px; } }
+
+/* Slim photo band tucked directly under the content above it */
+#background { padding-bottom: 36px; }
+.band--slim img { aspect-ratio: 3.6 / 1; }
+@media (max-width: 880px) { .band--slim img { aspect-ratio: 16 / 9; } #background { padding-bottom: 28px; } }
