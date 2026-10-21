@@ -8,8 +8,12 @@ export default function Header() {
   const path = usePathname() || "/";
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [grp, setGrp] = useState(null);
 
-  useEffect(() => setOpen(false), [path]);
+  useEffect(() => {
+    setOpen(false);
+    setGrp(NAV.find((g) => g.items.length && (path === g.href || g.items.some(([, h]) => h === path)))?.label || null);
+  }, [path]);
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
     const onKey = (e) => e.key === "Escape" && setOpen(false);
@@ -25,6 +29,11 @@ export default function Header() {
     const dd = e.target.closest?.(".dd");
     if (dd) { dd.querySelector(":scope > a")?.focus(); e.target.blur?.(); dd.classList.add("is-dismissed"); setTimeout(() => dd.classList.remove("is-dismissed"), 400); }
   };
+  useEffect(() => {
+    // lock page scroll behind the open mobile menu
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [open]);
   const on = (href) => (path === href ? "page" : undefined);
   const groupOn = (g) => (path === g.href || g.items.some(([, h]) => h === path) ? "page" : undefined);
 
@@ -41,8 +50,9 @@ export default function Header() {
             {NAV.map((g) => {
               if (g.label === "Services") {
                 return (
-                  <div className="dd dd--mega" key={g.label}>
+                  <div className={`dd dd--mega${grp === g.label ? " is-open" : ""}`} key={g.label}>
                     <Link href={g.href} aria-current={groupOn(g)}>{g.label}</Link>
+                    <button type="button" className="dd-toggle" aria-expanded={grp === g.label} aria-label={`Show ${g.label} pages`} onClick={() => setGrp(grp === g.label ? null : g.label)} />
                     <div className="mega">
                       <div className="mega-in">
                         {MEGA.intro ? <p className="mega-intro">{MEGA.intro}</p> : null}
@@ -50,7 +60,7 @@ export default function Header() {
                           {MEGA.columns.map((c) => (
                             <div key={c.heading}>
                               <span className="mega-h">{c.heading}</span>
-                              {c.links.map(([t, h]) => <Link key={t} href={h}>{t}</Link>)}
+                              {c.links.map(([t, h]) => <Link key={t} href={h} aria-current={on(h)}>{t}</Link>)}
                             </div>
                           ))}
                         </div>
@@ -61,8 +71,9 @@ export default function Header() {
                 );
               }
               return g.items.length ? (
-                <div className="dd" key={g.label}>
+                <div className={`dd${grp === g.label ? " is-open" : ""}`} key={g.label}>
                   <Link href={g.href} aria-current={groupOn(g)}>{g.label}</Link>
+                  <button type="button" className="dd-toggle" aria-expanded={grp === g.label} aria-label={`Show ${g.label} pages`} onClick={() => setGrp(grp === g.label ? null : g.label)} />
                   <div className="sub">{g.items.map(([t, h]) => <Link key={h} href={h} aria-current={on(h)}>{t}</Link>)}</div>
                 </div>
               ) : (
