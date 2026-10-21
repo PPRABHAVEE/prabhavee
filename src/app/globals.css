@@ -1403,3 +1403,14 @@ main:has(> #background) .figs-label { display: block; }
 /* Closing band: the two actions sit at the right edge of the content, level with the heading */
 @media (min-width: 881px) { .closing-actions { justify-content: flex-end; } }
 @media (min-width: 881px) { .cons-join > .btn { justify-self: end; } }
+
+/* Consultant card, tighter: landscape crop so the photo and panel are about as tall as their content */
+@media (min-width: 881px) {
+  .cons-card { padding-top: 22px; margin-top: 22px; }
+  .cons-card img { aspect-ratio: 4 / 3; max-height: none; height: auto; object-position: center 18%; align-self: start; }
+  .cons-body { padding: 28px 36px; height: auto; align-self: stretch; }
+  .cons-body .big { margin-bottom: 20px; }
+}
+@media (min-width: 881px) { .cons-card img { aspect-ratio: auto; height: 100%; min-height: 260px; align-self: stretch; } }
+@media (min-width: 881px) { .cons-card { grid-template-rows: minmax(260px, auto); } .cons-card img { height: 0; min-height: 100%; } }
+@media (max-width: 880px) { .cons-card { padding: 0 0 22px; background: none; gap: 20px; } .cons-card img { max-width: none; width: 100%; aspect-ratio: 4 / 3; object-position: center 18%; } .cons-body { background: var(--mist); padding: 22px; } }
