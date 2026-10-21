@@ -1167,3 +1167,17 @@ dl.cred > div:nth-child(n) { padding: 22px 26px 24px; }
 .core-grid + .figs-label { margin-top: 36px; }
 @media (max-width: 1180px) { .core-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 620px) { .core-grid { grid-template-columns: 1fr; gap: 10px; } .core-grid li { flex-direction: row; align-items: baseline; gap: 14px; padding: 14px 16px; } .core-grid h3 { font-size: 18px; } .core-grid + .figs-label { margin-top: 24px; } }
+
+/* About: Background section. Lead and name card share one top line; two equal text cards below. */
+.bg-top { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: stretch; }
+.bg-lead h2 { margin-bottom: 20px; }
+.bg-lead .big { margin: 0; max-width: 44ch; }
+.bg-name { margin: 0; display: grid; align-content: center; padding: 34px 38px; background: var(--mist); border-top: 3px solid var(--green); font-family: var(--display); font-size: var(--fs-sub); line-height: 1.25; letter-spacing: -.015em; color: var(--ink); }
+.bg-red { color: var(--red-ink); }
+.bg-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 40px; }
+.bg-card { border-top: 1px solid var(--line); padding-top: 22px; }
+.bg-card .n { display: block; font: 700 13px var(--body); letter-spacing: .14em; color: var(--red-ink); margin-bottom: 12px; }
+.bg-card p { margin: 0; }
+.bg-top > *, .bg-cards > * { min-width: 0; }
+@media (max-width: 1100px) { .bg-top, .bg-cards { grid-template-columns: minmax(0, 1fr); gap: 24px; } .bg-cards { margin-top: 28px; } }
+@media (max-width: 620px) { .bg-name { padding: 22px 20px; font-size: 24px; } .bg-card { padding-top: 16px; } }

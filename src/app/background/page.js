@@ -30,13 +30,18 @@ export default function About() {
       </div></nav>
 
       <section className="sec" id="background">
-        <div className="wrap split">
+        <div className="wrap">
           <span className="eyebrow">Background</span>
-          <div><h2>Responsible business is a shared risk.</h2></div>
-          <div>
-            <p className="big">It demands clarity on how stakeholders understand their roles, responsibilities, influence and impact on people across value chains. P/ PRABHA means impact. PRABHAVEE influences.</p>
-            <p>We help organisations interpret and navigate risk. We strengthen governance and accountability. We embed ethical systems, processes and practices across operations and supply chains. And we translate responsible business commitments into action through strategic advisory, training and capacity building, facilitation and strategic programmes.</p>
-            <p>We work with companies of all sizes, academic institutions, civil society organisations, research and advocacy centres, multi-stakeholder platforms, UN agencies, working groups and coalitions. Together we turn the complexity of business and human rights into actionable strategy. P/ PRABHAVEE was founded in 2022.</p>
+          <div className="bg-top">
+            <div className="bg-lead">
+              <h2>Responsible business is a shared risk.</h2>
+              <p className="big">It demands clarity on how stakeholders understand their roles, responsibilities, influence and impact on people across value chains.</p>
+            </div>
+            <p className="bg-name"><span className="bg-red">P/ PRABHA</span> means impact.<br /><span className="bg-red">PRABHAVEE</span> influences.</p>
+          </div>
+          <div className="bg-cards">
+            <div className="bg-card"><span className="n" aria-hidden="true">01</span><p>We help organisations interpret and navigate risk. We strengthen governance and accountability. We embed ethical systems, processes and practices across operations and supply chains. And we translate responsible business commitments into action through strategic advisory, training and capacity building, facilitation and strategic programmes.</p></div>
+            <div className="bg-card"><span className="n" aria-hidden="true">02</span><p>We work with companies of all sizes, academic institutions, civil society organisations, research and advocacy centres, multi-stakeholder platforms, UN agencies, working groups and coalitions. Together we turn the complexity of business and human rights into actionable strategy. P/ PRABHAVEE was founded in 2022.</p></div>
           </div>
         </div>
       </section>
