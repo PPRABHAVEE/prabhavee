@@ -384,13 +384,13 @@
  },
  {
   "n": 34,
-  "title": "Third Stakeholder Consultation - Group 3 - CSOs, Academia, Policy experts, Labour rights organisations, and researchers",
+  "title": "Third closed-door Stakeholder Consultation - Group 3: Civil Society Organisations and Academia",
   "detail": [],
   "year": "2026",
   "yearSort": 2026,
   "type": "Consultation",
   "category": "Academic collaborations",
-  "role": "Facilitator and Organiser of upcoming Academic/ Research Initiative",
+  "role": "Facilitator and Organiser of Academic/ Research Initiative",
   "photoFlag": "Y",
   "photo": null,
   "photos": [],
@@ -479,7 +479,7 @@
   "yearSort": 2025,
   "type": "Multi-stakeholder convenings & Dialogues",
   "category": "Academic collaborations",
-  "role": "Facilitator and Organiser of upcoming Academic/ Research Initiative",
+  "role": "Facilitator and Organiser of Academic/ Research Initiative",
   "photoFlag": "Y",
   "photo": null,
   "photos": [],
@@ -494,7 +494,7 @@
   "yearSort": 2025,
   "type": "Multi-stakeholder convenings & Dialogues",
   "category": "Academic collaborations",
-  "role": "Facilitator and Organiser of upcoming Academic/ Research Initiative",
+  "role": "Facilitator and Organiser of Academic/ Research Initiative",
   "photoFlag": "Y",
   "photo": "/img/tnnlu-plenary-dec-2025.webp",
   "photos": [
@@ -512,7 +512,7 @@
   "yearSort": 2025,
   "type": "Multi-stakeholder convenings & Dialogues",
   "category": "Academic collaborations",
-  "role": "Facilitator and Organiser of upcoming Academic/ Research Initiative",
+  "role": "Facilitator and Organiser of Academic/ Research Initiative",
   "photoFlag": "Y",
   "photo": "/img/tnnlu-tnnlu-edited.webp",
   "photos": [
@@ -558,7 +558,7 @@
  },
  {
   "n": 26,
-  "title": "Annual Internal Committee (IC) Training Webinar with Optional Certification",
+  "title": "Annual Internal Committee (IC) Training Webinar with Certification",
   "detail": [],
   "year": "2025",
   "yearSort": 2025,
@@ -988,7 +988,9 @@
    "/img/ev/6-1.webp",
    "/img/ev/6-2.webp"
   ],
-  "links": [],
+  "links": [
+   "https://globalcompact.in/wp-content/uploads/2023/08/UN-GCNI-Bulletin-June-Sept-2022-.docx.pdf"
+  ],
   "upcoming": false,
   "doc": {
    "label": "Workshop report (PDF)",

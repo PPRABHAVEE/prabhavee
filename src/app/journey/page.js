@@ -1,6 +1,5 @@
 import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
-import Img from "@/components/site/Img";
 import JourneyStrip from "@/components/site/JourneyStrip";
 import { pageMeta } from "@/lib/meta";
 
@@ -17,7 +16,7 @@ const MS = [
   ["May 2025", "Event · Online and in-person", "Events & workshops", "Internal events and the Young Leaders Council, AIMA", "Organised and participated in key events and workshops, including collaborations with the Young Leaders Council at AIMA."],
 ];
 // Organisation names only (her comment of 19 Oct 2026). Two of the earlier experts were listed without an organisation and are not shown.
-const ORGS = ["National Institute of Advanced Studies", "BRAC International", "Pinkishe Foundation", "Infinite Cycle", "Watershed Organisation Trust (WOTR)", "FSG", "SoBoho.official", "Sanjhe Sapne", "Darbar Sahitya Sansada", "Impacted Data Technologies", "Udyogini", "Jagriti Enterprise Centre"];
+const ORGS = ["National Institute of Advanced Studies", "BRAC International", "Pinkishe Foundation", "Infinite Cycle", "Watershed Organisation Trust (WOTR)", "FSG", "SoBoho.official", "Sanjhe Sapne", "Darbar Sahitya Sansada", "Impacted Data Technologies", "Udyogini", "Jagriti Enterprise Centre - Purvanchal"];
 
 export default function Journey() {
   return (
@@ -34,7 +33,7 @@ export default function Journey() {
           <h2 className="sr-only">Timeline, 2022 to 2025</h2>
           <ol className="timeline">
             {MS.map(([w, s, tag, h, t, ph]) => (
-              <li key={h}><div className="when">{w}<small>{s}</small></div><div><span className="kicker">{tag}</span><h3>{h}</h3><p>{t}</p>{ph ? <div className="tl-photo"><Img src={ph[0]} alt={ph[1]} sizes="420px" /></div> : null}</div></li>
+              <li key={h}><div className="when">{w}<small>{s}</small></div><div><span className="kicker">{tag}</span><h3>{h}</h3><p>{t}</p></div></li>
             ))}
           </ol>
         </div>
@@ -43,7 +42,7 @@ export default function Journey() {
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Stakeholder engagement &amp; initiatives · before May 2025</span><h2>Engaged with stakeholders across diverse thematic areas.</h2></div><p>We facilitate multi-stakeholder dialogue. It advances shared priorities and collective action.</p></div>
           <div className="figs figs--4" style={{ marginBottom: 46 }}>
-            <div><b>13+</b><span>experts</span></div><div><b>10+</b><span>domains</span></div><div><b>20+</b><span>organisations</span></div><div><b>2024</b><span>active year. Led the WICCI Delhi External Affairs Council (DEAC) as State Vice President</span></div>
+            <div><b>13+</b><span>experts</span></div><div><b>10+</b><span>domains</span></div><div><b>20+</b><span>organisations</span></div><div><b>2024</b><span>active year. Led WICCI Delhi External Affairs Council (DEAC) as State Vice President</span></div>
           </div>
           <ul className="chips">{ORGS.map((o) => <li key={o}>{o}</li>)}</ul>
         </div>

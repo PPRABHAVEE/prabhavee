@@ -44,11 +44,11 @@ export default function Posh() {
             <div><b>70+</b><span>organisations empowered through PoSH training</span></div>
             <div><b>15+</b><span>participants at the July 2026 mid-year PoSH review roundtable</span></div>
             <div><b>1150+</b><span>individuals trained</span></div>
-            <div><b>9</b><span>flagship programmes convened and hosted, 2025–26</span></div>
+            <div><b>5</b><span>PoSH Programmes: From Compliance to Governance, 2025–26</span></div>
           </div>
           <div className="cols-2 posh-programmes" style={{ marginTop: 32 }}>
             <Img src="/img/banner-governance-poster.webp" alt="Poster: Annual Roundtable 2026, Safe Workplaces by Design, a leadership imperative in risk governance" sizes="(max-width: 880px) 100vw, 320px" style={{ width: 240, marginBottom: 22 }} /><div><h3>Mid-year PoSH review consultation</h3><p>Reframes PoSH as a strategic governance priority rather than a compliance obligation, exploring workplace grey zones, organisational risk areas and Internal Committee accountability. Examines PoSH through an ESG and BRSR lens, highlighting its growing relevance as investor-visible governance data and a measure of organisational responsibility and accountability.</p><a className="link" href="/docs/building-better-governance-2026.pdf" target="_blank" rel="noopener">Read the outcomes report (PDF)</a></div>
-            <div><h3>PoSH PRO programmes</h3><p>Two-day online programmes on PoSH at the workplace, co-organised with Yellow Spark.</p><a className="link" href="/docs/prabhavee-posh-brochure.pdf" download>PoSH brochure (PDF)</a></div>
+            <div><h3>PoSH PRO programmes</h3><p>A collaborative learning initiative with Yellow Spark: Two-day virtual learning programme building practical expertise in PoSH compliance, inquiry processes and workplace governance.</p><a className="link" href="/docs/prabhavee-posh-brochure.pdf" download>PoSH brochure (PDF)</a></div>
           </div>
         </div>
       </section>

@@ -9,7 +9,7 @@ export const metadata = pageMeta("Networks & collaborations", "Ongoing and past 
 export default function Networking() {
   return (
     <>
-      <PageIntro crumb="About / Networks & collaborations" title="Networks and strategic collaborations." lede="We work with leading organisations. Together we drive change and sustainable development across industries." image={{ src: "/img/banner-networks-aima-2026.webp", alt: "A group photo at the AIMA 68th Foundation Day and 18th National Management Day, February 2026", caption: "AIMA 68th Foundation Day and 18th National Management Day, New Delhi, February 2026", position: "center 35%" }} />
+      <PageIntro crumb="About / Networks & collaborations" title="Networks and strategic collaborations." lede="We work with leading organisations. Together we drive change and sustainable development across industries." image={{ src: "/img/banner-networks-aima-2026.webp", alt: "A group photo at the AIMA 68th Foundation Day and 18th National Management Day, February 2024", caption: "AIMA 68th Foundation Day and 18th National Management Day, New Delhi, February 2024", position: "center 35%" }} />
       <section className="sec">
         <div className="wrap">
           <div className="sec-head">

@@ -11,7 +11,7 @@ import { APPROACH, FRAMEWORKS, FOCUS_AREAS, STRENGTHS, BENEFITS, STATS, CONTEXT 
 
 export const metadata = pageMeta("Who we are", "A strategy and management consultancy at the intersection of public policy, law, communication and business strategy. Our approach, frameworks and strengths.", "/background");
 
-const CORE = ["Regulatory risk and compliance advisory", "Policy advisory, partnerships, strategic communication and advocacy", "Policy research, analysis and convenings", "Training and institutional capacity building", "Strategic programme design and implementation", "Multi-stakeholder engagement, facilitation and convenings", "Strategic convenings, partnerships and collaborations", "Governance and non-profit board leadership", "Prevention of Sexual Harassment of Women at the Workplace (PoSH) training and compliance support"];
+const CORE = ["Regulatory risk and compliance advisory", "Policy advisory, partnership strategy, strategic communication and advocacy", "Policy research, analysis and convenings", "Training and institutional capacity building", "Strategic programme design and implementation", "Multi-stakeholder engagement, facilitation and convenings", "Strategic convenings, partnerships and collaborations", "Governance and non-profit board leadership", "Prevention of Sexual Harassment of Women at the Workplace (PoSH) training and compliance support"];
 // Retained from the current website
 const CHALLENGES = [
   ["BRSR reporting quality", "BRSR reporting is uneven, and non-financial data is under-disclosed. Despite government efforts, companies lack policy commitment and awareness of the NGRBC. They struggle to self-regulate with accurate, verifiable human rights disclosures."],
@@ -74,7 +74,7 @@ export default function About() {
         <div className="wrap">
           <div className="sec-head">
             <div><span className="eyebrow">Consulting expertise</span><h2>Nine core consulting areas.</h2></div>
-            <p>Our work focuses on the social and governance dimensions of ESG, where regulatory developments, responsible business conduct, business practices and stakeholder expectations intersect. <Link className="link" href="/services">See our practice areas</Link></p>
+            <p>Our work focuses on the Social and Governance dimensions of ESG, where regulatory developments, responsible business conduct, organisational practices and stakeholder expectations intersect. <Link className="link" href="/services">See our practice areas</Link></p>
           </div>
           <ol className="core-grid">{CORE.map((c, i) => <li key={c}><span className="n" aria-hidden="true">{String.fromCharCode(65 + i)}</span><h3>{c}</h3></li>)}</ol>
           <span className="figs-label">Key focus areas</span>

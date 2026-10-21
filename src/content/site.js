@@ -27,13 +27,13 @@ export const STATS = {
   network: [
     { n: "1150+", t: "individuals trained" },
     { n: "20", t: "CSOs, NGOs and social impact start-ups" },
-    { n: "125+", t: "academicians and policy experts" },
+    { n: "125+", t: "network of academicians, consultants and policy experts" },
     { n: "70+", t: "organisations empowered through PoSH training" },
   ],
   engagements: [
-    { n: "12", t: "policy and stakeholder consultations" },
+    { n: "15", t: "policy and stakeholder consultations" },
     { n: "7", t: "GRI standard development consultations" },
-    { n: "14", t: "workshops, capacity-building and learning initiatives" },
+    { n: "15", t: "workshops, capacity-building and learning initiatives" },
     { n: "50+", t: "organisations engaged, including global collaborations" },
     { n: "5", t: "strategic partnerships" },
     { n: "6", t: "academic institutions and universities" },
@@ -55,7 +55,7 @@ export const APPROACH = [
   {
     k: "Actualisation",
     lead: "Translating intent, influence and integrity into on-the-ground practice across the workforce, supply chains and stakeholder ecosystems.",
-    steps: ["Engage and collaborate across the workforce, suppliers and stakeholders", "Implement actions and build capability", "Monitor, measure and learn for continuous improvement"],
+    steps: ["Engage and collaborate across the workforce and stakeholders", "Implement actions and build capability", "Monitor, measure and learn for continuous improvement"],
   },
 ];
 
@@ -64,7 +64,7 @@ export const SERVICES = [
   { slug: "regulatory-risk", title: "Regulatory risk & compliance advisory", short: "Helping businesses navigate evolving regulatory, legal and policy landscapes.",
     body: "Strategic guidance on emerging regulatory and compliance frameworks, identifying and mitigating risks across operations and supply chains, aligned with Indian and global standards.",
     benefit: "Strengthen strategies, compliance systems, processes, practices and governance frameworks to identify, mitigate and manage legal, regulatory and human rights risks proactively.", items: [] },
-  { slug: "policy-advocacy", title: "Policy advisory, partnerships, strategic communication & advocacy", short: "Enabling organisations to translate human rights and responsible business commitments into influence.",
+  { slug: "policy-advocacy", title: "Policy advisory, partnership strategy, strategic communication & advocacy", short: "Enabling organisations to translate human rights and responsible business commitments into influence.",
     body: "Translating human rights and responsible business commitments into influence, shaping regulations, industry norms and stakeholder behaviour through evidence, narrative and coalition-building.",
     benefit: "Build resilient strategies that safeguard organisational reputation, strengthen stakeholder trust and support effective communication.",
     items: [] },
@@ -195,7 +195,7 @@ export const FOUNDER = {
 // ---------------------------------------------------------------- navigation: Services mega-menu, grouped by audience (deck slide 20)
 export const MEGA = {
   columns: [
-    { heading: "Businesses, brands & suppliers", links: [["Regulatory risk & compliance advisory", "/services#regulatory-risk"], ["Policy advisory, partnerships, strategic communication & advocacy", "/services#policy-advocacy"], ["Supplier engagement & training", "/training"], ["PoSH training & compliance support", "/posh"]] },
+    { heading: "Businesses, brands & suppliers", links: [["Regulatory risk & compliance advisory", "/services#regulatory-risk"], ["Policy advisory, partnership strategy, strategic communication & advocacy", "/services#policy-advocacy"], ["Supplier engagement & training", "/training"], ["PoSH training & compliance support", "/posh"]] },
     { heading: "Universities, research centres & think tanks", links: [["Policy research, analysis & convenings", "/services#policy-research"], ["Strategic programme design & implementation", "/services#strategic-programmes"], ["Training & institutional capacity building", "/services#training-capacity"], ["Academic collaborations", "/academic"]] },
     { heading: "Social purpose organisations", links: [["Governance & non-profit board leadership", "/services#governance-boards"], ["Multi-stakeholder engagement, facilitation & convenings", "/services#multi-stakeholder"]] },
   ],
@@ -236,7 +236,7 @@ export const JOURNEY = [
 export const FRAMEWORK_SHORT = [
   "Scan the rules. Understand expectations. Assess risk.",
   "Embed in governance. Integrate into operations. Set accountability.",
-  "Engage suppliers. Implement. Monitor and learn.",
+  "Engage stakeholders. Implement. Monitor and learn.",
 ];
 
 // ---------------------------------------------------------------- enquiry form

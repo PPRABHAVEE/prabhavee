@@ -12,10 +12,10 @@ export default function Training() {
   return (
     <>
       <PageIntro crumb="Services / Training & capacity building" title="Training and capacity building." lede="We design strategic learning and capacity-building initiatives that strengthen individual capabilities, build institutional capacity and foster collaboration for sustainable impact." image={{ src: "/img/banner-jsjc-session.webp", alt: "A training session in progress at the Jindal School of Journalism and Communication", caption: "A session at the Jindal School of Journalism and Communication", position: "center 40%" }} />
-      <PhotoBand src="/img/ev/7-1.webp" alt="Participants at the business integrity and ESG orientation training by UN Global Compact Network India" caption="Business integrity and ESG orientation training, UN Global Compact Network India" position="center 35%" />
+      <PhotoBand src="/img/ev/7-1.webp" alt="Participants at the business integrity and ESG orientation training by UN Global Compact Network India" caption="Stakeholder at Business Integrity and ESG orientation training, UN Global Compact Network India" position="center 35%" />
       <section className="sec">
         <div className="wrap">
-          <div className="sec-head"><div><span className="eyebrow">Programmes</span><h2>Building Capabilities.</h2></div><p>Practical learning for employees, leaders, suppliers and media professionals.</p></div>
+          <div className="sec-head"><div><span className="eyebrow">Programmes</span><h2>Building Capabilities.</h2></div><p>Practical learning for employees, leaders, businesses and media professionals.</p></div>
           <div className="cols-2">
             {TRAINING.map((t, i) => (
               <div className="row row--plain" key={t.h} style={{ borderTop: "2px solid var(--green)", padding: "26px 0 34px" }}>

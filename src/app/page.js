@@ -50,11 +50,10 @@ export default function Home() {
           <div className="who-grid">
             <div className="who-copy">
               <h2>Where policy, law and business strategy meet.</h2>
-              <p className="big">P/ PRABHAVEE, founded in 2022, is an advisory and strategy consulting practice working at the intersection of policy, law, communication, and business strategy.</p>
+              <p className="big">P/ PRABHAVEE, founded in 2022, is an advisory and strategy consulting practice working at the intersection of public policy, law, communication, society and business strategy.</p>
               <p>Lawyer Anumita Sarkar founded the practice. We offer strategic advisory, multi-stakeholder initiatives, consultation and facilitation, training and capacity building, and strategic programmes.</p>
-              <p>We focus on the social and governance dimensions of ESG. That is where regulation, labour standards, business practice and stakeholder expectations meet. We turn that into strategies for engagement and influence. We seek to be the ‘Convenor’ of this larger public discourse.</p>
-              <p className="who-fields-note">We practise at the intersection of public policy, law, communication, society and business strategy.</p>
-            <div className="founder-card">
+              <p>We focus on the Social and Governance dimensions of ESG, where regulatory developments, responsible business conduct, organisational practices, and stakeholder expectations intersect. We help organisations understand how local regulatory frameworks, labour standards, business and human rights principles, and responsible business practices connect, and translate those insights into actionable strategies that strengthen governance, inform decision-making, and support meaningful stakeholder engagement and influence. We seek to be the ‘Convenor’ of this larger public discourse.</p>
+                          <div className="founder-card">
               <span className="fc-photo"><Img src="/img/founder.webp" sizes="96px" alt="Anumita Sarkar, founder of P/ PRABHAVEE" /></span>
               <div>
                 <b>{FOUNDER.name}</b>
@@ -225,8 +224,7 @@ export default function Home() {
             <h2>{ENQUIRY.heading}</h2>
             <p className="big">{ENQUIRY.lead}</p>
             <p>{ENQUIRY.statement}</p>
-            <p className="enq-where">Based in: India<br />Pan-India and global collaborations</p>
-          </div>
+                      </div>
           <EnquiryForm idPrefix="home" />
         </div>
       </section>
