@@ -1330,3 +1330,7 @@ dl.cred > div:nth-child(n) { padding: 22px 26px 24px; }
   .approach > div > .steps { grid-column: 1 / -1; grid-row: 3; margin-top: 18px; align-self: auto; grid-auto-rows: auto; }
   .approach .steps li { align-items: start; }
 }
+
+/* 3-part framework: the description sits directly under the heading instead of spreading to the right edge */
+#approach .sec-head { display: block; }
+#approach .sec-head > p { margin: 16px 0 0; max-width: 62ch; font-size: 17px; }
