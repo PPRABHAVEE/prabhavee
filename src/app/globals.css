@@ -1374,3 +1374,18 @@ main:has(> #background) .figs-label { display: block; }
   #background .bg-points { gap: 24px; }
   #contribution .figs > div:nth-child(even) { padding-left: 16px; }
 }
+
+/* Consultants & alumni */
+.cons-card { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 56px; align-items: center; margin-top: 28px; padding: 36px; background: var(--mist); border-top: 3px solid var(--green); }
+.cons-card img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: top; }
+.cons-body h2 { margin: 0 0 12px; }
+.cons-body .big { margin: 0 0 26px; max-width: 34ch; }
+.alum-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; list-style: none; margin: 0; padding: 0; }
+.alum-grid li { background: #fff; border-top: 3px solid var(--green); padding: 28px 28px 30px; }
+.alum-grid .mono { margin-bottom: 18px; }
+.alum-grid h3 { margin: 0 0 6px; font-size: var(--fs-h3); }
+.alum-grid p { margin: 0; font-size: 15.5px; color: var(--muted); }
+.cons-join { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+.cons-join h2 { color: #fff; margin: 0 0 10px; }
+.cons-join p { color: #ffffffd6; margin: 0; max-width: 52ch; }
+@media (max-width: 880px) { .cons-card { grid-template-columns: minmax(0, 1fr); gap: 26px; padding: 22px; } .cons-card img { max-width: 260px; } .alum-grid { grid-template-columns: minmax(0, 1fr); gap: 14px; } .cons-join { flex-direction: column; align-items: flex-start; gap: 24px; } }
