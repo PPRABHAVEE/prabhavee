@@ -46,46 +46,6 @@ function Lightbox({ gal, onClose }) {
   );
 }
 
-const hasPhoto = (e) => (e.photos && e.photos.length) || e.photo;
-
-// Tiles flow into the shortest column in order, so columns end at about the same height and
-// events without a photo leave no large gaps. Heights are estimates (photo + text lines).
-function balance(list, cols) {
-  const w = typeof window === "undefined" ? 1240 : Math.min(window.innerWidth - 48, 1240);
-  const colW = (w - 28 * (cols - 1)) / cols;
-  const perLine = Math.max(20, Math.floor(colW / 8.7));
-  const est = list.map((e) => (hasPhoto(e) ? colW * (2 / 3) + 141 : 88) + Math.ceil(e.title.length / perLine) * 27 + 26);
-  // try every assignment of tiles to columns and keep the one with the smallest height spread
-  let best = null;
-  let bestSpread = Infinity;
-  const pick = Array(list.length).fill(0);
-  const walk = (k) => {
-    if (k === list.length) {
-      const h = Array(cols).fill(0);
-      pick.forEach((c, i) => { h[c] += est[i]; });
-      const spread = Math.max(...h) - Math.min(...h);
-      if (spread < bestSpread) { bestSpread = spread; best = pick.slice(); }
-      return;
-    }
-    for (let c = 0; c < cols; c++) { pick[k] = c; walk(k + 1); }
-  };
-  if (list.length <= 9) walk(0);
-  const out = Array.from({ length: cols }, () => []);
-  list.forEach((e, i) => out[best ? best[i] : i % cols].push(e));
-  return out;
-}
-
-function useCols() {
-  const [c, setC] = useState(3);
-  useEffect(() => {
-    const f = () => setC(window.innerWidth <= 620 ? 1 : window.innerWidth <= 1180 ? 2 : 3);
-    f();
-    window.addEventListener("resize", f);
-    return () => window.removeEventListener("resize", f);
-  }, []);
-  return c;
-}
-
 function Tile({ ev, onOpen }) {
   const links = [
     ...ev.links.map((l) => ({ href: l, label: l.includes("youtube") ? "Watch" : "Read more" })),
@@ -94,19 +54,24 @@ function Tile({ ev, onOpen }) {
   const photos = ev.photos && ev.photos.length ? ev.photos : ev.photo ? [ev.photo] : [];
   return (
     <article className={`ev${photos.length ? " has-ph" : ""}`}>
+      {!photos.length ? <div className="ph ph--none" aria-hidden="true"><span>P/</span><em>{ev.category}</em></div> : null}
       {photos.length ? (
         <button type="button" className="ph" onClick={(e) => onOpen({ photos, i: 0, title: ev.title }, e.currentTarget)} aria-label={`View ${photos.length} ${photos.length === 1 ? "photo" : "photos"}: ${ev.title}`}>
           <Img src={photos[0]} alt="" sizes="(max-width: 620px) 100vw, (max-width: 1180px) 50vw, 420px" />
           {photos.length > 1 ? <span className="ph-n">{photos.length} photos</span> : <span className="ph-n">View photo</span>}
         </button>
       ) : null}
-      <div className="meta">
-        {ev.upcoming ? <span className="badge">UPCOMING</span> : null}
-        <span>{ev.year}</span><i>/</i><span>{ev.type}</span>
+      <div className="ev-body">
+        <div className="meta">
+          {ev.upcoming ? <span className="badge">UPCOMING</span> : null}
+          <span className="yr">{ev.year}</span><span>{ev.type}</span>
+        </div>
+        <h3 title={ev.title}>{ev.title}</h3>
+        <div className="ev-foot">
+          <p className="role"><span>Role</span>{ev.role}</p>
+          {links.length ? <div className="links">{links.map((l) => <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer">{l.label}</a>)}</div> : null}
+        </div>
       </div>
-      <h3>{ev.title}</h3>
-      <p className="role">{ev.role}</p>
-      {links.length ? <div className="links">{links.map((l) => <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer">{l.label}</a>)}</div> : null}
     </article>
   );
 }
@@ -114,12 +79,12 @@ function Tile({ ev, onOpen }) {
 export default function EventsExplorer({ events }) {
   const cats = useMemo(() => [...new Set(events.map((e) => e.category))].sort(), [events]);
   const years = useMemo(() => [...new Set(events.flatMap((e) => e.year.match(/20\d\d/g) || []))].sort().reverse(), [events]);
+  const counts = useMemo(() => events.reduce((m, e) => ({ ...m, [e.category]: (m[e.category] || 0) + 1 }), {}), [events]);
   const [cat, setCat] = useState("");
   const [year, setYear] = useState("");
   const [q, setQ] = useState("");
   const [page, setPage] = useState(1);
   const [gal, setGal] = useState(null);
-  const cols = useCols();
   const closeGal = useCallback(() => setGal(null), []);
 
   useEffect(() => {
@@ -145,16 +110,19 @@ export default function EventsExplorer({ events }) {
   return (
     <div className="wrap">
       {gal ? <Lightbox gal={gal} onClose={closeGal} /> : null}
-      <div className="filters">
-        <div><label htmlFor="f-cat">Type of engagement</label>
-          <select id="f-cat" value={cat} onChange={reset(setCat)}><option value="">All types</option>{cats.map((c) => <option key={c}>{c}</option>)}</select></div>
-        <div><label htmlFor="f-year">Year</label>
-          <select id="f-year" value={year} onChange={reset(setYear)}><option value="">All years</option>{years.map((y) => <option key={y}>{y}</option>)}</select></div>
-        <div><label htmlFor="f-q">Search</label>
-          <input id="f-q" type="search" value={q} onChange={reset(setQ)} placeholder="Forum, role, organisation" /></div>
-        <span className="count" aria-live="polite">{list.length} {list.length === 1 ? "engagement" : "engagements"}</span>
+      <div className="evf">
+        <div className="evf-row">
+          <div className="evf-field evf-field--type"><label htmlFor="f-cat">Type of engagement</label>
+            <select id="f-cat" value={cat} onChange={reset(setCat)}><option value="">All types ({events.length})</option>{cats.map((c) => <option key={c} value={c}>{c} ({counts[c]})</option>)}</select></div>
+          <div className="evf-field"><label htmlFor="f-year">Year</label>
+            <select id="f-year" value={year} onChange={reset(setYear)}><option value="">All years</option>{years.map((y) => <option key={y}>{y}</option>)}</select></div>
+          <div className="evf-field evf-field--grow"><label htmlFor="f-q">Search</label>
+            <input id="f-q" type="search" value={q} onChange={reset(setQ)} placeholder="Forum, role, organisation" /></div>
+          <div className="evf-count" aria-live="polite"><b>{list.length}</b><span>{list.length === 1 ? "engagement" : "engagements"}</span></div>
+          {cat || year || q ? <button type="button" className="evf-reset" onClick={() => { setCat(""); setYear(""); setQ(""); setPage(1); }}>Clear filters</button> : null}
+        </div>
       </div>
-      <div className="ev-grid" id="ev-grid">{balance(shown, cols).map((col, i) => <div className="ev-col" key={i}>{col.map((e) => <Tile key={e.n} ev={e} onOpen={setGal} />)}</div>)}</div>
+      <div className="ev-grid" id="ev-grid">{shown.map((e) => <Tile key={e.n} ev={e} onOpen={setGal} />)}</div>
       {list.length === 0 ? <p className="empty">No engagements match these filters.</p> : null}
       {pages > 1 ? (
         <div className="pager" aria-label="Pages">
