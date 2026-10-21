@@ -34,10 +34,12 @@ export default function About() {
         <div className="wrap">
           <span className="eyebrow">Background</span>
           <div className="bg-top">
-            <h2>Responsible business is a shared risk.</h2>
-            <p className="big">It demands clarity on how stakeholders understand their roles, responsibilities, influence and impact on people across value chains.</p>
+            <div className="bg-lead">
+              <h2>Responsible business is a shared risk.</h2>
+              <p className="big">It demands clarity on how stakeholders understand their roles, responsibilities, influence and impact on people across value chains.</p>
+            </div>
+            <p className="bg-name"><span className="bg-red">P/ PRABHA</span> means impact.<br /><span className="bg-red">PRABHAVEE</span> influences.</p>
           </div>
-          <p className="bg-name"><span><span className="bg-red">P/ PRABHA</span> means impact.</span><span><span className="bg-red">PRABHAVEE</span> influences.</span></p>
           <div className="bg-cards">
             <div className="bg-points">
             <div className="bg-card"><span className="n" aria-hidden="true">01</span><h3 className="bg-label">What we do</h3><p>We help organisations interpret and navigate risk. We strengthen governance and accountability. We embed ethical systems, processes and practices across operations and supply chains. And we translate responsible business commitments into action through strategic advisory, training and capacity building, facilitation and strategic programmes.</p></div>
