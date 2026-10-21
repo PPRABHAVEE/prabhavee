@@ -1311,3 +1311,12 @@ dl.cred > div:nth-child(n) { padding: 22px 26px 24px; }
 @media (max-width: 1100px) { .approach > div, .approach > div + div { grid-template-columns: minmax(0, 1fr); row-gap: 8px; } .approach > div > .steps { grid-column: 1; grid-row: auto; margin-top: 18px; } }
 @media (max-width: 620px) { .approach > div > .steps { grid-template-columns: minmax(0, 1fr); gap: 10px; } .approach .steps li { padding: 14px 16px 16px; } .approach .steps li::before { font-size: 24px; margin-bottom: 6px; } }
 .approach > div > .steps { grid-auto-rows: 1fr; } .approach .steps li { min-height: 150px; }
+
+/* framework detail, compact: small tiles with an inline numeral, tighter rows */
+.approach > div, .approach > div + div { padding: 22px 0 24px; column-gap: 48px; }
+.approach .k { margin: 4px 0 8px; }
+.approach > div > p { font-size: 15px; line-height: 1.55; margin: 0; }
+.approach > div > .steps { gap: 10px; grid-auto-rows: auto; }
+.approach .steps li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 6px; min-height: 0; padding: 12px 14px 14px; font-size: 14.5px; line-height: 1.4; border-top-width: 2px; }
+.approach .steps li::before { font: 700 12px/1.7 var(--body); letter-spacing: .08em; margin: 0; color: var(--red-ink); }
+@media (max-width: 620px) { .approach .steps li { padding: 10px 12px 12px; } .approach .steps li::before { font-size: 12px; margin: 0; } }
