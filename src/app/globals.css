@@ -1608,3 +1608,31 @@ main:has(> #background) .figs-label { display: block; }
 @media (max-width: 620px) { .along { grid-template-columns: minmax(0, 1fr); } .along li { padding: 16px 0; grid-template-columns: 38px minmax(0, 1fr); } .along-t { font-size: 17.5px; } }
 .along { grid-auto-rows: 1fr; }
 @media (max-width: 980px) { .along { grid-auto-rows: auto; } }
+
+/* Training: equal-height programme cards, audience band, convening panels */
+.trn-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
+.trn-card { position: relative; display: flex; flex-direction: column; padding: 34px 34px 32px; background: var(--mist); border-top: 3px solid var(--green); overflow: hidden; }
+.trn-n { position: absolute; top: 14px; right: 24px; font-family: var(--display); font-size: 84px; line-height: 1; color: #013b2318; pointer-events: none; }
+.trn-card h3 { margin: 0 0 22px; max-width: 24ch; font-family: var(--display); font-weight: 400; font-size: var(--fs-sub); line-height: 1.2; letter-spacing: -.01em; }
+.trn-list { list-style: none; margin: 0; padding: 0; }
+.trn-list li { position: relative; padding: 12px 0 12px 22px; border-top: 1px solid var(--line); font-size: 16.5px; line-height: 1.45; }
+.trn-list li::before { content: ""; position: absolute; left: 0; top: 1.28em; width: 9px; height: 2px; background: var(--red); }
+.trn-for { margin-top: 24px; display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr) auto; gap: 28px 36px; align-items: center; padding: 30px 36px; background: var(--green); color: #fff; }
+.trn-for-l { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #ffffffcc; }
+.trn-for ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 28px; }
+.trn-for li { display: flex; flex-direction: column; gap: 6px; padding-left: 18px; border-left: 1px solid #ffffff40; font-size: 16px; font-weight: 600; line-height: 1.4; }
+.trn-for li span { font-size: 12px; font-weight: 700; letter-spacing: .1em; color: #ff8d8d; }
+.trn-for .btn--ghost { border-color: #ffffff99; color: #fff; background: transparent; white-space: nowrap; }
+.trn-for .btn--ghost:hover { background: #fff; color: var(--green); }
+.conv-lists { margin-top: 36px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
+.conv-panel { background: #fff; border-top: 3px solid var(--green); padding: 0 32px 18px; box-shadow: 0 10px 28px #013b2312; }
+.conv-panel h3 { margin: 0; padding: 24px 0 14px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--green); }
+.conv-panel h3 span { display: inline-block; padding-left: 28px; position: relative; }
+.conv-panel h3 span::before { content: ""; position: absolute; left: 0; top: 50%; width: 20px; height: 2px; background: var(--red); }
+.conv-panel ul { list-style: none; margin: 0; padding: 0; }
+.conv-panel li { padding: 13px 0; border-top: 1px solid var(--line); font-size: 16.5px; line-height: 1.45; }
+@media (max-width: 1180px) { .trn-for { grid-template-columns: minmax(0, 1fr); } .trn-for .btn--ghost { justify-self: start; } }
+@media (max-width: 880px) { .trn-grid, .conv-lists { grid-template-columns: minmax(0, 1fr); } .trn-for ul { grid-template-columns: minmax(0, 1fr); gap: 16px; } .trn-for li { padding: 2px 0 2px 16px; } }
+@media (max-width: 620px) { .trn-card { padding: 26px 20px 24px; } .trn-n { font-size: 64px; top: 10px; right: 16px; } .trn-for { padding: 24px 20px; } .conv-panel { padding: 0 20px 12px; } .trn-list li, .conv-panel li { font-size: 16px; } }
+@media (min-width: 881px) { .trn-card h3 { min-height: 3.6em; } }
+.conv-photo { display: block; width: 100%; height: 100%; max-height: 340px; min-height: 220px; object-fit: cover; object-position: center 40%; border-bottom: 3px solid var(--red); }
