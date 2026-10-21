@@ -1,7 +1,7 @@
 import Img from "@/components/site/Img";
 
 // Page header. With `image` it becomes a split header: green copy panel plus a full-colour banner photograph.
-export default function PageIntro({ crumb, title, lede, image }) {
+export default function PageIntro({ crumb, title, lede, image, compact }) {
   const copy = (
     <div className="wrap">
       <div className="crumb">{crumb}</div>
@@ -11,7 +11,7 @@ export default function PageIntro({ crumb, title, lede, image }) {
   );
   if (!image) return <section className="intro">{copy}</section>;
   return (
-    <section className="intro intro--img">
+    <section className={`intro intro--img${compact ? " intro--compact" : ""}`}>
       {copy}
       <figure className="intro-media">
         <Img src={image.src} alt={image.alt} sizes="(max-width: 880px) 100vw, 46vw" priority style={{ objectPosition: image.position || "center" }} />

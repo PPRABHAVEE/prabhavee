@@ -1414,3 +1414,78 @@ main:has(> #background) .figs-label { display: block; }
 @media (min-width: 881px) { .cons-card img { aspect-ratio: auto; height: 100%; min-height: 260px; align-self: stretch; } }
 @media (min-width: 881px) { .cons-card { grid-template-rows: minmax(260px, auto); } .cons-card img { height: 0; min-height: 100%; } }
 @media (max-width: 880px) { .cons-card { padding: 0 0 22px; background: none; gap: 20px; } .cons-card img { max-width: none; width: 100%; aspect-ratio: 4 / 3; object-position: center 18%; } .cons-body { background: var(--mist); padding: 22px; } }
+
+/* Consultants page: photo + details side by side at every width, photo uncropped; alumni stay in a row */
+.cons-card { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); grid-template-rows: auto; gap: 0; padding: 0; background: none; align-items: stretch; }
+.cons-card img { grid-column: 1; width: 100%; height: auto; min-height: 0; max-height: none; max-width: none; aspect-ratio: 900 / 1351; object-fit: contain; object-position: center; align-self: start; }
+.cons-body { grid-column: 2; align-self: stretch; height: auto; display: flex; flex-direction: column; justify-content: center; background: var(--mist); padding: 36px 40px; box-sizing: border-box; }
+@media (max-width: 880px) {
+  .cons-card { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 0; padding: 0; }
+  .cons-body { padding: 20px 22px; }
+  .alum-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .alum-grid li { padding: 18px 16px 20px; }
+}
+@media (max-width: 560px) {
+  .cons-body { padding: 16px; }
+  .cons-body .btnrow { flex-direction: column; align-items: stretch; }
+  .alum-grid li { padding: 14px 12px 16px; }
+  .alum-grid h3 { font-size: 16px; }
+  .alum-grid p { font-size: 13.5px; }
+}
+
+/* Consultants + alumni side by side as two columns */
+.cons-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.cons-col--alum { background: var(--mist); padding: 28px; align-self: stretch; }
+.cons-col--alum .sec-head { display: block; margin-bottom: 20px; }
+.cons-col--alum .sec-head p { margin: 10px 0 0; }
+.cons-col--alum .alum-grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+.cons-split .cons-card { grid-template-columns: minmax(0, 1fr); margin-top: 28px; }
+.cons-split .cons-card img { max-width: none; width: 100%; aspect-ratio: 900 / 1351; }
+.cons-split .cons-body { grid-column: 1; padding: 24px 28px; }
+@media (max-width: 880px) { .cons-split { gap: 20px; } .cons-col--alum { padding: 18px; } .cons-split .cons-body { padding: 18px; } .cons-split .cons-body .btnrow { flex-direction: column; align-items: stretch; } }
+@media (max-width: 520px) { .cons-split { grid-template-columns: minmax(0, 1fr); } }
+
+/* Equal-height alumni cards that fill the column */
+.cons-col--alum { display: flex; flex-direction: column; box-sizing: border-box; }
+.cons-col--alum .alum-grid { flex: 1; grid-auto-rows: 1fr; }
+.cons-col--alum .alum-grid li { display: flex; flex-direction: column; justify-content: center; }
+
+/* Both column headings share one baseline: eyebrow on top, panel below with identical offset */
+.cons-split { align-items: stretch; }
+.cons-col { display: flex; flex-direction: column; min-width: 0; }
+.cons-col .eyebrow { margin: 0; }
+.cons-col--alum { background: none; padding: 0; }
+.cons-col--alum .alum-panel { flex: 1; display: flex; flex-direction: column; margin-top: 28px; background: var(--mist); padding: 28px; box-sizing: border-box; }
+.cons-split .cons-card { margin-top: 28px; }
+@media (max-width: 880px) { .cons-col--alum .alum-panel { padding: 18px; } }
+
+/* Mobile: columns stack, so no stretching */
+@media (max-width: 520px) {
+  .cons-split { gap: 36px; }
+  .cons-col--alum .alum-panel { flex: 0 0 auto; padding: 20px 16px; }
+  .cons-col--alum .alum-grid { flex: 0 0 auto; grid-auto-rows: auto; gap: 12px; }
+  .cons-col--alum .alum-grid li { padding: 20px 18px; }
+  .cons-split .cons-body .btnrow { flex-direction: row; flex-wrap: wrap; }
+}
+
+/* Enquiry form: give fields room on tablet and mobile */
+@media (max-width: 880px) {
+  .enq .form .row2 { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .enq .form { gap: 24px; padding: 32px 28px 30px; }
+  .enq .form .field label { margin-bottom: 10px; }
+  .enq .form .field input, .enq .form .field select { padding: 16px 18px; }
+  .enq .form .field textarea { min-height: 160px; padding: 16px 18px; }
+}
+@media (max-width: 620px) {
+  .enq .form { gap: 22px; padding: 26px 20px 24px; }
+  .enq .form .row2 { gap: 22px; }
+  .enq .form .field { gap: 0; }
+  .enq .form .field label { margin-bottom: 8px; }
+  .enq .form .field textarea { min-height: 150px; }
+}
+
+/* Long ledes (contact): smaller on phones so the form is not pushed a full screen down */
+@media (max-width: 620px) {
+  .intro--compact .lede { font-size: 17px; line-height: 1.55; }
+  .intro--compact h1 { font-size: 30px; }
+}

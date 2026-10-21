@@ -9,7 +9,7 @@ export const metadata = pageMeta("Contact us", "Contact P/ PRABHAVEE, a Delhi st
 export default function Contact() {
   return (
     <>
-      <PageIntro crumb="Contact us" title={ENQUIRY.heading} lede={`${ENQUIRY.lead} ${ENQUIRY.statement}`} />
+      <PageIntro compact crumb="Contact us" title={ENQUIRY.heading} lede={`${ENQUIRY.lead} ${ENQUIRY.statement}`} image={{ src: "/img/banner-forum-speakers.webp", alt: "Speakers standing together after a session at the UN Responsible Business and Human Rights Forum", caption: "Speakers after a session at the UN Responsible Business and Human Rights Forum", position: "center 30%" }} />
       <section className="sec">
         <div className="wrap enq enq--contact">
           <aside className="contact-card">
