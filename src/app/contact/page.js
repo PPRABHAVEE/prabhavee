@@ -19,7 +19,7 @@ export default function Contact() {
             <a className="link link--ico" href={`mailto:${SITE.email}`}><MailIcon size={16} />{SITE.email}</a>
             <hr />
             <span className="eyebrow">Our reach</span>
-            <p>Based in: India<br />Pan-India and global collaborations</p>
+            
             <a className="link link--ico" href={SITE.linkedinCompany} target="_blank" rel="noopener noreferrer"><LinkedInIcon size={16} />Connect on LinkedIn<span className="sr-only"> (opens in a new tab)</span></a>
           </aside>
           <EnquiryForm idPrefix="contact" />

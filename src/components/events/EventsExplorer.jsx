@@ -46,6 +46,46 @@ function Lightbox({ gal, onClose }) {
   );
 }
 
+const hasPhoto = (e) => (e.photos && e.photos.length) || e.photo;
+
+// Tiles flow into the shortest column in order, so columns end at about the same height and
+// events without a photo leave no large gaps. Heights are estimates (photo + text lines).
+function balance(list, cols) {
+  const w = typeof window === "undefined" ? 1240 : Math.min(window.innerWidth - 48, 1240);
+  const colW = (w - 28 * (cols - 1)) / cols;
+  const perLine = Math.max(20, Math.floor(colW / 8.7));
+  const est = list.map((e) => (hasPhoto(e) ? colW * (2 / 3) + 141 : 88) + Math.ceil(e.title.length / perLine) * 27 + 26);
+  // try every assignment of tiles to columns and keep the one with the smallest height spread
+  let best = null;
+  let bestSpread = Infinity;
+  const pick = Array(list.length).fill(0);
+  const walk = (k) => {
+    if (k === list.length) {
+      const h = Array(cols).fill(0);
+      pick.forEach((c, i) => { h[c] += est[i]; });
+      const spread = Math.max(...h) - Math.min(...h);
+      if (spread < bestSpread) { bestSpread = spread; best = pick.slice(); }
+      return;
+    }
+    for (let c = 0; c < cols; c++) { pick[k] = c; walk(k + 1); }
+  };
+  if (list.length <= 9) walk(0);
+  const out = Array.from({ length: cols }, () => []);
+  list.forEach((e, i) => out[best ? best[i] : i % cols].push(e));
+  return out;
+}
+
+function useCols() {
+  const [c, setC] = useState(3);
+  useEffect(() => {
+    const f = () => setC(window.innerWidth <= 620 ? 1 : window.innerWidth <= 1180 ? 2 : 3);
+    f();
+    window.addEventListener("resize", f);
+    return () => window.removeEventListener("resize", f);
+  }, []);
+  return c;
+}
+
 function Tile({ ev, onOpen }) {
   const links = [
     ...ev.links.map((l) => ({ href: l, label: l.includes("youtube") ? "Watch" : "Read more" })),
@@ -79,6 +119,7 @@ export default function EventsExplorer({ events }) {
   const [q, setQ] = useState("");
   const [page, setPage] = useState(1);
   const [gal, setGal] = useState(null);
+  const cols = useCols();
   const closeGal = useCallback(() => setGal(null), []);
 
   useEffect(() => {
@@ -113,7 +154,7 @@ export default function EventsExplorer({ events }) {
           <input id="f-q" type="search" value={q} onChange={reset(setQ)} placeholder="Forum, role, organisation" /></div>
         <span className="count" aria-live="polite">{list.length} {list.length === 1 ? "engagement" : "engagements"}</span>
       </div>
-      <div className="ev-grid" id="ev-grid">{shown.map((e) => <Tile key={e.n} ev={e} onOpen={setGal} />)}</div>
+      <div className="ev-grid" id="ev-grid">{balance(shown, cols).map((col, i) => <div className="ev-col" key={i}>{col.map((e) => <Tile key={e.n} ev={e} onOpen={setGal} />)}</div>)}</div>
       {list.length === 0 ? <p className="empty">No engagements match these filters.</p> : null}
       {pages > 1 ? (
         <div className="pager" aria-label="Pages">

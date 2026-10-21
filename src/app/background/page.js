@@ -7,6 +7,7 @@ import JourneyStrip from "@/components/site/JourneyStrip";
 import { Credentials } from "@/components/site/TrustStrip";
 import Fold from "@/components/site/Fold";
 import { pageMeta } from "@/lib/meta";
+import DECK from "@/content/deck.json";
 import { APPROACH, FRAMEWORKS, FOCUS_AREAS, STRENGTHS, BENEFITS, STATS, CONTEXT } from "@/content/site";
 
 export const metadata = pageMeta("Who we are", "A strategy and management consultancy at the intersection of public policy, law, communication and business strategy. Our approach, frameworks and strengths.", "/background");
@@ -131,6 +132,7 @@ export default function About() {
             <p>These engagements reflect a commitment to advancing responsible business conduct, strengthening corporate accountability, and integrating human rights due diligence into governance frameworks and business practices.</p>
             </Fold>
             <div className="figs figs--4" style={{ marginTop: 34 }}>{STATS.engagements.slice(0, 3).concat(STATS.engagements.slice(3, 4)).map((s) => <div key={s.t}><b>{s.n}</b><span>{s.t}</span></div>)}</div>
+            <div style={{ marginTop: 22 }}><Fold title="See the organisations we have engaged"><ul className="chips chips--tight">{DECK.collaborations.map((o) => <li key={o}>{o}</li>)}</ul></Fold></div>
           </div>
         </div>
       </section>

@@ -1185,3 +1185,16 @@ dl.cred > div:nth-child(n) { padding: 22px 26px 24px; }
 /* Doc round 21 Oct: red industries, red dash before key labels */
 .industries li { color: var(--red-ink); }
 .figs-label::before { content: ""; display: inline-block; width: 22px; height: 2px; background: var(--red); vertical-align: middle; margin-right: 10px; }
+
+.chips--tight { gap: 6px; margin-top: 14px; }
+.chips--tight li { padding: 6px 12px; font-size: 13px; }
+
+/* Practice-areas sub-line: same size as body text, red as in her note */
+.sec .sec-head .sec-sub { font-size: 16px; color: var(--red-ink); font-weight: 500; }
+
+/* Events grid: balanced columns (see balance() in EventsExplorer) */
+.ev-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-count: auto; column-gap: 28px; align-items: start; }
+.ev-col { display: flex; flex-direction: column; gap: 26px; min-width: 0; }
+.ev-grid > .ev-col > .ev { margin-bottom: 0; }
+@media (max-width: 1180px) { .ev-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .ev-grid { grid-template-columns: minmax(0, 1fr); } }

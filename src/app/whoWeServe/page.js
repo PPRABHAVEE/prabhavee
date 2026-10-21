@@ -25,8 +25,12 @@ export default function WhoWeServe() {
         </div>
       </section>
       <section className="sec">
-        <div className="wrap">
-          <div className="sec-head"><div><span className="eyebrow">Target clients</span><h2>Who benefits most.</h2></div><p>Businesses and supply chain stakeholders navigating evolving human rights due diligence requirements, responsible sourcing expectations and international market standards.</p></div>
+        <div className="wrap split">
+          <span className="eyebrow">Target clients</span>
+          <div><h2>Who benefits most.</h2></div>
+          <div><p className="big">Businesses and supply chain stakeholders navigating evolving human rights due diligence requirements, responsible sourcing expectations and international market standards.</p></div>
+        </div>
+        <div className="wrap" style={{ marginTop: 40 }}>
           <div className="tiles">{TARGET_CLIENTS.map((c, i) => <div key={c}><span>0{i + 1}</span>{c}</div>)}</div>
         </div>
       </section>
