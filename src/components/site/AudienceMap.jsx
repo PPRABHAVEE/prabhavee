@@ -6,9 +6,9 @@ import { MEGA, PARTNER_GROUPS } from "@/content/site";
 const PHOTOS = ["/img/ev/25-1.webp", "/img/jindal-jindal-1.webp", "/img/ev/17-1.webp"];
 const ALTS = ["Participants at the amfori and Confederation of Indian Industry trade and sustainability workshop", "Participants at a workshop with the Jindal School of Journalism and Communication", "Participants at a P/ PRABHAVEE mentorship programme"];
 
-export default function AudienceMap({ withPhotos = false }) {
+export default function AudienceMap({ withPhotos = false, cards = false }) {
   return (
-    <div className="aud">
+    <div className={`aud${cards ? " aud--cards" : ""}`}>
       {MEGA.columns.map((c, i) => (
         <article className="aud-card" key={c.heading}>
           {withPhotos ? <div className="aud-ph"><Img src={PHOTOS[i]} alt={ALTS[i]} sizes="(max-width: 880px) 100vw, 33vw" /></div> : null}
