@@ -1300,10 +1300,11 @@ dl.cred > div:nth-child(n) { padding: 22px 26px 24px; }
 
 /* 3-part framework detail: the kicker, title, lead and each step sit on shared rows, so the three columns line up across */
 @media (min-width: 881px) {
-  .approach { grid-template-rows: repeat(6, auto); }
-  .approach > div { display: grid; grid-template-rows: subgrid; grid-row: span 6; counter-reset: s; align-content: start; }
+  .approach { grid-template-rows: repeat(9, auto); }
+  .approach > div { display: grid; grid-template-rows: subgrid; grid-row: span 9; counter-reset: s; align-content: start; }
   .approach .steps { display: contents; counter-reset: none; }
   .approach .steps li { align-content: start; }
   .approach > div > .kicker { align-self: start; }
   .approach > div > p { margin-bottom: 18px; }
 }
+.approach .steps li:last-child { border-bottom: 1px solid var(--line-soft); }
