@@ -1402,3 +1402,4 @@ main:has(> #background) .figs-label { display: block; }
 
 /* Closing band: the two actions sit at the right edge of the content, level with the heading */
 @media (min-width: 881px) { .closing-actions { justify-content: flex-end; } }
+@media (min-width: 881px) { .cons-join > .btn { justify-self: end; } }
