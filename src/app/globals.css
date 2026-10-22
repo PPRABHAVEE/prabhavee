@@ -2165,3 +2165,4 @@ main > .sec:has(.ws-cards) { background: var(--mist); color: var(--ink); }
 .sec .sec-head .sec-sub { color: var(--muted); font-weight: 400; }
 .sec .sec-head .sec-sub .red-word { color: var(--red-ink); font-weight: 600; }
 .fig-pre { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 600; color: var(--muted); letter-spacing: .02em; }
+.who-copy .red-word { color: var(--red-ink); }
