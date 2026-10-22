@@ -21,7 +21,7 @@ export default function Events() {
               <article className="card" key={f.title + f.when}>
                 {f.img2 ? <div className="im im--duo"><Img src={f.img} alt="Speakers for the year-end consultation and governance masterclass" sizes="(max-width: 620px) 50vw, 210px" /><Img src={f.img2} alt="Speaker biographies for the year-end consultation and governance masterclass" sizes="(max-width: 620px) 50vw, 210px" /></div> : f.img ? <div className="im"><Img src={f.img} alt="" sizes="(max-width: 620px) 100vw, (max-width: 1180px) 50vw, 420px" style={f.pos ? { objectPosition: f.pos } : undefined} /></div> : <div className="im im--text">P/</div>}
                 <div className="bd">
-                  <span className="when">{f.when}{f.upcoming ? <span className="badge">UPCOMING</span> : null}</span><h3>{f.title}</h3><p>{f.text}</p>{f.link ? <a className="link fl-link" href={f.link[1]} target="_blank" rel="noopener noreferrer">{f.link[0]}<span className="sr-only"> (opens in a new tab)</span></a> : null}
+                  <span className="when">{f.when}{f.upcoming ? <span className="badge">UPCOMING</span> : null}</span><h3>{f.title}</h3><p>{f.text}</p>{f.links ? <div className="fl-links">{f.links.map(([l, h]) => <a className="link fl-link" key={h} href={h} target="_blank" rel="noopener noreferrer">{l}<span className="sr-only"> (opens in a new tab)</span></a>)}</div> : null}
                   {f.more ? (
                     <details className="fl-more">
                       <summary>Programme details</summary>
