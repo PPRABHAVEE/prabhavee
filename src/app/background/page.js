@@ -10,7 +10,7 @@ import { pageMeta } from "@/lib/meta";
 import DECK from "@/content/deck.json";
 import { APPROACH, FRAMEWORKS, FOCUS_AREAS, STRENGTHS, BENEFITS, STATS, CONTEXT } from "@/content/site";
 
-export const metadata = pageMeta("Who we are", "A strategy and management consultancy at the intersection of public policy, law, communication and business strategy. Our approach, frameworks and strengths.", "/background");
+export const metadata = pageMeta("Who we are", "A strategy and management consultancy at the intersection of public policy, law, communication, society and business strategy. Our approach, frameworks and strengths.", "/background");
 
 const CORE = ["Regulatory risk and compliance advisory", "Policy advisory, partnership strategy, strategic communication and advocacy", "Policy research, analysis and convenings", "Training and institutional capacity building", "Strategic programme design and implementation", "Multi-stakeholder engagement, facilitation and convenings", "Strategic convenings, partnerships and collaborations", "Governance and non-profit board leadership", "Prevention of Sexual Harassment of Women at the Workplace (PoSH) training and compliance support"];
 // Retained from the current website
