@@ -1930,12 +1930,14 @@ main:has(> #background) .figs-label { display: block; }
 @media (max-width: 880px) { .bg-statement { column-count: 1; } .bg-strengths { grid-template-columns: minmax(0, 1fr); gap: 16px; } .bg-scol { gap: 16px; } .val-cards { grid-template-columns: minmax(0, 1fr); gap: 12px; } .bg-team { padding: 22px 22px 24px; } }
 @media (max-width: 620px) { .val-card { padding: 20px 20px 24px; } .val-card span { font-size: 40px; margin-bottom: 12px; } .bg-statement p, .bg-statement p:first-child { font-size: 16.5px; } }
 
-/* Corporate refinement, 22 Oct: one restrained system; content and font roles unchanged. */
-:root {
+/* Corporate refinement, 22 Oct (Codex). Guarded so the home page (.hero) keeps its own styling. */
+:root:not(:has(.hero)) {
   --sec-y: clamp(48px, 5.2vw, 76px);
   --head-gap: clamp(28px, 3vw, 44px);
   --card-pad: clamp(22px, 2.2vw, 32px);
 }
+@media (max-width: 620px) { :root:not(:has(.hero)) { --sec-y: 44px; --head-gap: 28px; --card-pad: 22px; } }
+:where(:root:not(:has(.hero))) {
 body { line-height: 1.65; }
 h2 { line-height: 1.12; }
 .sec-head { column-gap: 56px; row-gap: 0; }
@@ -2087,7 +2089,6 @@ main > .sec:has(.ws-cards) { background: var(--mist); color: var(--ink); }
   .posh-prog { gap: 20px; }
 }
 @media (max-width: 620px) {
-  :root { --sec-y: 44px; --head-gap: 28px; --card-pad: 22px; }
   .intro--img .wrap { padding-inline: 20px; }
   .intro--compact h1 { font-size: var(--fs-page); }
   .svc-card { padding-right: 64px; }
@@ -2099,4 +2100,5 @@ main > .sec:has(.ws-cards) { background: var(--mist); color: var(--ink); }
   .benefit-n { margin-bottom: 0; min-width: 40px; }
   .fd-tiles li { padding: 18px 16px; }
   .card .im, .ev .ph:not(.ph--none), .res .th, .acad-card-ph { aspect-ratio: 16 / 10; }
+}
 }
