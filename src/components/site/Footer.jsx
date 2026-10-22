@@ -38,7 +38,7 @@ export default function Footer() {
             <ul>
               <li><a href={`mailto:${SITE.email}`}><MailIcon size={16} />{SITE.email}</a></li>
               <li><a href={SITE.linkedinCompany} target="_blank" rel="noopener noreferrer"><LinkedInIcon size={16} />LinkedIn<span className="sr-only"> (opens in a new tab)</span></a></li>
-              <li className="foot-text">{SITE.location}</li>
+              <li className="foot-text foot-loc"><svg className="loc-ico" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z" /><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" strokeWidth="1.8" /></svg>{SITE.location}</li>
             </ul>
           </div>
           <div className="foot-col">

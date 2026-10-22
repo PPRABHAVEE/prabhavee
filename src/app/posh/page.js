@@ -48,13 +48,10 @@ export default function Posh() {
             <div><b>1150+</b><span>individuals trained</span></div>
             <div><b>5</b><span>PoSH Programmes: From Compliance to Governance, 2025–26</span></div>
           </div>
-          <div className="posh-progs">
+          <div className="posh-progs posh-progs--one">
             <article className="posh-prog posh-prog--poster">
               <Img src="/img/banner-governance-poster.webp" alt="Poster: Annual Roundtable 2026, Safe Workplaces by Design, a leadership imperative in risk governance" sizes="(max-width: 880px) 60vw, 200px" />
               <div><h3>Mid-year PoSH review consultation</h3><p>Reframes PoSH as a strategic governance priority rather than a compliance obligation, exploring workplace grey zones, organisational risk areas and Internal Committee accountability. Examines PoSH through an ESG and BRSR lens, highlighting its growing relevance as investor-visible governance data and a measure of organisational responsibility and accountability.</p><a className="link" href="/docs/building-better-governance-2026.pdf" target="_blank" rel="noopener">Read the outcomes report (PDF)</a></div>
-            </article>
-            <article className="posh-prog">
-              <div><h3>PoSH PRO programmes</h3><p>A collaborative learning initiative with Yellow Spark: Two-day virtual learning programme building practical expertise in PoSH compliance, inquiry processes and workplace governance.</p><a className="link" href="/docs/prabhavee-posh-brochure.pdf" download>PoSH brochure (PDF)</a></div>
             </article>
           </div>
         </div>

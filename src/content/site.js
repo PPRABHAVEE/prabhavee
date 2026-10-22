@@ -128,7 +128,7 @@ export const TARGET_CLIENTS = ["Multi-national companies and brands", "MSMEs and
 export const INDUSTRIES = ["Textile, garment and fashion", "Leather and footwear", "Tourism and hospitality", "Automotive", "FMCG", "Electronics"];
 export const STRENGTHS = {
   experience: ["Regulatory risk and compliance advisory", "Legal compliance management", "Strategy, public policy and governance", "Extensive network of partners and experts"],
-  decade: ["Strategy development and consultation", "Programme management", "Strategic partnerships", "Brand positioning and strategy", "Narrative building", "Policy advisory", "Stakeholder engagement", "Institutional partnerships"],
+  decade: ["Strategy development and consultation", "Project management", "Strategic partnerships", "Brand positioning and strategy", "Narrative building", "Policy advisory", "Stakeholder engagement", "Institutional partnerships"],
   industries: ["Regulatory and tax practice", "Legal technology (governance, risk and compliance management solutions)", "Information services", "SaaS and digital product management", "Publishing", "Social impact consulting", "University", "Public policy office", "Social enterprise"],
   network: ["Government", "Private sector and businesses", "Higher educational institutions", "Law universities, academic research centres", "Industry associations, business chambers, multi-stakeholder platforms", "UN agencies", "Civil society organisations", "CSOs and NGOs", "Social start-ups", "Non-profit accelerator", "SPO advisory boards"],
 };
@@ -170,8 +170,8 @@ export const FLAGSHIPS = [
       facts: ["Learning Circle 1: The First 10", "“Carry the Law. Command the Room.”", "Registered by the Ministry of Women & Child Development, Government of India (Trainer)", "Empanelled with the New Delhi Institute of Management (NDIM) for training and capacity building", "ITC ILO Alumni Network member"],
       profile: ["Gender practitioners", "Psychologists and counsellors", "PoSH trainers and advisers", "Lawyers", "Representatives from civil society organisations"],
     } },
-  { when: "April 2026", title: "Webinar and panel: The Business of Human Rights", text: "Unpacking linkages between corporate accountability, rights-based frameworks and the fourth estate, with New Imaginations, Jindal School of Journalism and Communication, O.P. Jindal Global University.", img: "/img/jindal-webinar-2026.webp" },
-  { when: "April 2026", title: "2-day workshop: Corporate Accountability, Business Reporting and Human Rights", text: "Capacity building for early- and mid-career journalists, reporters, CSO communicators and media-advocacy professionals, with New Imaginations: Centre for Peace, Conflict and Justice of Jindal School of Journalism and Communication at O.P. Jindal Global University.", img: "/img/jindal-jsjc-flyer.webp" },
+  { when: "April 2026", title: "Webinar and panel: The Business of Human Rights", text: "Unpacking Linkages between Corporate Accountability, Rights-based Frameworks and the Fourth Estate, with New Imaginations: Centre for Peace, Conflict and Justice of Jindal School of Journalism and Communication at O.P. Jindal Global University.", img: "/img/jindal-webinar-2026.webp", link: ["About New Imaginations", "https://jgu.edu.in/jsjc/research/new-imaginations-centre-for-peace-conflict-and-justice"] },
+  { when: "April 2026", title: "2-day workshop: Corporate Accountability, Business Reporting and Human Rights", text: "Capacity building for early- and mid-career journalists, reporters, CSO communicators and media-advocacy professionals, with New Imaginations: Centre for Peace, Conflict and Justice of Jindal School of Journalism and Communication at O.P. Jindal Global University.", img: "/img/jindal-jsjc-flyer.webp", link: ["About New Imaginations", "https://jgu.edu.in/jsjc/research/new-imaginations-centre-for-peace-conflict-and-justice"] },
   { when: "February 2026", title: "PoSH PRO: Advanced Programme", text: "PoSH inquiry: fairness, confidentiality, justice, co-organised with Yellow Spark.", img: "/img/posh-pro-advanced-20.webp" },
   { when: "December 2025", title: "Multi-stakeholder dialogue series", text: "Research initiative ‘Local Economies, Global Values: MSMEs Driving Gender Equity in South India’ with the Centre for Business and Human Rights (CBHR) at TNNLU and Sustaim Consulting, followed by closed-door stakeholder consultations.", img: "/img/tnnlu-brochure-msme-research-collaboration.webp" },
   { when: "September 2025", title: "PoSH PRO", text: "On the prevention of sexual harassment (PoSH) and its application at the workplace, co-organised with Yellow Spark.", img: "/img/ev/2-1.webp" },
@@ -224,11 +224,11 @@ export const LOGOS = [
 // ---------------------------------------------------------------- journey graphic (current website timeline, deck slides 34-37)
 export const JOURNEY = [
   { y: "May 2022", t: "Founded", d: "Conceptualised at NSRCEL, IIM Bangalore." },
-  { y: "Sep 2024", t: "Bangkok forum", d: "Delegate at the UN Responsible Business and Human Rights Forum." },
+  { y: "Sep 2024", t: "UNRBHR Forum, Asia-Pacific, 2024", d: "Delegate at the Forum in Bangkok." },
   { y: "Nov 2024", t: "Women on Boards", d: "Founder completes the ISDM programme." },
   { y: "May 2025", t: "Research and partnerships", d: "Policy dialogue and academic research begin." },
   { y: "2025–26", t: "Flagship programmes", d: "Nine convenings, workshops and consultations." },
-  { y: "Sep 2026", t: "Spotlight session", d: "Hosted at the UN Forum, Asia-Pacific 2026." },
+  { y: "Sep 2026", t: "Spotlight session", d: "Hosted at the UNRBHR Forum, Asia-Pacific, 2026." },
   { y: "Nov 2026", t: "Governance masterclass", d: "PoSH year-end consultation.", upcoming: true },
 ];
 
@@ -349,8 +349,8 @@ export const NETWORK_BLOCKS = [
   ] },
   { eyebrow: "Networks", h2: "Where we have been members.", categories: [
     { title: "Networks and memberships", items: [
-      ["Young Leaders Council (YLC)", "All India Management Association (AIMA)", "Network partner and mentor"],
-      ["UN Global Compact Network India", "United Nations initiative", "Network member"],
+      ["Young Leaders Council (YLC)", "All India Management Association (AIMA)", "Brand partner, Mentor, Member"],
+      ["UN Global Compact Network India", "United Nations initiative", "Working Group Member"],
       ["Indian Institute of Corporate Affairs (IICA)", "Government institute", "Member"],
       ["Indian Society for Training and Development (ISTD), Delhi Chapter", "Non-profit organisation", "Member"],
       ["Institute of Directors (IOD)", "Professional body", "Member (M.IOD)"],

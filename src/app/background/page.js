@@ -107,7 +107,7 @@ export default function About() {
             </div>
           </div>
           </Fold>
-          <div className="bg-team"><span className="figs-label">Multi-disciplinary team</span>
+          <div className="bg-team"><span className="eyebrow">Multi-disciplinary team</span>
           <p className="big" style={{ maxWidth: "none" }}>We strengthen corporate accountability by embedding responsible practices that uphold and protect the voices of rights-holders. We keep expanding our network. We partner with lawyers, regulatory and compliance professionals, advocates specialising in labour and employment laws, workplace safety and investigations, remediation and grievance mechanisms, DEI, PoSH, policy experts and researchers, business and human rights specialists, sustainability consultants, SA8000-certified auditors, human rights due diligence (HRDD) experts, industry consultants with deep sectoral insights and experience, and academics working at the intersection of business and human rights.</p></div>
         </div>
       </section>
