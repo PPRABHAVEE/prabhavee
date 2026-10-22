@@ -20,14 +20,12 @@ export default function WhoWeServe() {
         </div>
       </section>
       <section className="sec sec--mist">
-        <div className="wrap alongside">
-          <div className="alongside-copy">
-            <span className="eyebrow">Our collaborators</span>
-            <h2>Who we work alongside.</h2>
-            <p className="big">We work with them on projects and initiatives across business and human rights.</p>
+        <div className="wrap">
+          <div className="sec-head"><div><span className="eyebrow">Our collaborators</span><h2>Who we work alongside.</h2></div><p>We work with them on projects and initiatives across business and human rights.</p></div>
+          <div className="alongside">
             <blockquote className="convenor">We seek to be the ‘Convenor’ of this larger public discourse, bringing these voices into one conversation on business and human rights.</blockquote>
+            <ul className="along">{ALONGSIDE.map((n, i) => <li key={n}><span className="along-n">0{i + 1}</span><span className="along-t">{n}</span></li>)}</ul>
           </div>
-          <ul className="along">{ALONGSIDE.map((n, i) => <li key={n}><span className="along-n">0{i + 1}</span><span className="along-t">{n}</span></li>)}</ul>
         </div>
       </section>
       <section className="sec">
