@@ -2193,3 +2193,10 @@ main > .sec:has(.ws-cards) { background: var(--mist); color: var(--ink); }
 }
 @media (max-width: 620px) { #strengths .bg-strengths .conv-panel h3 { padding: 15px 20px; } #strengths .bg-strengths .conv-panel ul { padding: 4px 20px 6px; } #strengths .bg-team { padding: 26px 20px; } #contribution .bg-st-card { padding: 22px 20px 26px; } #contribution .bg-st-close { padding: 20px 20px; } }
 #contribution .bg-st-close { max-width: none; }
+
+/* Founder awards: a clean numbered list beside the photo instead of sparse boxes */
+.fd-media .fd-awards--2 { display: block; border-top: 2px solid var(--green); }
+.fd-media .fd-awards--2 li { display: grid; grid-template-columns: 58px minmax(0, 1fr); align-items: baseline; gap: 0 14px; grid-column: auto; padding: 24px 0; background: none; border: 0; border-bottom: 1px solid var(--line); box-shadow: none; }
+.fd-media .fd-awards--2 li span { margin: 0; font-family: var(--display); font-size: 30px; line-height: 1; color: var(--red-ink); }
+.fd-media .fd-awards--2 li p { margin: 0; font-size: 17.5px; line-height: 1.55; }
+@media (max-width: 620px) { .fd-media .fd-awards--2 li { grid-template-columns: 44px minmax(0, 1fr); padding: 18px 0; } .fd-media .fd-awards--2 li span { font-size: 24px; } .fd-media .fd-awards--2 li p { font-size: 16.5px; } }
