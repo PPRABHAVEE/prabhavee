@@ -1908,3 +1908,24 @@ main:has(> #background) .figs-label { display: block; }
 @media (max-width: 620px) { .bg-orgs .bg-collabs { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 880px) { .bg-focus.fd-ledger--3, .bg-stake.fd-ledger--3 { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 620px) { .ctx-card h3 { font-size: 18px; } .bg-strengths { gap: 14px; } .bg-strengths .conv-panel { padding: 0 20px 10px; } .bg-orgs { margin-top: 24px; } }
+
+/* Who we are: fill the empty columns (frameworks ledger, contribution statement, balanced strengths, value cards) */
+.bg-fw { margin-top: 8px; }
+.bg-statement { column-count: 2; column-gap: 64px; margin-top: 6px; }
+.bg-statement p { margin: 0 0 18px; break-inside: avoid; font-size: 17px; line-height: 1.7; color: #2c352f; }
+.bg-statement p:first-child { font-size: 19px; line-height: 1.65; color: var(--ink); }
+#contribution .bg-stats { margin-top: 36px; }
+.bg-strengths { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; margin-top: 8px; }
+.bg-scol { display: grid; gap: 24px; align-content: start; min-width: 0; }
+.bg-strengths .conv-panel h3 { min-height: 0; display: block; }
+.bg-team { margin-top: 36px; padding: 30px 36px 32px; background: var(--mist); border-left: 4px solid var(--red); }
+.bg-team .figs-label { margin-top: 0; }
+.bg-team .big { margin: 0; }
+.val-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; align-items: stretch; }
+.val-card { display: flex; flex-direction: column; padding: 28px 28px 32px; background: #ffffff10; border: 1px solid #ffffff33; border-top: 3px solid var(--red); }
+.val-card span { font-family: var(--display); font-size: 52px; line-height: .9; color: #ffffff30; margin-bottom: 20px; }
+.val-card h3 { margin: 0 0 12px; font-size: 21px; line-height: 1.3; font-weight: 600; color: #fff; }
+.val-card p { margin: 0; font-size: 16.5px; line-height: 1.6; color: #ffffffe6; }
+@media (max-width: 1100px) { .bg-statement { column-gap: 40px; } .val-cards { gap: 16px; } }
+@media (max-width: 880px) { .bg-statement { column-count: 1; } .bg-strengths { grid-template-columns: minmax(0, 1fr); gap: 16px; } .bg-scol { gap: 16px; } .val-cards { grid-template-columns: minmax(0, 1fr); gap: 12px; } .bg-team { padding: 22px 22px 24px; } }
+@media (max-width: 620px) { .val-card { padding: 20px 20px 24px; } .val-card span { font-size: 40px; margin-bottom: 12px; } .bg-statement p, .bg-statement p:first-child { font-size: 16.5px; } }

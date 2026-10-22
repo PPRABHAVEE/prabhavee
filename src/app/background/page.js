@@ -86,10 +86,9 @@ export default function About() {
       </section>
 
       <section className="sec sec--mist" id="frameworks">
-        <div className="wrap split">
-          <span className="eyebrow">Aligning with national and global frameworks</span>
-          <div><h2>Indian regulation, read with global standards.</h2><p>We align with local laws and regulations, the UN Guiding Principles on Business and Human Rights, the OECD Due Diligence Guidance for Responsible Conduct, and emerging international due diligence laws, requirements and regulatory mandates across jurisdictions.</p></div>
-          <Fold title="See the frameworks"><ul className="ticks">{FRAMEWORKS.map((f) => <li key={f}>{f}</li>)}</ul></Fold>
+        <div className="wrap">
+          <div className="sec-head"><div><span className="eyebrow">Aligning with national and global frameworks</span><h2>Indian regulation, read with global standards.</h2></div><p>We align with local laws and regulations, the UN Guiding Principles on Business and Human Rights, the OECD Due Diligence Guidance for Responsible Conduct, and emerging international due diligence laws, requirements and regulatory mandates across jurisdictions.</p></div>
+          <Fold title="See the frameworks"><ol className="fd-ledger fd-ledger--3 bg-fw">{FRAMEWORKS.map((f, i) => <li key={f}><span>{String(i + 1).padStart(2, "0")}</span>{f}</li>)}</ol></Fold>
         </div>
       </section>
 
@@ -97,15 +96,19 @@ export default function About() {
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Our strengths</span><h2>Close to 20 years of experience.</h2></div><p>A decade in knowledge, communication, strategy and partnerships.</p></div>
           <Fold title="See our strengths in detail">
-          <div className="conv-lists bg-strengths">
-            <section className="conv-panel" aria-labelledby="st-e"><h3 id="st-e"><span>Experience</span></h3><ul>{STRENGTHS.experience.map((x) => <li key={x}>{x}</li>)}</ul></section>
-            <section className="conv-panel" aria-labelledby="st-d"><h3 id="st-d"><span>Decade in knowledge, communication, strategy &amp; partnerships</span></h3><ul>{STRENGTHS.decade.map((x) => <li key={x}>{x}</li>)}</ul></section>
-            <section className="conv-panel" aria-labelledby="st-i"><h3 id="st-i"><span>Industries &amp; sectors</span></h3><ul>{STRENGTHS.industries.map((x) => <li key={x}>{x}</li>)}</ul></section>
-            <section className="conv-panel" aria-labelledby="st-n"><h3 id="st-n"><span>Network, stakeholder relations &amp; collaborations</span></h3><ul>{STRENGTHS.network.map((x) => <li key={x}>{x}</li>)}</ul></section>
+          <div className="bg-strengths">
+            <div className="bg-scol">
+              <section className="conv-panel" aria-labelledby="st-e"><h3 id="st-e"><span>Experience</span></h3><ul>{STRENGTHS.experience.map((x) => <li key={x}>{x}</li>)}</ul></section>
+              <section className="conv-panel" aria-labelledby="st-n"><h3 id="st-n"><span>Network, stakeholder relations &amp; collaborations</span></h3><ul>{STRENGTHS.network.map((x) => <li key={x}>{x}</li>)}</ul></section>
+            </div>
+            <div className="bg-scol">
+              <section className="conv-panel" aria-labelledby="st-d"><h3 id="st-d"><span>Decade in knowledge, communication, strategy &amp; partnerships</span></h3><ul>{STRENGTHS.decade.map((x) => <li key={x}>{x}</li>)}</ul></section>
+              <section className="conv-panel" aria-labelledby="st-i"><h3 id="st-i"><span>Industries &amp; sectors</span></h3><ul>{STRENGTHS.industries.map((x) => <li key={x}>{x}</li>)}</ul></section>
+            </div>
           </div>
           </Fold>
-          <span className="figs-label">Multi-disciplinary team</span>
-          <p className="big" style={{ maxWidth: "none" }}>We strengthen corporate accountability by embedding responsible practices that uphold and protect the voices of rights-holders. We keep expanding our network. We partner with lawyers, regulatory and compliance professionals, advocates specialising in labour and employment laws, workplace safety and investigations, remediation and grievance mechanisms, DEI, PoSH, policy experts and researchers, business and human rights specialists, sustainability consultants, SA8000-certified auditors, human rights due diligence (HRDD) experts, industry consultants with deep sectoral insights and experience, and academics working at the intersection of business and human rights.</p>
+          <div className="bg-team"><span className="figs-label">Multi-disciplinary team</span>
+          <p className="big" style={{ maxWidth: "none" }}>We strengthen corporate accountability by embedding responsible practices that uphold and protect the voices of rights-holders. We keep expanding our network. We partner with lawyers, regulatory and compliance professionals, advocates specialising in labour and employment laws, workplace safety and investigations, remediation and grievance mechanisms, DEI, PoSH, policy experts and researchers, business and human rights specialists, sustainability consultants, SA8000-certified auditors, human rights due diligence (HRDD) experts, industry consultants with deep sectoral insights and experience, and academics working at the intersection of business and human rights.</p></div>
         </div>
       </section>
 
@@ -119,24 +122,19 @@ export default function About() {
       <section className="sec sec--green">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">The value we create</span><h2>The value we deliver.</h2></div></div>
-          <div className="rows">{BENEFITS.map(([h, t], i) => <div className="row" key={h}><span className="n">0{i + 1}</span><div><h3>{h}</h3><p>{t}</p></div></div>)}</div>
+          <div className="val-cards">{BENEFITS.map(([h, t], i) => <article className="val-card" key={h}><span>0{i + 1}</span><h3>{h}</h3><p>{t}</p></article>)}</div>
         </div>
       </section>
 
       <section className="sec" id="contribution">
         <div className="wrap">
-          <div className="split">
-          <span className="eyebrow">Contribution to standards and policy</span>
-          <div><h2>Engaging at global and national level.</h2></div>
-          <div>
-            <Fold title="Read the full statement">
+          <div className="sec-head"><div><span className="eyebrow">Contribution to standards and policy</span><h2>Engaging at global and national level.</h2></div></div>
+          <Fold title="Read the full statement"><div className="bg-statement">
             <p>P/ PRABHAVEE contributes to global standard-setting and policy processes, including regular participation in Global Reporting Initiative (GRI) standards development consultations, including consultation on the GRI Topic Standard Project for Labor, contributing to the evolution of key labor and human rights disclosures on: Non-discrimination and Equal Opportunity; Diversity and Inclusion; Labor Rights in Business Relationships; Freedom of Association and Collective Bargaining; Child Labor; and Forced Labor.</p>
             <p>P/ PRABHAVEE contributes to national and international policy development through written submissions to the UN Working Group on Business and Human Rights; its contribution to the report to the 81st session of the UN General Assembly on Corporate Governance, Business and Human Rights; pre-forum consultations with UNDP’s Business and Human Rights Asia-Pacific Team in preparation for the annual UN Responsible Business and Human Rights Forums; and submissions to the European Commission on the EU Forced Labour Regulation and Corporate Sustainability Due Diligence Directive (CSDDD).</p>
             <p>These engagements reflect a commitment to advancing responsible business conduct, strengthening corporate accountability, and integrating human rights due diligence into governance frameworks and business practices.</p>
-            </Fold>
-            <div className="posh-stats posh-stats--2 bg-stats">{STATS.engagements.slice(0, 3).concat(STATS.engagements.slice(3, 4)).map((s) => <div key={s.t}><b>{s.n}</b><span>{s.t}</span></div>)}</div>
-          </div>
-          </div>
+            </div></Fold>
+          <div className="posh-stats bg-stats">{STATS.engagements.slice(0, 3).concat(STATS.engagements.slice(3, 4)).map((s) => <div key={s.t}><b>{s.n}</b><span>{s.t}</span></div>)}</div>
           <div className="bg-orgs">            <Fold title="See the organisations we have engaged"><ul className="fd-ledger bg-collabs">{DECK.collaborations.map((o, i) => <li key={o}><span>{String(i + 1).padStart(2, "0")}</span>{o}</li>)}</ul></Fold></div>
         </div>
       </section>
