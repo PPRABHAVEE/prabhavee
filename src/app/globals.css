@@ -2157,3 +2157,5 @@ main > .sec:has(.ws-cards) { background: var(--mist); color: var(--ink); }
 .pil-card ul li::before { content: ""; position: absolute; left: 0; top: 1.3em; width: 9px; height: 2px; background: var(--red); }
 @media (max-width: 1100px) { .pil-detail { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pil-card, .pil-card:nth-child(n + 4) { grid-column: auto; } .pil-card:last-child { grid-column: 1 / -1; } }
 @media (max-width: 620px) { .pil-detail { grid-template-columns: minmax(0, 1fr); gap: 12px; margin-top: 18px; } .pil-card, .pil-card:last-child { grid-column: auto; padding: 20px 20px 22px; } }
+.fd-ledger--roman li { grid-template-columns: 46px minmax(0, 1fr); }
+.fd-ledger--roman li span { font-size: 14px; font-weight: 700; letter-spacing: .04em; }
