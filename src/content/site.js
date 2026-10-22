@@ -254,7 +254,7 @@ export const FRAMEWORK_SHORT = [
 export const ENQUIRY = {
   heading: "Have a project or partnership in mind?",
   lead: "Looking for a specialist advisory partner?",
-  statement: "Engage P/ PRABHAVEE for commissioned assignments, technical advisory, workplace governance, training and programme implementation, responsible supply-chain programmes. We welcome enquiries for institutional partnerships, funded programmes and multi-stakeholder initiatives in responsible business, workplace governance, business and human rights, and social sustainability.",
+  statement: "Engage P/ PRABHAVEE for commissioned assignments, technical advisory, workplace governance, training and programme implementation, responsible supply-chain programmes. We welcome enquiries for institutional partnerships, funded programmes and multi-stakeholder initiatives.",
   submit: "Start a conversation",
   types: [
     "Regulatory Risk and Compliance Advisory",
