@@ -30,7 +30,7 @@ const EXT = [
 export default function Resources() {
   return (
     <>
-      <PageIntro crumb="Engagements / Resources" title="Videos, brochures, reports and submissions." lede="Watch our sessions. Download our brochures. Read the reports and submissions we have contributed to." />
+      <PageIntro compact crumb="Engagements / Resources" title="Videos, brochures, reports and submissions." lede="Watch our sessions. Download our brochures. Read the reports and submissions we have contributed to." />
       <PhotoBand natural src="/img/banner-excellence-in-multi-stakeholder-2.webp" alt="A collage of P/ PRABHAVEE workshops, consultations and convenings, and of the supply chains they address" caption="Workshops, consultations and convenings across our partners" />
       <section className="sec">
         <div className="wrap">
@@ -39,7 +39,7 @@ export default function Resources() {
             {VIDS.map(([t, id, d]) => (
               <div className="res" key={id}>
                 <a className="th" href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener noreferrer"><img src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" /><span className="badge">WATCH</span></a>
-                <h3>{t}</h3><p>{d}</p>
+                <div className="res-body"><h3>{t}</h3><p>{d}</p></div>
               </div>
             ))}
           </div>
@@ -48,20 +48,20 @@ export default function Resources() {
       <section className="sec sec--mist">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Brochures</span><h2>Download.</h2></div></div>
-          <div className="res-grid">{BROCHURES.map(([t, d, f]) => <div className="res" key={f}><div className="cover"><span>P/</span><small>PARTNER FOR SOCIAL IMPACT · PDF</small></div><h3>{t}</h3><p>{d}</p><a className="link" href={`/docs/${f}`} download>Download brochure</a></div>)}</div>
+          <div className="res-grid res-grid--2">{BROCHURES.map(([t, d, f]) => <div className="res res--wide" key={f}><div className="cover"><span>P/</span><small>PARTNER FOR SOCIAL IMPACT · PDF</small></div><div className="res-body"><h3>{t}</h3><p>{d}</p><a className="link" href={`/docs/${f}`} download>Download brochure</a></div></div>)}</div>
         </div>
       </section>
       <section className="sec">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Publications &amp; reports</span><h2>Reports.</h2></div></div>
-          <div className="res-grid">{REPORTS.map(([t, d, f, tag, url]) => <div className="res" key={f}><a className="docth" href={url || `/docs/${f}`} target="_blank" rel="noopener noreferrer" aria-label={`Open ${t} (PDF)`}><Img src={`/img/covers/${f.replace(".pdf", "")}.webp`} alt={`Cover of ${t}`} sizes="(max-width: 620px) 70vw, 280px" /></a><span className="kicker">{tag}</span><h3 style={{ marginTop: 6 }}>{t}</h3><p>{d}</p><a className="link" href={url || `/docs/${f}`} target="_blank" rel="noopener noreferrer">Read the report (PDF)</a></div>)}</div>
+          <div className="res-grid">{REPORTS.map(([t, d, f, tag, url]) => <div className="res" key={f}><a className="docth" href={url || `/docs/${f}`} target="_blank" rel="noopener noreferrer" aria-label={`Open ${t} (PDF)`}><Img src={`/img/covers/${f.replace(".pdf", "")}.webp`} alt={`Cover of ${t}`} sizes="(max-width: 620px) 70vw, 280px" /></a><div className="res-body"><span className="kicker">{tag}</span><h3>{t}</h3><p>{d}</p><a className="link" href={url || `/docs/${f}`} target="_blank" rel="noopener noreferrer">Read the report (PDF)</a></div></div>)}</div>
           <Pending title="Missing report">The P/ PRABHAVEE and YLC AIMA report named in her feedback was not among the files received.</Pending>
         </div>
       </section>
       <section className="sec sec--mist">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">External links</span><h2>Consultations &amp; submissions.</h2></div></div>
-          <ul className="linklist">{EXT.map(([t, d, u]) => <li key={u}><div><b>{t}</b><small>{d}</small></div><a className="link" href={u} target="_blank" rel="noopener noreferrer">Open</a></li>)}</ul>
+          <ol className="extlist">{EXT.map(([t, d, u], i) => <li key={u}><span className="ext-n">{String(i + 1).padStart(2, "0")}</span><div><b>{t}</b><small>{d}</small></div><a className="ext-open" href={u} target="_blank" rel="noopener noreferrer">Open<span className="sr-only"> {t} (opens in a new tab)</span></a></li>)}</ol>
         </div>
       </section>
       <CtaBand next={["See the practice areas", "/services"]} />

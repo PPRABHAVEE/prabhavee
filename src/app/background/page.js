@@ -25,7 +25,7 @@ const INITIATIVES = ["Policy input and engagement with government and the privat
 export default function About() {
   return (
     <>
-      <PageIntro crumb="About" title="Who we are." lede="P/ PRABHAVEE is an advisory and strategy consulting practice based in Delhi. We advance human rights and responsible business through strategic advisory, multi-stakeholder initiatives, facilitation, training and strategic programmes." image={{ src: "/img/banner-forum-hall.webp", alt: "A working hall at the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026", caption: "UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok", position: "center 55%" }} />
+      <PageIntro compact crumb="About" title="Who we are." lede="P/ PRABHAVEE is an advisory and strategy consulting practice based in Delhi. We advance human rights and responsible business through strategic advisory, multi-stakeholder initiatives, facilitation, training and strategic programmes." image={{ src: "/img/banner-forum-hall.webp", alt: "A working hall at the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026", caption: "UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok", position: "center 55%" }} />
       <nav className="subnav" aria-label="On this page"><div className="wrap">
         <a href="#background">Background</a><a href="#approach">Approach</a><a href="#expertise">Consulting expertise</a><a href="#frameworks">Frameworks</a><a href="#strengths">Strengths</a><a href="#contribution">Contribution</a><a href="#context">Context</a>
       </div></nav>
@@ -81,7 +81,7 @@ export default function About() {
           </div>
           <ol className="core-grid">{CORE.map((c, i) => <li key={c}><span className="n" aria-hidden="true">{String.fromCharCode(65 + i)}</span><h3>{c}</h3></li>)}</ol>
           <span className="figs-label">Key focus areas</span>
-          <ul className="chips">{FOCUS_AREAS.map((f) => <li key={f}>{f}</li>)}</ul>
+          <ul className="fd-ledger fd-ledger--3 bg-focus">{FOCUS_AREAS.map((f, i) => <li key={f}><span>{String(i + 1).padStart(2, "0")}</span>{f}</li>)}</ul>
         </div>
       </section>
 
@@ -97,11 +97,11 @@ export default function About() {
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Our strengths</span><h2>Close to 20 years of experience.</h2></div><p>A decade in knowledge, communication, strategy and partnerships.</p></div>
           <Fold title="See our strengths in detail">
-          <div className="cols-2">
-            <div><span className="kicker">Experience</span><ul className="ticks" style={{ marginTop: 12 }}>{STRENGTHS.experience.map((s) => <li key={s}>{s}</li>)}</ul>
-              <span className="kicker" style={{ display: "block", marginTop: 34 }}>Decade in knowledge, communication, strategy &amp; partnerships</span><ul className="ticks" style={{ marginTop: 12 }}>{STRENGTHS.decade.map((s) => <li key={s}>{s}</li>)}</ul></div>
-            <div><span className="kicker">Industries &amp; sectors</span><ul className="ticks ticks--sm" style={{ marginTop: 12 }}>{STRENGTHS.industries.map((s) => <li key={s}>{s}</li>)}</ul>
-              <span className="kicker" style={{ display: "block", marginTop: 34 }}>Network, stakeholder relations &amp; collaborations</span><ul className="ticks ticks--sm" style={{ marginTop: 12 }}>{STRENGTHS.network.map((s) => <li key={s}>{s}</li>)}</ul></div>
+          <div className="conv-lists bg-strengths">
+            <section className="conv-panel" aria-labelledby="st-e"><h3 id="st-e"><span>Experience</span></h3><ul>{STRENGTHS.experience.map((x) => <li key={x}>{x}</li>)}</ul></section>
+            <section className="conv-panel" aria-labelledby="st-d"><h3 id="st-d"><span>Decade in knowledge, communication, strategy &amp; partnerships</span></h3><ul>{STRENGTHS.decade.map((x) => <li key={x}>{x}</li>)}</ul></section>
+            <section className="conv-panel" aria-labelledby="st-i"><h3 id="st-i"><span>Industries &amp; sectors</span></h3><ul>{STRENGTHS.industries.map((x) => <li key={x}>{x}</li>)}</ul></section>
+            <section className="conv-panel" aria-labelledby="st-n"><h3 id="st-n"><span>Network, stakeholder relations &amp; collaborations</span></h3><ul>{STRENGTHS.network.map((x) => <li key={x}>{x}</li>)}</ul></section>
           </div>
           </Fold>
           <span className="figs-label">Multi-disciplinary team</span>
@@ -124,7 +124,8 @@ export default function About() {
       </section>
 
       <section className="sec" id="contribution">
-        <div className="wrap split">
+        <div className="wrap">
+          <div className="split">
           <span className="eyebrow">Contribution to standards and policy</span>
           <div><h2>Engaging at global and national level.</h2></div>
           <div>
@@ -133,9 +134,10 @@ export default function About() {
             <p>P/ PRABHAVEE contributes to national and international policy development through written submissions to the UN Working Group on Business and Human Rights; its contribution to the report to the 81st session of the UN General Assembly on Corporate Governance, Business and Human Rights; pre-forum consultations with UNDP’s Business and Human Rights Asia-Pacific Team in preparation for the annual UN Responsible Business and Human Rights Forums; and submissions to the European Commission on the EU Forced Labour Regulation and Corporate Sustainability Due Diligence Directive (CSDDD).</p>
             <p>These engagements reflect a commitment to advancing responsible business conduct, strengthening corporate accountability, and integrating human rights due diligence into governance frameworks and business practices.</p>
             </Fold>
-            <div className="figs figs--4" style={{ marginTop: 34 }}>{STATS.engagements.slice(0, 3).concat(STATS.engagements.slice(3, 4)).map((s) => <div key={s.t}><b>{s.n}</b><span>{s.t}</span></div>)}</div>
-            <div style={{ marginTop: 22 }}><Fold title="See the organisations we have engaged"><ul className="chips chips--tight">{DECK.collaborations.map((o) => <li key={o}>{o}</li>)}</ul></Fold></div>
+            <div className="posh-stats posh-stats--2 bg-stats">{STATS.engagements.slice(0, 3).concat(STATS.engagements.slice(3, 4)).map((s) => <div key={s.t}><b>{s.n}</b><span>{s.t}</span></div>)}</div>
           </div>
+          </div>
+          <div className="bg-orgs">            <Fold title="See the organisations we have engaged"><ul className="fd-ledger bg-collabs">{DECK.collaborations.map((o, i) => <li key={o}><span>{String(i + 1).padStart(2, "0")}</span>{o}</li>)}</ul></Fold></div>
         </div>
       </section>
 
@@ -143,18 +145,18 @@ export default function About() {
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Positioning in the ecosystem</span><h2>Where regulation meets practice.</h2></div><p>{CONTEXT.bridge}</p></div>
           <span className="kicker kicker--red">Context &amp; regulatory shifts</span>
-          <div className="cols-3" style={{ marginTop: 14 }}>{CONTEXT.shifts.map(([h, t]) => <div className="row row--plain" key={h} style={{ borderTop: "2px solid var(--green)" }}><div><h3>{h}</h3><p>{t}</p></div></div>)}</div>
+          <div className="ctx-cards ctx-cards--3">{CONTEXT.shifts.map(([h, t], i) => <article className="ctx-card" key={h}><span>0{i + 1}</span><h3>{h}</h3><p>{t}</p></article>)}</div>
           <p className="big" style={{ marginTop: 34, maxWidth: 880 }}>{CONTEXT.closing}</p>
           <span className="kicker" style={{ marginTop: 26, display: "block" }}>Key stakeholders</span>
-          <ul className="chips" style={{ marginTop: 14 }}>{CONTEXT.stakeholders.map((x) => <li key={x}>{x}</li>)}</ul>
+          <ul className="fd-ledger fd-ledger--3 bg-stake">{CONTEXT.stakeholders.map((x, i) => <li key={x}><span>{String(i + 1).padStart(2, "0")}</span>{x}</li>)}</ul>
           <p style={{ marginTop: 14, marginBottom: 38 }}>{CONTEXT.stakeholderNote}</p>
           <Fold title="Challenges we address" red>
           <span className="kicker kicker--red fold-title">Challenges we address</span>
-          <div className="cols-2" style={{ marginTop: 14 }}>{CHALLENGES.map(([h, t]) => <div className="row row--plain" key={h}><div><h3>{h}</h3><p>{t}</p></div></div>)}</div>
+          <div className="ctx-cards ctx-cards--2">{CHALLENGES.map(([h, t], i) => <article className="ctx-card" key={h}><span>0{i + 1}</span><h3>{h}</h3><p>{t}</p></article>)}</div>
           </Fold>
           <div style={{ marginTop: 38 }}>
             <Fold title="Our key initiatives" red>
-              <span className="kicker kicker--red fold-title">Our key initiatives</span><ol className="ticks cols-list-2" style={{ marginTop: 12, paddingLeft: 0 }}>{INITIATIVES.map((t) => <li key={t}>{t}</li>)}</ol>
+              <span className="kicker kicker--red fold-title">Our key initiatives</span><ol className="fd-ledger fd-ledger--2 bg-init">{INITIATIVES.map((t, i) => <li key={t}><span>{String(i + 1).padStart(2, "0")}</span>{t}</li>)}</ol>
             </Fold>
           </div>
         </div>
