@@ -1,6 +1,6 @@
 import PageIntro from "@/components/site/PageIntro";
 import CtaBand from "@/components/site/CtaBand";
-import JourneyStrip from "@/components/site/JourneyStrip";
+import Img from "@/components/site/Img";
 import { pageMeta } from "@/lib/meta";
 
 export const metadata = pageMeta("Strategic milestones", "Milestones of P/ PRABHAVEE from its 2022 founding at NSRCEL, IIM Bangalore, to research initiatives, partnerships and global forums, with stakeholder engagement.", "/journey");
@@ -21,30 +21,36 @@ const ORGS = ["National Institute of Advanced Studies", "BRAC International", "P
 export default function Journey() {
   return (
     <>
-      <PageIntro crumb="About / Strategic milestones" title="Empowering progress through purposeful evolution." lede="From vision to impact. Our defining achievements and turning points." image={{ src: "/img/ev/1-1.webp", alt: "The venue of the UN Responsible Business and Human Rights Forum, Asia-Pacific 2024, Bangkok, with national flags", caption: "UN Responsible Business and Human Rights Forum, Asia-Pacific 2024, Bangkok", position: "center 40%" }} />
+      <PageIntro compact crumb="About / Strategic milestones" title="Empowering progress through purposeful evolution." lede="From vision to impact. Our defining achievements and turning points." image={{ src: "/img/ev/1-1.webp", alt: "The venue of the UN Responsible Business and Human Rights Forum, Asia-Pacific 2024, Bangkok, with national flags", caption: "UN Responsible Business and Human Rights Forum, Asia-Pacific 2024, Bangkok", position: "center 40%" }} />
       <section className="sec sec--mist">
         <div className="wrap">
-          <div className="sec-head"><div><span className="eyebrow">At a glance</span><h2>2022 to 2026.</h2></div><p>Seven turning points. The full story is below.</p></div>
-          <JourneyStrip />
-        </div>
-      </section>
-      <section className="sec">
-        <div className="wrap">
           <h2 className="sr-only">Timeline, 2022 to 2025</h2>
-          <ol className="timeline">
-            {MS.map(([w, s, tag, h, t, ph]) => (
-              <li key={h}><div className="when">{w}<small>{s}</small></div><div><span className="kicker">{tag}</span><h3>{h}</h3><p>{t}</p></div></li>
-            ))}
+          <ol className="tln">
+            {MS.map(([w, s, tag, h, t, ph]) => {
+              const [mo, yr] = w.split(" ");
+              return (
+                <li key={h}>
+                  <div className="tln-when"><span className="tln-yr">{yr}</span><span className="tln-mo">{mo}</span></div>
+                  <span className="tln-node" aria-hidden="true" />
+                  <article className="tln-card">
+                    <div className="tln-meta"><span className="tln-tag">{tag}</span><span className="tln-sub">{s}</span></div>
+                    <h3>{h}</h3>
+                    <p>{t}</p>
+                    {ph ? <div className="tln-ph"><Img src={ph[0]} alt={ph[1]} sizes="(max-width: 880px) 100vw, 40vw" /></div> : null}
+                  </article>
+                </li>
+              );
+            })}
           </ol>
         </div>
       </section>
-      <section className="sec sec--mist" id="stakeholder">
+      <section className="sec" id="stakeholder">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Stakeholder engagement &amp; initiatives · before May 2025</span><h2>Engaged with stakeholders across diverse thematic areas.</h2></div><p>We facilitate multi-stakeholder dialogue. It advances shared priorities and collective action.</p></div>
-          <div className="figs figs--4" style={{ marginBottom: 46 }}>
+          <div className="figs figs--4 st-figs">
             <div><b>13+</b><span>experts</span></div><div><b>10+</b><span>domains</span></div><div><b>20+</b><span>organisations</span></div><div><b>2024</b><span>active year. Led WICCI Delhi External Affairs Council (DEAC) as State Vice President</span></div>
           </div>
-          <ul className="chips">{ORGS.map((o) => <li key={o}>{o}</li>)}</ul>
+          <ul className="orgs">{ORGS.map((o, i) => <li key={o}><span>{String(i + 1).padStart(2, "0")}</span>{o}</li>)}</ul>
         </div>
       </section>
       <CtaBand next={["See our events", "/events"]} />
