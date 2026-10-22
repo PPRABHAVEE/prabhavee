@@ -176,7 +176,7 @@ export const FLAGSHIPS = [
     more: { facts: ["Co-organised by New Imaginations: Centre for Peace, Conflict and Justice of Jindal School of Journalism and Communication at O.P. Jindal Global University and P/ PRABHAVEE", "JGU Campus, Sonipat, Haryana"] } },
   { when: "February 2026", title: "PoSH PRO: Advanced Programme", text: "PoSH inquiry: fairness, confidentiality, justice, co-organised with Yellow Spark.", img: "/img/posh-pro-advanced-20.webp" },
   { when: "December 2025", title: "Multi-stakeholder dialogue series", text: "Research initiative ‘Local Economies, Global Values: MSMEs Driving Gender Equity in South India’ with the Centre for Business and Human Rights (CBHR) at TNNLU and Sustaim Consulting, followed by closed-door stakeholder consultations.", img: "/img/tnnlu-brochure-msme-research-collaboration.webp" },
-  { when: "September 2025", title: "PoSH PRO", text: "On the prevention of sexual harassment (PoSH) and its application at the workplace, co-organised with Yellow Spark.", img: "/img/ev/2-1.webp" },
+  { when: "September 2025", title: "PoSH PRO", text: "A collaborative learning initiative with Yellow Spark: Two-day virtual learning programme building practical expertise in PoSH compliance, inquiry processes and workplace governance.", img: "/img/ev/2-1.webp" },
 ];
 
 export const PILLARS = ["Research, development & knowledge dissemination", "Training excellence & lifelong learning", "Strategic partnerships for sustainable long-term impact", "Institutional development & strong and effective governance", "Standardisation & best practices"];
