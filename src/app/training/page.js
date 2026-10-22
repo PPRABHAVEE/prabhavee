@@ -15,7 +15,7 @@ export default function Training() {
       <PhotoBand src="/img/ev/7-1.webp" alt="Participants at the business integrity and ESG orientation training by UN Global Compact Network India" caption="Stakeholder at Business Integrity and ESG orientation training, UN Global Compact Network India" position="center 35%" />
       <section className="sec">
         <div className="wrap">
-          <div className="sec-head"><div><span className="eyebrow">Programmes</span><h2>Building Capabilities.</h2></div><p>Practical learning for employees, leaders, businesses and media professionals.</p></div>
+          <div className="sec-head"><div><span className="eyebrow">Programmes</span><h2>Building capabilities.</h2></div><p>Practical learning for employees, leaders, businesses and media professionals.</p></div>
           <div className="trn-grid">
             {TRAINING.map((t, i) => (
               <article className="trn-card" key={t.h}>

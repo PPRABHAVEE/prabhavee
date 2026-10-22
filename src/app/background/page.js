@@ -147,7 +147,7 @@ export default function About() {
           <p className="big" style={{ marginTop: 34, maxWidth: 880 }}>{CONTEXT.closing}</p>
           <span className="kicker" style={{ marginTop: 26, display: "block" }}>Key stakeholders</span>
           <ul className="fd-ledger fd-ledger--3 bg-stake">{CONTEXT.stakeholders.map((x, i) => <li key={x}><span>{String(i + 1).padStart(2, "0")}</span>{x}</li>)}</ul>
-          <p style={{ marginTop: 14, marginBottom: 38 }}>{CONTEXT.stakeholderNote}</p>
+          <p style={{ marginTop: 28, marginBottom: 38 }}>{CONTEXT.stakeholderNote}</p>
           <Fold title="Challenges we address" red>
           <span className="kicker kicker--red fold-title">Challenges we address</span>
           <div className="ctx-cards ctx-cards--2">{CHALLENGES.map(([h, t], i) => <article className="ctx-card" key={h}><span>0{i + 1}</span><h3>{h}</h3><p>{t}</p></article>)}</div>

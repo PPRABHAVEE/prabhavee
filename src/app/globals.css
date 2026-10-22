@@ -2134,3 +2134,8 @@ main > .sec:has(.ws-cards) { background: var(--mist); color: var(--ink); }
 @media (max-width: 620px) { .fd-media .fd-awards--2 { grid-template-columns: minmax(0, 1fr); grid-auto-rows: auto; } .acad-card-ph--duo { aspect-ratio: 16 / 8; } }
 .fd-media .fd-awards--2 li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 @media (max-width: 620px) { .fd-media .fd-awards--2 li:last-child:nth-child(odd) { grid-column: auto; } }
+
+/* Revisions follow-up: events without photos use the spare card height, one body size on home practice cards */
+.ev:not(.has-ph) .ph--none { flex: 1 1 auto; aspect-ratio: auto; min-height: 96px; }
+.ev:not(.has-ph) .ev-body { flex: 0 0 auto; }
+.svc-card p { font-size: 16px; }
