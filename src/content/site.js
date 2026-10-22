@@ -150,7 +150,7 @@ export const FLAGSHIPS = [
       facts: ["13:00 ICT, Bangkok, Thailand", "Forum theme: Remedy, Accountability and Trust", "The session explores how bribery, falsified reporting, weak compliance, unethical recruitment, compromised procurement, unsafe workplaces and ineffective grievance mechanisms enable human rights harms."],
       speakers: [["Anumita Sarkar", "Founder, P/ PRABHAVEE"], ["Praswad", "Chairman, SEA Actions"], ["Supriya Madan", "Global Ethics and Compliance Leader; Principal at BT Group"], ["Garima Dhiman", "Independent Business and Human Rights Specialist"]],
     } },
-  { when: "13 November 2026", upcoming: true, title: "PoSH Governance Review, Annual Reporting and Strategic Planning: Year-end Consultation and Governance Masterclass", text: "A strategic learning journey for organisations committed to stronger governance and safer workplaces.", img: "/img/ev/47-1.webp", pos: "center 20%",
+  { when: "13 November 2026", upcoming: true, title: "PoSH Governance Review, Annual Reporting and Strategic Planning: Year-end Consultation and Governance Masterclass", text: "A strategic learning journey for organisations committed to stronger governance and safer workplaces.", img: "/img/ev/47-2.webp", img2: "/img/ev/47-3.webp", pos: "center 20%",
     more: {
       facts: ["13 November 2026, 2:00 to 4:00 PM IST, online", "Q4: Dialogue, reflection and action"],
       speakers: [["Suruchi Kumar", "Founder and principal attorney, Law Chambers of Suruchi Kumar (SKLC)"], ["Madhu Mehra", "Founder, Partners for Law in Development (PLD)"], ["Anumita Sarkar", "Founder, P/ PRABHAVEE"]],
