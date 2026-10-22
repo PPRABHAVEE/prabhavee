@@ -56,21 +56,30 @@ export default function Founder() {
       <section className="sec fd">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Awards &amp; recognitions</span><h2>Recognised for impact and delivery.</h2></div></div>
-          <ul className="fd-awards">{FOUNDER_MORE.awards.map((a, i) => <li key={a}><span>{String(i + 1).padStart(2, "0")}</span><p>{a}</p></li>)}</ul>
+          <div className="fd-media">
+            <figure className="fd-fig"><Img src="/img/founder-impact.webp" alt="Receiving an award at a Wolters Kluwer India event" sizes="(max-width: 980px) 100vw, 40vw" /></figure>
+            <ul className="fd-awards fd-awards--2">{FOUNDER_MORE.awards.map((a, i) => <li key={a}><span>{String(i + 1).padStart(2, "0")}</span><p>{a}</p></li>)}</ul>
+          </div>
         </div>
       </section>
 
       <section className="sec sec--mist fd">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Collaborations, consulting and engagements</span></div></div>
-          <ol className="fd-ledger fd-ledger--2">{COLLABS.map((c, i) => <li key={c}><span>{String(i + 1).padStart(2, "0")}</span>{c}</li>)}</ol>
+          <div className="fd-media fd-media--flip">
+            <figure className="fd-fig"><Img src="/img/founder-collaborations.webp" alt="Participants at the Workshop on Trends in Data Governance in India and the EU, New Delhi" sizes="(max-width: 980px) 100vw, 40vw" /></figure>
+            <ol className="fd-ledger fd-ledger--1">{COLLABS.map((c, i) => <li key={c}><span>{String(i + 1).padStart(2, "0")}</span>{c}</li>)}</ol>
+          </div>
         </div>
       </section>
 
       <section className="sec fd">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Strategic partner to</span></div></div>
-          <ol className="fd-ledger fd-ledger--2">{PARTNER_TO.map((c, i) => <li key={c}><span>{String(i + 1).padStart(2, "0")}</span>{c}</li>)}</ol>
+          <div className="fd-media">
+            <figure className="fd-fig"><Img src="/img/founder-partner.webp" alt="Receiving a Women on Boards Programme certificate at the Indian School of Development Management" sizes="(max-width: 980px) 100vw, 40vw" /></figure>
+            <ol className="fd-ledger fd-ledger--1">{PARTNER_TO.map((c, i) => <li key={c}><span>{String(i + 1).padStart(2, "0")}</span>{c}</li>)}</ol>
+          </div>
         </div>
       </section>
 

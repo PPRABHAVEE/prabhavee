@@ -13,7 +13,7 @@ const ACAD = [
   { photo: ["/img/ndim-posh-ndim-3.webp", "Faculty and staff at a PoSH training session at the New Delhi Institute of Management"], n: "New Delhi Institute of Management (NDIM)", y: "2026", items: ["Empanelled consultant for the PoSH Internal Committee: PoSH training and capacity building for faculty and staff"] },
   { photo: ["/img/ev/24-1.webp", "Online guest lecture on the legal and policy framework around social aspects of ESG compliance"], n: "Guru Gobind Singh Indraprastha University, with EHS Guru Sustainable Solutions Pvt. Ltd.", y: "Faculty, 2025 and 2026", items: [{ t: "ESG Compliance Lead Course: Module VI and Parts I and II on the legal and policy framework around social aspects in India (Batch 3)", href: "https://ehsguru.com/esg-compliance-lead-certification-course" }] },
   { mark: "IICA", n: "Centre for Excellence in CSR and Corporate Citizenship, Indian Institute of Corporate Affairs (IICA)", y: "2026", items: ["Expert session on CSR and Branding for Management students: 6-month IICA-WNS Ybrant CSR, ESG & Sustainability Certificate Programme"] },
-  { mark: "NU", n: "Centre for Social Justice and Institute of Law, Nirma University", items: [{ t: "Lecture on the topic Corporate Responsibility in Indian Law at a two-day seminar for LLM students titled “Beyond Disclosure: ESG and Business and Human Rights in India” held on 14 and 15 October 2026 at the Institute of Law, Ahmedabad.", href: "https://law.nirmauni.ac.in/news-events/two-day-seminar-titled-beyond-disclosure-esg-and-business-and-human-rights-in-india/" }] },
+  { photo: ["/img/nirma-csj-1.webp", "Anumita Sarkar presenting online to students at the Institute of Law, Nirma University, on Corporate Responsibility in Indian Law"], photo2: ["/img/nirma-csj-2.webp", "A session on corporate responsibility in progress at the Institute of Law, Nirma University"], n: "Centre for Social Justice and Institute of Law, Nirma University", items: [{ t: "Lecture on the topic Corporate Responsibility in Indian Law at a two-day seminar for LLM students titled “Beyond Disclosure: ESG and Business and Human Rights in India” held on 14 and 15 October 2026 at the Institute of Law, Ahmedabad.", href: "https://law.nirmauni.ac.in/news-events/two-day-seminar-titled-beyond-disclosure-esg-and-business-and-human-rights-in-india/" }] },
 ];
 
 function AcadItems({ items }) {
@@ -42,7 +42,7 @@ export default function Academic() {
           <div className="acad-grid">
             {ACAD.slice(2).map((a) => (
               <article className="acad-card" key={a.n}>
-                {a.photo ? <div className="acad-card-ph"><Img src={a.photo[0]} alt={a.photo[1]} sizes="(max-width: 880px) 100vw, 40vw" /></div> : <div className="acad-card-ph acad-card-ph--mark" aria-hidden="true"><span>{a.mark}</span></div>}
+                {a.photo2 ? <div className="acad-card-ph acad-card-ph--duo"><Img src={a.photo[0]} alt={a.photo[1]} sizes="(max-width: 880px) 50vw, 20vw" /><Img src={a.photo2[0]} alt={a.photo2[1]} sizes="(max-width: 880px) 50vw, 20vw" /></div> : a.photo ? <div className="acad-card-ph"><Img src={a.photo[0]} alt={a.photo[1]} sizes="(max-width: 880px) 100vw, 40vw" /></div> : <div className="acad-card-ph acad-card-ph--mark" aria-hidden="true"><span>{a.mark}</span></div>}
                 <div className="acad-card-body">
                   {a.y ? <span className="acad-year">{a.y}</span> : null}
                   <h3>{a.n}</h3>
