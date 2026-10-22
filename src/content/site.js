@@ -263,7 +263,7 @@ export const ENQUIRY = {
     "Human Rights Due Diligence (HRDD) Advisory",
     "SA8000 Readiness, Social Audits & Labour Standards",
     "PoSH Consultancy & Workplace Governance",
-    "Policy Advisory, Strategic Communication & Advocacy",
+    "Policy Advisory, Partnership Strategy, Strategic Communication & Advocacy",
     "Training, Workshops & Institutional Capacity Building",
     "Policy Research, Analysis & Stakeholder Engagement",
     "Multi-stakeholder Engagement, Facilitation & Convenings",
@@ -290,7 +290,7 @@ export const ENQUIRY = {
 // Links elsewhere on the site pass ?interest=<old label>. Map each to the nearest of her enquiry types.
 const TYPE_FOR_SLUG = {
   "regulatory-risk": "Regulatory Risk and Compliance Advisory",
-  "policy-advocacy": "Policy Advisory, Strategic Communication & Advocacy",
+  "policy-advocacy": "Policy Advisory, Partnership Strategy, Strategic Communication & Advocacy",
   "policy-research": "Policy Research, Analysis & Stakeholder Engagement",
   "training-capacity": "Training, Workshops & Institutional Capacity Building",
   "strategic-programmes": "Institutional Partnerships and Academic Collaborations",
