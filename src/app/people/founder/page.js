@@ -16,7 +16,7 @@ import { Credentials } from "@/components/site/TrustStrip";
 
 export const metadata = pageMeta("Founder: Anumita Sarkar", "Anumita Sarkar, lawyer, independent policy and strategic advisor and founder of P/ PRABHAVEE, with close to 20 years across law, policy, ESG and human rights.", "/people/founder");
 
-const PARTNER_TO = ["Civil Society Organisations", "Law Universities and Law Schools", "Legal Research Institutions", "Public Policy Institutions and Offices", "Academic Research Centres and Think Tanks", "Policy Research and Advocacy Organisations"];
+const PARTNER_TO = ["Civil society organisations", "Law universities and law schools", "Legal research institutions", "Public policy institutions and offices", "Academic research centres and think tanks", "Policy research and advocacy organisations"];
 
 export default function Founder() {
   return (
