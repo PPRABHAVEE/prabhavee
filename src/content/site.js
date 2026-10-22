@@ -27,7 +27,7 @@ export const STATS = {
   network: [
     { n: "1150+", t: "individuals trained" },
     { n: "20", t: "CSOs, NGOs and social impact start-ups" },
-    { n: "125+", t: "network of academicians, consultants and policy experts" },
+    { n: "125+", pre: "network of", t: "academicians, consultants and policy experts" },
     { n: "70+", t: "organisations empowered through PoSH training" },
   ],
   engagements: [

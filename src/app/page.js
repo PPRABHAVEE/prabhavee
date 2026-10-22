@@ -41,7 +41,7 @@ export default function Home() {
         </div>
         <HeroSlides slides={HERO} />
       </section>
-      <div className="hero-figs"><div className="wrap">{STATS.network.map((s) => <div key={s.t}><b><CountUp value={s.n} /></b><span>{s.t}</span></div>)}</div></div>
+      <div className="hero-figs"><div className="wrap">{STATS.network.map((s) => <div key={s.t}>{s.pre ? <small className="fig-pre">{s.pre}</small> : <small className="fig-pre" aria-hidden="true">&nbsp;</small>}<b><CountUp value={s.n} /></b><span>{s.t}</span></div>)}</div></div>
 
       <div className="wrap"><LogoRow /></div>
 
