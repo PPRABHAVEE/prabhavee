@@ -6,7 +6,8 @@ import FrameworkGraphic from "@/components/site/FrameworkGraphic";
 import PillarsGraphic from "@/components/site/PillarsGraphic";
 import JourneyStrip from "@/components/site/JourneyStrip";
 import { LogoRow, Credentials } from "@/components/site/TrustStrip";
-import { SITE, ENQUIRY, SERVICES, STATS, INDUSTRIES, FLAGSHIPS, PARTNER_GROUPS, FOUNDER } from "@/content/site";
+import { SITE, ENQUIRY, SERVICES, STATS, INDUSTRIES, FLAGSHIPS, PARTNER_GROUPS, FOUNDER, PILLARS, PILLAR_DETAIL } from "@/content/site";
+import Fold from "@/components/site/Fold";
 import Img from "@/components/site/Img";
 import Orbit from "@/components/site/Orbit";
 import IntersectionGraphic from "@/components/site/IntersectionGraphic";
@@ -167,6 +168,9 @@ export default function Home() {
             <p>Five pillars. One purpose: stronger institutions and responsible business.</p>
           </div>
           <PillarsGraphic />
+          <Fold title="See what each pillar covers">
+            <ol className="pil-detail">{PILLARS.map((t, i) => <li className="pil-card" key={t}><span>0{i + 1}</span><h3>{t}</h3><ul>{PILLAR_DETAIL[i].map((b) => <li key={b}>{b}</li>)}</ul></li>)}</ol>
+          </Fold>
         </div>
       </section>
 

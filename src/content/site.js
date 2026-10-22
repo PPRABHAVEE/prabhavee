@@ -180,6 +180,14 @@ export const FLAGSHIPS = [
 ];
 
 export const PILLARS = ["Research, development & knowledge dissemination", "Training excellence & lifelong learning", "Strategic partnerships for sustainable long-term impact", "Institutional development & strong and effective governance", "Standardisation & best practices"];
+// What each pillar covers: her wording from the current live website (prabhaveepfsi.org), with only spelling slips corrected. She will review it.
+export const PILLAR_DETAIL = [
+  ["Collaborate with researchers, scholars, academia, public policy consultants, and civil society organisations.", "To undertake evidence-based research generating data, evidence, insights & recommendations."],
+  ["Delivering training programs, curating and launching expert-led workshops.", "Facilitating focused group discussions and leading other strategic initiatives, including leadership development programs."],
+  ["Partner with Academic Institutions, diverse industries, businesses, brands, suppliers, sector-specific experts, NGOs, civil society organisations, CSR implementing agencies, and social impact consulting firms.", "Foster multi-stakeholder dialogue and build a robust platform for sustained engagement, collaborative knowledge co-creation, and the sharing of best practices."],
+  ["Strengthen governance frameworks within Nonprofit Legal and Advisory Boards.", "Ensure compliance with laws and regulatory standards, and offer strategic support and guidance to develop and institutionalise robust systems and processes.", "Enhance accountability, transparency, and long-term sustainability."],
+  ["Build, convene, and foster an ecosystem of practitioners aligned with thematic focus areas we focus on.", "Co-create and document innovative approaches, strategic frameworks, evidence-based pathways, insights, and practical recommendations.", "Integrate evolving international standards and globally recognised guidance across all programs and service offerings for quality and accountability in all the initiatives and programs."],
+];
 
 // Slides 6-8
 export const FOUNDER = {
