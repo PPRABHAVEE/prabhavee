@@ -304,7 +304,6 @@ export const ENQUIRY_ALIASES = {
 export const FOUNDER_MORE = {
   expertise: ["Strategic partnerships and new opportunities", "Organisational development and strategic consulting", "Non-profit board leadership", "Leadership and team-building", "Multi-disciplinary and cross-functional team leadership", "Stakeholder engagement and strategic initiatives", "Training and capacity-building", "Communication, outreach and knowledge management"],
   awards: [
-    "Iconic Women Creating a Better World for All, presented at the 84th Global Edition of the Annual Women Economic Forum 2022, representing the WICCI Delhi External Affairs Council",
     "CEO Award for exemplifying the core value of “Make It Better”, Tax, Accounting & Legal Publishing Team, for exceeding revenue targets in H1 2018 (Wolters Kluwer India, 2018)",
     "Best Product Launch of the Year 2017 (Wolters Kluwer India)",
     "Launch of the Month (Wolters Kluwer India, 2017)",

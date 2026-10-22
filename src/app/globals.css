@@ -2132,3 +2132,5 @@ main > .sec:has(.ws-cards) { background: var(--mist); color: var(--ink); }
 .acad-card-ph--duo img { width: 100%; height: 100%; object-fit: cover; }
 @media (max-width: 980px) { .fd-media, .fd-media--flip { grid-template-columns: minmax(0, 1fr); gap: 28px; } .fd-media--flip .fd-fig { order: 0; } .fd-media .fd-awards--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 620px) { .fd-media .fd-awards--2 { grid-template-columns: minmax(0, 1fr); grid-auto-rows: auto; } .acad-card-ph--duo { aspect-ratio: 16 / 8; } }
+.fd-media .fd-awards--2 li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+@media (max-width: 620px) { .fd-media .fd-awards--2 li:last-child:nth-child(odd) { grid-column: auto; } }
