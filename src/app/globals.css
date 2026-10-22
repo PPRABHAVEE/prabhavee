@@ -2162,3 +2162,5 @@ main > .sec:has(.ws-cards) { background: var(--mist); color: var(--ink); }
 .alongside { align-items: start; }
 .alongside .convenor { margin-top: 4px; }
 .svc-card h3 { font-size: var(--fs-h3); }
+.sec .sec-head .sec-sub { color: var(--muted); font-weight: 400; }
+.sec .sec-head .sec-sub .red-word { color: var(--red-ink); font-weight: 600; }

@@ -114,7 +114,7 @@ export default function Home() {
       <section className="sec">
         <div className="wrap">
           <div className="sec-head">
-            <div><span className="eyebrow">Practice areas</span><h2>Advisory, facilitation, and capacity building.</h2><p className="sec-sub">Practical, context-specific solutions. Tailored to each organisation.</p></div>
+            <div><span className="eyebrow">Practice areas</span><h2>Advisory, facilitation, and capacity building.</h2><p className="sec-sub">Practical, <span className="red-word">context-specific</span> solutions. Tailored to each organisation.</p></div>
           </div>
           <div className="svc-cards">
             {SERVICES.map((s, i) => (
