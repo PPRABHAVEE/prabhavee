@@ -1757,3 +1757,48 @@ main:has(> #background) .figs-label { display: block; }
   .tln-ph { margin-top: 14px; }
   .orgs li { padding: 11px 0; }
 }
+
+/* PoSH: law section, pillar panels, stats band, programme cards */
+.posh-law { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 0 56px; align-items: stretch; }
+.posh-law-copy h2 { margin: 0 0 22px; font-size: clamp(24px, 2.2vw, 32px); line-height: 1.2; }
+.posh-law-note { margin: 0; padding: 4px 0 4px 22px; border-left: 3px solid var(--red); font-size: 17px; line-height: 1.6; }
+.posh-why { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: 20px; }
+.posh-why li { display: flex; flex-direction: column; padding: 24px 26px 26px; background: var(--mist); border-top: 3px solid var(--green); }
+.posh-why li span { font-family: var(--display); font-size: 38px; line-height: 1; color: #013b2333; margin-bottom: 14px; }
+.posh-why h3 { margin: 0 0 10px; font-size: 19px; line-height: 1.3; font-weight: 600; }
+.posh-why p { margin: 0; font-size: 15.5px; line-height: 1.6; color: var(--muted); }
+.posh-pillars-sec { margin-top: 44px; }
+.tabs { display: inline-flex; flex-wrap: wrap; gap: 0; margin-bottom: 28px; border: 1px solid #013b2340; background: #fff; }
+.tabs button { border: 0; border-right: 1px solid #013b2326; background: transparent; padding: 14px 26px; font: inherit; font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--green); cursor: pointer; }
+.tabs button:last-child { border-right: 0; }
+.tabs button[aria-pressed="true"] { background: var(--green); color: #fff; }
+.tabs button:focus-visible { outline: 2px solid var(--green); outline-offset: -4px; }
+.plr { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); margin-bottom: 24px; background: #fff; border-top: 3px solid var(--green); box-shadow: 0 10px 28px #013b2312; }
+.plr:last-child { margin-bottom: 0; }
+.plr-side { padding: 30px 32px 32px; border-right: 1px solid var(--line-soft); }
+.plr-kind { display: inline-block; margin-bottom: 16px; padding: 4px 10px; background: var(--green); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.plr-side h3 { margin: 0 0 12px; font-family: var(--display); font-weight: 400; font-size: var(--fs-sub); line-height: 1.15; letter-spacing: -.01em; }
+.plr-side p { margin: 0; font-size: 16px; line-height: 1.6; color: var(--muted); }
+.plr-items { list-style: none; margin: 0; padding: 14px 36px 14px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 36px; align-content: start; }
+.plr-items li { position: relative; padding: 14px 0 14px 22px; border-bottom: 1px solid var(--line); font-size: 16px; line-height: 1.5; }
+.plr-items li::before { content: ""; position: absolute; left: 0; top: 1.5em; width: 9px; height: 2px; background: var(--red); }
+.posh-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: var(--green); color: #fff; }
+.posh-stats div { padding: 30px 28px 32px; border-left: 1px solid #ffffff2e; }
+.posh-stats div:first-child { border-left: 0; }
+.posh-stats b { display: block; font-family: var(--display); font-weight: 400; font-size: clamp(38px, 4vw, 54px); line-height: 1; margin-bottom: 12px; }
+.posh-stats span { display: block; font-size: 15px; line-height: 1.45; color: #ffffffd9; }
+.posh-progs { margin-top: 28px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
+.posh-prog { display: flex; gap: 28px; padding: 30px 32px 32px; background: var(--mist); border-top: 3px solid var(--green); }
+.posh-prog > div { display: flex; flex-direction: column; min-width: 0; }
+.posh-prog img { flex: none; width: 170px; height: auto; align-self: flex-start; border-bottom: 3px solid var(--red); }
+.posh-prog h3 { margin: 0 0 12px; font-family: var(--display); font-weight: 400; font-size: var(--fs-sub); line-height: 1.2; letter-spacing: -.01em; }
+.posh-prog p { margin: 0 0 18px; font-size: 16px; line-height: 1.6; color: #2c352f; }
+.posh-prog .link { margin-top: auto; align-self: flex-start; }
+@media (max-width: 1100px) { .posh-law { grid-template-columns: minmax(0, 1fr); gap: 28px; } .plr-items { grid-template-columns: minmax(0, 1fr); } .posh-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .posh-stats div:nth-child(3) { border-left: 0; } .posh-stats div:nth-child(n + 3) { border-top: 1px solid #ffffff2e; } }
+@media (max-width: 880px) { .plr { grid-template-columns: minmax(0, 1fr); } .plr-side { border-right: 0; border-bottom: 1px solid var(--line-soft); padding: 24px 24px 26px; } .plr-items { padding: 8px 24px 10px; } .posh-progs { grid-template-columns: minmax(0, 1fr); gap: 18px; } }
+@media (max-width: 620px) { .posh-why { grid-template-columns: minmax(0, 1fr); gap: 12px; grid-auto-rows: auto; } .posh-why li { padding: 20px 20px 22px; } .tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; } .tabs button { padding: 13px 10px; border-bottom: 1px solid #013b2326; } .tabs button:nth-child(2n) { border-right: 0; } .tabs button:nth-last-child(-n + 2) { border-bottom: 0; } .posh-stats div { padding: 20px 18px 22px; } .posh-prog { flex-direction: column; gap: 18px; padding: 22px 20px 24px; } .posh-prog img { width: 150px; } }
+.posh-law-copy { align-self: center; }
+.posh-prog .link { margin-top: auto; align-self: stretch; padding-top: 16px; border-top: 1px solid var(--line); border-bottom: 0; font-weight: 700; }
+.posh-prog > div > p { margin-bottom: 22px; }
+@media (max-width: 880px) { .posh-pillars-sec { margin-top: 24px; } }
+@media (max-width: 620px) { .posh-pillars-sec { margin-top: 16px; } .posh-law { gap: 20px; } .plr { margin-bottom: 16px; } .plr-side { padding: 20px 18px 22px; } .plr-items { padding: 4px 18px 8px; } .plr-items li { padding: 12px 0 12px 20px; } .posh-stats span { font-size: 14px; } .posh-progs { margin-top: 20px; } }

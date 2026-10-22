@@ -20,18 +20,20 @@ const WHY = [["End-to-end PoSH support", "From policy drafting and Internal Comm
 export default function Posh() {
   return (
     <>
-      <PageIntro crumb="Services / PoSH training & compliance support" title="Safeguarding workplaces with integrity." lede="We help organisations create inclusive, legally compliant and safe workplaces. Our PoSH services rest on deep legal expertise. They go beyond theory to practical, workable solutions." />
+      <PageIntro compact crumb="Services / PoSH training & compliance support" title="Safeguarding workplaces with integrity." lede="We help organisations create inclusive, legally compliant and safe workplaces. Our PoSH services rest on deep legal expertise. They go beyond theory to practical, workable solutions." />
       <section className="sec">
-        <div className="wrap split">
-          <span className="eyebrow">The law</span>
-          <div><h2>The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013</h2>
-            <p>Anumita Sarkar is registered with the Ministry of Women &amp; Child Development, Government of India. She serves as an External Member of PoSH Internal Committees.</p></div>
-          <div className="cols-2" style={{ gap: "0 36px" }}>{WHY.map(([h, t]) => <div className="row row--plain" key={h} style={{ borderTop: "2px solid var(--green)" }}><div><h3>{h}</h3><p>{t}</p></div></div>)}</div>
+        <div className="wrap posh-law">
+          <div className="posh-law-copy">
+            <span className="eyebrow">The law</span>
+            <h2>The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013</h2>
+            <p className="posh-law-note">Anumita Sarkar is registered with the Ministry of Women &amp; Child Development, Government of India. She serves as an External Member of PoSH Internal Committees.</p>
+          </div>
+          <ul className="posh-why">{WHY.map(([h, t], i) => <li key={h}><span>0{i + 1}</span><h3>{h}</h3><p>{t}</p></li>)}</ul>
         </div>
       </section>
 
       <PhotoBand src="/img/ndim-posh-ndim-3.webp" alt="Faculty and staff at a PoSH training session at the New Delhi Institute of Management" caption="PoSH training for faculty and staff, New Delhi Institute of Management" position="center 55%" />
-      <section className="sec sec--mist" style={{ marginTop: 44 }}>
+      <section className="sec sec--mist posh-pillars-sec">
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Our core service pillars</span><h2>Choose the support your organisation needs.</h2></div></div>
           <PillarTabs pillars={PILLARS} />
@@ -40,15 +42,20 @@ export default function Posh() {
 
       <section className="sec">
         <div className="wrap">
-          <div className="figs figs--4" style={{ marginBottom: 34 }}>
+          <div className="posh-stats">
             <div><b>70+</b><span>organisations empowered through PoSH training</span></div>
             <div><b>15+</b><span>participants at the July 2026 mid-year PoSH review roundtable</span></div>
             <div><b>1150+</b><span>individuals trained</span></div>
             <div><b>5</b><span>PoSH Programmes: From Compliance to Governance, 2025–26</span></div>
           </div>
-          <div className="cols-2 posh-programmes" style={{ marginTop: 32 }}>
-            <Img src="/img/banner-governance-poster.webp" alt="Poster: Annual Roundtable 2026, Safe Workplaces by Design, a leadership imperative in risk governance" sizes="(max-width: 880px) 100vw, 320px" style={{ width: 240, marginBottom: 22 }} /><div><h3>Mid-year PoSH review consultation</h3><p>Reframes PoSH as a strategic governance priority rather than a compliance obligation, exploring workplace grey zones, organisational risk areas and Internal Committee accountability. Examines PoSH through an ESG and BRSR lens, highlighting its growing relevance as investor-visible governance data and a measure of organisational responsibility and accountability.</p><a className="link" href="/docs/building-better-governance-2026.pdf" target="_blank" rel="noopener">Read the outcomes report (PDF)</a></div>
-            <div><h3>PoSH PRO programmes</h3><p>A collaborative learning initiative with Yellow Spark: Two-day virtual learning programme building practical expertise in PoSH compliance, inquiry processes and workplace governance.</p><a className="link" href="/docs/prabhavee-posh-brochure.pdf" download>PoSH brochure (PDF)</a></div>
+          <div className="posh-progs">
+            <article className="posh-prog posh-prog--poster">
+              <Img src="/img/banner-governance-poster.webp" alt="Poster: Annual Roundtable 2026, Safe Workplaces by Design, a leadership imperative in risk governance" sizes="(max-width: 880px) 60vw, 200px" />
+              <div><h3>Mid-year PoSH review consultation</h3><p>Reframes PoSH as a strategic governance priority rather than a compliance obligation, exploring workplace grey zones, organisational risk areas and Internal Committee accountability. Examines PoSH through an ESG and BRSR lens, highlighting its growing relevance as investor-visible governance data and a measure of organisational responsibility and accountability.</p><a className="link" href="/docs/building-better-governance-2026.pdf" target="_blank" rel="noopener">Read the outcomes report (PDF)</a></div>
+            </article>
+            <article className="posh-prog">
+              <div><h3>PoSH PRO programmes</h3><p>A collaborative learning initiative with Yellow Spark: Two-day virtual learning programme building practical expertise in PoSH compliance, inquiry processes and workplace governance.</p><a className="link" href="/docs/prabhavee-posh-brochure.pdf" download>PoSH brochure (PDF)</a></div>
+            </article>
           </div>
         </div>
       </section>

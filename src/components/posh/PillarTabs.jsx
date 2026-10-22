@@ -10,11 +10,14 @@ export default function PillarTabs({ pillars }) {
         {tabs.map(([k, l]) => <button key={k} type="button" aria-pressed={f === k} onClick={() => setF(k)}>{l}</button>)}
       </div>
       {pillars.filter((p) => f === "all" || p.kind === f).map((p) => (
-        <div className="pillar" key={p.title}>
-          <h3>{p.title}</h3>
-          <p>{p.text}</p>
-          <ul className="ticks ticks--sm">{p.items.map((i) => <li key={i}>{i}</li>)}</ul>
-        </div>
+        <section className="plr" key={p.title}>
+          <div className="plr-side">
+            <span className="plr-kind">{p.kind === "consultation" ? "Consultation" : p.kind === "training" ? "Training" : "Support"}</span>
+            <h3>{p.title}</h3>
+            <p>{p.text}</p>
+          </div>
+          <ul className="plr-items">{p.items.map((i) => <li key={i}>{i}</li>)}</ul>
+        </section>
       ))}
     </>
   );
