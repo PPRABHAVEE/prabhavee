@@ -2166,3 +2166,30 @@ main > .sec:has(.ws-cards) { background: var(--mist); color: var(--ink); }
 .sec .sec-head .sec-sub .red-word { color: var(--red-ink); font-weight: 600; }
 .fig-pre { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 600; color: var(--muted); letter-spacing: .02em; }
 .who-copy .red-word { color: var(--red-ink); }
+
+/* About: designed strengths panels, team band and contribution statement (ID-scoped so they win over earlier flat rules) */
+#strengths .bg-strengths .conv-panel { background: #fff; border: 1px solid var(--line-soft); border-top: 0; box-shadow: 0 10px 28px #013b2312; padding: 0 0 10px; }
+#strengths .bg-strengths .conv-panel h3 { margin: 0; padding: 17px 26px; background: var(--green); color: #fff; min-height: 0; display: block; font-size: 12px; letter-spacing: .12em; line-height: 1.4; }
+#strengths .bg-strengths .conv-panel h3 span { padding-left: 30px; }
+#strengths .bg-strengths .conv-panel h3 span::before { display: block; width: 20px; background: var(--red); }
+#strengths .bg-strengths .conv-panel ul { padding: 6px 26px 8px; }
+#strengths .bg-strengths .conv-panel li { position: relative; padding: 13px 0 13px 22px; border-top: 1px solid var(--line); }
+#strengths .bg-strengths .conv-panel li:first-child { border-top: 0; }
+#strengths .bg-strengths .conv-panel li::before { content: ""; position: absolute; left: 0; top: 1.4em; width: 9px; height: 2px; background: var(--red); }
+#strengths .bg-team { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 0 56px; align-items: center; margin-top: 40px; padding: 46px 50px; background: var(--green); border: 0; color: #fff; }
+#strengths .bg-team-lead .eyebrow { margin: 0 0 18px; color: #fff; }
+#strengths .bg-team-lead p { margin: 0; font-family: var(--display); font-size: clamp(22px, 2.1vw, 30px); line-height: 1.32; color: #fff; }
+#strengths .bg-team-body { margin: 0; padding-left: 44px; border-left: 1px solid #ffffff40; font-size: 17px; line-height: 1.85; color: #ffffffd9; max-width: none; }
+#strengths .bg-team-body b { color: #fff; font-weight: 600; border-bottom: 1px solid var(--red); }
+#contribution .bg-statement { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; column-count: auto; margin-top: 8px; counter-reset: st; }
+#contribution .bg-statement p { margin: 0; break-inside: auto; }
+#contribution .bg-st-card { counter-increment: st; padding: 30px 32px 34px; background: #fff; border: 1px solid var(--line-soft); border-top: 3px solid var(--green); box-shadow: 0 10px 28px #013b2312; font-size: 16.5px; line-height: 1.7; color: #2c352f; }
+#contribution .bg-st-card::before { content: "0" counter(st); display: block; margin-bottom: 14px; font-family: var(--display); font-size: 38px; line-height: 1; color: #013b2333; }
+#contribution .bg-st-close { grid-column: 1 / -1; padding: 28px 34px; background: var(--mist); border-left: 4px solid var(--red); font-family: var(--display); font-size: clamp(19px, 1.8vw, 24px); line-height: 1.4; color: var(--green); }
+@media (max-width: 880px) {
+  #strengths .bg-team { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 30px 26px; }
+  #strengths .bg-team-body { padding: 24px 0 0; border-left: 0; border-top: 1px solid #ffffff40; }
+  #contribution .bg-statement { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+}
+@media (max-width: 620px) { #strengths .bg-strengths .conv-panel h3 { padding: 15px 20px; } #strengths .bg-strengths .conv-panel ul { padding: 4px 20px 6px; } #strengths .bg-team { padding: 26px 20px; } #contribution .bg-st-card { padding: 22px 20px 26px; } #contribution .bg-st-close { padding: 20px 20px; } }
+#contribution .bg-st-close { max-width: none; }
