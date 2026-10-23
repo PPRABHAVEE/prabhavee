@@ -9,7 +9,6 @@ import { LinkedInIcon, MailIcon } from "@/components/site/Icons";
 const ADVISES = ["Regulatory risk and compliance", "Social sustainability", "Labour rights", "PoSH", "Gender, diversity and inclusion", "Governance", "Ethics and compliance", "Business integrity", "Corporate accountability", "Human rights", "Responsible business"];
 // Her list of 19 Oct 2026, in her order.
 const COLLABS = ["Centre for Social Justice (CSJ)", "Institute of Law, Nirma University", "NEW IMAGINATIONS: Centre for Peace, Conflict and Justice of Jindal School of Journalism & Communication at O.P. Jindal Global University", "Centre for Business and Human Rights, Tamil Nadu National Law University (TNNLU)", "Centre for Communication Governance, National Law University Delhi", "New Delhi Institute of Management (NDIM)", "EHS GURU Sustainable Solutions Pvt. Ltd.", "Centre for Excellence in CSR and Corporate Citizenship, Indian Institute of Corporate Affairs (IICA)", "Haqdarshak Empowerment Solutions Pvt. Ltd.", "ATMA - An Accelerator for NGOs", "UN Global Compact Network India (UNGCNI)"];
-const ROMAN = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii"];
 const EXPERIENCE = ["Law practice", "Corporate", "LegalTech: governance, risk and compliance solutions", "Global publishing and information services", "Consulting", "Academia and universities", "Public policy office", "Non-profit accelerator", "Social enterprise", "NGO advisory boards"];
 import Img from "@/components/site/Img";
 import { Credentials } from "@/components/site/TrustStrip";
@@ -69,7 +68,7 @@ export default function Founder() {
           <div className="sec-head"><div><span className="eyebrow">Collaborations, consulting and engagements</span></div></div>
           <div className="fd-media fd-media--flip">
             <figure className="fd-fig"><Img src="/img/founder-collaborations.webp" alt="Participants at the Workshop on Trends in Data Governance in India and the EU, New Delhi" sizes="(max-width: 980px) 100vw, 40vw" /></figure>
-            <ol className="fd-ledger fd-ledger--1 fd-ledger--roman">{COLLABS.map((c, i) => <li key={c}><span>{ROMAN[i]}.</span>{c}</li>)}</ol>
+            <ol className="fd-ledger fd-ledger--1">{COLLABS.map((c, i) => <li key={c}><span>{String(i + 1).padStart(2, "0")}</span>{c}</li>)}</ol>
           </div>
         </div>
       </section>

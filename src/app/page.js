@@ -51,7 +51,7 @@ export default function Home() {
           <div className="who-grid">
             <div className="who-copy">
               <h2>Where policy, law and business strategy meet.</h2>
-              <p className="big">P/ PRABHAVEE, founded in 2022, is an advisory and strategy consulting practice working at the intersection of <span className="red-word">public</span> policy, law, communication, <span className="red-word">society</span> and business strategy.</p>
+              <p className="big">P/ PRABHAVEE, founded in 2022, is an advisory and strategy consulting practice working at the intersection of public policy, law, communication, society and business strategy.</p>
               <p>Lawyer Anumita Sarkar founded the practice. We offer strategic advisory, multi-stakeholder initiatives, consultation and facilitation, training and capacity building, and strategic programmes.</p>
               <p>We focus on the Social and Governance dimensions of ESG, where regulatory developments, responsible business conduct, organisational practices, and stakeholder expectations intersect. We help organisations understand how local regulatory frameworks, labour standards, business and human rights principles, and responsible business practices connect, and translate those insights into actionable strategies that strengthen governance, inform decision-making, and support meaningful stakeholder engagement and influence. We seek to be the ‘Convenor’ of this larger public discourse.</p>
                           <div className="founder-card">
@@ -114,7 +114,7 @@ export default function Home() {
       <section className="sec">
         <div className="wrap">
           <div className="sec-head">
-            <div><span className="eyebrow">Practice areas</span><h2>Advisory, facilitation, and capacity building.</h2><p className="sec-sub">Practical, <span className="red-word">context-specific</span> solutions. Tailored to each organisation.</p></div>
+            <div><span className="eyebrow">Practice areas</span><h2>Advisory, facilitation, and capacity building.</h2><p className="sec-sub">Practical, context-specific solutions. Tailored to each organisation.</p></div>
           </div>
           <div className="svc-cards">
             {SERVICES.map((s, i) => (

@@ -1,8 +1,10 @@
 "use client";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Img from "@/components/site/Img";
 
-const PER = 6;
+const PER = 9;
+
+const band = (e) => String(e.yearSort);
 
 function Lightbox({ gal, onClose }) {
   const [i, setI] = useState(gal.i);
@@ -95,7 +97,8 @@ export default function EventsExplorer({ events }) {
 
   const list = useMemo(() => {
     const s = q.trim().toLowerCase();
-    return events.filter((e) =>
+    const ordered = events.map((e, i) => [e, i]).sort(([a, i], [b, j]) => (b.upcoming - a.upcoming) || (b.yearSort - a.yearSort) || (i - j)).map(([e]) => e);
+    return ordered.filter((e) =>
       (!cat || e.category === cat) &&
       (!year || (e.year.match(/20\d\d/g) || []).includes(year)) &&
       (!s || `${e.title} ${e.type} ${e.role}`.toLowerCase().includes(s)));
@@ -122,7 +125,12 @@ export default function EventsExplorer({ events }) {
           {cat || year || q ? <button type="button" className="evf-reset" onClick={() => { setCat(""); setYear(""); setQ(""); setPage(1); }}>Clear filters</button> : null}
         </div>
       </div>
-      <div className="ev-grid" id="ev-grid">{shown.map((e) => <Tile key={e.n} ev={e} onOpen={setGal} />)}</div>
+      <div className="ev-grid" id="ev-grid">{shown.map((e, i) => (
+        <Fragment key={e.n}>
+          {i === 0 || band(shown[i - 1]) !== band(e) ? <h3 className="ev-year"><span>{band(e)}</span></h3> : null}
+          <Tile ev={e} onOpen={setGal} />
+        </Fragment>
+      ))}</div>
       {list.length === 0 ? <p className="empty">No engagements match these filters.</p> : null}
       {pages > 1 ? (
         <div className="pager" aria-label="Pages">

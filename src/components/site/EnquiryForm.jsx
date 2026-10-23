@@ -87,7 +87,7 @@ export default function EnquiryForm({ idPrefix = "enq" }) {
         </select>
       </div>
       <div className="field"><label htmlFor={`${idPrefix}-message`}>Brief description of the requirement *</label><textarea id={`${idPrefix}-message`} name="message" required maxLength={4000} placeholder="Tell us about your organisation and what you are looking for." /></div>
-      <div className="consent"><input id={`${idPrefix}-consent`} type="checkbox" name="consent" required /><label htmlFor={`${idPrefix}-consent`}>I understand and agree that accessing this website, submitting a form, or sending an inquiry does not, in itself, establish a formal professional-client relationship with P/ PRABHAVEE or constitute the provision of professional advisory services. Any engagement for advisory or consulting services will be subject to a separate agreement, as applicable.</label></div>
+      <div className="consent"><input id={`${idPrefix}-consent`} type="checkbox" name="consent" required /><label htmlFor={`${idPrefix}-consent`}>I understand and agree that accessing this website, submitting a form, or sending an inquiry does not, in itself, establish a formal professional-client relationship or constitute the provision of professional advisory services. Any engagement for advisory or consulting services will be subject to a separate agreement, as applicable.</label></div>
       <input className="hp" type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
       <div><button className="btn" type="submit">{ENQUIRY.submit}</button></div>
       <p className="form-status" role="status">{status}</p>

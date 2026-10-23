@@ -161,7 +161,9 @@
   "photoFlag": "N",
   "photo": null,
   "photos": [],
-  "links": [],
+  "links": [
+   "https://www.rbhrforum.com/"
+  ],
   "upcoming": false
  },
  {
@@ -289,7 +291,8 @@
    "/img/unrbhr-forum-2026-group.webp"
   ],
   "links": [
-   "https://www.youtube.com/watch?v=ux0yvv89Pl0&list=PLd1oe7-gK28U&index=7"
+   "https://www.youtube.com/watch?v=ux0yvv89Pl0&list=PLd1oe7-gK28U&index=7",
+   "https://www.rbhrforum.com/"
   ],
   "upcoming": false
  },
@@ -519,7 +522,6 @@
   "photoFlag": "Y",
   "photo": "/img/tnnlu-tnnlu-edited.webp",
   "photos": [
-   "/img/tnnlu-tnnlu-edited.webp",
    "/img/tnnlu-brochure-msme-research-collaboration.webp"
   ],
   "links": [],

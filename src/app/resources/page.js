@@ -17,7 +17,7 @@ const BROCHURES = [["P/ PRABHAVEE brochure", "Empowering organisations through s
 const REPORTS = [
   ["GCNI ACCA Project Impact Report", "Global Compact Network India · June 2025 · Siemens Integrity Initiative. Anumita contributed to country network surveys and interviews as a working-group member.", "gcni-acca-project-impact-report-2025.pdf", "GCNI · 2025", "https://globalcompact.in/wp-content/uploads/2025/06/GCNI-TFR-Project-Impact-Report.pdf"],
   ["Building Better Governance: Consultation Outcomes Report", "Mid-year PoSH review: Safe Workplaces by Design · P/ PRABHAVEE · August 2026.", "building-better-governance-2026.pdf", "P/ PRABHAVEE · 2026"],
-  ["Anti-Corruption Collective Action Playbook Training: Workshop Report", "UN Global Compact Network India · September 2022. Anumita participated in a stakeholder interview.", "acca-playbook-workshop-report-2022.pdf", "UNGCNI · 2022"],
+  ["Anti-Corruption Collective Action Playbook Training: Workshop Report", "UN Global Compact Network India · September 2022. Anumita participated in the training.", "acca-playbook-workshop-report-2022.pdf", "UNGCNI · 2022"],
 ];
 const EXT = [
   ["Forced labour: guidelines on the implementation of the EU rules", "European Commission public consultation, 2026", "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16292-Forced-labour-guidelines-on-the-implementation-of-the-EU-rules/F33378062_en"],

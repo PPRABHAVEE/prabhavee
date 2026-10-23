@@ -48,7 +48,7 @@ export default function Journey() {
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Stakeholder engagement &amp; initiatives · before May 2025</span><h2>Engaged with stakeholders across diverse thematic areas.</h2></div><p>We facilitate multi-stakeholder dialogue. It advances shared priorities and collective action.</p></div>
           <div className="figs figs--4 st-figs">
-            <div><b>13+</b><span>experts</span></div><div><b>10+</b><span>domains</span></div><div><b>20+</b><span>organisations</span></div><div><b>2024</b><span>active year. Led WICCI Delhi External Affairs Council (DEAC) as State Vice President</span></div>
+            <div><b>13+</b><span>experts</span></div><div><b>10+</b><span>domains</span></div><div><b>20+</b><span>organisations</span></div><div><b>2024</b><span>Led WICCI Delhi External Affairs Council (DEAC) as State Vice President</span></div>
           </div>
           <ul className="orgs">{ORGS.map((o, i) => <li key={o}><span>{String(i + 1).padStart(2, "0")}</span>{o}</li>)}</ul>
         </div>
