@@ -2227,3 +2227,11 @@ main > .sec:has(.ws-cards) { background: var(--mist); color: var(--ink); }
 #engage .fold { margin-top: 44px; }
 #engage .fold .fold-title, #engage .fold-body > .fold-title:first-child { margin: 0 0 24px; }
 @media (max-width: 880px) { #engage .fold { margin-top: 24px; } }
+
+/* 24 Oct: tagline beside the logo in brand green with a divider (her choice, Option B); PoSH stats band with three figures */
+.site-header .brand { flex-direction: row; align-items: center; gap: 16px; padding-bottom: 0; }
+.site-header .brand-strap { margin: 0; padding-left: 16px; border-left: 1px solid var(--line); color: var(--green); font-size: 10.5px; }
+@media (max-width: 620px) { .site-header .brand { gap: 10px; } .site-header .brand-strap { padding-left: 10px; font-size: 8px; letter-spacing: .05em; white-space: normal; line-height: 1.25; max-width: 110px; } }
+.posh-stats--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 1100px) { .posh-stats--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } .posh-stats--3 div:nth-child(3) { border-left: 1px solid #ffffff2e; } .posh-stats--3 div:nth-child(n + 3) { border-top: 0; } }
+@media (max-width: 760px) { .posh-stats--3 { grid-template-columns: minmax(0, 1fr); } .posh-stats--3 div, .posh-stats--3 div:nth-child(3) { border-left: 0; } .posh-stats--3 div:nth-child(n + 2) { border-top: 1px solid #ffffff2e; } }

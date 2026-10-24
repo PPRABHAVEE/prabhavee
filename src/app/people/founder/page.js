@@ -8,7 +8,7 @@ import { LinkedInIcon, MailIcon } from "@/components/site/Icons";
 // From the pitch deck, slide 6.
 const ADVISES = ["Regulatory risk and compliance", "Social sustainability", "Labour rights", "PoSH", "Gender, diversity and inclusion", "Governance", "Ethics and compliance", "Business integrity", "Corporate accountability", "Human rights", "Responsible business"];
 // Her list of 19 Oct 2026, in her order.
-const COLLABS = ["Centre for Social Justice (CSJ)", "Institute of Law, Nirma University", "NEW IMAGINATIONS: Centre for Peace, Conflict and Justice of Jindal School of Journalism & Communication at O.P. Jindal Global University", "Centre for Business and Human Rights, Tamil Nadu National Law University (TNNLU)", "Centre for Communication Governance, National Law University Delhi", "New Delhi Institute of Management (NDIM)", "EHS GURU Sustainable Solutions Pvt. Ltd.", "Centre for Excellence in CSR and Corporate Citizenship, Indian Institute of Corporate Affairs (IICA)", "Haqdarshak Empowerment Solutions Pvt. Ltd.", "ATMA - An Accelerator for NGOs", "UN Global Compact Network India (UNGCNI)"];
+const COLLABS = ["Centre for Social Justice (CSJ)", "Institute of Law, Nirma University", "NEW IMAGINATIONS: Centre for Peace, Conflict and Justice of Jindal School of Journalism & Communication at O.P. Jindal Global University", "Centre for Business and Human Rights, Tamil Nadu National Law University (TNNLU)", "Centre for Communication Governance, National Law University Delhi", "New Delhi Institute of Management (NDIM)", "EHS GURU Sustainable Solutions Pvt. Ltd.", "Guru Gobind Singh Indraprastha University, New Delhi", "Centre for Excellence in CSR and Corporate Citizenship, Indian Institute of Corporate Affairs (IICA)", "Haqdarshak Empowerment Solutions Pvt. Ltd.", "ATMA - An Accelerator for NGOs", "UN Global Compact Network India (UNGCNI)"];
 const EXPERIENCE = ["Law practice", "Corporate", "LegalTech: governance, risk and compliance solutions", "Global publishing and information services", "Consulting", "Academia and universities", "Public policy office", "Non-profit accelerator", "Social enterprise", "NGO advisory boards"];
 import Img from "@/components/site/Img";
 import { Credentials } from "@/components/site/TrustStrip";
@@ -20,7 +20,7 @@ const PARTNER_TO = ["Civil society organisations", "Law universities and law sch
 export default function Founder() {
   return (
     <>
-      <PageIntro compact crumb="People / Founder" title="About the founder." image={{ src: "/img/banner-unrbhr-anumita.webp", alt: "Anumita Sarkar standing at the welcome sign of the UN Responsible Business and Human Rights Forum, Bangkok", caption: "Anumita Sarkar at the UN Responsible Business and Human Rights Forum, Bangkok", position: "center 30%" }} />
+      <PageIntro compact crumb="People / Founder" title="About the founder." image={{ src: "/img/banner-unrbhr-anumita.webp", alt: "Anumita Sarkar standing at the welcome sign of the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok", caption: "Anumita Sarkar at the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok", position: "center 30%" }} />
       <section className="sec fd">
         <div className="wrap fd-profile">
           <figure className="fd-photo"><Img src="/img/founder.webp" alt={FOUNDER.name} sizes="(max-width: 880px) 100vw, 40vw" priority /></figure>

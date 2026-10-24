@@ -154,7 +154,7 @@ export default function Home() {
             </figure>
           </div>
           <div className="posh-tiles">
-            {[["Expert-led training", "Programmes tailored to your organisation."], ["Compliance audits", "Checks for legal compliance and best practice."], ["Advisory solutions", "Guidance to build an inclusive, safe culture."], ["External member services", "Legal and advisory support for ongoing compliance."]].map(([h, t], i) => (
+            {[["Expert-led training", "Programmes tailored to your organisation."], ["Compliance audits", "Checks for compliance and best practice."], ["Advisory solutions", "Guidance to build an inclusive, safe culture."], ["External member services", "Retainer for ongoing regulatory compliance and advisory support."]].map(([h, t], i) => (
               <div className="posh-tile" key={h}><span className="n" aria-hidden="true">0{i + 1}</span><h3>{h}</h3><p>{t}</p></div>
             ))}
           </div>

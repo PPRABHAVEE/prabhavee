@@ -42,10 +42,9 @@ export default function Posh() {
 
       <section className="sec">
         <div className="wrap">
-          <div className="posh-stats">
+          <div className="posh-stats posh-stats--3">
             <div><b>70+</b><span>organisations empowered through PoSH training</span></div>
             <div><b>15+</b><span>participants at the July 2026 mid-year PoSH review roundtable</span></div>
-            <div><b>1150+</b><span>individuals trained</span></div>
             <div><b>5</b><span>PoSH Programmes: From Compliance to Governance, 2025–26</span></div>
           </div>
           <div className="posh-progs posh-progs--one">
