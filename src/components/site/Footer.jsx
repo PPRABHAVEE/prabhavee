@@ -53,6 +53,7 @@ export default function Footer() {
         <div className="foot-bottom">
           <span>© 2026 {SITE.name} – {SITE.tagline}. All rights reserved.</span>
           <span>{SITE.registered}</span>
+          <nav className="foot-policies" aria-label="Legal information"><Link href="/privacy-policy">Privacy Policy</Link><Link href="/cookie-notice">Cookie Notice</Link><Link href="/disclaimer">Disclaimer</Link></nav>
         </div>
       </div>
     </footer>

@@ -24,8 +24,8 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
-  // Preview builds (review markers on) are kept out of search engines.
-  ...(process.env.NEXT_PUBLIC_SHOW_PENDING === "1" ? { robots: { index: false, follow: false } } : {}),
+  // Review previews are kept out of search engines, with or without internal markers.
+  ...((process.env.NEXT_PUBLIC_SHOW_PENDING === "1" || process.env.NEXT_PUBLIC_REVIEW_PREVIEW === "1") ? { robots: { index: false, follow: false } } : {}),
 };
 
 export default function RootLayout({ children }) {
