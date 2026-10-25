@@ -203,7 +203,7 @@ export const FOUNDER = {
 // ---------------------------------------------------------------- navigation: Services mega-menu, grouped by audience (deck slide 20)
 export const MEGA = {
   columns: [
-    { heading: "Businesses, brands & suppliers", links: [["Regulatory risk & compliance advisory", "/services#regulatory-risk"], ["Policy advisory, partnership strategy, strategic communication & advocacy", "/services#policy-advocacy"], ["Supplier engagement & training", "/training"], ["PoSH training & compliance support", "/posh"]] },
+    { heading: "Businesses, brands & suppliers", links: [["Regulatory risk & compliance advisory", "/services#regulatory-risk"], ["Policy advisory, partnership strategy, strategic communication & advocacy", "/services#policy-advocacy"], ["Supplier engagement and capability development programmes", "/training"], ["PoSH training & compliance support", "/posh"]] },
     { heading: "Universities, research centres & think tanks", links: [["Policy research, analysis & convenings", "/services#policy-research"], ["Strategic programme design & implementation", "/services#strategic-programmes"], ["Training & institutional capacity building", "/services#training-capacity"], ["Academic collaborations", "/academic"]] },
     { heading: "Social purpose organisations", links: [["Governance & non-profit board leadership", "/services#governance-boards"], ["Multi-stakeholder engagement, facilitation & convenings", "/services#multi-stakeholder"]] },
   ],
@@ -323,7 +323,7 @@ export const FOUNDER_MORE = {
     { h: "Faculty development programmes", items: ["CSR law and practices, strategic engagements and implementation of CSR initiatives through social media, FORE School of Management, New Delhi", "Context to Concept: Crafting Impactful Case Studies, jointly organised by the School of Management, GD Goenka University and the India Case Research Centre of the All India Management Association"] },
     { h: "Board Development Programme", items: ["Women on Boards Programme, Cohort 5, Indian School of Development Management (ISDM)"] },
     { h: "Certificates", items: ["Certified Professional in CSR Impact Assessment and SROI, Consultivo Academy", "Strategic Communication and Partnership Building for Social Impact, MICA | The School of Ideas", "Financial Education, National Centre for Financial Education (NCFE) and ITCILO, International Training Centre of the ILO", "CSR Laws: Its Applied Aspects, HCL Academy of HCL Foundation, Batch X", "Professional trainings and certifications from the World Bank Group, ITCILO, UNITAR, WHO, UNESCO APCEIU, OECD-OCDE, UN Global Compact Academy and others"] },
-    { h: "Registration", items: ["Advocate (non-practising), registered with the Bar Council of Delhi", "Alumni member, ITCILO, 2021 to present"] },
+    { h: "Registration", items: ["Advocate (non-practising), registered with the Bar Council of Delhi"] },
   ],
 };
 

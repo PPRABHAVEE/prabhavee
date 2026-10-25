@@ -2244,3 +2244,13 @@ main > .sec:has(.ws-cards) { background: var(--mist); color: var(--ink); }
 @media (max-width: 880px) { .subnav .wrap { padding-right: 36px; -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 32px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 32px), transparent); } }
 @media (max-width: 880px) { p a.link, li a.link { display: inline; padding: 0; } }
 @media (max-width: 880px) { a.link.link--ico { display: inline-flex; } }
+
+/* Client revisions, 25 Oct: keep the founder visible in the portrait banner. */
+.founder-intro .intro-media { min-height: 460px; background: var(--mist); }
+.founder-intro .intro-media img { object-fit: contain; }
+.ev-description { margin: 16px 0 0; font-size: 16px; line-height: 1.65; color: var(--muted); }
+.report-placeholder { aspect-ratio: 16 / 11; display: grid; align-content: center; gap: 12px; padding: 28px; background: var(--mist); border-bottom: 1px solid var(--line); color: var(--green); }
+.report-placeholder strong { font-family: var(--display); font-size: 28px; line-height: 1.2; }
+.report-placeholder small { font-size: 13px; letter-spacing: .08em; }
+@media (max-width: 880px) { .founder-intro .intro-media { min-height: 0; } .founder-intro .intro-media img { aspect-ratio: 3 / 4; max-height: 620px; } }
+.res-body > .badge { align-self: flex-start; }

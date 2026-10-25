@@ -25,7 +25,7 @@ const HERO = [
 ];
 
 export default function Home() {
-  const flagships = FLAGSHIPS.filter((f) => f.img).slice(0, 4);
+  const flagships = [...FLAGSHIPS].sort((a, b) => Number(Boolean(b.upcoming)) - Number(Boolean(a.upcoming))).filter((f) => f.img).slice(0, 4);
   return (
     <>
       <section className="hero">

@@ -137,7 +137,7 @@
  },
  {
   "n": 51,
-  "title": "Public Consultation on GRI Topic Standard Project for Labor by Global Reporting Initiative, contributing to the evolution of key labor and human rights disclosures on: — - Non-discrimination and Equal Opportunity — - Diversity and Inclusion — - Labor Rights in Business Relationships — - Freedom of Association and Collective Bargaining — - Child Labor — - Forced Labor",
+  "title": "Public Consultation on GRI Topic Standard Project for Labor by Global Reporting Initiative, contributing to the evolution of key labor and human rights disclosures on: Non-discrimination and Equal Opportunity; Diversity and Inclusion; Labor Rights in Business Relationships; Freedom of Association and Collective Bargaining; Child Labor; Forced Labor",
   "detail": [],
   "year": "2025 / 2026",
   "yearSort": 2026,
@@ -1067,6 +1067,58 @@
   "photo": null,
   "photos": [],
   "links": [],
+  "upcoming": false
+ },
+ {
+  "n": 61,
+  "title": "Public Consultation on IOM’s Global Strategy on Migration, Business and Human Rights",
+  "description": "Global strategic approach on Migration, Business and Human Rights (MBHR), supporting the private sector on migrant worker protections and responsible recruitment.",
+  "detail": [],
+  "year": "2025",
+  "yearSort": 2025,
+  "type": "Public consultation",
+  "category": "Consultations",
+  "role": "Contributor",
+  "photoFlag": "N",
+  "photo": null,
+  "photos": [],
+  "links": [],
+  "upcoming": false
+ },
+ {
+  "n": 62,
+  "title": "Contributed to a global survey to shape inform research priorities on forced labour and human trafficking by the International Labour Organization (ILO) and Innovations for Poverty Action (IPA)",
+  "description": "",
+  "detail": [],
+  "year": "2025",
+  "yearSort": 2025,
+  "type": "Survey",
+  "category": "Consultations",
+  "role": "Contributor",
+  "photoFlag": "N",
+  "photo": null,
+  "photos": [],
+  "links": [
+   "https://www.ilo.org/resource/news/global-survey-shape-inform-research-priorities-forced-labour-and-human"
+  ],
+  "upcoming": false
+ },
+ {
+  "n": 63,
+  "title": "Contributed to IMT–UNGCNI Sustainability Capability Study: ESG Survey on Economics and Sustainability",
+  "description": "Skill-gap, capacity-building, and business school curricula. Report: Building India’s Net Zero Capability: Industry Readiness and Skills.",
+  "detail": [],
+  "year": "2026",
+  "yearSort": 2026,
+  "type": "Survey",
+  "category": "Consultations",
+  "role": "Contributor",
+  "photoFlag": "N",
+  "photo": null,
+  "photos": [],
+  "links": [
+   "https://www.imt.edu/centre-for-sustainability/"
+  ],
   "upcoming": false
  }
 ]

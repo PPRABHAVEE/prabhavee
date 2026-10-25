@@ -20,7 +20,7 @@ const PARTNER_TO = ["Civil society organisations", "Law universities and law sch
 export default function Founder() {
   return (
     <>
-      <PageIntro compact crumb="People / Founder" title="About the founder." image={{ src: "/img/banner-unrbhr-anumita.webp", alt: "Anumita Sarkar standing at the welcome sign of the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok", caption: "Anumita Sarkar at the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok", position: "center 30%" }} />
+      <div className="founder-intro"><PageIntro compact crumb="People / Founder" title="About the founder." image={{ src: "/img/banner-unrbhr-anumita.webp", alt: "Anumita Sarkar standing at the welcome sign of the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok", caption: "Anumita Sarkar at the UN Responsible Business and Human Rights Forum, Asia-Pacific 2026, Bangkok", position: "center" }} /></div>
       <section className="sec fd">
         <div className="wrap fd-profile">
           <figure className="fd-photo"><Img src="/img/founder.webp" alt={FOUNDER.name} sizes="(max-width: 880px) 100vw, 40vw" priority /></figure>

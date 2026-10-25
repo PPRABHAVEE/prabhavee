@@ -69,6 +69,7 @@ function Tile({ ev, onOpen }) {
           <span className="yr">{ev.year}</span><span>{ev.type}</span>
         </div>
         <h3 title={ev.title}>{ev.title}</h3>
+        {ev.description ? <p className="ev-description">{ev.description}</p> : null}
         <div className="ev-foot">
           <p className="role"><span>Role</span>{ev.role}</p>
           {links.length ? <div className="links">{links.map((l) => <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer">{l.label}</a>)}</div> : null}
