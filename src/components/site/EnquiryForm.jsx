@@ -56,8 +56,8 @@ export default function EnquiryForm({ idPrefix = "enq" }) {
   if (sent) {
     return (
       <div className="sent" role="status">
-        <h3>Thank you.</h3>
-        <p>Your enquiry has been sent. We will reply to the email address you gave.</p>
+        <h3>Thank you so much.</h3>
+        <p>Your enquiry has been sent successfully. We’ll get in touch with you soon.</p>
         <button className="btn btn--ghost" type="button" onClick={() => setSent(false)}>Send another enquiry</button>
       </div>
     );
