@@ -17,7 +17,7 @@ export default function Events() {
         <div className="wrap">
           <div className="sec-head"><div><span className="eyebrow">Flagship programmes 2025–26</span><h2>Nine programmes convened and hosted.</h2></div></div>
           <div className="cards">
-            {FLAGSHIPS.map((f) => (
+            {[...FLAGSHIPS].sort((a, b) => Number(Boolean(b.upcoming)) - Number(Boolean(a.upcoming))).map((f) => (
               <article className="card" key={f.title + f.when}>
                 {f.img2 ? <div className="im im--duo"><Img src={f.img} alt="Speakers for the year-end consultation and governance masterclass" sizes="(max-width: 620px) 50vw, 210px" /><Img src={f.img2} alt="Speaker biographies for the year-end consultation and governance masterclass" sizes="(max-width: 620px) 50vw, 210px" /></div> : f.img ? <div className="im"><Img src={f.img} alt="" sizes="(max-width: 620px) 100vw, (max-width: 1180px) 50vw, 420px" style={f.pos ? { objectPosition: f.pos } : undefined} /></div> : <div className="im im--text">P/</div>}
                 <div className="bd">
