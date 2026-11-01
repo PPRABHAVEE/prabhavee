@@ -16,7 +16,7 @@ export const SITE = {
 
 export const NAV = [
   { label: "About", href: "/background", items: [["About P/ PRABHAVEE", "/background"], ["Networks & collaborations", "/networking"], ["Strategic milestones", "/journey"]] },
-  { label: "Services", href: "/services", items: [["Professional services", "/services"], ["Training & capacity building", "/training"], ["PoSH training & compliance support", "/posh"], ["Academic collaborations", "/academic"]] },
+  { label: "Services", href: "/services", items: [["Professional services", "/services"], ["Training & capacity building", "/training"], ["Prevention of Sexual Harassment of Women at the Workplace (PoSH) Training & Compliance Support", "/posh"], ["Academic collaborations", "/academic"]] },
   { label: "Who we serve", href: "/whoWeServe", items: [] },
   { label: "People", href: "/people/founder", items: [["Founder", "/people/founder"], ["Consultants & alumni", "/people/consultant"]] },
   { label: "Engagements", href: "/events", items: [["Events", "/events"], ["Resources", "/resources"]] },
@@ -203,7 +203,7 @@ export const FOUNDER = {
 // ---------------------------------------------------------------- navigation: Services mega-menu, grouped by audience (deck slide 20)
 export const MEGA = {
   columns: [
-    { heading: "Businesses, brands & suppliers", links: [["Regulatory risk & compliance advisory", "/services#regulatory-risk"], ["Policy advisory, partnership strategy, strategic communication & advocacy", "/services#policy-advocacy"], ["Supplier engagement and capability development programmes", "/training"], ["PoSH training & compliance support", "/posh"]] },
+    { heading: "Businesses, brands & suppliers", links: [["Regulatory risk & compliance advisory", "/services#regulatory-risk"], ["Policy advisory, partnership strategy, strategic communication & advocacy", "/services#policy-advocacy"], ["Supplier engagement and capability development programmes", "/training"], ["Prevention of Sexual Harassment of Women at the Workplace (PoSH) Training & Compliance Support", "/posh"]] },
     { heading: "Universities, research centres & think tanks", links: [["Policy research, analysis & convenings", "/services#policy-research"], ["Strategic programme design & implementation", "/services#strategic-programmes"], ["Training & institutional capacity building", "/services#training-capacity"], ["Academic collaborations", "/academic"]] },
     { heading: "Social purpose organisations", links: [["Governance & non-profit board leadership", "/services#governance-boards"], ["Multi-stakeholder engagement, facilitation & convenings", "/services#multi-stakeholder"]] },
   ],
