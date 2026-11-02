@@ -190,9 +190,9 @@ export const PILLAR_DETAIL = [
 // Slides 6-8
 export const FOUNDER = {
   name: "Anumita Sarkar",
-  role: "Lawyer · Independent Policy and Strategic Advisor · Founder, P/ PRABHAVEE",
+  role: "Lawyer · Founder, P/ PRABHAVEE",
   bio: [
-    "Anumita Sarkar is a lawyer, an Independent Policy and Strategic Advisor, Founder of P/ PRABHAVEE, registered with the Ministry of Women & Child Development, Government of India. She advises on regulatory risk and compliance, and provides strategic consultation on social sustainability, labour rights, PoSH, gender, diversity and inclusion, governance, ethics and compliance, business integrity, corporate accountability, human rights and responsible business.",
+    "Anumita Sarkar is a lawyer and Founder of P/ PRABHAVEE, registered with the Ministry of Women & Child Development, Government of India. She advises on regulatory risk and compliance, and provides strategic consultation on social sustainability, labour rights, PoSH, gender, diversity and inclusion, governance, ethics and compliance, business integrity, corporate accountability, human rights and responsible business.",
     "She is a strategic leader with an interdisciplinary academic background in sociology, law, communications and strategic management, and brings close to 20 years of sectoral, cross-functional and multi-stakeholder expertise. Anumita has extensive experience spanning law practice, corporate, LegalTech (governance, risk and compliance solutions), global publishing and information services, consulting, academia, universities, a public policy office, a non-profit accelerator, social enterprise and NGO advisory boards. From 2022 to 2025, she served as a member of UN Global Compact Network India's Anti-Corruption Collective Action Working Group.",
     "She is known for building powerful collaborations and designing high-impact capacity-building programmes, and leading organisations invite her to deliver lectures on ESG, CSR, and business and human rights. She advises organisations on responsible business, governance and multi-stakeholder engagement through strategic advisory, facilitation, capacity building and strategic programmes. She serves as an External Member of PoSH Internal Committees.",
   ],
@@ -349,6 +349,7 @@ export const NETWORK_BLOCKS = [
       ["India Partner Network (IPN)", "A Sattva initiative", "Network partner"],
       ["Teaching Business and Human Rights Forum", "Academic network", "Affiliate"],
       ["eLearnPOSH.com", "E-learning provider (PoSH)", "Learning partner", "https://elearnposh.com/em-directory/profile1/?id=7xKh7m"],
+      ["Indian LegalTech Network (ILTN)", "Legal technology network", "Member", "https://www.indianlegaltech.net/"],
     ] },
     { title: "Mentorship", subtitle: "Ongoing", items: [
       ["New Delhi Institute of Management (NDIM)", "Academic institution", "Industry mentor"],

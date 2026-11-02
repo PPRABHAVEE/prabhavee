@@ -45,7 +45,7 @@ export default function Networking() {
                       <div className="net-top"><span className="net-crest" aria-hidden="true">{mark(n)}</span><span className="net-role">{r}</span></div>
                       <h4>{n}</h4>
                       <p>{o}</p>
-                      {href ? <a className="link" href={href} target="_blank" rel="noopener noreferrer">View profile on eLearnPOSH<span className="sr-only"> (opens in a new tab)</span></a> : null}
+                      {href ? <a className="link" href={href} target="_blank" rel="noopener noreferrer">{href.includes("elearnposh") ? "View profile on eLearnPOSH" : "Visit website"}<span className="sr-only"> (opens in a new tab)</span></a> : null}
                     </li>
                   ))}</ul>
                 ) : (

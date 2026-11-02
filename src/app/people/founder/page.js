@@ -13,7 +13,7 @@ const EXPERIENCE = ["Law practice", "Corporate", "LegalTech: governance, risk an
 import Img from "@/components/site/Img";
 import { Credentials } from "@/components/site/TrustStrip";
 
-export const metadata = pageMeta("Founder: Anumita Sarkar", "Anumita Sarkar, lawyer, independent policy and strategic advisor and founder of P/ PRABHAVEE, with close to 20 years across law, policy, ESG and human rights.", "/people/founder");
+export const metadata = pageMeta("Founder: Anumita Sarkar", "Anumita Sarkar, lawyer and founder of P/ PRABHAVEE, with close to 20 years across law, policy, ESG and human rights.", "/people/founder");
 
 const PARTNER_TO = ["Civil society organisations", "Law universities and law schools", "Legal research institutions", "Public policy institutions and offices", "Academic research centres and think tanks", "Policy research and advocacy organisations"];
 
