@@ -279,7 +279,7 @@ export const ENQUIRY = {
     "Funded Projects & Grant Partnerships",
     "Institutional partnership and academic collaboration",
     "Retainer or long-term advisory engagement",
-    "External Member appointment (PoSH)",
+    "Appointment as External Member to Internal Committee (IC) under the PoSH Act, 2013",
     "Speaking, moderation or expert engagement",
     "Exploratory discussion / Other",
   ],
