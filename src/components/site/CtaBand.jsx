@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 // Closing band. `next` is the natural next page to read; the primary action is always to write to the firm.
-export default function CtaBand({ title = "Have a strategic priority in mind? Let’s turn intent into action.", next }) {
+export default function CtaBand({ title = "Have a strategic priority or policy agenda in mind? Let’s translate intent into meaningful action.", next }) {
   return (
     <section className="closing">
       <div className="wrap">

@@ -279,7 +279,7 @@ export const ENQUIRY = {
     "Funded Projects & Grant Partnerships",
     "Institutional partnership and academic collaboration",
     "Retainer or long-term advisory engagement",
-    "Appointment as External Member to Internal Committee (IC) under the PoSH Act, 2013",
+    "Appointment as an External Member to Internal Committee (IC) under the PoSH Act, 2013",
     "Speaking, moderation or expert engagement",
     "Exploratory discussion / Other",
   ],
@@ -319,7 +319,7 @@ export const FOUNDER_MORE = {
     "Rookie of the Year 2016 (Wolters Kluwer India, 2017)",
   ],
   credentials: [
-    { h: "Degrees and diplomas", items: ["LL.B., Campus Law Centre, Faculty of Law, University of Delhi", "B.A. (Hons.) Sociology, Miranda House College, University of Delhi", "Post Graduate Diploma in Mass Communication, Bhavan's Rajendra Prasad Institute of Communication & Management", "Certificate in Strategic Management, IIM Bangalore"] },
+    { h: "Degrees and diplomas", items: ["LL.B., Campus Law Centre, Faculty of Law, University of Delhi", "B.A. (Hons.) Sociology, Miranda House College, University of Delhi", "Post Graduate Diploma in Mass Communication, Bhavan's Rajendra Prasad Institute of Communication & Management", "Certificate, specialisation in Strategic Management, MicroMasters Program in Business Management, IIM Bangalore"] },
     { h: "Faculty development programmes", items: ["CSR law and practices, strategic engagements and implementation of CSR initiatives through social media, FORE School of Management, New Delhi", "Context to Concept: Crafting Impactful Case Studies, jointly organised by the School of Management, GD Goenka University and the India Case Research Centre of the All India Management Association"] },
     { h: "Board Development Programme", items: ["Women on Boards Programme, Cohort 5, Indian School of Development Management (ISDM)"] },
     { h: "Certificates", items: ["Certified Professional in CSR Impact Assessment and SROI, Consultivo Academy", "Strategic Communication and Partnership Building for Social Impact, MICA | The School of Ideas", "Financial Education, National Centre for Financial Education (NCFE) and ITCILO, International Training Centre of the ILO", "CSR Laws: Its Applied Aspects, HCL Academy of HCL Foundation, Batch X", "Professional trainings and certifications from the World Bank Group, ITCILO, UNITAR, WHO, UNESCO APCEIU, OECD-OCDE, UN Global Compact Academy and others"] },
